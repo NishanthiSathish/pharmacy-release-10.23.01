@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+GENRTL10
+</name>
+</assembly>
+<members>
+<member name="M:GENRTL10.SettingRead.DssSettingsForUserRoles(System.Int32,System.Int32)">
+	<summary>
+ Gets a list of dss check settings for the specified user and all of their roles including the everyone role
+ </summary>
+	<param name="SessionID">standard session id</param>
+	<param name="EntityID">the entity id of the user we are looking for</param>
+	<returns>true if no dss checks should be performed for this user</returns>
+</member>
+</members>
+</doc>

@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[RunScripts.csproj]
+SCC_Aux_Path = "\\Core-store\Development\AscribefpDev\SS\v9.2"
+SCC_Project_Name = "$/Pharmacy/Database/Reporting/RunScript", IDSEAAAA
+
+[RunScripts.sln]
+SCC_Aux_Path = "\\Core-store\Development\AscribefpDev\SS\v9.2"
+SCC_Project_Name = "$/Pharmacy/Database/Reporting/RunScript", IDSEAAAA

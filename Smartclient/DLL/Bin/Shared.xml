@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Shared
+</name>
+</assembly>
+<members>
+<member name="P:_Shared.ICWException.Message">
+	<summary>
+ Overridden property so we can set the message outside of the constructor.
+ The Base Message Property is readonly.
+ </summary>
+</member><member name="M:_Shared.ICWException.RaiseError(_Shared.LibErrorEnum,System.String)">
+	<summary>
+ Creates a Error message based on LibErrorEnum values. 
+ </summary>
+	<param name="errorNumber"></param>
+	<param name="extraInfo"></param>
+	<returns>String containg a message, relavant to the errorNumber</returns>
+</member><member name="M:_Shared.ICWException.GetNestedExceptions">
+	<summary>
+ Gets inner exceptions and display as message. 
+ Each exception may have its own inner exception. 
+ Loop through these inner exceptions, displaying each message in turn, seperated by new line character.
+ </summary>
+	<returns>String of exceptions seperated by a new line.</returns>
+</member>
+</members>
+</doc>

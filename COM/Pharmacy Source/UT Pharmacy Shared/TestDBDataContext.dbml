@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="UHBServiceTestDB" Class="TestDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ASC-XNORMAN;Initial Catalog=UHBServiceTestDB;User ID=sys" SettingsObjectName="UT_Pharmacy_Shared.Properties.Settings" SettingsPropertyName="UHBServiceTestDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="wConfiguration" Member="wConfigurations">
+    <Type Name="wConfiguration">
+      <Column Name="WConfigurationID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SiteID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Section" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="[Key]" Member="Key" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(1024)" CanBeNull="true" />
+      <Column Name="[_RowVersion]" Member="_RowVersion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[_RowGUID]" Member="_RowGUID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="sys.spResetDBForEnumViaDBLookupAttributeTests" Method="spResetDBForEnumViaDBLookupAttributeTests">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="sys.spClearDB" Method="spClearDB">
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

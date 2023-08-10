@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WWardProductList" targetNamespace="http://tempuri.org/XN_RegressionDataSet.xsd" xmlns:mstns="http://tempuri.org/XN_RegressionDataSet.xsd" xmlns="http://tempuri.org/XN_RegressionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=devdb6-2008r2;Initial Catalog=XN_Regression;User ID=icwsys;Password=ascribe" IsAppSettingsProperty="false" Modifier="Assembly" Name="devdb6-2008r2.XN_Regression.icwsys" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WWardProductList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_WWardProductList" msprop:Generator_UserDSName="WWardProductList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WWardProductList" msprop:Generator_TableClassName="WWardProductListDataTable" msprop:Generator_TableVarName="tableWWardProductList" msprop:Generator_TablePropName="WWardProductList" msprop:Generator_RowDeletingName="WWardProductListRowDeleting" msprop:Generator_RowChangingName="WWardProductListRowChanging" msprop:Generator_RowEvHandlerName="WWardProductListRowChangeEventHandler" msprop:Generator_RowDeletedName="WWardProductListRowDeleted" msprop:Generator_UserTableName="WWardProductList" msprop:Generator_RowChangedName="WWardProductListRowChanged" msprop:Generator_RowEvArgName="WWardProductListRowChangeEvent" msprop:Generator_RowClassName="WWardProductListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WWardProductListID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnWWardProductListID" msprop:Generator_ColumnPropNameInRow="WWardProductListID" msprop:Generator_ColumnPropNameInTable="WWardProductListIDColumn" msprop:Generator_UserColumnName="WWardProductListID" type="xs:int" />
+              <xs:element name="SiteID" msprop:Generator_ColumnVarNameInTable="columnSiteID" msprop:Generator_ColumnPropNameInRow="SiteID" msprop:Generator_ColumnPropNameInTable="SiteIDColumn" msprop:Generator_UserColumnName="SiteID" type="xs:int" minOccurs="0" />
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_UserColumnName="FullName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PrintDeliveryNote" msprop:Generator_ColumnVarNameInTable="columnPrintDeliveryNote" msprop:Generator_ColumnPropNameInRow="PrintDeliveryNote" msprop:Generator_ColumnPropNameInTable="PrintDeliveryNoteColumn" msprop:Generator_UserColumnName="PrintDeliveryNote" type="xs:boolean" />
+              <xs:element name="PrintPickTicket" msprop:Generator_ColumnVarNameInTable="columnPrintPickTicket" msprop:Generator_ColumnPropNameInRow="PrintPickTicket" msprop:Generator_ColumnPropNameInTable="PrintPickTicketColumn" msprop:Generator_UserColumnName="PrintPickTicket" type="xs:boolean" />
+              <xs:element name="WCustomerID" msprop:Generator_ColumnVarNameInTable="columnWCustomerID" msprop:Generator_ColumnPropNameInRow="WCustomerID" msprop:Generator_ColumnPropNameInTable="WCustomerIDColumn" msprop:Generator_UserColumnName="WCustomerID" type="xs:int" minOccurs="0" />
+              <xs:element name="InUse" msprop:Generator_ColumnVarNameInTable="columnInUse" msprop:Generator_ColumnPropNameInRow="InUse" msprop:Generator_ColumnPropNameInTable="InUseColumn" msprop:Generator_UserColumnName="InUse" type="xs:boolean" />
+              <xs:element name="SessionLock" msprop:Generator_ColumnVarNameInTable="columnSessionLock" msprop:Generator_ColumnPropNameInRow="SessionLock" msprop:Generator_ColumnPropNameInTable="SessionLockColumn" msprop:Generator_UserColumnName="SessionLock" type="xs:int" />
+              <xs:element name="VisibleToWard" msprop:Generator_ColumnVarNameInTable="columnVisibleToWard" msprop:Generator_ColumnPropNameInRow="VisibleToWard" msprop:Generator_ColumnPropNameInTable="VisibleToWardColumn" msprop:Generator_UserColumnName="VisibleToWard" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="WWardProductListLine" msprop:Generator_TableClassName="WWardProductListLineDataTable" msprop:Generator_TableVarName="tableWWardProductListLine" msprop:Generator_TablePropName="WWardProductListLine" msprop:Generator_RowDeletingName="WWardProductListLineRowDeleting" msprop:Generator_RowChangingName="WWardProductListLineRowChanging" msprop:Generator_RowEvHandlerName="WWardProductListLineRowChangeEventHandler" msprop:Generator_RowDeletedName="WWardProductListLineRowDeleted" msprop:Generator_UserTableName="WWardProductListLine" msprop:Generator_RowChangedName="WWardProductListLineRowChanged" msprop:Generator_RowEvArgName="WWardProductListLineRowChangeEvent" msprop:Generator_RowClassName="WWardProductListLineRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WWardProductListLineID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnWWardProductListLineID" msprop:Generator_ColumnPropNameInRow="WWardProductListLineID" msprop:Generator_ColumnPropNameInTable="WWardProductListLineIDColumn" msprop:Generator_UserColumnName="WWardProductListLineID" type="xs:int" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="56" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ScreenPosn" msprop:Generator_ColumnVarNameInTable="columnScreenPosn" msprop:Generator_ColumnPropNameInRow="ScreenPosn" msprop:Generator_ColumnPropNameInTable="ScreenPosnColumn" msprop:Generator_UserColumnName="ScreenPosn" type="xs:int" />
+              <xs:element name="NSVcode" msprop:Generator_ColumnVarNameInTable="columnNSVcode" msprop:Generator_ColumnPropNameInRow="NSVcode" msprop:Generator_ColumnPropNameInTable="NSVcodeColumn" msprop:Generator_UserColumnName="NSVcode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PackSize" msprop:Generator_ColumnVarNameInTable="columnPackSize" msprop:Generator_ColumnPropNameInRow="PackSize" msprop:Generator_ColumnPropNameInTable="PackSizeColumn" msprop:Generator_UserColumnName="PackSize" type="xs:int" minOccurs="0" />
+              <xs:element name="PrintLabel" msprop:Generator_ColumnVarNameInTable="columnPrintLabel" msprop:Generator_ColumnPropNameInRow="PrintLabel" msprop:Generator_ColumnPropNameInTable="PrintLabelColumn" msprop:Generator_UserColumnName="PrintLabel">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WWardProductListID" msprop:Generator_ColumnVarNameInTable="columnWWardProductListID" msprop:Generator_ColumnPropNameInRow="WWardProductListID" msprop:Generator_ColumnPropNameInTable="WWardProductListIDColumn" msprop:Generator_UserColumnName="WWardProductListID" type="xs:int" />
+              <xs:element name="TopupLvl" msprop:Generator_ColumnVarNameInTable="columnTopupLvl" msprop:Generator_ColumnPropNameInRow="TopupLvl" msprop:Generator_ColumnPropNameInTable="TopupLvlColumn" msprop:Generator_UserColumnName="TopupLvl" type="xs:int" minOccurs="0" />
+              <xs:element name="LastIssue" msprop:Generator_ColumnVarNameInTable="columnLastIssue" msprop:Generator_ColumnPropNameInRow="LastIssue" msprop:Generator_ColumnPropNameInTable="LastIssueColumn" msprop:Generator_UserColumnName="LastIssue" type="xs:int" minOccurs="0" />
+              <xs:element name="LastIssueDate" msprop:Generator_ColumnVarNameInTable="columnLastIssueDate" msprop:Generator_ColumnPropNameInRow="LastIssueDate" msprop:Generator_ColumnPropNameInTable="LastIssueDateColumn" msprop:Generator_UserColumnName="LastIssueDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DailyIssue" msprop:Generator_ColumnVarNameInTable="columnDailyIssue" msprop:Generator_ColumnPropNameInRow="DailyIssue" msprop:Generator_ColumnPropNameInTable="DailyIssueColumn" msprop:Generator_UserColumnName="DailyIssue" type="xs:int" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsIssueAdHoc" msprop:Generator_ColumnVarNameInTable="columnIsIssueAdHoc" msprop:Generator_ColumnPropNameInRow="IsIssueAdHoc" msprop:Generator_ColumnPropNameInTable="IsIssueAdHocColumn" msprop:Generator_UserColumnName="IsIssueAdHoc" type="xs:boolean" />
+              <xs:element name="IsMultiIssueOnIssueDate" msprop:Generator_ColumnVarNameInTable="columnIsMultiIssueOnIssueDate" msprop:Generator_ColumnPropNameInRow="IsMultiIssueOnIssueDate" msprop:Generator_ColumnPropNameInTable="IsMultiIssueOnIssueDateColumn" msprop:Generator_UserColumnName="IsMultiIssueOnIssueDate" type="xs:boolean" />
+              <xs:element name="Barcode_WProduct" msprop:Generator_ColumnVarNameInTable="columnBarcode_WProduct" msprop:Generator_ColumnPropNameInRow="Barcode_WProduct" msprop:Generator_ColumnPropNameInTable="Barcode_WProductColumn" msprop:Generator_UserColumnName="Barcode_WProduct" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:WWardProductList" />
+      <xs:field xpath="mstns:WWardProductListID" />
+    </xs:unique>
+    <xs:unique name="WWardProductListLine_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:WWardProductListLine" />
+      <xs:field xpath="mstns:WWardProductListLineID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="WWardProductList_WWardProductListLine" msdata:parent="WWardProductList" msdata:child="WWardProductListLine" msdata:parentkey="WWardProductListID" msdata:childkey="WWardProductListID" msprop:Generator_UserChildTable="WWardProductListLine" msprop:Generator_ChildPropName="GetWWardProductListLineRows" msprop:Generator_UserRelationName="WWardProductList_WWardProductListLine" msprop:Generator_ParentPropName="WWardProductListRow" msprop:Generator_RelationVarName="relationWWardProductList_WWardProductListLine" msprop:Generator_UserParentTable="WWardProductList" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

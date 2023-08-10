@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<patchTemplate productGuid="a31116c6-24a5-448a-bdf8-0dca6596b3ff">
+	<patchAction name="CopyFiles">
+		<patchFolder relativePath="Pharmacy\Client" copyType="Contents">
+			<patchFilePattern extension=".pdb" exclude="true"/>
+		</patchFolder>
+	</patchAction>
+	<patchAction name="RegSvr32" abortOnFailure="false">
+		<fileToRegister relativePath="CaptureControl.dll"/>
+	</patchAction>
+	<patchAction name="RegSvr32" abortOnFailure="false">
+		<fileToRegister relativePath="ipport40.ocx"/>
+	</patchAction>
+	<patchAction name="RunExe" performOnConfigSwitch="false" abortOnFailure="true">
+		<executable filename="ascribeTcpipComms.exe" arguments="/RegServer" fileLocation="ProductRoot" waitForExit="false" reportStandardOutput="false" failOnStandardError="false" />
+	</patchAction>
+	<patchAction name="RunExe" performOnConfigSwitch="false" abortOnFailure="true">
+		<executable filename="System File Setup.exe" arguments="/quiet" fileLocation="ProductRoot" waitForExit="true" reportStandardOutput="false" failOnStandardError="false" />
+	</patchAction>
+	<patchAction name="CustomPatchAction" performOnConfigSwitch="true">
+		<customAction filepath="EmisCustomPatchActions.dll" className="EmisCustomPatchActions.RegisterPharmacyClientAssembliesPatchAction"/>
+	</patchAction>
+	<patchAction name="CreateFolder" abortOnFailure="false">
+		<folderDetails folderPath="C:\programdata\EMIS"/>
+	</patchAction>
+</patchTemplate>

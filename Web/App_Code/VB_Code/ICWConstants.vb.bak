@@ -1,0 +1,88 @@
+﻿Imports Microsoft.VisualBasic
+
+Namespace Ascribe.Common
+
+	Public Class ICWConstants 'Parameter constants
+
+		'---------------------
+		Public Const METHOD_PARAMETER As String = "method"
+		Public Const USERNAME_PARAMETER As String = "Username"
+		Public Const PASSWORD_PARAMETER As String = "Password"
+		Public Const SESSIONID_PARAMETER As String = "SessionID"
+		Public Const EXTERNAL_PARAMETER As String = "External"
+		Public Const INITIALS_PARAMETER As String = "Initials"
+		Public Const SURNAME_PARAMETER As String = "Surname"
+		Public Const FORENAME_PARAMETER As String = "Forename"
+		Public Const ROLES_PARAMETER As String = "Roles"
+		Public Const OVERRIDE_PARAMETER As String = "Override"
+		Public Const PATIENT_PARAMETER As String = "Patient"
+        Public Const PATIENTALIASGROUP_PARAMETER As String = "PatientAliasGroup"
+        '25Mar10    Rams    F0081713 - Printing cookie does not remembered through SSO
+        Public Const DOMAINNAME_PARAMETER As String = "Domainname"
+        Public Const COMPUTERNAME_PARAMETER As String = "Computername"
+        Public Const DEFAULTLOCATION_PARAMETER As String = "DefaultLocation"
+		'Method constants
+		'-------------------
+		Public Const METHOD_NULL As String = ""
+		'Error codes
+		'------------
+		Public Const ERROR_CODE_INVALID_METHOD As String = "101"
+		Public Const ERROR_CODE_INVALID_PARAMETERVALUE As String = "105"
+		Public Const ERROR_CODE_INVALID_XML As String = "103"
+		Public Const ERROR_CODE_NULL_METHOD As String = "100"
+		Public Const ERROR_CODE_BROKEN_RULES As String = "102"
+		Public Const ERROR_CODE_SERVER_EXCEPTION As String = "104"
+		'Success/error constants
+		'-------------------------
+		Public Const SUCCESS_ERRORS As Integer = 0
+		Public Const SUCCESS_SUCCESS As Integer = 1
+		Public Const ELEMENT_BROKENRULES As String = "BrokenRules"
+
+		Public Const STARTDATE_PARAMETER As String = "StartDate"
+		Public Const ENDDATE_PARAMETER As String = "EndDate"
+		Public Const EVENTTYPES_PARAMETER As String = "EventTypes"
+		Public Const EVENTTYPE_PARAMETER As String = "EventType"
+		Public Const EVENTID_PARAMETER As String = "EventID"
+		Public Const METHOD_SUMMARYQUERY As String = "SummaryQuery"
+		Public Const METHOD_DETAILQUERY As String = "DetailQuery"
+
+		'Parameter constants
+		'---------------------
+		Public Const DESKTOP_PARAMETER As String = "Desktop"
+		Public Const EPISODE_PARAMETER As String = "Episode"
+		Public Const EPISODETYPE_PARAMETER As String = "EpisodeType"
+		Public Const OLDPASSWORD_PARAMETER As String = "OldPassword"
+		Public Const NEWPASSWORD_PARAMETER As String = "NewPassword"
+		Public Const LOCATION_PARAMETER As String = "Location"
+		Public Const CONSULTANT_PARAMETER As String = "Consultant"
+		Public Const ALIASGROUP_PARAMETER As String = "AliasGroup"
+		Public Const EPISODEALIASGROUP_PARAMETER As String = "EpisodeAliasGroup"
+		Public Const CONSULTANTALIASGROUP_PARAMETER As String = "ConsultantAliasGroup"
+		Public Const LOCATIONALIASGROUP_PARAMETER As String = "LocationAliasGroup"
+		'Method constants
+		'-------------------
+		Public Const METHOD_CHANGEPASSWORD As String = "ChangePassword"
+		Public Const METHOD_LOGIN As String = "Login"
+		Public Const METHOD_LOGINEXTERNAL As String = "LoginExternal"
+		Public Const METHOD_LOGOUT As String = "Logout"
+		Public Const METHOD_SETDESKTOP As String = "SetDesktop"
+		Public Const METHOD_SETEPISODE As String = "SetEpisode"
+		Public Const METHOD_SETPATIENT As String = "SetPatient"
+		Public Const METHOD_SETSTATE As String = "SetState"
+		Public Const METHOD_LAUNCH As String = "Launch"
+		Public Const METHOD_ATTACHEPISODE As String = "AttachEpisode"
+		'Error codes
+		'------------
+		Public Const ERROR_CODE_INVALID_EPISODE As String = "108"
+		Public Const ERROR_CODE_INVALID_LOCATION As String = "110"
+		Public Const ERROR_CODE_INVALID_Patient As String = "109"
+		Public Const ERROR_CODE_INVALID_RESULTS As String = "106"
+		Public Const ERROR_CODE_NO_EPISODE As String = "107"
+
+		'Routine constants
+		Public Const trnDataTypeVarChar = 0
+		Public Const trnDataTypeInt = 2
+
+	End Class
+
+End Namespace

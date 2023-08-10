@@ -1,0 +1,60 @@
+﻿/* 
+    Style sheet for using the icw controls with pharmacy
+*/
+
+body
+{
+    background-image:url('../images/background_gradient.gif');
+    background-repeat:repeat-x;
+    background-color:#4982af;
+    overflow-x:hidden;
+    font-family:arial;
+    font-size:12px;
+}
+
+.PharmButton 
+{
+    width: 70px;  
+    height: 23px;  
+    font-size: 12px;  
+}
+
+.PharmButtonSmall
+{
+    width: 50px;  
+    height: 20px;  
+    font-size: 10px;
+}
+
+/* Depricated as causes forms to jump due to margin but requires careful replacment 3Oct14 XN 99382 */
+.icw-container
+{
+    background-color:White;
+    margin:8px;
+}        
+
+/* New icw-container to prevent resize jumping up pages 3Oct14 XN 99382 */
+.icw-container-fixed
+{
+    position: fixed;
+    background-color:White;
+    top:8px;
+    bottom:8px;
+    left:8px;
+    right: 8px;
+}
+
+.ErrorMessage 
+{
+    color: #FF0000; 
+    font-style: italic;
+}
+
+.Mandatroy
+{
+    color: #c00;
+    padding-left:5px;
+    padding-right:5px;
+    font-size:16px;
+    vertical-align:middle;
+}

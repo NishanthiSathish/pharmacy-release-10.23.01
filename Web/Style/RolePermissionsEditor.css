@@ -1,0 +1,11 @@
+﻿.selected_role 
+{
+	background-color: #00599C;
+	color:#ffffff;
+}
+
+.unselected_role 
+{
+	background-color:#ffffff;
+	color: #000000;
+}

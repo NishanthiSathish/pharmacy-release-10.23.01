@@ -1,0 +1,26 @@
+﻿body
+{
+	margin: 5px;
+}
+
+#tblGrid
+{
+	background-color: #ffffff;
+}
+
+#tblGrid thead td
+{
+	background-color: #9ACBFF;
+	border-bottom: solid 1px #000000;
+}
+
+#tdBottomPanel
+{
+	background-color: #9ACBFF;
+	border: solid 1px #000000;
+	padding: 20px;
+}
+.ValidationMsg
+{
+	color: #ff0000;
+}

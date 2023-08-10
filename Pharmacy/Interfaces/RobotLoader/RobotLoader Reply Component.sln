@@ -1,0 +1,183 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B2BA5464-1E1B-4FD5-A0A2-349D248A51D5}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		Robot Loading Message Processor.vsmdi = Robot Loading Message Processor.vsmdi
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "trnrtl10", "..\..\..\COM\Source\TRN\RTL\10\trnrtl10.vbproj", "{919A45F6-1B16-4591-82C3-5577D9A8E179}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICWTransaction", "..\..\..\COM\Source\ICWTransaction\ICWTransaction.csproj", "{B70DC114-2B68-472D-AF8E-7ABA8081F0EB}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Shared", "..\..\..\COM\Source\Shared\Shared.vbproj", "{102066AE-1ABB-4B31-BDE1-426781187493}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GENRTL10", "..\..\..\COM\Source\GEN\RTL\10\GENRTL10.vbproj", "{DCB85406-7349-4548-A542-E16402E14AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base Data Layer", "..\..\..\COM\Pharmacy Source\Base Data Layer\Base Data Layer.csproj", "{1E425244-912E-4C6F-A313-E636311F34A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business Layer", "..\..\..\COM\Pharmacy Source\Business Layer\Business Layer.csproj", "{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICW Data Layer", "..\..\..\COM\Pharmacy Source\ICW Data Layer\ICW Data Layer.csproj", "{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy Data Layer", "..\..\..\COM\Pharmacy Source\Pharmacy Data Layer\Pharmacy Data Layer.csproj", "{5882B905-230A-4EA2-B4BE-81331C68804C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy Shared", "..\..\..\COM\Pharmacy Source\Pharmacy Shared\Pharmacy Shared.csproj", "{6A3007BE-808C-4570-B488-1892B85B0322}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotLoading Layer", "..\..\..\COM\Pharmacy Source\RobotLoader Layer\RobotLoading Layer.csproj", "{0D07DB8B-3A07-4FAE-9031-D45773679D32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT RobotLoading Layer", "..\..\..\COM\Pharmacy Source\UT RobotLoading Layer\UT RobotLoading Layer.csproj", "{9629F6D6-475E-4F26-8269-A41491164105}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotLoader Reply Component", "src\RobotLoader Reply Component.csproj", "{9D30272E-5C53-4E80-86B1-74D5DF16F20E}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 13
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://core-tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = src\\RobotLoader\u0020Reply\u0020Component.csproj
+		SccProjectName1 = src
+		SccLocalPath1 = src
+		SccProjectUniqueName2 = ..\\..\\..\\COM\\Source\\TRN\\RTL\\10\\trnrtl10.vbproj
+		SccProjectName2 = ../../../COM/Source/TRN/RTL/10
+		SccLocalPath2 = ..\\..\\..\\COM\\Source\\TRN\\RTL\\10
+		SccProjectUniqueName3 = ..\\..\\..\\COM\\Source\\ICWTransaction\\ICWTransaction.csproj
+		SccProjectName3 = ../../../COM/Source/ICWTransaction
+		SccLocalPath3 = ..\\..\\..\\COM\\Source\\ICWTransaction
+		SccProjectUniqueName4 = ..\\..\\..\\COM\\Source\\Shared\\Shared.vbproj
+		SccProjectName4 = ../../../COM/Source/Shared
+		SccLocalPath4 = ..\\..\\..\\COM\\Source\\Shared
+		SccProjectUniqueName5 = ..\\..\\..\\COM\\Source\\GEN\\RTL\\10\\GENRTL10.vbproj
+		SccProjectName5 = ../../../COM/Source/GEN/RTL/10
+		SccLocalPath5 = ..\\..\\..\\COM\\Source\\GEN\\RTL\\10
+		SccProjectUniqueName6 = ..\\..\\..\\COM\\Pharmacy\u0020Source\\Base\u0020Data\u0020Layer\\Base\u0020Data\u0020Layer.csproj
+		SccProjectName6 = ../../../COM/Pharmacy\u0020Source/Base\u0020Data\u0020Layer
+		SccLocalPath6 = ..\\..\\..\\COM\\Pharmacy\u0020Source\\Base\u0020Data\u0020Layer
+		SccProjectUniqueName7 = ..\\..\\..\\COM\\Pharmacy\u0020Source\\Business\u0020Layer\\Business\u0020Layer.csproj
+		SccProjectName7 = ../../../COM/Pharmacy\u0020Source/Business\u0020Layer
+		SccLocalPath7 = ..\\..\\..\\COM\\Pharmacy\u0020Source\\Business\u0020Layer
+		SccProjectUniqueName8 = ..\\..\\..\\COM\\Pharmacy\u0020Source\\ICW\u0020Data\u0020Layer\\ICW\u0020Data\u0020Layer.csproj
+		SccProjectName8 = ../../../COM/Pharmacy\u0020Source/ICW\u0020Data\u0020Layer
+		SccLocalPath8 = ..\\..\\..\\COM\\Pharmacy\u0020Source\\ICW\u0020Data\u0020Layer
+		SccProjectUniqueName9 = ..\\..\\..\\COM\\Pharmacy\u0020Source\\Pharmacy\u0020Data\u0020Layer\\Pharmacy\u0020Data\u0020Layer.csproj
+		SccProjectName9 = ../../../COM/Pharmacy\u0020Source/Pharmacy\u0020Data\u0020Layer
+		SccLocalPath9 = ..\\..\\..\\COM\\Pharmacy\u0020Source\\Pharmacy\u0020Data\u0020Layer
+		SccProjectUniqueName10 = ..\\..\\..\\COM\\Pharmacy\u0020Source\\Pharmacy\u0020Shared\\Pharmacy\u0020Shared.csproj
+		SccProjectName10 = ../../../COM/Pharmacy\u0020Source/Pharmacy\u0020Shared
+		SccLocalPath10 = ..\\..\\..\\COM\\Pharmacy\u0020Source\\Pharmacy\u0020Shared
+		SccProjectUniqueName11 = ..\\..\\..\\COM\\Pharmacy\u0020Source\\UT\u0020RobotLoading\u0020Layer\\UT\u0020RobotLoading\u0020Layer.csproj
+		SccProjectName11 = ../../../COM/Pharmacy\u0020Source/UT\u0020RobotLoading\u0020Layer
+		SccLocalPath11 = ..\\..\\..\\COM\\Pharmacy\u0020Source\\UT\u0020RobotLoading\u0020Layer
+		SccProjectUniqueName12 = ..\\..\\..\\COM\\Pharmacy\u0020Source\\RobotLoader\u0020Layer\\RobotLoading\u0020Layer.csproj
+		SccProjectName12 = ../../../COM/Pharmacy\u0020Source/RobotLoader\u0020Layer
+		SccLocalPath12 = ..\\..\\..\\COM\\Pharmacy\u0020Source\\RobotLoader\u0020Layer
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{919A45F6-1B16-4591-82C3-5577D9A8E179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{919A45F6-1B16-4591-82C3-5577D9A8E179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{919A45F6-1B16-4591-82C3-5577D9A8E179}.Debug|x86.ActiveCfg = Debug|x86
+		{919A45F6-1B16-4591-82C3-5577D9A8E179}.Debug|x86.Build.0 = Debug|x86
+		{919A45F6-1B16-4591-82C3-5577D9A8E179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{919A45F6-1B16-4591-82C3-5577D9A8E179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{919A45F6-1B16-4591-82C3-5577D9A8E179}.Release|x86.ActiveCfg = Release|x86
+		{919A45F6-1B16-4591-82C3-5577D9A8E179}.Release|x86.Build.0 = Release|x86
+		{B70DC114-2B68-472D-AF8E-7ABA8081F0EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B70DC114-2B68-472D-AF8E-7ABA8081F0EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B70DC114-2B68-472D-AF8E-7ABA8081F0EB}.Debug|x86.ActiveCfg = Debug|x86
+		{B70DC114-2B68-472D-AF8E-7ABA8081F0EB}.Debug|x86.Build.0 = Debug|x86
+		{B70DC114-2B68-472D-AF8E-7ABA8081F0EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B70DC114-2B68-472D-AF8E-7ABA8081F0EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B70DC114-2B68-472D-AF8E-7ABA8081F0EB}.Release|x86.ActiveCfg = Release|x86
+		{B70DC114-2B68-472D-AF8E-7ABA8081F0EB}.Release|x86.Build.0 = Release|x86
+		{102066AE-1ABB-4B31-BDE1-426781187493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102066AE-1ABB-4B31-BDE1-426781187493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102066AE-1ABB-4B31-BDE1-426781187493}.Debug|x86.ActiveCfg = Debug|x86
+		{102066AE-1ABB-4B31-BDE1-426781187493}.Debug|x86.Build.0 = Debug|x86
+		{102066AE-1ABB-4B31-BDE1-426781187493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102066AE-1ABB-4B31-BDE1-426781187493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{102066AE-1ABB-4B31-BDE1-426781187493}.Release|x86.ActiveCfg = Release|x86
+		{102066AE-1ABB-4B31-BDE1-426781187493}.Release|x86.Build.0 = Release|x86
+		{DCB85406-7349-4548-A542-E16402E14AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB85406-7349-4548-A542-E16402E14AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB85406-7349-4548-A542-E16402E14AF8}.Debug|x86.ActiveCfg = Debug|x86
+		{DCB85406-7349-4548-A542-E16402E14AF8}.Debug|x86.Build.0 = Debug|x86
+		{DCB85406-7349-4548-A542-E16402E14AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB85406-7349-4548-A542-E16402E14AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB85406-7349-4548-A542-E16402E14AF8}.Release|x86.ActiveCfg = Release|x86
+		{DCB85406-7349-4548-A542-E16402E14AF8}.Release|x86.Build.0 = Release|x86
+		{1E425244-912E-4C6F-A313-E636311F34A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E425244-912E-4C6F-A313-E636311F34A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E425244-912E-4C6F-A313-E636311F34A6}.Debug|x86.ActiveCfg = Debug|x86
+		{1E425244-912E-4C6F-A313-E636311F34A6}.Debug|x86.Build.0 = Debug|x86
+		{1E425244-912E-4C6F-A313-E636311F34A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E425244-912E-4C6F-A313-E636311F34A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E425244-912E-4C6F-A313-E636311F34A6}.Release|x86.ActiveCfg = Release|x86
+		{1E425244-912E-4C6F-A313-E636311F34A6}.Release|x86.Build.0 = Release|x86
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}.Debug|x86.ActiveCfg = Debug|x86
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}.Debug|x86.Build.0 = Debug|x86
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}.Release|x86.ActiveCfg = Release|x86
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}.Release|x86.Build.0 = Release|x86
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}.Debug|x86.ActiveCfg = Debug|x86
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}.Debug|x86.Build.0 = Debug|x86
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}.Release|x86.ActiveCfg = Release|x86
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}.Release|x86.Build.0 = Release|x86
+		{5882B905-230A-4EA2-B4BE-81331C68804C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5882B905-230A-4EA2-B4BE-81331C68804C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5882B905-230A-4EA2-B4BE-81331C68804C}.Debug|x86.ActiveCfg = Debug|x86
+		{5882B905-230A-4EA2-B4BE-81331C68804C}.Debug|x86.Build.0 = Debug|x86
+		{5882B905-230A-4EA2-B4BE-81331C68804C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5882B905-230A-4EA2-B4BE-81331C68804C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5882B905-230A-4EA2-B4BE-81331C68804C}.Release|x86.ActiveCfg = Release|x86
+		{5882B905-230A-4EA2-B4BE-81331C68804C}.Release|x86.Build.0 = Release|x86
+		{6A3007BE-808C-4570-B488-1892B85B0322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3007BE-808C-4570-B488-1892B85B0322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3007BE-808C-4570-B488-1892B85B0322}.Debug|x86.ActiveCfg = Debug|x86
+		{6A3007BE-808C-4570-B488-1892B85B0322}.Debug|x86.Build.0 = Debug|x86
+		{6A3007BE-808C-4570-B488-1892B85B0322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3007BE-808C-4570-B488-1892B85B0322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A3007BE-808C-4570-B488-1892B85B0322}.Release|x86.ActiveCfg = Release|x86
+		{6A3007BE-808C-4570-B488-1892B85B0322}.Release|x86.Build.0 = Release|x86
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32}.Debug|x86.ActiveCfg = Debug|x86
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32}.Debug|x86.Build.0 = Debug|x86
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32}.Release|x86.ActiveCfg = Release|x86
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32}.Release|x86.Build.0 = Release|x86
+		{9629F6D6-475E-4F26-8269-A41491164105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9629F6D6-475E-4F26-8269-A41491164105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9629F6D6-475E-4F26-8269-A41491164105}.Debug|x86.ActiveCfg = Debug|x86
+		{9629F6D6-475E-4F26-8269-A41491164105}.Debug|x86.Build.0 = Debug|x86
+		{9629F6D6-475E-4F26-8269-A41491164105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9629F6D6-475E-4F26-8269-A41491164105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9629F6D6-475E-4F26-8269-A41491164105}.Release|x86.ActiveCfg = Release|x86
+		{9629F6D6-475E-4F26-8269-A41491164105}.Release|x86.Build.0 = Release|x86
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E}.Debug|x86.ActiveCfg = Debug|x86
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E}.Debug|x86.Build.0 = Debug|x86
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E}.Release|x86.ActiveCfg = Release|x86
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

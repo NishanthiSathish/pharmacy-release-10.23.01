@@ -1,0 +1,37 @@
+﻿.fm-sa-table
+{
+    font-size:   9pt;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=145, Strength=3);            
+}
+
+.fm-sa-table-header
+{
+    color:            #417f8f;
+    background-color: #eaeaea;
+    font-weight:      bold;
+    text-align:       center;
+    height:           22px;
+}
+
+.fm-sa-table-value
+{
+    text-align: right;
+    padding-right: 5px;
+}
+
+.fm-sa-table-accountsection
+{
+    height:      22px;
+}
+
+.fm-sa-table-mainsection
+{
+    font-weight: bold;
+    height:      25px;
+}
+
+.fm-sa-expandcollapsbutton
+{
+    width: 70px;
+    margin-right: 10px;
+}

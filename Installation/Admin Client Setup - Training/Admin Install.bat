@@ -1,0 +1,1 @@
+msiexec /a "HAP and Pharmacy Admin Client Setup - Training.msi"

@@ -1,0 +1,36 @@
+Type=Exe
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\..\..\..\..\..\WINDOWS\system32\stdole2.tlb#OLE Automation
+Reference=*\G{0D0C2ADB-EB0D-403D-B724-5A263D51D993}#1.0#0#..\..\..\..\..\..\..\..\V9.6.7\L\COM\Bin\GENRTL10.dll#GENRTL10
+Reference=*\G{AD4D1F2C-8A26-4D1A-8C56-FBA541EF1383}#1.0#0#..\..\bin\Maxims HL7 Allergy  Encoder V1.dll#ICW Allergy HL7 Encoder for Maxims V1
+Form=frmTestbed.frm
+Startup="frmTestbed"
+ExeName32="Testbed.exe"
+Path32="..\..\..\..\..\..\Executables\v9\Interfaces\SystemC\V1\Testbed"
+Command32=""
+Name="Testbed"
+HelpContextID="0"
+CompatibleMode="0"
+MajorVer=1
+MinorVer=0
+RevisionVer=0
+AutoIncrementVer=0
+ServerSupportFiles=0
+VersionCompanyName="ascribe"
+CompilationType=0
+OptimizationType=0
+FavorPentiumPro(tm)=0
+CodeViewDebugInfo=0
+NoAliasing=0
+BoundsCheck=0
+OverflowCheck=0
+FlPointCheck=0
+FDIVCheck=0
+UnroundedFP=0
+StartMode=0
+Unattended=0
+Retained=0
+ThreadPerObject=0
+MaxNumberOfThreads=1
+
+[MS Transaction Server]
+AutoRefresh=1

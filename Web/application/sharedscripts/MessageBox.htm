@@ -1,0 +1,219 @@
+<html>
+<head>
+
+<title>Message</title>
+
+<link rel="stylesheet" type="text/css" href="../../style/application.css" >
+
+<script language="javascript" src="../sharedscripts/icwfunctions.js"></script>
+<script language="javascript">
+//===========================================================================
+//
+//								MessageBox.htm
+//
+//	Provides enhanced functionality over alert().
+//	HTML is honoured, and there is a choice of up to 3 buttons.
+//
+//	Useage:
+//		Call using the MessageBox() function in icwFunctions.js, 
+//		do not call this page directly.
+//
+//		Expects window.dialogArguements as follows:
+//			A semi-colon separated string containing:
+//			title={titletext};
+//			text={textfordisplay};
+//			button1={buttontext},{returnvalue};
+//			[button2={buttontext},{returnvalue};]
+//			[button3={buttontext},{returnvalue};]
+//
+//		button1 must always be present; there can be no more than 3 
+//		buttons specified.
+//
+//
+//	Modification History:
+//	17Jan04 AE  Written
+//	28Jan04 AE  Slight mod to HTML to prevent the message being truncat...
+//	12May06 AE  Added escape key functionality.  Fixed keyboard shortcuts by using .accessKey instead of .setAttribute('accesskey', '')  #DR-05-0127
+//  04Apr13 ST  Added handling for a default button selection.
+//===========================================================================
+
+function Initialise() 
+{
+    var intCount = new Number();
+    var astrItem = new Array();
+    var astrButton = new Array();
+    var strText = new String();
+    var strAccessKey = new String();
+    var intItems = new Number();
+
+    window.returnValue = '';
+
+    //Script the specified values onto the page
+	var astrArgs = window.dialogArguments.split(';');
+	
+	intItems = astrArgs.length;
+
+	for (intCount = 0; intCount < intItems; intCount++) 
+	{
+		astrItem = astrArgs[intCount].split('=');
+
+		switch (astrItem[0].toLowerCase()) {
+			case 'title':
+				txtTitle.innerHTML = ToHTML(astrItem[1], true);
+				break;
+
+			case 'text':
+				divText.innerHTML = ToHTML(astrItem[1], true);
+				break;
+
+            case 'icon':
+                if (astrItem[1] != null || astrItem[1] != '') {
+                    document.getElementById("tdIcon").style.visibility = "visible";
+                    document.getElementById("imgIcon").style.width = "48px";
+                    document.getElementById("imgIcon").style.height = "48px";
+                    imgIcon.src = astrItem[1];
+                }
+                break;
+
+            case 'button1':
+                astrButton = astrItem[1].split(',');
+                strText = astrButton[0];
+                strAccessKey = strText.substring(0, 1);
+                cmdButton[0].accessKey = strAccessKey;
+                cmdButton[0].setAttribute("Identifier", astrButton[0]);
+                void cmdButton[0].setAttribute('returnVal', astrButton[1]);
+                cmdButton[0].innerHTML = UnderlineFirst(strText);
+                break;
+
+			case 'button2':
+				astrButton = astrItem[1].split(',');
+				strText = astrButton[0];
+				strAccessKey = strText.substring(0, 1);
+				cmdButton[1].setAttribute("Identifier", astrButton[0]);
+				cmdButton[1].accessKey = strAccessKey;
+				void cmdButton[1].setAttribute ('returnVal', astrButton[1]);
+				cmdButton[1].innerHTML = UnderlineFirst(strText);
+				break;
+
+			case 'button3':
+				astrButton = astrItem[1].split(',');
+				strText = astrButton[0];
+				strAccessKey = strText.substring(0,1);
+				cmdButton[2].setAttribute("Identifier", astrButton[0]);							
+				cmdButton[2].accessKey = strAccessKey;
+				void cmdButton[2].setAttribute ('returnVal', astrButton[1]);
+				cmdButton[2].innerHTML = UnderlineFirst(strText);
+				break;
+
+            case 'defaultbtn':
+                var defaultButton = astrItem[1];
+                break;
+				
+			default:
+				break;
+		}
+	}
+
+    if (defaultButton != "" && defaultButton != undefined) 
+    {
+        for (intCount = 0; intCount < 3; intCount++) {
+            if ((cmdButton[intCount].getAttribute("Identifier") != null && cmdButton[intCount].getAttribute("Identifier") != undefined) && (cmdButton[intCount].getAttribute("Identifier").toLowerCase() == defaultButton.toLowerCase())) {
+                cmdButton[intCount].focus();
+            }
+        }
+    }
+
+
+//Hide buttons which have not been used
+	for (intCount=0; intCount < 3; intCount ++) {
+		if (cmdButton[intCount].innerHTML == '') {
+			cmdButton[intCount].style.display='none';
+		}
+	}	
+	
+//Expand the window to fit the text
+	var intHeight = divText.offsetHeight + tdTitle.offsetHeight + tblButtons.offsetHeight + 50;
+	if (intHeight < 200) intHeight = 200;
+	if (intHeight > screen.availableHeight) intHeight = screen.availableHeight;
+	window.dialogHeight = intHeight + 'px';
+}
+
+//===========================================================================
+
+function UnderlineFirst(strText) {
+
+	var strText = '<u>' + strText.substring(0,1) + '</u>' + strText.substring(1);
+	return strText;
+}
+
+//===========================================================================
+
+function CloseWindow(objButton) {
+
+	window.returnValue = objButton.getAttribute('returnVal');
+	void window.close();
+
+}
+
+//===========================================================================
+function body_onkeydown(){
+//Handle escape keypress.  Close window and return "cancelled"
+//12May06 AE  Added to handle all keypresses.			#DR-05-0127
+	if (event.keyCode==27) {
+		window.returnValue='x';
+		window.close();
+	}
+	else {
+		for (i=0; i<3; i++){
+		
+			if (cmdButton[i].innerHTML != '' && cmdButton[i].accessKey.toLowerCase() == String.fromCharCode(event.keyCode).toLowerCase()){
+			//If this button is in use, and its accesskey is the same as the key just pressed, click it
+				cmdButton[i].click();
+			}
+		}
+	}
+}
+</script>
+
+<style>
+div
+{
+	overflow-y:auto;
+}
+</style>
+</head>
+<body onload="Initialise()" onkeydown="body_onkeydown()">
+
+<table style="height:100%; width:100%" border="0">
+    <tr style="height:64px;">
+        <td id="tdTitle"><h3 align="center" id="txtTitle"></h3></td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td id="tdIcon" style="visibility:hidden; vertical-align: text-top;">
+                        <div id="divIcon" style="width=0px;padding=8,8,8,8; vertical-align: text-top;"><img id="imgIcon" src="" style="width: 0px; height: 0px; vertical-align: text-top;"/></div>
+                    </td>       
+                    <td id="tdText">
+                        <div id="divText" style="padding-left:10px;"></div>
+			
+                    </td>
+                </tr>
+            </table> 
+        </td>
+    </tr>
+	
+	<tr>
+		<td align="right">
+			<table cellpadding="3" cellspacing="0" id="tblButtons">
+				<tr>
+					<td><button id="cmdButton" onclick="CloseWindow(this)"></button></td>
+					<td><button id="cmdButton" onclick="CloseWindow(this)"></button></td>
+					<td><button id="cmdButton" onclick="CloseWindow(this)"></button></td>
+				</tr>			
+			</table>
+		</td>
+	</tr>
+</table>
+</body>

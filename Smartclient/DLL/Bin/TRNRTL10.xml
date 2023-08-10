@@ -1,0 +1,61 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TRNRTL10
+</name>
+</assembly>
+<members>
+<member name="M:TRNRTL10.InterfaceLogAssessor.Parse(System.Xml.Linq.XElement,System.String,System.String)">
+	<summary>
+ Looks for a named attribute in an XElement and returns its value and its translation
+ </summary>
+	<param name="xn">Element to test</param>
+	<param name="fieldname">Name of field to locate</param>
+	<param name="keyname">Name of table to return</param>
+	<returns>Keyname and the value of the attribute in a InterfaceData structure.  Returns nothing if the Fieldname cannot be found</returns>
+	<remarks></remarks>
+</member><member name="T:TRNRTL10.InterfaceLogAssessor">
+	<summary>
+ Used to parse an XML document using linq and return the settings of two fields
+ This replaces the need to parse XML on the server as part of pAuditLogInsert
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TRNRTL10.Transport.AdjustOutputParameterValue(System.Data.IDbDataParameter)">
+	<summary>
+ Change type specific output parameter data into strings suitable for the output XML
+ </summary>
+	<param name="Parameter"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TRNRTL10.Transport.COMVersion">
+	<summary>
+ THIS IS PRESUMABLY NOW REDUNDANT?
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:TRNRTL10.Transport.ConnectionString">
+	<summary>
+ Get the connection string from config
+ This is obtained from the config file which will either be the app.config or web.config asociated with the application, or if no entry is found
+ there it will be from the App.config file associated with the assemmbly
+ 
+ <configuration>
+			<connectionStrings>
+				<add name="TRNRTL10.My.MySettings.ConnectionString" connectionString="Persist Security Info=False;User ID=sys;Initial Catalog=ICW;Password=sys"/>
+			</connectionStrings>
+		</configuration>
+	</summary>
+</member><member name="M:TRNRTL10.Transport.CreateSessionIDParameter(System.Data.IDbCommand,System.Int32,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="Command"></param>
+	<param name="SessionID"></param>
+	<param name="Current">
+ Determines whether the parameter is named SessionID or CurrentSessionID
+ </param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

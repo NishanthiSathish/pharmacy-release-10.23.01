@@ -1,0 +1,33 @@
+/*------------------------------------------------------------------------------*?
+/* Filtering Rules Selection */
+
+
+body.FilteringRulesSelection
+{
+	padding:4px;
+}
+
+.FilteringRulesSelection .ItemName
+{
+	font-weight:bold;
+	font-size:medium;
+	height:50px;
+}
+
+.FilteringRulesSelection .FilteringRulesList 
+{
+	height:100px;
+}
+
+.FilteringRulesSelection .FilteringRulesList div
+{
+	border:#000000 1px solid;	
+	width:100%;
+	background-color:#ffffff;
+}
+
+
+.FilteringRulesSelection .FilteringRulesList table
+{
+	background-color:#ffffff;
+}

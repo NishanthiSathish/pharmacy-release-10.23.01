@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C78890E-2C84-4CB6-8BF0-F38532E78D45}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ascribe.pharmacy.quesscrllayer</RootNamespace>
+    <AssemblyName>QuesScrl Layer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICWTransaction, Version=10.8.4423.27914, Culture=neutral, PublicKeyToken=ef4f0acfe19f4a5d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Web\bin\ICWTransaction.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IQSDisplayAccessor.cs" />
+    <Compile Include="IQSDisplayAccessorExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IQSViewControl.cs" />
+    <Compile Include="QSBaseProcessor.cs" />
+    <Compile Include="QSDataInputItem.cs" />
+    <Compile Include="QSDifference.cs" />
+    <Compile Include="QSDisplayItem.cs" />
+    <Compile Include="QSField.cs" />
+    <Compile Include="QSHelper.cs" />
+    <Compile Include="QSPanel.cs" />
+    <Compile Include="QSValidationInfo.cs" />
+    <Compile Include="QSView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base Data Layer\Base Data Layer.csproj">
+      <Project>{1E425244-912E-4C6F-A313-E636311F34A6}</Project>
+      <Name>Base Data Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pharmacy Shared\Pharmacy Shared.csproj">
+      <Project>{6A3007BE-808C-4570-B488-1892B85B0322}</Project>
+      <Name>Pharmacy Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if (%25COMPUTERNAME%25)==(CORE-TFSBuild) "C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\signtool.exe" sign /a /t "http://timestamp.comodoca.com/authenticode" /v "$(ProjectDir)\obj\Release\$(TargetFileName)"
+if (%25COMPUTERNAME%25)==(CORE-TFSBuild2) "C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\signtool.exe" sign /a /t "http://timestamp.comodoca.com/authenticode" /v "$(ProjectDir)\obj\Release\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

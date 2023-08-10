@@ -1,0 +1,48 @@
+Type=Control
+UserControl=iStoresOCX.ctl
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\..\..\WINDOWS\System32\stdole2.tlb#OLE Automation
+Module=ERRTRACE; ..\..\..\shared\source\libraries\ERRTRACE.BAS
+Module=Launch; Launch.bas
+Startup="(None)"
+HelpFile=""
+Title="Launcher"
+ExeName32="Launcher.ocx"
+Path32="..\..\Bin"
+Command32=""
+Name="Launcher"
+HelpContextID="0"
+CompatibleMode="2"
+CompatibleEXE32="..\..\Bin\Launcher.ocx"
+VersionCompatible32="1"
+MajorVer=1
+MinorVer=0
+RevisionVer=0
+AutoIncrementVer=0
+ServerSupportFiles=0
+VersionFileDescription="Pharmacy LaunchExe"
+VersionCompanyName="EMIS Health"
+VersionLegalCopyright="Copyright © 1989-[CurrentYear] EMIS Health"
+VersionProductName="EMIS Health Hospital Pharmacy"
+CompilationType=0
+OptimizationType=0
+FavorPentiumPro(tm)=0
+CodeViewDebugInfo=0
+NoAliasing=0
+BoundsCheck=0
+OverflowCheck=0
+FlPointCheck=0
+FDIVCheck=0
+UnroundedFP=0
+StartMode=1
+Unattended=0
+Retained=0
+ThreadPerObject=0
+MaxNumberOfThreads=1
+ThreadingModel=1
+DebugStartupOption=0
+
+[MS Transaction Server]
+AutoRefresh=1
+
+[Requirement for Bob]
+ReadyToBuild=True

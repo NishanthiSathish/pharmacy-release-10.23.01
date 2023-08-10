@@ -1,0 +1,38 @@
+.Border
+{
+    MARGIN: 5px;
+    border:solid 1px black;
+    BACKGROUND-COLOR: #ffffff
+}
+.Heading
+{
+    PADDING-RIGHT: 10px;
+    PADDING-LEFT: 10px;
+    FONT-SIZE: small;
+    COLOR: black;
+    HEIGHT: 35px;
+}
+.Link 
+{
+	width:80px;
+	text-decoration:underline;
+	cursor:hand;
+}
+.gridCellEven
+{
+    BORDER-TOP: #c0c0c0 1px solid;
+    FONT-SIZE: 10pt;
+    CURSOR: default;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #ffffff    
+}
+.gridCellOdd
+{
+    BORDER-TOP: #c0c0c0 1px solid;
+    FONT-SIZE: 10pt;
+    CURSOR: default;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #e6f4ff
+}
+
+.ieEleFocus{ border-color:#E37C0E; }

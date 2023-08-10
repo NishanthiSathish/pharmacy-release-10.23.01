@@ -1,0 +1,101 @@
+﻿/*
+
+    Style sheet for the AMM Supply request screen
+
+*/
+
+.StageBox
+{
+    width: 100%;
+    margin-left: 8px;
+    margin-bottom: 3px;
+    height:55px;    
+    text-align: center;
+    vert-align: middle;
+    font-size:12px;
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.StageComplete
+{
+      color: #31708f;
+      background-color: #d9edf7;
+      border-color: #bce8f1;
+}
+
+.StageActive
+{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.StageOpen
+{
+    color: #3c763d;
+    background-color: white;
+    border-color: #d6e9c6;
+}
+
+.StageLocked
+{
+    color: #3c763d;
+    background-color: lightgray;
+    border-color: #d6e9c6;
+}
+
+.ControlCell 
+{
+    width: 100%;
+    padding-left: 20px;
+    vert-align: middle;
+    vertical-align: top;
+}
+
+.ReadOnly
+{
+    border: none;
+}
+
+.DividerCell 
+{
+    height:3px;
+    text-align:center;    
+}
+
+.Divider 
+{
+    width:80%;
+    padding:0px;
+    margin:0px;
+    margin-bottom:3px;    
+}
+
+.alert
+{
+  padding: 15px;
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+.OverCapacity
+{
+  color: #a94442;
+  font-size:12px;
+}
+
+.NearCapacity
+{
+  color: #31708f;
+  font-size:12px;
+}
+
+.UndoeAlert
+{
+  color: #a94442;
+}

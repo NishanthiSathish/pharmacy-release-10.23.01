@@ -1,0 +1,473 @@
+﻿/* 
+    Style sheet for the pharmacy parenteral nutrition module
+*/
+
+body
+{
+    background: white;
+}
+
+
+/*  Toolbar */
+.ToolbarButton
+{
+    height: 45px;
+    width: 58px;
+    text-align: center; 
+    padding-top: 20px;
+    font-size: 9px;
+    background-color: #FFF3AD;
+    border: none;
+}
+
+.ToolbarButton:hover
+{
+    border: solid 1px #999999;
+}
+
+.ToolbarSeparator
+{
+    border-right: solid 2px #ADC3D6;
+}
+
+
+/*  Toolbar buttons */
+#ToolBar #btnPrescription
+{
+    background:url(../application/PNViewAndAdjust/images/prescription.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnRegimen
+{
+    background:url(../application/PNViewAndAdjust/images/regimen.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnRequirements
+{
+    background:url(../application/PNViewAndAdjust/images/requirements.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnPopulate
+{
+    background:url(../application/PNViewAndAdjust/images/populate.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnAdd
+{
+    background:url(../application/PNViewAndAdjust/images/add.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnReplace
+{
+    background:url(../application/PNViewAndAdjust/images/replace.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnDelete
+{
+    background:url(../application/PNViewAndAdjust/images/delete.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnSet
+{
+    background:url(../application/PNViewAndAdjust/images/set.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnMultiplyBy
+{
+    background:url(../application/PNViewAndAdjust/images/multiply.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnGlucoseByPercentage
+{
+    background:url(../application/PNViewAndAdjust/images/percentage.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnOverage
+{
+    background:url(../application/PNViewAndAdjust/images/overage.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnSummary
+{
+    background:url(../application/PNViewAndAdjust/images/summary.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnProductWeight
+{
+    background:url(../application/PNViewAndAdjust/images/weight.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnSave
+{
+    background:url(../application/PNViewAndAdjust/images/save.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnAuthorise
+{
+    background:url(../application/PNViewAndAdjust/images/authorise.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnPrint
+{
+    background:url(../application/PNViewAndAdjust/images/print.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnEdit
+{
+    background:url(../application/PNViewAndAdjust/images/edit.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+#ToolBar #btnExit
+{
+    background:url(../application/PNViewAndAdjust/images/exit.gif);
+    background-repeat:no-repeat;
+    background-position: 19px 6px
+}
+
+/* Details Panel */
+.DetailsPanel
+{
+    font-size: 12px;
+    background: white;
+    border: solid 5px #D6DBEF;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.DetailsLabelFirst
+{
+}
+
+.DetailsLabel
+{
+    padding-left:10px;
+}
+
+.DetailsValue
+{
+    font-weight:bold; 
+}
+
+
+/* Grid */
+.GridPanel
+{
+    font-size: 11px;
+    background: white;
+    border: solid 5px #D6DBEF;
+}
+
+#PNGrid tbody input
+{
+    width: 42px;
+    text-align: right;
+    border-style: none;
+    font-family: arial; 
+    font-size: small;
+}
+
+#PNGrid tbody tr[RowType="total"] 
+{
+    background: #FFE5E5;
+}
+
+#PNGrid tbody tr[RowType="total"] input
+{
+    background: #FFE5E5;
+}
+
+#PNGrid tbody tr[RowType="requirements"] 
+{
+    background: #FFC6F0;
+}
+
+#PNGrid tbody tr[RowType="requirements"] input
+{
+    background: #FFC6F0;
+}
+
+
+#PNGrid tbody tr[RowType="prescription"] 
+{
+    background: #E2B7FF;
+}
+
+#PNGrid tbody tr[RowType="prescription"] input
+{
+    background: #E2B7FF;
+}
+
+#PNGrid tbody td
+{
+    font-family: arial; 
+    font-size: small;
+}
+
+#PNGrid tbody td.negative input 
+{
+    background: GoldenRod;
+    color: #8B0000;
+}    
+
+#PNGrid tbody td.negative
+{
+    background: GoldenRod;
+    color: #8B0000;
+}    
+
+#PNGrid tbody td.active input
+{
+    background: Blue;
+    color: White;
+}
+
+#PNGrid tbody td.active
+{
+    background: Blue;
+    color: White;
+}
+
+/* Wizard */
+#blanket 
+{
+    background-color:#111;
+    opacity: 0.65;
+    filter:alpha(opacity=65);
+    position:absolute;
+    z-index: 9001;
+    top:0px;
+    left:0px;
+    width:100%;
+}
+    
+.popup
+{
+    position:absolute;
+    background-color:#eeeeee;
+    z-index: 9002;
+    border: solid 5px #D6DBEF;
+}
+    
+.wizardStep
+{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+/* Phosphate tooltip */
+.TooltipTotalRow td           
+{
+    border-top: solid 1px #777777;
+}
+
+/* Styles for the settings page */
+.PNSettings
+{
+    background: white;
+}
+
+.PNSettings .menu 
+{
+    background: #EFEFF7; 
+    border-right-style: inset; 
+    border-right-width: thick;    
+}
+
+.PNSettings .menuHeader
+{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 22px;
+    text-align: left;
+    color: #73617B;
+}
+
+.PNSettings .menuItem
+{
+    vertical-align: middle;
+    text-align: right;
+    font-size: 18px;
+    background: #EFEFF7; 
+    height: 35px; 
+    width: 100%;
+    border: none;
+    color: #426DCE;
+    padding-right: 10px;
+    cursor:hand;
+}
+
+.PNSettings .menuItemSelected
+{
+    background: #BDCFEF;
+    color: black;
+}
+
+.PharmButton 
+{
+	width: 70px;  
+	height: 30px;  
+	color: #555555; 
+	background-color: white;
+	text-align: center;  
+	font-size: 12px;  
+	border: solid 1px #999999;
+}
+ 
+.PharmButton:hover 
+{
+	background-color: #DDDDDD;
+}
+
+.PharmButtonSmall 
+{
+	width: 50px;  
+	height: 20px;  
+	color: #555555; 
+	background-color: white;
+	text-align: center;  
+	font-size: 10px;  
+	border: solid 1px #999999;
+}
+ 
+.PharmButtonSmall:hover 
+{
+	background-color: #DDDDDD;
+}
+
+.PNSettings .Section
+{
+    width: 95%;
+    border-bottom: solid 2px #DDDDDD;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}        
+
+.PNSettings .SectionHeader
+{
+    display: inline-block;
+    width: 100px;
+    padding-left: 10px;
+    font-weight: bold;
+    vertical-align: top;
+}        
+
+.PNSettings .SectionControls
+{
+    display: inline-block;
+}        
+
+.PNSettings input[readonly]
+{
+    border: none;
+}        
+
+.PNSettings input[disabled="disabled"]
+{
+    color: black;
+    border: none;
+}        
+
+.PNSettings select[disabled="disabled"]
+{
+    color: black;
+    border: none;
+} 
+
+.PNSettings .ControlLabel
+{
+    display: inline-block;
+    width: 200px;
+}
+
+.PNSettings .EditControlLabel
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 150px;            
+}   
+
+#gridSelectProduct .GridRow td
+{
+    border-top: none;
+    font-size: small;
+    height:    13px;
+}
+
+#gridSelectProduct .gridTable
+{
+    border-bottom: none;
+}
+
+/* Multiply by form */
+
+.multiplyBySlider
+{
+    height: 260px;
+    left: 25px;
+    top: 10px;
+}    
+
+.MultiplyBySliderLabel
+{
+    position: absolute; 
+    left: 25px;
+    font-size: 11px;
+    width: 175px;
+}
+
+/* Weights and volumes page */
+
+.weightsAndVolumes tbody td
+{
+    text-align: right;
+}
+        
+.weightsAndVolumes tbody tr[RowType="total"] td
+{
+    background: #FFE5E5;
+    border-top: solid 2px #A7A7A7; 
+    border-bottom: solid 2px #A7A7A7; 
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Allow jqeury ui 10.6.4 dialogues to appear at top of page */
+.ui-front 
+{
+    z-index:1000000 !important; /* The default is 100. !important overrides the default. */
+}        

@@ -1,0 +1,40 @@
+﻿/*
+
+    Style sheet for the finance manager page
+
+*/
+body
+{
+	background-color: #4982af;
+    background-repeat:repeat-x;
+    background-image:url('../../../images/background_gradient.gif');
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;            
+}
+
+.container
+{
+    background: #ffffff;
+    margin-left:   15px;
+    margin-right:  15px;
+    margin-bottom: 25px;
+    border: 1px black solid;
+}
+
+.fm-main-heading
+{
+    color: #417F8F;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.fm-info
+{
+    color: #417F8F;
+    font-size: 10pt;
+    font-weight: bold;
+}
+        

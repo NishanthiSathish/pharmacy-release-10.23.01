@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="UHBServiceTestDB" Class="TestDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ASC-XNORMAN;Initial Catalog=UHBServiceTestDB;User ID=sys" SettingsObjectName="Unit_Test_Base_Data_Layer.Properties.Settings" SettingsPropertyName="UHBServiceTestDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="sys.SiteProductData" Member="SiteProductDatas">
+    <Type Name="SiteProductData">
+      <Column Name="barcode" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="siscode" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
+      <Column Name="code" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="labeldescription" Type="System.String" DbType="VarChar(56)" CanBeNull="true" />
+      <Column Name="tradename" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="printformv" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="storesdescription" Type="System.String" DbType="VarChar(56)" CanBeNull="true" />
+      <Column Name="convfact" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mlsperpack" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="cyto" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="warcode" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="warcode2" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="inscode" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="DosesperIssueUnit" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DosingUnits" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DPSForm" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="DrugID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LabelInIssueUnits" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CanUseSpoon" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DSSMasterSiteID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SiteProductDataID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BNF" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="ProductID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MinDailyDose" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MaxDailyDose" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MinDoseFrequency" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MaxDoseFrequency" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="warcode_Locked" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="warcode2_Locked" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="inscode_Locked" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="StoresDescription_Locked" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LabelDescription_Locked" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="[_RowVersion]" Member="_RowVersion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[_RowGUID]" Member="_RowGUID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="sys.ProductStock" Member="ProductStockInfos">
+    <Type Name="ProductStockInfo">
+      <Column Name="ProductStockID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProductID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LocationID_Site" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="inuse" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="cyto" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="formulary" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="warcode" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="warcode2" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="inscode" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="dircode" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="labelformat" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="extralabel" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="expiryminutes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="minissue" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="maxissue" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="lastissued" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="issueWholePack" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="stocklvl" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="sisstock" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="livestockctrl" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ordercycle" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="cyclelength" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="outstanding" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="loccode" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="loccode2" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="anuse" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="usethisperiod" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="recalcatperiodend" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="datelastperiodend" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="usagedamping" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="safetyfactor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="supcode" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="altsupcode" Type="System.String" DbType="VarChar(29)" CanBeNull="true" />
+      <Column Name="contno" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="lastordered" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="stocktakestatus" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="laststocktakedate" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="laststocktaketime" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="batchtracking" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="cost" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="lossesgains" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ledcode" Type="System.String" DbType="VarChar(7) NOT NULL" CanBeNull="false" />
+      <Column Name="pflag" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="message" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="UserMsg" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="PILnumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PIL2" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedUser" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="createdterminal" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="createddate" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="createdtime" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="modifieduser" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="modifiedterminal" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="modifieddate" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="modifiedtime" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="local" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ReconVol" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ReconAbbr" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="Diluent1" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="Diluent2" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="InfusionTime" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Minmgperml" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Maxmgperml" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IVContainer" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DisplacementVolume" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="mgPerml" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="maxInfusionRate" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CIVAS" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="convfact" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DosesPerIssueUnit" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="StoresPack" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="SessionLock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="bnf" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="Therapcode" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Reorderlvl" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="ReorderQty" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="DrugID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Site_ProductStockInfo" Member="Site" ThisKey="LocationID_Site" Type="Site" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="sys.Site" Member="Sites">
+    <Type Name="Site">
+      <Column Name="LocationID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SiteNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Site_ProductStockInfo" Member="ProductStockInfos" Storage="_ProductStocks" OtherKey="LocationID_Site" Type="ProductStockInfo" />
+    </Type>
+  </Table>
+  <Function Name="sys.spResetDBForSessionLockerTests" Method="spResetDBForSessionLockerTests">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="sys.spResetDBForBaseRowTests" Method="spResetDBForBaseRowTests">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="sys.spResetDBForBaseReportingTableTests" Method="spResetDBForBaseReportingTableTests">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="sys.spClearDB" Method="spClearDB">
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

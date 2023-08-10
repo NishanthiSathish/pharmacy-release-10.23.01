@@ -1,0 +1,3 @@
+HAPDatabaseConnectionString	Data Source=asc-xnorman;Initial Catalog=XN_2017_1;Integrated Security=False;User ID=icwsys;Password=ascribe
+ICWBaseAddress	http://ASC-XNORMAN/ASCICW_Live-0-0-0-001
+ClusterReference	Live

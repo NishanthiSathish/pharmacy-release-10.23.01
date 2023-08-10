@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Controller>
+	<Database Category="Pharmacy Services" DatabaseName="HealthApplicationPlatform" ReleaseVersion="1.0.0.0000" SupplementaryProductName="Pharmacy Services">
+		<Module>Pharmacy Services.xml</Module>
+	</Database>
+</Controller>

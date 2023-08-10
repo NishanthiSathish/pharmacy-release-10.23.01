@@ -1,0 +1,1918 @@
+﻿<?xml version="1.0" encoding="utf-8"?><root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chartline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartarea3D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartarea3d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartbar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/paste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newpage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/newpage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mailmergeiffield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/mailmergeiffield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mailmergeshowfieldtext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/mailmergeshowfieldtext.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartbar3D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartbar3d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartarea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartarea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pagebreak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/pagebreak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/redo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BTN_REDO" xml:space="preserve">
+    <value>redo</value>
+  </data>  
+  <data name="BTN_UNDO" xml:space="preserve">
+    <value>undo</value>
+  </data>
+  <data name="textframe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/textframe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mailmergedeletefield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/mailmergedeletefield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mergetablecells" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/mergetablecells.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mailmergedatefield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/mailmergedatefield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartlayout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartlayout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/cut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartpie3D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartpie3d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pagenumbertop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/pagenumbertop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="options" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/options.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartbelowaxistitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartbelowaxistitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pagenumberbottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/pagenumberbottom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inserthyperlink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/inserthyperlink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartgridlinesmajorhor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartgridlinesmajorhor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartcolumn3D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartcolumn3d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartpie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartpie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/zoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insertlinebreak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/insertlinebreak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pagecolumnstwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/pagecolumnstwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="charttitlemain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/charttitlemain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insertpagenumber" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/insertpagenumber.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hfdialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/hfdialog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartlegend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartlegend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mailmergeinsertfield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/mailmergeinsertfield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartcolumn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartcolumn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deletepagenumber" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/deletepagenumber.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="splittablecells" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/splittablecells.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_export" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/export.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mailmergeincludetextfield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/mailmergeincludetextfield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartgridlinesmajorvert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartgridlinesmajorvert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="print" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/print.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edithyperlink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/edithyperlink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mailmergeshowfieldcodes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/mailmergeshowfieldcodes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spelling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/spelling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartline3D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartline3d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mailmergehighlightfields" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/mailmergehighlightfields.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartdatalabels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartdatalabels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartaxes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartaxes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="strMsgFileHandler01" xml:space="preserve">
+    <value>Some formatting features are possibly not supported by the used save format.
+These features may be lost or degraded when you reload this document.
+Click OK to reload the document anyway.
+To keep all formatting features, click Cancel, and then save the file in another file format.</value>
+  </data>
+  <data name="pageframedialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/pageframedialog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pagedialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/pagedialog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printpreview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/printpreview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pageviewprint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/pageviewprint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pageviewnormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/pageviewnormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="charactersettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/charactersettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="replace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/replace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insertbookmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/insertbookmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="header" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/header.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insertfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/insertfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="styledialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/styledialog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listdialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/listdialog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paragraphsettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/paragraphsettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tabs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/tabs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="indentincrease" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/indentincrease.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="indentdecrease" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/indentdecrease.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="table" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deletetable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/deletetable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inserttablecolleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/inserttablecolleft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inserttablecolright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/inserttablecolright.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inserttablerowabove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/inserttablerowabove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inserttablerowbelow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/inserttablerowbelow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="selecttable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/selecttable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="selecttablecell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/selecttablecell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="selecttablecol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/selecttablecol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="selecttablerow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/selecttablerow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="splittable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/splittable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="splittableabove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/splittableabove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="splittablebelow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/splittablebelow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="strChartPropertiesMenuItemName" xml:space="preserve">
+    <value>Chart Properties…</value>
+  </data>
+  <data name="chartdatatable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartdatatable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="strChartEditDataMenuItemName" xml:space="preserve">
+    <value>Edit Chart Data…</value>
+  </data>
+  <data name="chartformat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartformat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chartsetdatarelation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/chart/chartsetdatarelation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="strChartDataRelMenuItemName" xml:space="preserve">
+    <value>Set Chart Data Relation…</value>
+  </data>
+  <data name="tabledialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/tabledialog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tablegridlines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/tablegridlines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mailmergefieldproperties" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/mailmergefieldproperties.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deletetablecell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/deletetablecell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deletetablecol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/deletetablecol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deletetablerow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/deletetablerow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="strMsgFileHandler02" xml:space="preserve">
+    <value>Exporting to PDF/A is currently not possible because the PDF/A-Setting has not been enabled.
+The PDF/A-Setting can be enabled at 'Options' → 'PDF Settings' → 'Export Settings'
+The export process will now be canceled.</value>
+  </data>
+  <data name="strObjectName" xml:space="preserve">
+    <value>Set Object Name…</value>
+  </data>
+  <data name="formlayoutrtl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/formlayoutrtl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hyphenation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/hyphenation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mailmergenextfield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/mailmergenextfield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mailmergenextiffield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/mailmergenextiffield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="setlanguage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/setlanguage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="languagedetection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/languagedetection.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moresymbols" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/moresymbols.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="selectall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/selectall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="drawingcanvas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/drawingcanvas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="drawingmarkerlines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/drawingmarkerlines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mousecursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/mousecursor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HEADER_BasicShapesCategory" xml:space="preserve">
+    <value>Basic Shapes</value>
+  </data>
+  <data name="HEADER_BlockArrowsCategory" xml:space="preserve">
+    <value>Block Arrows</value>
+  </data>
+  <data name="HEADER_CalloutsCategory" xml:space="preserve">
+    <value>Callouts</value>
+  </data>
+  <data name="HEADER_EquationShapesCategory" xml:space="preserve">
+    <value>Equation Shapes</value>
+  </data>
+  <data name="HEADER_FlowChartCategory" xml:space="preserve">
+    <value>Flowchart</value>
+  </data>
+  <data name="HEADER_LinesCategory" xml:space="preserve">
+    <value>Lines</value>
+  </data>
+  <data name="HEADER_RectanglesCategory" xml:space="preserve">
+    <value>Rectangles</value>
+  </data>
+  <data name="HEADER_StarsAndBannersCategory" xml:space="preserve">
+    <value>Stars and Banners</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Arc" xml:space="preserve">
+    <value>Arc</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Arrow" xml:space="preserve">
+    <value>Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BentArrow" xml:space="preserve">
+    <value>Bent Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BentUpArrow" xml:space="preserve">
+    <value>Bent-Up Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Bevel" xml:space="preserve">
+    <value>Bevel</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BlockArc" xml:space="preserve">
+    <value>Block Arc</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Can" xml:space="preserve">
+    <value>Can</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Chevron" xml:space="preserve">
+    <value>Chevron</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Chord" xml:space="preserve">
+    <value>Chord</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CircularArrow" xml:space="preserve">
+    <value>Circular Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Cloud" xml:space="preserve">
+    <value>Cloud</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CloudCallout" xml:space="preserve">
+    <value>Cloud Callout</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Plus" xml:space="preserve">
+    <value>Cross</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Cube" xml:space="preserve">
+    <value>Cube</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Curve" xml:space="preserve">
+    <value>Curve</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CurvedArrowCon" xml:space="preserve">
+    <value>Curved Arrow Connector</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CurvedConnector3" xml:space="preserve">
+    <value>Curved Connector</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CurvedDblArrowCon" xml:space="preserve">
+    <value>Curved Double-Arrow Connector</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CurvedDownArrow" xml:space="preserve">
+    <value>Curved Down Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_EllipseRibbon" xml:space="preserve">
+    <value>Curved Down Ribbon</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CurvedLeftArrow" xml:space="preserve">
+    <value>Curved Left Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CurvedRightArrow" xml:space="preserve">
+    <value>Curved Right Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CurvedUpArrow" xml:space="preserve">
+    <value>Curved Up Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_EllipseRibbon2" xml:space="preserve">
+    <value>Curved Up Ribbon</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_DblArrow" xml:space="preserve">
+    <value>Double Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BracePair" xml:space="preserve">
+    <value>Double Brace</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BracketPair" xml:space="preserve">
+    <value>Double Bracket</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_DoubleWave" xml:space="preserve">
+    <value>Double Wave</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Decagon" xml:space="preserve">
+    <value>Decagon</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_DiagonalStripe" xml:space="preserve">
+    <value>Diagonal Stripe</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Diamond" xml:space="preserve">
+    <value>Diamond</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_MathDivide" xml:space="preserve">
+    <value>Division</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Dodecagon" xml:space="preserve">
+    <value>Dodecagon</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Donut" xml:space="preserve">
+    <value>Donut</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_DownArrow" xml:space="preserve">
+    <value>Down Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_DownArrowCallout" xml:space="preserve">
+    <value>Down Arrow Callout</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Ribbon" xml:space="preserve">
+    <value>Down Ribbon</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_ElbowArrowCon" xml:space="preserve">
+    <value>Elbow Arrow Connector</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BentConnector3" xml:space="preserve">
+    <value>Elbow Connector</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_ElbowDblArrowCon" xml:space="preserve">
+    <value>Elbow Double-Arrow Connector</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_MathEqual" xml:space="preserve">
+    <value>Equal</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_IrregularSeal1" xml:space="preserve">
+    <value>Explosion 1</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_IrregularSeal2" xml:space="preserve">
+    <value>Explosion 2</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartAlternateProcess" xml:space="preserve">
+    <value>Flowchart: Alternate Process</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartPunchedCard" xml:space="preserve">
+    <value>Flowchart: Card</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartCollate" xml:space="preserve">
+    <value>Flowchart: Collate</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartConnector" xml:space="preserve">
+    <value>Flowchart: Connector</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartInputOutput" xml:space="preserve">
+    <value>Flowchart: Data</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartDecision" xml:space="preserve">
+    <value>Flowchart: Decision</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartDelay" xml:space="preserve">
+    <value>Flowchart: Delay</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartMagneticDrum" xml:space="preserve">
+    <value>Flowchart: Direct Access Storage</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartDisplay" xml:space="preserve">
+    <value>Flowchart: Display</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartDocument" xml:space="preserve">
+    <value>Flowchart: Document</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartExtract" xml:space="preserve">
+    <value>Flowchart: Extract</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartInternalStorage" xml:space="preserve">
+    <value>Flowchart: Internal Storage</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartMagneticDisk" xml:space="preserve">
+    <value>Flowchart: Magnetic Disk</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartManualInput" xml:space="preserve">
+    <value>Flowchart: Manual Input</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartManualOperation" xml:space="preserve">
+    <value>Flowchart: Manual Operation</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartMerge" xml:space="preserve">
+    <value>Flowchart: Merge</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartMultidocument" xml:space="preserve">
+    <value>Flowchart: Multidocument</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartOffpageConnector" xml:space="preserve">
+    <value>Flowchart: Off-Page Connector</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartOr" xml:space="preserve">
+    <value>Flowchart: Or</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartPredefinedProcess" xml:space="preserve">
+    <value>Flowchart: Predefined Process</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartPreparation" xml:space="preserve">
+    <value>Flowchart: Preparation</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartProcess" xml:space="preserve">
+    <value>Flowchart: Process</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartPunchedTape" xml:space="preserve">
+    <value>Flowchart: Punched Tape</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartMagneticTape" xml:space="preserve">
+    <value>Flowchart: Sequential Access Storage</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartSort" xml:space="preserve">
+    <value>Flowchart: Sort</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartOnlineStorage" xml:space="preserve">
+    <value>Flowchart: Stored Data</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartSummingJunction" xml:space="preserve">
+    <value>Flowchart: Summing Junction</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartTerminator" xml:space="preserve">
+    <value>Flowchart: Terminator</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FoldedCorner" xml:space="preserve">
+    <value>Folded Corner</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Frame" xml:space="preserve">
+    <value>Frame</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Freeform" xml:space="preserve">
+    <value>Freeform</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_HalfFrame" xml:space="preserve">
+    <value>Half Frame</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Heart" xml:space="preserve">
+    <value>Heart</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Heptagon" xml:space="preserve">
+    <value>Heptagon</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Hexagon" xml:space="preserve">
+    <value>Hexagon</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_HorizontalScroll" xml:space="preserve">
+    <value>Horizontal Scroll</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Triangle" xml:space="preserve">
+    <value>Isosceles Triangle</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftArrow" xml:space="preserve">
+    <value>Left Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftArrowCallout" xml:space="preserve">
+    <value>Left Arrow Callout</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftBrace" xml:space="preserve">
+    <value>Left Brace</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftBracket" xml:space="preserve">
+    <value>Left Bracket</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftRightArrow" xml:space="preserve">
+    <value>Left-Right Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftRightArrowCallout" xml:space="preserve">
+    <value>Left-Right Arrow Callout</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftRightUpArrow" xml:space="preserve">
+    <value>Left-Right-Up Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftUpArrow" xml:space="preserve">
+    <value>Left-Up Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LightningBolt" xml:space="preserve">
+    <value>Lightning Bolt</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Line" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BorderCallout1" xml:space="preserve">
+    <value>Line Callout 1</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_AccentCallout1" xml:space="preserve">
+    <value>Line Callout 1 (Accent Bar)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_AccentBorderCallout1" xml:space="preserve">
+    <value>Line Callout 1 (Border and Accent Bar)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Callout1" xml:space="preserve">
+    <value>Line Callout 1 (No Border)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BorderCallout2" xml:space="preserve">
+    <value>Line Callout 2</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_AccentCallout2" xml:space="preserve">
+    <value>Line Callout 2 (Accent Bar)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_AccentBorderCallout2" xml:space="preserve">
+    <value>Line Callout 2 (Border and Accent Bar)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Callout2" xml:space="preserve">
+    <value>Line Callout 2 (No Border)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BorderCallout3" xml:space="preserve">
+    <value>Line Callout 3</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_AccentCallout3" xml:space="preserve">
+    <value>Line Callout 3 (Accent Bar)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_AccentBorderCallout3" xml:space="preserve">
+    <value>Line Callout 3 (Border and Accent Bar)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Callout3" xml:space="preserve">
+    <value>Line Callout 3 (No Border)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Corner" xml:space="preserve">
+    <value>L-Shape</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_MathMinus" xml:space="preserve">
+    <value>Minus</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Moon" xml:space="preserve">
+    <value>Moon</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_MathMultiply" xml:space="preserve">
+    <value>Multiply</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_NotchedRightArrow" xml:space="preserve">
+    <value>Notched Right Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_MathNotEqual" xml:space="preserve">
+    <value>Not Equal</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_NoSmoking" xml:space="preserve">
+    <value>"No" Symbol</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Octagon" xml:space="preserve">
+    <value>Octagon</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Ellipse" xml:space="preserve">
+    <value>Oval</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_WedgeEllipseCallout" xml:space="preserve">
+    <value>Oval Callout</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Parallelogram" xml:space="preserve">
+    <value>Parallelogram</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_HomePlate" xml:space="preserve">
+    <value>Pentagon</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Pie" xml:space="preserve">
+    <value>Pie</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Plaque" xml:space="preserve">
+    <value>Plaque</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_MathPlus" xml:space="preserve">
+    <value>Plus</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_QuadArrow" xml:space="preserve">
+    <value>Quad Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_QuadArrowCallout" xml:space="preserve">
+    <value>Quad Arrow Callout</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Rectangle" xml:space="preserve">
+    <value>Rectangle</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_WedgeRectangleCallout" xml:space="preserve">
+    <value>Rectangular Callout</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Pentagon" xml:space="preserve">
+    <value>Regular Pentagon</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_RightArrow" xml:space="preserve">
+    <value>Right Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_RightArrowCallout" xml:space="preserve">
+    <value>Right Arrow Callout</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_RightBrace" xml:space="preserve">
+    <value>Right Brace</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_RightBracket" xml:space="preserve">
+    <value>Right Bracket</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_RightTriangle" xml:space="preserve">
+    <value>Right Triangle</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Round2DiagonalRectangle" xml:space="preserve">
+    <value>Round Diagonal Corner Rectangle</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_RoundRectangle" xml:space="preserve">
+    <value>Rounded Rectangle</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_WedgeRoundRectangleCallout" xml:space="preserve">
+    <value>Rounded Rectangular Callout</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Round2SameRectangle" xml:space="preserve">
+    <value>Round Same Side Corner Rectangle</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Round1Rectangle" xml:space="preserve">
+    <value>Round Single Corner Rectangle</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Scribble" xml:space="preserve">
+    <value>Scribble</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_SmileyFace" xml:space="preserve">
+    <value>Smiley Face</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Snip2DiagonalRectangle" xml:space="preserve">
+    <value>Snip Diagonal Corner Rectangle</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_SnipRoundRectangle" xml:space="preserve">
+    <value>Snip and Round Single Corner Rectangle</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Snip2SameRectangle" xml:space="preserve">
+    <value>Snip Same Side Corner Rectangle</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Snip1Rectangle" xml:space="preserve">
+    <value>Snip Single Corner Rectangle</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star4" xml:space="preserve">
+    <value>4-Point Star</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star5" xml:space="preserve">
+    <value>5-Point Star</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star6" xml:space="preserve">
+    <value>6-Point Star</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star7" xml:space="preserve">
+    <value>7-Point Star</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star8" xml:space="preserve">
+    <value>8-Point Star</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star10" xml:space="preserve">
+    <value>10-Point Star</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star12" xml:space="preserve">
+    <value>12-Point Star</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star16" xml:space="preserve">
+    <value>16-Point Star</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star24" xml:space="preserve">
+    <value>24-Point Star</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star32" xml:space="preserve">
+    <value>32-Point Star</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_StripedRightArrow" xml:space="preserve">
+    <value>Striped Right Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Sun" xml:space="preserve">
+    <value>Sun</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Teardrop" xml:space="preserve">
+    <value>Teardrop</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_TextBox" xml:space="preserve">
+    <value>Text Box</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_NonIsoscelesTrapezoid" xml:space="preserve">
+    <value>Trapezoid</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_UpArrow" xml:space="preserve">
+    <value>Up Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_UpArrowCallout" xml:space="preserve">
+    <value>Up Arrow Callout</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_UpDownArrow" xml:space="preserve">
+    <value>Up-Down Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Ribbon2" xml:space="preserve">
+    <value>Up Ribbon</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_UTurnArrow" xml:space="preserve">
+    <value>U-Turn Arrow</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_VerticalScroll" xml:space="preserve">
+    <value>Vertical Scroll</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Wave" xml:space="preserve">
+    <value>Wave</value>
+  </data>
+  <data name="BTN_CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="BTN_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="DOC_TITLE_UNTITLED" xml:space="preserve">
+    <value>[untitled]</value>
+  </data>
+  <data name="EXC_MERGE_BLOCK_CONVERSION" xml:space="preserve">
+    <value>TX Text Control Reports:
+The following merge blocks could not be converted:
+{0}
+
+Remove the corresponding bookmarks with:
+Insert - Bookmark - Delete Bookmark.
+Create a new block with:
+Reporting - Insert Merge Block - Insert Custom Merge Block.</value>
+    <comment>{0} is a list of merge block names separated by line breaks</comment>
+  </data>
+  <data name="EXC_PDF_SIGNATURE" xml:space="preserve">
+    <value>There seems to be a problem with the PDF signature file settings: {0}</value>
+    <comment>{0} is the exception text</comment>
+  </data>
+  <data name="MSG_CONFIRM_UPDATE_MERGE_BLOCK_TYPE" xml:space="preserve">
+    <value>The Reporting Template was stored in an older TX Text Control format.
+Do you want to save it in the current format?</value>
+  </data>
+  <data name="MSG_FILE_DOES_NOT_EXIST" xml:space="preserve">
+    <value>File "{0}" does not exist.</value>
+    <comment>{0} is the file name</comment>
+  </data>
+  <data name="MSG_REMOVE_FILE_FROM_LIST" xml:space="preserve">
+    <value>The selected file does not exist. Do you want 
+to remove it from the list of recent files?</value>
+  </data>
+  <data name="MSG_UNKNOWN_FILE_TYPE" xml:space="preserve">
+    <value>Unknown file type (*{0}).</value>
+    <comment>{0} is the file extension of the file which could not be loaded.</comment>
+  </data>
+  <data name="OPT_DLG_CSS_GRP_SAVEOPTS" xml:space="preserve">
+    <value>HTML stylesheet save options</value>
+  </data>
+  <data name="OPT_DLG_CSS_INLINE" xml:space="preserve">
+    <value>I&amp;nline stylesheet</value>
+  </data>
+  <data name="OPT_DLG_CSS_LBL_FILE" xml:space="preserve">
+    <value>Stylesheet fil&amp;e:</value>
+  </data>
+  <data name="OPT_DLG_CSS_NONE" xml:space="preserve">
+    <value>&amp;No stylesheet</value>
+  </data>
+  <data name="OPT_DLG_CSS_SAVE_NOT_OVR" xml:space="preserve">
+    <value>Sa&amp;ve but do not overwrite existing file</value>
+  </data>
+  <data name="OPT_DLG_CSS_SEPARATE_FILE" xml:space="preserve">
+    <value>&amp;Save stylesheet in separate file</value>
+  </data>
+  <data name="OPT_DLG_PDFEXP_ENABLE_PDFA" xml:space="preserve">
+    <value>&amp;Enable PDF/A</value>
+  </data>
+  <data name="OPT_DLG_PDFEXP_GRP_OPTS" xml:space="preserve">
+    <value>PDF Export Options</value>
+  </data>
+  <data name="OPT_DLG_PDFIMP_GRP_OPTS" xml:space="preserve">
+    <value>PDF Import Options</value>
+  </data>
+  <data name="OPT_DLG_PDFIMP_LBL_MODE" xml:space="preserve">
+    <value>I&amp;mport mode:</value>
+  </data>
+  <data name="OPT_DLG_PDFIMP_MODE_FRAMES" xml:space="preserve">
+    <value>Text frame import mode</value>
+  </data>
+  <data name="OPT_DLG_PDFIMP_MODE_PAR" xml:space="preserve">
+    <value>Paragraph recognition mode</value>
+  </data>
+  <data name="OPT_DLG_PDFIMP_MODE_PLAIN" xml:space="preserve">
+    <value>Plain text mode</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_CHNGALLOW_ANY" xml:space="preserve">
+    <value>Any except extracting pages</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_CHNGALLOW_COMMENTS" xml:space="preserve">
+    <value>Commenting, filling in form fields and signing</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_CHNGALLOW_FORMFLDS" xml:space="preserve">
+    <value>Filling in form fields and signing</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_CHNGALLOW_INSDEL" xml:space="preserve">
+    <value>Inserting, deleting and rotating pages</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_CHNGALLOW_NONE" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_ERR_NO_DOC_PWD" xml:space="preserve">
+    <value>The 'Require a password to open the document' option is selected, but the Document Open Password field is empty. Please enter a password or deselect the security option.</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_ERR_NO_MASTER_PWD" xml:space="preserve">
+    <value>The 'Use a password to restrict printing and editing of the 
+document and its security settings' option is selected, but 
+the Permissions Password field is empty. Please enter a 
+password or deselect the security option.</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_ERR_SAME_PWD" xml:space="preserve">
+    <value>The Document Open and Permissions passwords cannot
+be the same. Please enter a different password in either the 
+Document Open Password field or the Permission Password 
+field.</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_GRP_DIG_SIG" xml:space="preserve">
+    <value>Digital Signature</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_GRP_DOC_PWD" xml:space="preserve">
+    <value>PDF Document Password</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_LBL_CERT_FILE" xml:space="preserve">
+    <value>&amp;Certificate File (*.pfx):</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_LBL_CERT_PWD" xml:space="preserve">
+    <value>Certificate &amp;Password:</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_LBL_DOC_PWD" xml:space="preserve">
+    <value>&amp;Document Password:</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_REQ_DOC_PWD" xml:space="preserve">
+    <value>&amp;Require a password to open the document</value>
+  </data>
+  <data name="OPT_DLG_TAB_HTMLOPTS" xml:space="preserve">
+    <value>HTML Options</value>
+  </data>
+  <data name="OPT_DLG_TAB_PDFEXP" xml:space="preserve">
+    <value>PDF Export</value>
+  </data>
+  <data name="OPT_DLG_TAB_PDFIMP" xml:space="preserve">
+    <value>PDF Import</value>
+  </data>
+  <data name="OPT_DLG_TAB_PDFSEC" xml:space="preserve">
+    <value>PDF Security</value>
+  </data>
+  <data name="OPT_DLG_TITLE" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="SAVE_CHANGES_TO" xml:space="preserve">
+    <value>Save changes to {0}?</value>
+    <comment>{0} is the document title</comment>
+  </data>
+  <data name="USR_INP_PASSWORD_LABEL" xml:space="preserve">
+    <value>Enter password for password protected file:</value>
+  </data>
+  <data name="USR_INP_PASSWORD_TITLE" xml:space="preserve">
+    <value>Enter Password</value>
+  </data>
+  <data name="EDIT_USER_DLG_LBL_NEW_PASSWORD" xml:space="preserve">
+    <value>&amp;New Password:</value>
+  </data>
+  <data name="EDIT_USER_DLG_LBL_PASSWORD" xml:space="preserve">
+    <value>&amp;Password:</value>
+  </data>
+  <data name="EDIT_USER_DLG_LBL_PASSWORD_CONFIRM" xml:space="preserve">
+    <value>&amp;Confirm Password:</value>
+  </data>
+  <data name="EDIT_USER_DLG_LBL_USER_NAME" xml:space="preserve">
+    <value>&amp;Username:</value>
+  </data>
+  <data name="EDIT_USER_DLG_TITLE" xml:space="preserve">
+    <value>Edit User</value>
+  </data>
+  <data name="EDIT_USER_DLG_USER_EXISTS" xml:space="preserve">
+    <value>A user with the same name already exists.</value>
+  </data>
+  <data name="EDIT_USER_DLG_WRONG_PASSWORD" xml:space="preserve">
+    <value>The entered password does not match the user's password.</value>
+  </data>
+  <data name="USER_ACC_DLG_BTN_GRANT" xml:space="preserve">
+    <value>&amp;Grant Access</value>
+  </data>
+  <data name="USER_ACC_DLG_BTN_MANAGE" xml:space="preserve">
+    <value>&amp;Manage Users…</value>
+  </data>
+  <data name="USER_ACC_DLG_BTN_REVOKE" xml:space="preserve">
+    <value>&amp;Revoke Access</value>
+  </data>
+  <data name="USER_ACC_DLG_ENTER_PASSWORD" xml:space="preserve">
+    <value>Grant Access</value>
+  </data>
+  <data name="USER_ACC_DLG_ENTER_PASSWORD_LABEL" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="USER_ACC_DLG_LBL_USERS" xml:space="preserve">
+    <value>Registered &amp;Users:</value>
+  </data>
+  <data name="USER_ACC_DLG_TITLE" xml:space="preserve">
+    <value>User Access</value>
+  </data>
+  <data name="USER_ACC_DLG_WRONG_PASSWORD" xml:space="preserve">
+    <value>The entered password does not match the selected user's password.</value>
+  </data>
+  <data name="USER_ADMIN_DLG_BTN_DELETE" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="USER_ADMIN_DLG_BTN_EDIT" xml:space="preserve">
+    <value>&amp;Edit…</value>
+  </data>
+  <data name="USER_ADMIN_DLG_BTN_NEW" xml:space="preserve">
+    <value>&amp;New…</value>
+  </data>
+  <data name="USER_ADMIN_DLG_LBL_USERS" xml:space="preserve">
+    <value>Registered &amp;Users:</value>
+  </data>
+  <data name="USER_ADMIN_DLG_TITLE" xml:space="preserve">
+    <value>Manage Users</value>
+  </data>
+  <data name="EDITABLEREGION_DLG_SUBTITLE" xml:space="preserve">
+    <value>Give editing permission to</value>
+  </data>
+  <data name="EDITABLEREGION_DLG_TITLE" xml:space="preserve">
+    <value>Access Management For Region</value>
+  </data>
+  <data name="DSP_USERNAME_EVERYONE" xml:space="preserve">
+    <value>Everyone</value>
+  </data>
+  <data name="USER_ADD_REGION_DLG_TITLE" xml:space="preserve">
+    <value>Add Editable Region</value>
+  </data>
+  <data name="MNUBTNCOLUMNS_TEXT" xml:space="preserve">
+    <value>Columns</value>
+  </data>
+  <data name="MNUBTNCOPY_TEXT" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="MNUBTNCUT_TEXT" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="MNUBTNDELETE_TEXT" xml:space="preserve">
+    <value>Delete selection</value>
+  </data>
+  <data name="MNUBTNFIND_TEXT" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="MNUBTNHEADERSANDFOOTERS_TEXT" xml:space="preserve">
+    <value>Headers and Footers</value>
+  </data>
+  <data name="MNUBTNMARGINSANDPAPER_TEXT" xml:space="preserve">
+    <value>Margins and Paper</value>
+  </data>
+  <data name="MNUBTNNEWFILE_TEXT" xml:space="preserve">
+    <value>New document</value>
+  </data>
+  <data name="MNUBTNOPENFILE_TEXT" xml:space="preserve">
+    <value>Open document</value>
+  </data>
+  <data name="MNUBTNPAGEBORDERS_TEXT" xml:space="preserve">
+    <value>Page Borders</value>
+  </data>
+  <data name="MNUBTNPASTE_TEXT" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="MNUBTNPRINTPREVIEW_TEXT" xml:space="preserve">
+    <value>Print preview</value>
+  </data>
+  <data name="MNUBTNPRINT_TEXT" xml:space="preserve">
+    <value>Print document</value>
+  </data>
+  <data name="MNUBTNREDO_TEXT" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+  <data name="MNUBTNSAVE_TEXT" xml:space="preserve">
+    <value>Save document</value>
+  </data>
+  <data name="MNUBTNSELECTOBJECTS_TEXT" xml:space="preserve">
+    <value>Select Objects</value>
+  </data>
+  <data name="MNUBTNUNDO_TEXT" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="MNUEDIT_COPY_TEXT" xml:space="preserve">
+    <value>&amp;Copy</value>
+  </data>
+  <data name="MNUEDIT_CUT_TEXT" xml:space="preserve">
+    <value>Cu&amp;t</value>
+  </data>
+  <data name="MNUEDIT_DELETE_TEXT" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="MNUEDIT_FIND_TEXT" xml:space="preserve">
+    <value>&amp;Find</value>
+  </data>
+  <data name="MNUEDIT_HYPERLINK_TEXT" xml:space="preserve">
+    <value>&amp;Hyperlink…</value>
+  </data>
+  <data name="MNUEDIT_PASTE_TEXT" xml:space="preserve">
+    <value>&amp;Paste</value>
+  </data>
+  <data name="MNUEDIT_PERMISSIONS_ALLOWCOPY_TEXT" xml:space="preserve">
+    <value>Allow Copy</value>
+  </data>
+  <data name="MNUEDIT_PERMISSIONS_ALLOWFORMATTINGSTYLES_TEXT" xml:space="preserve">
+    <value>Allow Formatting Styles</value>
+  </data>
+  <data name="MNUEDIT_PERMISSIONS_ALLOWFORMATTING_TEXT" xml:space="preserve">
+    <value>Allow Formatting</value>
+  </data>
+  <data name="MNUEDIT_PERMISSIONS_ALLOWPRINTING_TEXT" xml:space="preserve">
+    <value>Allow Printing</value>
+  </data>
+  <data name="MNUEDIT_PERMISSIONS_READONLY_TEXT" xml:space="preserve">
+    <value>Read Only</value>
+  </data>
+  <data name="MNUEDIT_PERMISSIONS_TEXT" xml:space="preserve">
+    <value>&amp;Permissions</value>
+  </data>
+  <data name="MNUEDIT_PROTECTDOCUMENT_TEXT" xml:space="preserve">
+    <value>Pr&amp;otect Document...</value>
+  </data>
+  <data name="MNUEDIT_REDO_TEXT" xml:space="preserve">
+    <value>&amp;Redo</value>
+  </data>
+  <data name="MNUEDIT_REPLACE_TEXT" xml:space="preserve">
+    <value>R&amp;eplace</value>
+  </data>
+  <data name="MNUEDIT_SELECTALL_TEXT" xml:space="preserve">
+    <value>Select &amp;All</value>
+  </data>
+  <data name="MNUEDIT_TARGET_TEXT" xml:space="preserve">
+    <value>&amp;Bookmark…</value>
+  </data>
+  <data name="MNUEDIT_TEXT" xml:space="preserve">
+    <value>&amp;Edit</value>
+  </data>
+  <data name="MNUEDIT_UNDO_TEXT" xml:space="preserve">
+    <value>&amp;Undo</value>
+  </data>
+  <data name="MNUFILE_EXIT_TEXT" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="MNUFILE_EXPORT_TEXT" xml:space="preserve">
+    <value>&amp;Export…</value>
+  </data>
+  <data name="MNUFILE_NEW_TEXT" xml:space="preserve">
+    <value>&amp;New</value>
+  </data>
+  <data name="MNUFILE_OPEN_TEXT" xml:space="preserve">
+    <value>&amp;Open…</value>
+  </data>
+  <data name="MNUFILE_OPTIONS_TEXT" xml:space="preserve">
+    <value>Opt&amp;ions…</value>
+  </data>
+  <data name="MNUFILE_PAGESETUP_TEXT" xml:space="preserve">
+    <value>Page Se&amp;tup…</value>
+  </data>
+  <data name="MNUFILE_PRINTPREVIEW_TEXT" xml:space="preserve">
+    <value>Print Pre&amp;view…</value>
+  </data>
+  <data name="MNUFILE_PRINT_TEXT" xml:space="preserve">
+    <value>&amp;Print…</value>
+  </data>
+  <data name="MNUFILE_RECENTFILES_TEXT" xml:space="preserve">
+    <value>&amp;Recent Files</value>
+  </data>
+  <data name="MNUFILE_SAVEAS_TEXT" xml:space="preserve">
+    <value>Save &amp;As…</value>
+  </data>
+  <data name="MNUFILE_SAVE_TEXT" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="MNUFILE_TEXT" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="MNUFILE_USERACCESS_TEXT" xml:space="preserve">
+    <value>User A&amp;ccess...</value>
+  </data>
+  <data name="MNUFILE_USERMANAGEMENT_TEXT" xml:space="preserve">
+    <value>&amp;User Management...</value>
+  </data>
+  <data name="MNUFORMAT_CHARACTER_TEXT" xml:space="preserve">
+    <value>&amp;Character…</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_AXES_LEFTTORIGHT_TEXT" xml:space="preserve">
+    <value>&amp;Show left to right Axis</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_AXES_TEXT" xml:space="preserve">
+    <value>A&amp;xes</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_AXES_WITHOUTLABELING_TEXT" xml:space="preserve">
+    <value>Show Axis &amp;without Labeling</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_AXISTITLES_BELOWCHART_TEXT" xml:space="preserve">
+    <value>Title &amp;below Chart</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_AXISTITLES_NONE_TEXT" xml:space="preserve">
+    <value>&amp;None</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_AXISTITLES_TEXT" xml:space="preserve">
+    <value>&amp;Axis Titles</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_AXISTITLES_VERTICAL_TEXT" xml:space="preserve">
+    <value>&amp;Vertical Title</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_CHARTTITLE_ABOVECHART_TEXT" xml:space="preserve">
+    <value>&amp;Above Chart</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_CHARTTITLE_CENTEREDOVERLAY_TEXT" xml:space="preserve">
+    <value>&amp;Centered Overlay Title</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_CHARTTITLE_NONE_TEXT" xml:space="preserve">
+    <value>&amp;None</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_CHARTTITLE_TEXT" xml:space="preserve">
+    <value>Chart &amp;Title</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_DATALABELS_NONE_TEXT" xml:space="preserve">
+    <value>&amp;None</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_DATALABELS_OUTSIDEEND_TEXT" xml:space="preserve">
+    <value>&amp;Outside End</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_DATALABELS_TEXT" xml:space="preserve">
+    <value>&amp;Data Labels</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_HORGRIDLINES_TEXT" xml:space="preserve">
+    <value>&amp;Horizontal Gridlines</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_HORIZGRIDLINES_MAJANDMIN_TEXT" xml:space="preserve">
+    <value>Major &amp;&amp; minor &amp;Gridlines</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_HORIZGRIDLINES_MAJOR_TEXT" xml:space="preserve">
+    <value>&amp;Major Gridlines</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_HORIZGRIDLINES_MINOR_TEXT" xml:space="preserve">
+    <value>Min&amp;or Gridlines</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_HORIZGRIDLINES_NONE_TEXT" xml:space="preserve">
+    <value>&amp;None</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_LEGEND_BOTTOM_TEXT" xml:space="preserve">
+    <value>Show Legend at &amp;Bottom</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_LEGEND_LEFT_TEXT" xml:space="preserve">
+    <value>Show Legend at &amp;Left</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_LEGEND_NONE_TEXT" xml:space="preserve">
+    <value>&amp;None</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_LEGEND_RIGHT_TEXT" xml:space="preserve">
+    <value>Show Legend at &amp;Right</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_LEGEND_TEXT" xml:space="preserve">
+    <value>&amp;Legend</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_LEGEND_TOP_TEXT" xml:space="preserve">
+    <value>Show Legend at &amp;Top</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_TEXT" xml:space="preserve">
+    <value>Ch&amp;art</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_VERTGRIDLINES_MAJANDMIN_TEXT" xml:space="preserve">
+    <value>Major &amp;&amp; minor &amp;Gridlines</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_VERTGRIDLINES_MAJOR_TEXT" xml:space="preserve">
+    <value>&amp;Major Gridlines</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_VERTGRIDLINES_MINOR_TEXT" xml:space="preserve">
+    <value>Min&amp;or Gridlines</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_VERTGRIDLINES_NONE_TEXT" xml:space="preserve">
+    <value>&amp;None</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_VERTGRIDLINES_TEXT" xml:space="preserve">
+    <value>&amp;Vertical Gridlines</value>
+  </data>
+  <data name="MNUFORMAT_COLUMNS_TEXT" xml:space="preserve">
+    <value>C&amp;olumns…</value>
+  </data>
+  <data name="MNUFORMAT_HEADERSANDFOOTERS_TEXT" xml:space="preserve">
+    <value>&amp;Headers and Footers…</value>
+  </data>
+  <data name="MNUFORMAT_IMAGE_TEXT" xml:space="preserve">
+    <value>&amp;Image…</value>
+  </data>
+  <data name="MNUFORMAT_LANGUAGE_TEXT" xml:space="preserve">
+    <value>&amp;Language…</value>
+  </data>
+  <data name="MNUFORMAT_LIST_ARABICNUMBERS_TEXT" xml:space="preserve">
+    <value>&amp;1, 2, 3</value>
+  </data>
+  <data name="MNUFORMAT_LIST_ATTRIBUTES_TEXT" xml:space="preserve">
+    <value>&amp;Properties…</value>
+  </data>
+  <data name="MNUFORMAT_LIST_BULLETS_TEXT" xml:space="preserve">
+    <value>B&amp;ullets</value>
+  </data>
+  <data name="MNUFORMAT_LIST_CAPITALLETTERS_TEXT" xml:space="preserve">
+    <value>A, &amp;B, C</value>
+  </data>
+  <data name="MNUFORMAT_LIST_DECREASELEVEL_TEXT" xml:space="preserve">
+    <value>&amp;Decrease Level</value>
+  </data>
+  <data name="MNUFORMAT_LIST_INCREASELEVEL_TEXT" xml:space="preserve">
+    <value>&amp;Increase Level</value>
+  </data>
+  <data name="MNUFORMAT_LIST_LETTERS_TEXT" xml:space="preserve">
+    <value>a, b, &amp;c</value>
+  </data>
+  <data name="MNUFORMAT_LIST_ROMANNUMBERS_TEXT" xml:space="preserve">
+    <value>&amp;I, II, III, IV</value>
+  </data>
+  <data name="MNUFORMAT_LIST_SMALLROMANNUMBERS_TEXT" xml:space="preserve">
+    <value>i, ii, iii, i&amp;v</value>
+  </data>
+  <data name="MNUFORMAT_LIST_TEXT" xml:space="preserve">
+    <value>Bullets and &amp;Numbering</value>
+  </data>
+  <data name="MNUFORMAT_PAGEBORDERS_TEXT" xml:space="preserve">
+    <value>Page &amp;Borders…</value>
+  </data>
+  <data name="MNUFORMAT_PARAGRAPH_TEXT" xml:space="preserve">
+    <value>&amp;Paragraph…</value>
+  </data>
+  <data name="MNUFORMAT_SHAPE_TEXT" xml:space="preserve">
+    <value>Sha&amp;pe…</value>
+  </data>
+  <data name="MNUFORMAT_STYLES_TEXT" xml:space="preserve">
+    <value>&amp;Styles…</value>
+  </data>
+  <data name="MNUFORMAT_TABS_TEXT" xml:space="preserve">
+    <value>&amp;Tabs…</value>
+  </data>
+  <data name="MNUFORMAT_TEXT" xml:space="preserve">
+    <value>For&amp;mat</value>
+  </data>
+  <data name="MNUFORMAT_TEXTFRAME_TEXT" xml:space="preserve">
+    <value>Te&amp;xt Frame…</value>
+  </data>
+  <data name="MNUHELP_ABOUTTXTEXTCONTROLWORDS_TEXT" xml:space="preserve">
+    <value>&amp;About TX Text Control Words…</value>
+  </data>
+  <data name="MNUHELP_TEXT" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="MNUINSERT_BREAK_TEXT" xml:space="preserve">
+    <value>Brea&amp;k…</value>
+  </data>
+  <data name="MNUINSERT_CHART_AREA3D_TEXT" xml:space="preserve">
+    <value>A&amp;rea 3D</value>
+  </data>
+  <data name="MNUINSERT_CHART_AREA_TEXT" xml:space="preserve">
+    <value>&amp;Area</value>
+  </data>
+  <data name="MNUINSERT_CHART_BAR3D_TEXT" xml:space="preserve">
+    <value>Bar 3&amp;D</value>
+  </data>
+  <data name="MNUINSERT_CHART_BAR_TEXT" xml:space="preserve">
+    <value>&amp;Bar</value>
+  </data>
+  <data name="MNUINSERT_CHART_COLUMN3D_TEXT" xml:space="preserve">
+    <value>C&amp;olumn 3D</value>
+  </data>
+  <data name="MNUINSERT_CHART_COLUMN_TEXT" xml:space="preserve">
+    <value>&amp;Column</value>
+  </data>
+  <data name="MNUINSERT_CHART_LINE3D_TEXT" xml:space="preserve">
+    <value>Li&amp;ne 3D</value>
+  </data>
+  <data name="MNUINSERT_CHART_LINE_TEXT" xml:space="preserve">
+    <value>&amp;Line</value>
+  </data>
+  <data name="MNUINSERT_CHART_PIE3D_TEXT" xml:space="preserve">
+    <value>Pi&amp;e 3D</value>
+  </data>
+  <data name="MNUINSERT_CHART_PIE_TEXT" xml:space="preserve">
+    <value>&amp;Pie</value>
+  </data>
+  <data name="MNUINSERT_CHART_TEXT" xml:space="preserve">
+    <value>&amp;Chart</value>
+  </data>
+  <data name="MNUINSERT_EDITABLEREGION_ADD_EVERYONE_TEXT" xml:space="preserve">
+    <value>For Everyone</value>
+  </data>
+  <data name="MNUINSERT_EDITABLEREGION_ADD_TEXT" xml:space="preserve">
+    <value>Add editable Region</value>
+  </data>
+  <data name="MNUINSERT_EDITABLEREGION_ADD_USER_TEXT" xml:space="preserve">
+    <value>For a certain User…</value>
+  </data>
+  <data name="MNUINSERT_EDITABLEREGION_REMOVE_EVERYONE_TEXT" xml:space="preserve">
+    <value>For Everyone</value>
+  </data>
+  <data name="MNUINSERT_EDITABLEREGION_REMOVE_TEXT" xml:space="preserve">
+    <value>Remove editable Region</value>
+  </data>
+  <data name="MNUINSERT_EDITABLEREGION_REMOVE_USER_TEXT" xml:space="preserve">
+    <value>For a certain User…</value>
+  </data>
+  <data name="MNUINSERT_EDITABLEREGION_TEXT" xml:space="preserve">
+    <value>E&amp;ditable Region</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_DELETEFIELD_TEXT" xml:space="preserve">
+    <value>&amp;Delete Field</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_HIGHLIGHTMERGEFIELDS_TEXT" xml:space="preserve">
+    <value>&amp;Highlight Merge Fields</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_INSERTMERGEFIELD_TEXT" xml:space="preserve">
+    <value>&amp;Insert Merge Field...</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_INSERTSPECIALFIELD_DATE_TEXT" xml:space="preserve">
+    <value>&amp;Date...</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_INSERTSPECIALFIELD_IF_TEXT" xml:space="preserve">
+    <value>&amp;IF...</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_INSERTSPECIALFIELD_INCLTEXT_TEXT" xml:space="preserve">
+    <value>I&amp;ncludeText...</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_INSERTSPECIALFIELD_NEXTIF_TEXT" xml:space="preserve">
+    <value>Nex&amp;tIf...</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_INSERTSPECIALFIELD_NEXT_TEXT" xml:space="preserve">
+    <value>N&amp;ext</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_INSERTSPECIALFIELD_TEXT" xml:space="preserve">
+    <value>Insert &amp;Special Field</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_SHOWFIELDCODES_TEXT" xml:space="preserve">
+    <value>Show Field &amp;Codes</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_SHOWFIELDTEXT_TEXT" xml:space="preserve">
+    <value>Show Field &amp;Text</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_TEXT" xml:space="preserve">
+    <value>Fi&amp;elds</value>
+  </data>
+  <data name="MNUINSERT_FILE_TEXT" xml:space="preserve">
+    <value>&amp;File…</value>
+  </data>
+  <data name="MNUINSERT_HYPERLINK_TEXT" xml:space="preserve">
+    <value>&amp;Hyperlink…</value>
+  </data>
+  <data name="MNUINSERT_IMAGE_TEXT" xml:space="preserve">
+    <value>&amp;Image…</value>
+  </data>
+  <data name="MNUINSERT_PAGENUM_TEXT" xml:space="preserve">
+    <value>&amp;Page Number</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_BASIC_TEXT" xml:space="preserve">
+    <value>Grundformen</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_BLOCKARROWS_TEXT" xml:space="preserve">
+    <value>Blockpfeile</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_CALLOUTS_TEXT" xml:space="preserve">
+    <value>Sprechblasen</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_DRAWINGCANVAS_TEXT" xml:space="preserve">
+    <value>&amp;Drawing Canvas</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_EQUATION_TEXT" xml:space="preserve">
+    <value>Gleichungsformen</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_FLOWCHART_TEXT" xml:space="preserve">
+    <value>Flussdiagramm</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_LINES_TEXT" xml:space="preserve">
+    <value>Linien</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_RECTANGLES_TEXT" xml:space="preserve">
+    <value>Rechtecke</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_STARSBANNERS_TEXT" xml:space="preserve">
+    <value>Sternen und Banner</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_TEXT" xml:space="preserve">
+    <value>&amp;Shape</value>
+  </data>
+  <data name="MNUINSERT_SYMBOL_TEXT" xml:space="preserve">
+    <value>&amp;Symbol…</value>
+  </data>
+  <data name="MNUINSERT_TARGET_TEXT" xml:space="preserve">
+    <value>&amp;Bookmark…</value>
+  </data>
+  <data name="MNUINSERT_TEXT" xml:space="preserve">
+    <value>&amp;Insert</value>
+  </data>
+  <data name="MNUINSERT_TEXTFRAME_TEXT" xml:space="preserve">
+    <value>Te&amp;xt Frame</value>
+  </data>
+  <data name="MNUINSERT_PAGENUM_INSERT_TEXT" xml:space="preserve">
+    <value>&amp;Insert Page Number</value>
+  </data>
+  <data name="MNUINSERT_PAGENUM_DELETE_TEXT" xml:space="preserve">
+    <value>&amp;Delete Page Numbers</value>
+  </data>
+  <data name="MNUTABLE_DELETE_CELLS_ENTIRECOLUMN_TEXT" xml:space="preserve">
+    <value>Delete Entire &amp;Column</value>
+  </data>
+  <data name="MNUTABLE_DELETE_CELLS_ENTIREROW_TEXT" xml:space="preserve">
+    <value>Delete Entire &amp;Row</value>
+  </data>
+  <data name="MNUTABLE_DELETE_CELLS_SHIFTLEFT_TEXT" xml:space="preserve">
+    <value>Shift Cells &amp;Left</value>
+  </data>
+  <data name="MNUTABLE_DELETE_CELLS_TEXT" xml:space="preserve">
+    <value>C&amp;ells…</value>
+  </data>
+  <data name="MNUTABLE_DELETE_COLUMN_TEXT" xml:space="preserve">
+    <value>&amp;Column</value>
+  </data>
+  <data name="MNUTABLE_DELETE_ROWS_TEXT" xml:space="preserve">
+    <value>&amp;Rows</value>
+  </data>
+  <data name="MNUTABLE_DELETE_TABLE_TEXT" xml:space="preserve">
+    <value>&amp;Table</value>
+  </data>
+  <data name="MNUTABLE_DELETE_TEXT" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="MNUTABLE_GRIDLINES_TEXT" xml:space="preserve">
+    <value>&amp;Grid Lines</value>
+  </data>
+  <data name="MNUTABLE_INSERT_COLUMNTOTHELEFT_TEXT" xml:space="preserve">
+    <value>Column To The &amp;Left</value>
+  </data>
+  <data name="MNUTABLE_INSERT_COLUMNTOTHERIGHT_TEXT" xml:space="preserve">
+    <value>Column To The &amp;Right</value>
+  </data>
+  <data name="MNUTABLE_INSERT_ROWABOVE_TEXT" xml:space="preserve">
+    <value>Row &amp;Above</value>
+  </data>
+  <data name="MNUTABLE_INSERT_ROWBELOW_TEXT" xml:space="preserve">
+    <value>Row &amp;Below</value>
+  </data>
+  <data name="MNUTABLE_INSERT_TABLE_TEXT" xml:space="preserve">
+    <value>&amp;Table...</value>
+  </data>
+  <data name="MNUTABLE_INSERT_TEXT" xml:space="preserve">
+    <value>&amp;Insert</value>
+  </data>
+  <data name="MNUTABLE_MERGE_CELLS_TEXT" xml:space="preserve">
+    <value>&amp;Merge Cells</value>
+  </data>
+  <data name="MNUTABLE_PROPERTIES_TEXT" xml:space="preserve">
+    <value>&amp;Properties…</value>
+  </data>
+  <data name="MNUTABLE_SELECT_CELL_TEXT" xml:space="preserve">
+    <value>C&amp;ell</value>
+  </data>
+  <data name="MNUTABLE_SELECT_COLUMN_TEXT" xml:space="preserve">
+    <value>&amp;Column</value>
+  </data>
+  <data name="MNUTABLE_SELECT_ROW_TEXT" xml:space="preserve">
+    <value>&amp;Row</value>
+  </data>
+  <data name="MNUTABLE_SELECT_TABLE_TEXT" xml:space="preserve">
+    <value>&amp;Table</value>
+  </data>
+  <data name="MNUTABLE_SELECT_TEXT" xml:space="preserve">
+    <value>S&amp;elect</value>
+  </data>
+  <data name="MNUTABLE_SPLIT_ABOVE_TEXT" xml:space="preserve">
+    <value>&amp;Above</value>
+  </data>
+  <data name="MNUTABLE_SPLIT_BELOW_TEXT" xml:space="preserve">
+    <value>&amp;Below</value>
+  </data>
+  <data name="MNUTABLE_SPLIT_CELLS_TEXT" xml:space="preserve">
+    <value>&amp;Split Cells</value>
+  </data>
+  <data name="MNUTABLE_SPLIT_TEXT" xml:space="preserve">
+    <value>S&amp;plit Table</value>
+  </data>
+  <data name="MNUTABLE_TEXT" xml:space="preserve">
+    <value>T&amp;able</value>
+  </data>
+  <data name="MNUVIEW_BUTTONBAR_TEXT" xml:space="preserve">
+    <value>&amp;Button Bar</value>
+  </data>
+  <data name="MNUVIEW_DOCUMENTTARGETMARKERS_TEXT" xml:space="preserve">
+    <value>Bookmark &amp;Markers</value>
+  </data>
+  <data name="MNUVIEW_DRAFT_TEXT" xml:space="preserve">
+    <value>&amp;Draft</value>
+  </data>
+  <data name="MNUVIEW_DRAWINGMARKERLINES_TEXT" xml:space="preserve">
+    <value>&amp;Drawing Marker Lines</value>
+  </data>
+  <data name="MNUVIEW_FORMLAYOUT_TEXT" xml:space="preserve">
+    <value>&amp;Right to Left Layout</value>
+  </data>
+  <data name="MNUVIEW_HEADERSANDFOOTERS_TEXT" xml:space="preserve">
+    <value>&amp;Headers and Footers</value>
+  </data>
+  <data name="MNUVIEW_HORIZONTALRULER_TEXT" xml:space="preserve">
+    <value>H&amp;orizontal Ruler</value>
+  </data>
+  <data name="MNUVIEW_PAGELAYOUT_TEXT" xml:space="preserve">
+    <value>&amp;Page Layout</value>
+  </data>
+  <data name="MNUVIEW_STATUSBAR_TEXT" xml:space="preserve">
+    <value>&amp;Status Bar</value>
+  </data>
+  <data name="MNUVIEW_TEXT" xml:space="preserve">
+    <value>&amp;View</value>
+  </data>
+  <data name="MNUVIEW_TEXTFRAMEMARKERLINES_TEXT" xml:space="preserve">
+    <value>Text &amp;Frame Marker Lines</value>
+  </data>
+  <data name="MNUVIEW_TOOLBAR_TEXT" xml:space="preserve">
+    <value>&amp;Toolbar</value>
+  </data>
+  <data name="MNUVIEW_VERTICALRULER_TEXT" xml:space="preserve">
+    <value>&amp;Vertical Ruler</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_100_TEXT" xml:space="preserve">
+    <value>&amp;4  100%</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_150_TEXT" xml:space="preserve">
+    <value>&amp;5  150%</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_200_TEXT" xml:space="preserve">
+    <value>&amp;6  200%</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_25_TEXT" xml:space="preserve">
+    <value>&amp;1  25%</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_300_TEXT" xml:space="preserve">
+    <value>&amp;7  300%</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_50_TEXT" xml:space="preserve">
+    <value>&amp;2  50%</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_75_TEXT" xml:space="preserve">
+    <value>&amp;3  75%</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_TEXT" xml:space="preserve">
+    <value>&amp;Zoom</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_400_TEXT" xml:space="preserve">
+    <value>&amp;8  400%</value>
+  </data>
+  <data name="OPT_DLG_BTN_BROWSE" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="saveas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/saveas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="useraccess" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/useraccess.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="useradmin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/useradmin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shapeellipse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/shapes/shapeellipse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shapeflowchartmultidocument" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/shapes/shapeflowchartmultidocument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shapeline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/shapes/shapeline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shapemathequal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/shapes/shapemathequal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shaperectangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/shapes/shaperectangle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shaperightarrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/shapes/shaperightarrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shapestar5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/shapes/shapestar5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shapestar7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/shapes/shapestar7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shapewedgerectanglecallout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>../Images/small_32bit/shapes/shapewedgerectanglecallout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USER_ACC_DLG_BTN_CURRENTAUTHOR" xml:space="preserve">
+    <value>Current Author</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_BTN_ACCEPT" xml:space="preserve">
+    <value>&amp;Accept</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_BTN_ACCEPTALL" xml:space="preserve">
+    <value>Acce&amp;pt All</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_BTN_CLOSE" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_BTN_NEXT" xml:space="preserve">
+    <value>&amp;Next</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_BTN_REJECT" xml:space="preserve">
+    <value>&amp;Reject</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_BTN_REJECTALL" xml:space="preserve">
+    <value>R&amp;eject All</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_TITLE" xml:space="preserve">
+    <value>Review Tracked Changes</value>
+  </data>
+  <data name="MNUEDIT_REVIEWING_REVIEWCHANGES_TEXT" xml:space="preserve">
+    <value>&amp;Review Changes...</value>
+  </data>
+  <data name="MNUEDIT_REVIEWING_TEXT" xml:space="preserve">
+    <value>Re&amp;viewing</value>
+  </data>
+  <data name="MNUEDIT_REVIEWING_TRACKCHANGES_TEXT" xml:space="preserve">
+    <value>&amp;Track Changes</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_CHANGEKIND_DELETEDTEXT" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_CHANGEKIND_INSERTEDTEXT" xml:space="preserve">
+    <value>Inserted</value>
+  </data>
+  <data name="OPT_DLG_PDFIMP_MODE_XML" xml:space="preserve">
+    <value>XML mode</value>
+  </data>
+  <data name="MNUTABLE_FORMULAS_A1STYLE_TEXT" xml:space="preserve">
+    <value>&amp;A1 Reference Style</value>
+  </data>
+  <data name="MNUTABLE_FORMULAS_AUTOMATICCALCULATION_TEXT" xml:space="preserve">
+    <value>Automatic &amp;Calculation</value>
+  </data>
+  <data name="MNUTABLE_FORMULAS_EDITFORMULA_TEXT" xml:space="preserve">
+    <value>&amp;Edit Formula...</value>
+  </data>
+  <data name="MNUTABLE_FORMULAS_R1C1STYLE_TEXT" xml:space="preserve">
+    <value>&amp;R1C1 Reference Style</value>
+  </data>
+  <data name="MNUTABLE_FORMULAS_TEXT" xml:space="preserve">
+    <value>&amp;Formulas</value>
+  </data>
+  <data name="FILEHANDLER_MSGTEMPLATE_NAFILEFORMAT" xml:space="preserve">
+    <value>This document format is not available in TX Text Control {0}.</value>
+  </data>
+  <data name="ABOUTBOX_LBL_APPLICATIONTYPE" xml:space="preserve">
+    <value>(Menu and Toolbar Version)</value>
+  </data>
+  <data name="ERR_NEEDSPROFLICENSE" xml:space="preserve">
+    <value>This feature is not available in the TX Text Control Standard version. At least the Professional version must be installed.</value>
+  </data>
+</root>

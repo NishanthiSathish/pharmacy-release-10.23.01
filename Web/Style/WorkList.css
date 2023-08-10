@@ -1,0 +1,46 @@
+.titleCell
+{
+    BORDER-RIGHT: #ebd9d5 1px solid;
+    BORDER-TOP: #c99c91 1px solid;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    BORDER-LEFT: #c99c91 2px solid;
+    WIDTH: 40%;
+    COLOR: #000000;
+    BORDER-BOTTOM: #ebd9d5 1px solid;
+    HEIGHT: 30px;
+    BACKGROUND-COLOR: #dbbdb5
+}
+.infoCell
+{
+    BORDER-RIGHT: #ebd9d5 1px solid;
+    BORDER-TOP: #c99c91 1px solid;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    BORDER-LEFT: #c99c91 2px solid;
+    WIDTH: 60%;
+    COLOR: #000000;
+    BORDER-BOTTOM: #ebd9d5 1px solid;
+    HEIGHT: 30px;
+    BACKGROUND-COLOR: #dbbdb5
+}
+.gridHeader
+{
+    BORDER-RIGHT: #335a7b 1px solid;
+    BORDER-TOP: #7ea9ce 1px solid;
+    PADDING-LEFT: 3px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: #7ea9ce 1px solid;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #335a7b 1px solid;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #4682b4
+}
+.LoadingMsg
+{
+	COLOR: mediumblue;
+	FONT-STYLE: italic;
+}

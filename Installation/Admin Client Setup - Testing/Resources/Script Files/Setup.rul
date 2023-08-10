@@ -1,0 +1,483 @@
+////////////////////////////////////////////////////////////////////////////////
+//                                                                            
+//  This template script provides the code necessary to build an entry-point 
+//  function to be called in an InstallScript custom action. 
+//                                                                            
+//                                                                            
+//    File Name:  Setup.rul                                                   
+//                                                                            
+//  Description:  InstallShield script                                        
+//
+////////////////////////////////////////////////////////////////////////////////
+#define SOURCE_DIR 	INSTALLDIR
+#define TARGET_DIR 	INSTALLDIR
+#define SUPPORTDIR	INSTALLDIR
+//#define FILENAME1 	"installRedist.txt" 
+//#define FILENAME2 	"installRedist.bat"
+#define FILENAME3 	"NonHTATemplate.txt" 
+#define FILENAME4   "ChangeURLNonHTATemplateCmd.txt"
+#define FILENAME5   "ChangeURLNonHTATemplateCmd.bat"
+#define FILENAME6   "ChangeIconNonHTATemplateCmd.txt"
+#define FILENAME7   "ChangeIconNonHTATemplateCmd.bat"
+#define FOLDER    	"C:\\Users\\Administrator\\Desktop"
+#define PROGRAM   	INSTALLDIR
+#define ClientInstallConfigFile "ClientInstallConfiguration.xml"
+// Include Ifx.h for built-in InstallScript function prototypes, for Windows 
+// Installer API function prototypes and constants, and to declare code for 
+// the OnBegin and OnEnd events.
+#include "ifx.h"
+
+// The keyword export identifies MyFunction() as an entry-point function.
+// The argument it accepts must be a handle to the Installer database.
+export prototype MyFunction(HWND);
+export prototype DeleteFiles(HWND);
+export prototype DeleteShortcutFile(HWND);
+export prototype InstallRedistributoryPackages(HWND);
+export prototype CreateDeskShortcut(HWND);
+export prototype ChangeURLNonHTATemplateContent(HWND);
+export prototype ChangeIconNonHTATemplateContent(HWND);
+export prototype ClientInstallConfigSet(HWND);
+export prototype RenameFilesInInstallDir(HWND);
+prototype FindAndReplace(STRING, STRING, STRING);
+// To Do:  Declare global variables, define constants, and prototype user-
+//         defined and DLL functions here.
+
+
+// To Do:  Create a custom action for this entry-point function:
+// 1.  Right-click on "Custom Actions" in the Sequences/Actions view.
+// 2.  Select "Custom Action Wizard" from the context menu.
+// 3.  Proceed through the wizard and give the custom action a unique name.
+// 4.  Select "Run InstallScript code" for the custom action type, and in
+//     the next panel select "MyFunction" (or the new name of the entry-
+//     point function) for the source.
+// 5.  Click Next, accepting the default selections until the wizard
+//     creates the custom action.
+//
+// Once you have made a custom action, you must execute it in your setup by
+// inserting it into a sequence or making it the result of a dialog's
+// control event.
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  MyFunction
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+function MyFunction(hMSI)
+	STRING productName, productVersion;
+	NUMBER nvSize, nResult;
+    // To Do:  Declare local variables.
+begin
+MsiGetProperty (hMSI, "ProductName", productName, nvSize);
+	MsiGetProperty (hMSI, "ProductVersion", productVersion, nvSize);
+    nResult = CopyFile(SOURCE_DIR+"ASCRIBE.ICO", TARGET_DIR+"ASCRIBETesting_"+productVersion+".ICO");
+end;
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  RenameFilesInInstallDir
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+
+function RenameFilesInInstallDir(hMSI)
+   LIST versionList;
+   STRING res1, nvItem;
+   STRING productVersion, versionMajor, versionMinor, versionBuild, versionRevision, buildType;
+   NUMBER nvSize, n, nResult;
+begin
+   versionList = ListCreate(STRINGLIST);
+   nvSize = 256;
+   buildType = "T";
+   versionMajor = "";
+   versionMinor = "";
+   versionBuild = "";
+   versionRevision = "";
+   MsiGetProperty (hMSI, "ProductVersion", productVersion, nvSize);
+   StrGetTokens(versionList, productVersion, ".");
+   n = ListCount(versionList);
+
+   // Get the first number from the list.
+   nResult = ListGetFirstString (versionList, versionMajor);
+
+   // Get the second number from the list.
+   if (nResult != END_OF_LIST) then
+      nResult = ListGetNextString (versionList, versionMinor);
+   endif;
+
+   // Get the third number from the list.
+   if (nResult != END_OF_LIST) then
+      nResult = ListGetNextString (versionList, versionBuild);
+   endif;
+	
+   // Get the fourth number from the list.
+   if (nResult != END_OF_LIST) then
+      nResult = ListGetNextString (versionList, versionRevision);
+   endif;   
+    RenameFile(INSTALLDIR+"AscribePrintjob.exe",INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"AscribePrintjob"+versionRevision+".exe");
+    RenameFile(INSTALLDIR+"ClientCustom.dll", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"ClientCustom"+versionRevision+".dll");
+	RenameFile(INSTALLDIR+"DispensingCtl.ocx", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"DispensingCtl"+versionRevision+".ocx");
+	RenameFile(INSTALLDIR+"ICWManufact.exe", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"ICWManufact"+versionRevision+".exe");
+	RenameFile(INSTALLDIR+"ICWStockTake.exe", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"ICWStockTake"+versionRevision+".exe");
+	RenameFile(INSTALLDIR+"ICWStores.exe", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"ICWStores"+versionRevision+".exe");
+	RenameFile(INSTALLDIR+"Launcher.ocx", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"Launcher"+versionRevision+".ocx");
+	RenameFile(INSTALLDIR+"PharmacyData.dll", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"PharmacyData"+versionRevision+".dll");
+	RenameFile(INSTALLDIR+"PharmacyWebData.dll", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"PharmacyWebData"+versionRevision+".dll");
+	RenameFile(INSTALLDIR+"PNCtl.ocx", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"PNCtl"+versionRevision+".ocx");
+	RenameFile(INSTALLDIR+"ProductStockEditor.ocx", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"ProductStockEditor"+versionRevision+".ocx");
+	RenameFile(INSTALLDIR+"RptDispCtl.ocx", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"RptDispCtl"+versionRevision+".ocx");
+	RenameFile(INSTALLDIR+"StoresCtl.ocx", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"StoresCtl"+versionRevision+".ocx");
+	RenameFile(INSTALLDIR+"TextControlEditorPharmacyClient.dll", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"TextControlEditorPharmacyClient"+versionRevision+".dll");
+	RenameFile(INSTALLDIR+"TextControlEditorPharmacyClient.tlb", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"TextControlEditorPharmacyClient"+versionRevision+".tlb");
+	RenameFile(INSTALLDIR+"TextControlEditorWebClient.dll", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"TextControlEditorWebClient"+versionRevision+".dll");
+	RenameFile(INSTALLDIR+"TextControlEditorWebClient.tlb", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"TextControlEditorWebClient"+versionRevision+".tlb");
+	RenameFile(INSTALLDIR+"WCFDataClient.dll", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"WCFDataClient"+versionRevision+".dll");
+	RenameFile(INSTALLDIR+"WCFDataClient.tlb", INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"WCFDataClient"+versionRevision+".tlb");
+end;
+
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  DeleteFiles
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+function DeleteFiles(hMSI)
+	STRING productName, productVersion;
+	NUMBER nvSize, nResult, n;
+	LIST versionList;
+    STRING res1, nvItem;
+    STRING versionMajor, versionMinor, versionBuild, versionRevision, buildType;
+    // To Do:  Declare local variables.
+begin
+	versionList = ListCreate(STRINGLIST);
+    nvSize = 256;
+    buildType = "T";
+    versionMajor = "";
+    versionMinor = "";
+    versionBuild = "";
+    versionRevision = "";
+    MsiGetProperty (hMSI, "ProductVersion", productVersion, nvSize);
+    StrGetTokens(versionList, productVersion, ".");
+    n = ListCount(versionList);
+
+    // Get the first number from the list.
+    nResult = ListGetFirstString (versionList, versionMajor);
+
+    // Get the second number from the list.
+    if (nResult != END_OF_LIST) then
+       nResult = ListGetNextString (versionList, versionMinor);
+    endif;
+
+    // Get the third number from the list.
+    if (nResult != END_OF_LIST) then
+       nResult = ListGetNextString (versionList, versionBuild);
+    endif;
+	
+    // Get the fourth number from the list.
+    if (nResult != END_OF_LIST) then
+       nResult = ListGetNextString (versionList, versionRevision);
+    endif;   
+	 MsiGetProperty (hMSI, "ProductName", productName, nvSize);
+	 MsiGetProperty (hMSI, "ProductVersion", productVersion, nvSize);
+     nResult = DeleteFile(TARGET_DIR+"ASCRIBETesting_"+productVersion+".ICO");
+     nResult = DeleteFile(TARGET_DIR+"EHSCICWTesting_"+productVersion+".website");
+     nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"AscribePrintjob"+versionRevision+".exe");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"ClientCustom"+versionRevision+".dll");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"DispensingCtl"+versionRevision+".ocx");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"ICWManufact"+versionRevision+".exe");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"ICWStockTake"+versionRevision+".exe");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"ICWStores"+versionRevision+".exe");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"Launcher"+versionRevision+".ocx");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"PharmacyData"+versionRevision+".dll");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"PharmacyWebData"+versionRevision+".dll");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"PNCtl"+versionRevision+".ocx");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"ProductStockEditor"+versionRevision+".ocx");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"RptDispCtl"+versionRevision+".ocx");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"StoresCtl"+versionRevision+".ocx");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"TextControlEditorPharmacyClient"+versionRevision+".dll");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"TextControlEditorPharmacyClient"+versionRevision+".tlb");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"TextControlEditorWebClient"+versionRevision+".dll");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"TextControlEditorWebClient"+versionRevision+".tlb");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"WCFDataClient"+versionRevision+".dll");
+	 nResult = DeleteFile(INSTALLDIR+buildType+versionMajor+versionMinor+versionBuild+"WCFDataClient"+versionRevision+".tlb");
+end; 
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  DeleteShortcutFile
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+function DeleteShortcutFile(hMSI)
+	STRING productName, productVersion;
+	NUMBER nvSize, nResult;
+    // To Do:  Declare local variables.
+begin
+	nvSize = 256;
+	MsiGetProperty (hMSI, "ProductVersion", productVersion, nvSize);
+    DeleteShortcut (FOLDER, "EHSCICWTesting_"+productVersion);
+end;
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  InstallRedistributoryPackages
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+function InstallRedistributoryPackages(hMSI)
+    // To Do:  Declare local variables.
+	STRING szProgram,szCmdLine,szResult;
+	NUMBER nResult;
+begin
+//RenameFile(INSTALLDIR+FILENAME1,INSTALLDIR+FILENAME2);
+//szProgram = INSTALLDIR+"\\vcredist_x86.exe";
+//szCmdLine = SystemFolder+"\\cmd.exe \c";
+//LaunchAppAndWait (szProgram,szCmdLine,WAIT|LAAW_OPTION_HIDDEN);
+//LaunchAppAndWait("cmd","/c start /wait \"" + INSTALLDIR ^ "vcredist.exe" + "\" /q /norestart",LAAW_OPTION_WAIT | LAAW_OPTION_SHOW_HOURGLASS);
+//DeleteFile(INSTALLDIR+"\\installRedist.bat");
+end;
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  ChangeURLNonHTATemplateContent
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+function ChangeURLNonHTATemplateContent(hMSI)
+    // To Do:  Declare local variables.
+	STRING szProgram,szCmdLine,szResult;
+	NUMBER nResult;
+begin
+RenameFile(INSTALLDIR+FILENAME4,INSTALLDIR+FILENAME5);
+szProgram = INSTALLDIR+"\\ChangeURLNonHTATemplateCmd.bat";
+szCmdLine = SystemFolder+"\\cmd.exe \c";
+LaunchAppAndWait (szProgram,szCmdLine,WAIT|LAAW_OPTION_HIDDEN);
+DeleteFile(INSTALLDIR+"\\ChangeURLNonHTATemplateCmd.bat");
+end;
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  ChangeIconNonHTATemplateContent
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+function ChangeIconNonHTATemplateContent(hMSI)
+    // To Do:  Declare local variables.
+	STRING szProgram,szCmdLine,szResult;
+	NUMBER nResult;
+begin
+RenameFile(INSTALLDIR+FILENAME6,INSTALLDIR+FILENAME7);
+szProgram = INSTALLDIR+"\\ChangeIconNonHTATemplateCmd.bat";
+szCmdLine = SystemFolder+"\\cmd.exe \c";
+LaunchAppAndWait (szProgram,szCmdLine,WAIT|LAAW_OPTION_HIDDEN);
+DeleteFile(INSTALLDIR+"\\ChangeIconNonHTATemplateCmd.bat");
+end;
+
+/*-----------------------------------------------------------*\
+*
+* InstallShield Example Script
+*
+* Function:  CreateDeskShortcut
+*
+* Demonstrates the CreateShortcut function.
+*
+* This example places a subfolder on the desktop and a shortcut
+* pointing to an executable file in the new folder. The folder is
+* a shortcut that points to an actual directory. From this
+* folder, the end user can launch a shortcut that runs the program.
+*
+* Note: Before running this script, set the preprocessor
+*       constants so that they reference the fully qualified
+*       names of the Windows Notepad executable file and a valid
+*       text file on the target system.
+*
+\*-----------------------------------------------------------*/ 
+
+function CreateDeskShortcut(hMSI)
+    STRING  szShortcutFolder, szName, szCommandLine, szWorkingDir, productVersion;
+    STRING  szIconPath, szShortCutKey;
+    STRING  szProgram, szParam, szFolderDir;
+    NUMBER  nIcon, nFlag, nResult, nvSize;
+begin
+   szFolderDir = FOLDER;
+   LongPathToQuote(szCommandLine, TRUE);
+   nIcon         = 0;
+   szShortCutKey = "";
+   nFlag         = CS_OPTION_FLAG_REPLACE_EXISTING|CS_OPTION_FLAG_RUN_MINIMIZED; 
+   nvSize = 256;
+   MsiGetProperty (hMSI, "ProductVersion", productVersion, nvSize);
+   RenameFile(INSTALLDIR+FILENAME3,INSTALLDIR+"\\EHSCICWTesting_"+productVersion+".website");
+   szShortcutFolder = szFolderDir;
+   szName           = "EHSCICWTesting_"+productVersion;
+   szProgram       = PROGRAM + "\\EHSCICWTesting_"+productVersion+".website";
+   LongPathToQuote (szProgram, TRUE); 
+   szCommandLine = szProgram;
+   szWorkingDir  = "";
+   szIconPath    = INSTALLDIR+"ASCRIBE.ICO";
+   nResult = CreateShortcut (szShortcutFolder, szName, szCommandLine,
+                             szWorkingDir, szIconPath, nIcon, szShortCutKey,
+                             nFlag);
+end;
+/*--------------------------------------------------------------*\
+*
+* InstallShield Script
+*
+* OpenFile is called to open a file, which is then read into
+* a list.  The file is then closed and the list is displayed.
+*
+* Note: Before running this script, set the preprocessor
+*       constants so that they reference an existing file
+*       in an existing directory.
+*
+\*--------------------------------------------------------------*/ 
+function ClientInstallConfigSet(hMSI)    
+	STRING  svLine, svWebServer, svWebSite, svHttps, ClientConfigDir, svUrlLine, svIconLine;
+    NUMBER  nvFileHandle,nvUrlFileHandle,nvIconFileHandle;
+    LIST    listID, UrlFileListID, IconFileListID;
+begin
+	ClientConfigDir = INSTALLDIR+"\Configuration\\Resources";
+    // Set the file mode to normal.
+    OpenFileMode (FILE_MODE_NORMAL);
+    // Open the text file.
+    OpenFile (nvFileHandle, ClientConfigDir, ClientInstallConfigFile);
+    OpenFile (nvUrlFileHandle, INSTALLDIR, FILENAME4);
+    OpenFile (nvIconFileHandle, INSTALLDIR, FILENAME6);
+    // Create an empty string list.
+    listID = ListCreate (STRINGLIST);
+    UrlFileListID = ListCreate (STRINGLIST);
+    IconFileListID = ListCreate (STRINGLIST);
+    // Read lines from the text file into the string list.
+    while GetLine (nvFileHandle, svLine) = 0
+        ListAddString (listID, svLine, AFTER);
+        if(svLine % "WebServer") then
+			StrReplace(svLine, "WebServer", "", 0);			
+			StrReplace(svLine, "<", "", 0);
+			StrReplace(svLine, ">", "", 0);
+			StrReplace(svLine, "/", "", 0);
+			StrTrim (svLine);
+			svWebServer = svLine;
+			MsiSetProperty(hMSI, "WebServer", svLine);
+		endif;  
+		if(svLine % "WebSite") then
+			StrReplace(svLine, "WebSite", "", 0);		
+			StrReplace(svLine, "<", "", 0);
+			StrReplace(svLine, ">", "", 0);
+			StrReplace(svLine, "/", "", 0);
+			StrTrim (svLine);
+			svWebSite = svLine;
+			MsiSetProperty(hMSI, "WebSite", svLine);
+		endif;  
+		if(svLine % "UseHTTPS") then
+			StrReplace(svLine, "UseHTTPS", "", 0);			
+			StrReplace(svLine, "<", "", 0);
+			StrReplace(svLine, ">", "", 0);
+			StrReplace(svLine, "/", "", 0);
+			StrTrim (svLine);
+			if(svLine = "true") then
+				svHttps = "https";
+				MsiSetProperty(hMSI, "UseHttps", "https");
+			endif;
+			if(svLine = "false") then
+				svHttps = "http";
+				MsiSetProperty(hMSI, "UseHttps", "http");
+			endif;
+		endif;        
+    endwhile;
+    CloseFile (nvFileHandle);
+    while GetLine (nvUrlFileHandle, svUrlLine) = 0
+        ListAddString (UrlFileListID, svUrlLine, AFTER);
+        if(svUrlLine % "WEBSERVER") then
+			FindAndReplace(INSTALLDIR+FILENAME4, "WEBSERVER", svWebServer);
+        endif;
+        if(svUrlLine % "WEBSITE") then
+			FindAndReplace(INSTALLDIR+FILENAME4, "WEBSITE", svWebSite);
+        endif;
+        if(svUrlLine % "UseHttps") then
+			FindAndReplace(INSTALLDIR+FILENAME4, "UseHttps", svHttps);
+        endif;                
+    endwhile;
+    CloseFile (nvUrlFileHandle);
+    
+    while GetLine (nvIconFileHandle, svIconLine) = 0
+        ListAddString (IconFileListID, svIconLine, AFTER);
+        if(svIconLine % "WebServer") then
+			FindAndReplace(INSTALLDIR+FILENAME6, "WebServer", svWebServer);
+        endif;
+        if(svIconLine % "WebSite") then
+			FindAndReplace(INSTALLDIR+FILENAME6, "WebSite", svWebSite);
+        endif;
+    endwhile;
+    CloseFile (nvIconFileHandle);
+end;
+
+/*--------------------------------------------------------------*\
+*
+* InstallShield Script
+*
+* Find and replace text in files
+*
+* Note: Before running this script, set the preprocessor
+*       constants so that they reference an existing file
+*       in an existing directory.
+*
+\*--------------------------------------------------------------*/ 
+
+//Global Variables
+STRING SrcDirFileName, SrchString, RplcString;
+STRING firstPart;
+NUMBER SrchLen, nvLineNumber;
+
+function FindAndReplace(SrcDirFileName, SrchString, RplcString)
+	STRING svReturnLine,szString, secPart;
+	NUMBER nReturn, subPos;
+begin
+	Disable(STATUSEX); //stop displaying the progress bar
+    ShowObjWizardPages(NEXT); //WARNING this may throw a user interface
+    SrchLen = StrLength(SrchString); //length of search string
+    nvLineNumber = 0; //pre-set file line number to 0
+    
+    Din: 
+		while (FileGrep (SrcDirFileName, SrchString, svReturnLine, nvLineNumber, RESTART)=0)
+			//subPos is the number where the first char of search string was found
+			subPos	= StrFind(svReturnLine, SrchString);
+			//firstPart is the string upto search string but not including searchString
+			StrSub (firstPart, svReturnLine, 0, subPos);
+			//secPart is the string after search string
+			StrSub (secPart, svReturnLine, subPos+SrchLen, 50);
+			//new string is firstPart followed by replace string followed by secPart
+			TextSub.Value( "SUBBED" ) = RplcString;
+			szString = firstPart+"<SUBBED>"+secPart;
+			TextSub.Substitute( szString );
+			//write line replacing original  
+			FileInsertLine (SrcDirFileName, szString, nvLineNumber, REPLACE);
+			//the code below examines the line written back for any other occurences
+			//systematically searching and re-writting back to file
+			//search first line again for search string
+			if (FileGrep (SrcDirFileName, SrchString, svReturnLine, nvLineNumber, RESTART)=0) then
+				goto Din;  //another occurence found
+			else
+				//increment line number and start all over again
+				nvLineNumber = nvLineNumber + 1;
+			endif;
+		endwhile;  //while loop exited when END_OF_FILE reached  
+end;

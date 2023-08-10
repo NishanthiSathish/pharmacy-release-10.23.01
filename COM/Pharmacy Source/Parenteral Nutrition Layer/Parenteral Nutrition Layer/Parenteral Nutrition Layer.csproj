@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04ACB4B1-DEBF-447A-8C72-2FCE39D94AD2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ascribe.pharmacy.parenteralnutritionlayer</RootNamespace>
+    <AssemblyName>Parenteral Nutrition Layer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/Parenteral Nutrition Layer/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ascribe.Xml">
+      <HintPath>..\..\..\..\Web\bin\Ascribe.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Shared, Version=1.0.1.1, Culture=neutral, PublicKeyToken=2b6ddfa35a99ec24, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Web\bin\Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TRNRTL10, Version=1.0.1.1, Culture=neutral, PublicKeyToken=6643d4b36fa2aec3, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Web\bin\TRNRTL10.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PNDssCustomisation.cs" />
+    <Compile Include="PNPrescriptionProductVolume.cs" />
+    <Compile Include="PNRulePrescriptionProforma.cs" />
+    <Compile Include="PNStandardRegimenPNCodeVolume.cs" />
+    <Compile Include="PNBlackboard.cs" />
+    <Compile Include="PNPrintProcessor.cs" />
+    <Compile Include="PNRegimenProductVolume.cs" />
+    <Compile Include="PNDoubleExtension.cs" />
+    <Compile Include="PNIngDBNames.cs" />
+    <Compile Include="PNIngredient.cs" />
+    <Compile Include="PNLog.cs" />
+    <Compile Include="PNPrescription.cs" />
+    <Compile Include="PNProcessor.cs" />
+    <Compile Include="PNProduct.cs" />
+    <Compile Include="PNRegimen.cs" />
+    <Compile Include="PNRegimenItem.cs" />
+    <Compile Include="PNRule.cs" />
+    <Compile Include="PNSettings.cs" />
+    <Compile Include="PNStandardRegimen.cs" />
+    <Compile Include="PNSupplyRequest.cs" />
+    <Compile Include="PNUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Base Data Layer\Base Data Layer.csproj">
+      <Project>{1E425244-912E-4C6F-A313-E636311F34A6}</Project>
+      <Name>Base Data Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Layer\Business Layer.csproj">
+      <Project>{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}</Project>
+      <Name>Business Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ICW Data Layer\ICW Data Layer.csproj">
+      <Project>{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}</Project>
+      <Name>ICW Data Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pharmacy Data Layer\Pharmacy Data Layer.csproj">
+      <Project>{5882B905-230A-4EA2-B4BE-81331C68804C}</Project>
+      <Name>Pharmacy Data Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pharmacy Shared\Pharmacy Shared.csproj">
+      <Project>{6A3007BE-808C-4570-B488-1892B85B0322}</Project>
+      <Name>Pharmacy Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Report Layer\Report Layer.csproj">
+      <Project>{B8F185EC-D6BA-4FE8-8DD2-F4C44BAE2906}</Project>
+      <Name>Report Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if (%25COMPUTERNAME%25)==(CORE-TFSBuild) "C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\signtool.exe" sign /a /t "http://timestamp.comodoca.com/authenticode" /v "$(ProjectDir)\obj\Release\$(TargetFileName)"
+if (%25COMPUTERNAME%25)==(CORE-TFSBuild2) "C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\signtool.exe" sign /a /t "http://timestamp.comodoca.com/authenticode" /v "$(ProjectDir)\obj\Release\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,21 @@
+﻿Imports System.Web.Services
+Imports System.Web.Services.Protocols
+Imports System.ComponentModel
+Imports System.Configuration
+
+<System.Web.Services.WebService(Namespace:="http://www.ascribe.com/")> _
+<System.Web.Services.WebServiceBinding(ConformsTo:=WsiProfiles.BasicProfile1_1)> _
+<ToolboxItem(False)> _
+Public Class ClientConnection
+    Inherits System.Web.Services.WebService
+
+    <WebMethod()> _
+    Public Function GetConnectionString(byval sessionId As Integer, ByVal token As String) As String
+
+        If (secrtl_c.TokenGenerator.ValidateToken(token, sessionId)) Then
+            Return ConfigurationManager.ConnectionStrings("TRNRTL10.My.MySettings.ConnectionString").ConnectionString
+        End If
+        Return String.Empty
+    End Function
+
+End Class

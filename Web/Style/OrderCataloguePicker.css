@@ -1,0 +1,24 @@
+.divScrollBackground
+{
+    BORDER-RIGHT: gray 3px double;
+    BORDER-TOP: gray 3px double;
+    BORDER-LEFT: gray 3px double;
+    BORDER-BOTTOM: gray 3px double;
+    BACKGROUND-COLOR: white
+}
+.trRowHighLighted
+{
+    COLOR: white;
+    BACKGROUND-COLOR: #00599c
+}
+.tdItemSelected
+{
+    COLOR: #b3b3b3;
+    FONT-STYLE: italic
+}
+
+#tblList td
+{
+	vertical-align:top;
+	border-bottom:#e0e0e0 1px solid;
+}

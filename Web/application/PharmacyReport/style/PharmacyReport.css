@@ -1,0 +1,22 @@
+﻿body
+{
+	background-color: #4982af;
+    background-repeat:repeat-x;
+    background-image:url('../../../images/background_gradient.gif');
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;            
+}
+
+.container
+{
+    background: #ffffff;
+    border: 1px black solid;
+    position: fixed;
+    bottom:25px;
+    left:15px;
+    right:15px;
+    top:46px;
+}

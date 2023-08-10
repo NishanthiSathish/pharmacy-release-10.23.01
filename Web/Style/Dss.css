@@ -1,0 +1,278 @@
+
+/*All Table Cells*/
+td
+{
+	font-size:10pt;
+	padding-left:8px;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-right:8px;
+	height:20px;
+}
+
+/*Table cells which are children of Header Rows*/
+.ResultsTableHeader td
+{
+	background-color:#4682b4;
+	color:#ffffff;
+	border-top:#7EA9CE 1px solid;
+	border-bottom:#335A7B 1px solid;
+	border-left:#7EA9CE 1px solid;
+	border-right:#335A7B  1px solid;
+	font-weight:bold;
+	height:20px;
+}
+
+
+/*Table cells which are children of the Calculation Result row*/
+
+.CalculationResultsHeader td
+{
+	background-color:#B51B04;
+	color:#ffffff;
+	border-top:#FDAC86 1px solid;
+	border-bottom:#440B02 1px solid;
+	border-left:#FDAC86 1px solid;
+	border-right:#440B02  1px solid;
+	font-weight:bold;
+}
+
+/*Table cells which are children of Dose range checking Product title rows. */
+/*Borders/background not working AAAAAAGH */
+.ProductResultsHeader
+{
+	color:red;
+	background-color:#B51B04;
+	border-top:#FDAC86 1px solid;
+	border-bottom:#440B02 1px solid;
+	border-left:#FDAC86 1px solid;
+	border-right:#440B02  1px solid;
+	font-weight:bold;
+}
+
+.ProductResultsHeader span
+{
+	font-weight:bolder;
+}
+
+
+/* Table cells which are children of broken rule rows */
+.ErrorHeader td
+{
+	background-color:#B51B04;
+	color:#ffffff;
+	border-top:#FDAC86 1px solid;
+	border-bottom:#440B02 1px solid;
+	border-left:#FDAC86 1px solid;
+	border-right:#440B02  1px solid;
+	font-weight:bold;
+}
+
+/* Header for "the following rules could not be evaluated */
+.UnevaluatedRuleHeader td
+{
+	font-weight:bold;
+	color:#ff0000;
+}
+
+/*Description of each unevaluated rule */
+.UnevaluatedRule
+{
+	font-weight:bold;
+}
+
+/* Table which holds the list of routine outputs in each Unevaluated rule cell */
+.UnevaluatedRuleTable
+{
+	width:100%;
+	border-top:#c0c0c0 1px solid; 
+	border-left:#c0c0c0 1px solid	
+}
+
+/*Table cell which holds the formula (eg "10mg/kg") */
+.FormulaCell
+{
+	font-size:12pt;
+	background-color:#ffffff;
+}
+
+/*Table cell which holds the result of the calculation*/
+.CalculationResultCell
+{
+	font-size:12pt;
+	font-weight:bold;
+	background-color:#ffffff;
+}
+
+/*Cells in the table which lists the output detail*/
+.OutputTable tbody tr td
+{
+	background-color:#ffffff;
+	border: #c0c0c0 1px solid;
+	border-top:none;
+	border-left:none;
+}
+
+/*Cells in tables nested within the tables above.  No border wanted here*/
+.OutputTable tbody tr td table tbody tr td
+{
+	background-color:#ffffff;
+	border:none
+}
+
+/*Severity warning cells */
+.SeverityCell
+{
+	height:20px;
+	width:20px;
+}
+
+.SeverityCell img
+{
+	height:16px;
+	width:16px;
+}
+
+
+/* Frequency warning title and description cells */
+.FrequencyWarningCell
+{
+	font-weight:bold;
+}
+
+
+/* Dose warning title and description cells */
+.DrugWarningCell
+{
+	font-weight:bold;
+}
+
+
+/* Text at the bottom of the dose range warnings page ("...this includes related prescriptions...") */
+.WarningFooter
+{
+	font-weight:bold;
+	color:#ff0000;
+}
+
+/* Width styles: these are to ensure that the title bar of the scrolling table
+	has the same width as the cells within it.  Don't put anything except width 
+	styles in these!																				 */
+.Width_ItemCell				{width:45%;}
+.Width_ValueCell				{width:25%;}
+.Width_DateCell				{width:20%;}
+.Width_ButtonCell				{width:10%;}
+
+/*Other styles for the output cells*/
+/*Table cell which holds a routine name*/
+.OtherStyles_ItemCell
+{
+
+}
+
+
+/*Table cell which holds a routine value*/
+.OtherStyles_ValueCell
+{
+
+}
+
+
+/*Table cell which holds a routine date*/
+.OtherStyles_DateCell
+{
+	border-left: #c0c0c0 1px solid;
+}
+
+/*Style applied to the row when it is considered out-of-date*/
+.OutOfDate td
+{
+	color:red;
+	font-weight:bold;
+}
+
+/* The "Hints" span */
+.HintLink
+{
+	text-decoration:underline;
+	cursor:hand;
+	font-size:10pt;
+	font-weight:normal;
+}
+
+button td
+{
+	background-color:#B5CFFF;
+	border:none;
+	padding:0px;
+	padding-right:1px;
+}
+/*-----------------------------------------------------------------------------------------*/
+/* Dss Term Picker */
+
+.ProblemPicker
+{
+	overflow:hidden;
+}
+
+.ProblemPicker .Results td
+{
+	height:100%;
+	border: #000000 1px solid;
+}
+
+.ProblemPicker select
+{
+	height:100%;
+	width:100%;
+}
+
+
+
+
+/* Episode Info Panel */
+
+.pageHeader td
+{
+	
+	background-color:#ffffff;
+}
+
+#tdInfo td
+{
+	border-top:#00599c 1px solid;
+	border-left:#00599c 1px solid;
+	border-right:#00599c 1px solid;
+	background-color:#ffffff;
+}
+
+.pageHeader .AttrName
+{
+	font-weight:bold;
+	border:none;
+}
+
+.pageHeader .AttrValue
+{
+	padding-right:5px;
+	border:none;
+}
+
+.overrideHeadingCell
+{
+	padding-left:12px;
+	font-weight:bold;
+	font-size:10pt;
+}
+
+.overrideDescriptionCell
+{
+	padding-left:10px;
+	font-size:10pt;
+}
+
+.overrideFreeTextCell
+{
+	padding-left:12px;
+	font-size:8pt;
+}

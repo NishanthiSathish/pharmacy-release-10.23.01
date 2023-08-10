@@ -1,0 +1,50 @@
+﻿.ViewList
+{
+    background: #EFEFF7; 
+    border-right-style: inset; 
+    border-right-width: thick;    
+}
+
+.ViewHeader
+{
+    padding: 10px;
+    font-size: 18px;
+    color: #73617B;
+}
+
+.ViewList button
+{
+    vertical-align: middle;
+    text-align: left;
+    font-size: 14px;
+    background: #EFEFF7; 
+    height: 25px; 
+    width: 100%;
+    border: none;
+    color: #426DCE;
+    padding-left: 10px;
+    cursor:hand;
+}
+
+.ViewList .ViewListSelected
+{
+    background: #BDCFEF;
+    color: black;
+}
+    
+.titleProduct
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+    
+.titleLabel
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+    
+.titleValue
+{
+    font-size: 12px;
+}

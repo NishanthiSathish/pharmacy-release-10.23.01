@@ -1,0 +1,793 @@
+﻿
+/* SHARED */
+/* F0067381 PCannavan - added SINGLEPATIENT version of rvGridView, rvGridContainer, rvAppContent for
+patient mode specific styling */
+BODY
+{
+    overflow:           hidden; /* gets rid of the blue background for where the scrollbar would sit! */
+    height:             100%;
+    padding:5px;
+    border-width:       1px;
+}
+
+H2 
+{
+    font-size:          12pt;
+    border-bottom:      solid 1px black;
+}
+
+HR
+{
+    height:             1px;
+    color:              #366C8E;
+}
+
+.rvGridViewSINGLEPATIENT LABEL, .rvGridViewMULTIPATIENT LABEL, #rvPatientView LABEL, #rvResultDetailView LABEL,
+#rvFilterView LABEL, #rvResultCancellationView LABEL
+{
+    font-weight:        bold;
+    white-space:        nowrap;
+}
+
+
+/* stretch all containers to fill the space */
+.rvGridViewSINGLEPATIENT, .rvGridViewMULTIPATIENT, #rvTreeView, #rvQuickSearchView,
+#rvFilterView, #rvLoggerView, #rvPatientView, #rvResultDetailView, #rvResultCancellationView
+{
+    width:              100%;
+    height:             100%;
+}
+
+.rvAppHeader, .rvAppContent, #notesSection TD
+{
+    border:             solid #366C8E 1px;
+    padding:            5px;
+}
+
+.rvAppHeader
+{
+    background-color:   #4083B0;
+    color:              White;
+    font-weight:        bold;
+    height:             30px;
+}
+
+#notesSection TD
+{
+    border-top:         0px;
+    vertical-align:     top;
+}
+
+#rvResultCancellationView {
+	color: red;
+}
+
+#rvResultCancellationView .cancellationDescription{
+	color: red;
+}
+
+.rvAppContent
+{
+    background-color:   White;
+    border-top:         0px;
+    vertical-align:     top;
+    text-align:left;
+}
+
+.rvAppContentSINGLEPATIENT
+{
+    overflow:           auto;
+}
+
+.central
+{
+    text-align:         center;
+    vertical-align:     middle;
+}
+
+.loadingText
+{
+    padding-top:        7px;
+}
+
+.resultHeader
+{
+    height:20px;
+}
+
+.patientDetailsBanner
+{
+    color:White;
+    display:inline-block;
+    float:left;
+}
+
+.frameNotExpanded, .frameExpanded
+{
+    background-repeat:      no-repeat;
+    float:                  right;
+    width:                  25px;
+    height:                  25px;
+    cursor:                 hand;
+    background-position:    right;
+    text-align:             left;
+    display:inline;
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+.frameNotExpanded
+{
+    background-image:       url('../application/ResultsViewer/Images/expand_small.png');    
+}
+
+.frameExpanded
+{
+    background-image:       url('../application/ResultsViewer/Images/contract_small.png');
+}
+
+
+.filterWarning
+{
+    border:             solid 1px red;
+}
+
+.filterTextField
+{
+    width:              165px;
+}
+
+.filterNumberField
+{
+    width:              50px;
+}
+
+.filterLookupButton
+{
+    width:              20px;
+}
+
+.highVisibilityButton
+{
+    background-color:   Blue;
+    color:              White;
+    font-weight:        Bold;
+    border:             black 1px solid;
+    font-size:          9pt;
+    width:              60px;
+    padding:            2px;
+}
+
+/* F0067381 PCannavan - highlight search button upon changes to filter criteria */
+.highVisibilityButtonHighlight
+{
+    background-color:   Blue;
+    color:              Blue;
+    font-weight:        Bold;
+    border:             black 1px solid;
+    font-size:          9pt;
+    width:              60px;
+    padding:            2px;
+    background-image:   url('../application/ResultsViewer/Images/throb.gif');
+    background-repeat:  repeat-x;
+}
+
+#txtDaysPrevFilter
+{
+    width:              30px;
+}
+
+
+#rvTreeView #catalogTree {
+    margin-left:-17px;
+}
+
+
+#rvTreeView #rvTreeContainer
+{
+    width:              100%;
+    height:             100%;
+    overflow:           auto;
+}
+
+#rvTreeView UL {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#catalogTree UL {
+    /*background: url(../application/ResultsViewer/Images/Tree/lineStraight.gif) repeat-y;*/
+}
+   
+
+/* defines the area where the nodes can be expanded/collapsed (+/-) */
+.hitArea 
+{
+    background: url(../application/ResultsViewer/Images/Tree/plusTopBottomRight.gif) no-repeat;
+    cursor:pointer;
+}
+
+.expandible .hitArea .topBottomRight {
+    background: url(../application/ResultsViewer/Images/Tree/plusTopBottomRight.gif) no-repeat;
+}
+
+.expandible .hitArea .topRight {
+    background: url(../application/ResultsViewer/Images/Tree/plusTopRight.gif) no-repeat;
+}
+
+.expandible .hitArea .right {
+    background: url(../application/ResultsViewer/Images/Tree/plusRight.gif) no-repeat;
+}
+
+.collapsible .hitArea .topBottomRight {
+    background: url(../application/ResultsViewer/Images/Tree/minusTopBottomRight.gif) no-repeat;
+}
+
+.collapsible .hitArea .topRight {
+    background: url(../application/ResultsViewer/Images/Tree/minusTopRight.gif) no-repeat;
+}
+
+.collapsible .hitArea .right {
+    background: url(../application/ResultsViewer/Images/Tree/minusRight.gif) no-repeat;
+}
+
+#catalogTree LI {
+     margin: 0px;
+     padding: 0px 14px;
+     font-size: 8pt;
+     line-height: 18px;
+     /*background: url(../application/ResultsViewer/Images/Tree/lineTopBottomRight.gif) no-repeat;*/
+     white-space:nowrap;
+}
+
+#catalogTree LI.expandible {
+     /*background: url(../application/ResultsViewer/Images/Tree/plusRight.gif) no-repeat;*/
+}
+
+#catalogTree LI.collapsible {
+     /*background: url(../application/ResultsViewer/Images/Tree/minusRight.gif) no-repeat;*/
+}
+
+#catalogTree LI SPAN INPUT
+{
+     background-color: White;
+     padding-right: 5px;
+}
+
+#catalogTree LI LABEL 
+{
+     margin-left: 5px;
+     padding: 2px 2px;
+}
+
+#catalogTree LI LABEL SPAN
+{
+     padding-left: 15px;
+     /*background: url(/ICW/application/ResultsViewer/Images/Tree/iconUncheckAll.gif) no-repeat;*/
+}
+
+#catalogTree LI.last {
+    /*background: #fff url(../application/ResultsViewer/Images/Tree/lineTopRight.gif) no-repeat;*/
+}
+
+#catalogTree LI SPAN.activeNode
+{
+    background-color:   #2D69C4;
+    color:              White;
+}
+
+#catalogTree .hasNodes
+{
+    font-weight:        bold;   
+}
+
+
+/* QUICK SEARCH */
+#rvQuickSearchView BUTTON
+{
+    padding:                1px 1px 1px 9px;
+    background-position:    2px 1px;
+    background-repeat:      no-repeat;
+    background-color:       #b5cfff;
+    width:                  78px;
+}
+
+#btnCreateQS
+{
+    background-image:         url('/ICW/application/ResultsViewer/Images/QuickSearch/add.png');
+}
+
+#btnUpdateQS
+{
+    background-image:         url('/ICW/application/ResultsViewer/Images/QuickSearch/disk.png');
+}
+
+#btnDeleteQS
+{
+    background-image:         url('/ICW/application/ResultsViewer/Images/QuickSearch/cross.png');
+}
+
+/* END QUICK SEARCH */
+
+
+
+
+
+
+
+
+/* GRID */
+
+/* F0067381 PCannavan - styling for header version of result grid*/
+.clone
+{    
+    border-top: solid 0px black;
+    border-bottom: solid 0px black;
+    border-right: solid 0px black;
+    border-left: solid 0px black;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px; 
+    padding-top: 0px;
+    margin-top: 0px;
+    border-collapse:collapse; 
+    text-align:left;
+}
+
+
+/* F0067381 PCannavan - SINGLE and MULIT patient versions of header and grid to style according to patient mode */ 
+.headerRowMULTIPATIENT
+{
+    visibility:visible;
+    height:0px;
+    border: solid 0px black;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px; 
+    border-collapse:separate; 
+}
+
+.headerRowSINGLEPATIENT
+{
+    visibility:visible;
+}
+
+.gridBodyMULTIPATIENT
+{
+    visibility:visible;
+    height:0px;
+    border: solid 0px black;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;   
+}
+
+.gridBodySINGLEPATIENT
+{
+    visibility:visible; 
+}
+
+.rvGridContainer
+{
+    margin:             0px 5px 30px 5px;
+    border-collapse:separate;
+    padding:            0px;
+
+}
+
+.noDataForResult
+{
+    font-size:          8pt;
+    font-style:         italic;
+}
+
+#rvGridView
+{
+    text-align:         left;
+    width:              100%;
+    height:             100%;
+    overflow:           auto;
+}
+
+.rvGridViewSINGLEPATIENT
+{
+    height:             100%;
+    overflow:           auto;
+}
+
+.gridRowMULTIPATIENT
+{
+    background-color:#2D69C4;
+    color:White;
+}
+
+#rvGridsContainer
+{
+    text-align:         left;
+    width:              100%;
+    height:             100%;
+    
+}
+
+.rvGridsContainerSINGLEPATIENT
+{
+    overflow: auto;    
+}
+
+.pendingTable
+{
+    text-align:         right;
+    float:              right;   
+}
+
+
+#rvGridsSubContainer
+{
+    text-align:         left;
+    width:              100%;
+ 
+}
+
+TABLE.tabularData
+{
+    border-collapse:separate;
+}
+
+.rvGrid
+{
+    padding:            0px;
+    margin-top:         0px;
+}
+.tabularData TD
+{
+    padding:            5px;
+    text-align:         left;
+    font-size:          8pt;
+    border-left:        solid 0px black;
+    border-top:         solid 0px black;
+    border-right:       solid 1px black;
+    border-bottom:      solid 1px black;
+}
+
+.tabularData TH
+{
+    padding:            5px;
+    text-align:         left;
+    font-size:          8pt;
+    /*border-left:        solid 1px black;*/
+    border-top:         solid 1px black;
+    border-top-width:   1px;
+    border-right:       solid 1px black;
+    border-bottom:      solid 1px black;
+    border-bottom-width:   1px;
+    background-color:   #d6e3ff;
+    font-weight:        bold;
+    padding-left:       6px;
+    padding-right:      6px;
+    white-space:        nowrap;
+}
+
+.tabularData thead
+{
+    border-top-width:   0px;
+    border-bottom-width:   0px;   
+    padding:            0px;
+    margin: 0px;
+}
+
+.tabularData TH, .tabularData TD
+{
+    cursor:             hand;
+    
+}
+
+.tabularData TD:hover
+{
+    background-color : #347BE5;
+}
+
+.tabularData .NC, .rvGrid .mVal, .rvGrid .pVal
+{
+    cursor:             default;
+}
+
+.tabularData .byDateHeader {
+	background-color: #4083B0;
+	color: white;
+	font-size: 10pt;
+	border: none;
+	min-width: 200px;
+	font-weight: bold;
+}
+
+.tabularData .empty {
+	background-color: white;
+	border: none;
+	border-bottom: solid 1px black;
+}
+
+.tabularData .requestCell {
+	border-top: none;
+	border-bottom: none;
+}
+
+.tabularData .alternateRow {
+    background-color:   #d6e3ff;
+}
+
+.tabularData .header1 {
+	width: 200px;
+}
+
+.tabularData .header2 {
+	width: 150px;
+}
+
+.rvGrid
+{
+    
+    border-collapse:separate;    
+    /*border-bottom-width:1px;*/
+    padding:0px;
+    margin:0px;
+    
+}
+
+.rvGrid
+{
+
+/*    border-left:solid 1px black;*/
+    /*border-bottom-width:1px;*/
+
+    
+}
+
+.rvGrid .val
+{
+    line-height:        16px;
+    float:              left;    
+}
+
+.rvGrid .val.abnormalVal, .rvGrid .mVal, .rvGrid .pVal, .pendingString
+{
+    color:              red;
+    font-weight:        bold;
+}
+
+.rvGrid .abnormalResult, .rvGrid .hasNotesResult
+{
+    line-height:        16px;
+    padding-left:       5px;
+    float:              right;
+}
+
+/* Using the input definition instead of having a class on each td
+containing a checkbox, reduces data coming over the wire */
+.rvGrid .tabularData .mVal, .rvGrid .tabularData TD.action
+{
+    text-align:         center;
+}
+
+/* placing this here so the style isn't repeated every time there's a BR.
+This will reduce the amount of data coming over the wire when loaded in */
+.rvGrid .tabularData TD BR
+{
+    clear:              both;
+}
+
+/* F0067381 02.03.10 - P.Cannavan - used by an individual cell in the grid 
+to highlight there is further information obtained by clicking*/
+.cellHighlight
+{
+    /*background-color:   #FF8C00;*/
+    border-color:                   #E4C48B;
+    background-color:               #FFF8D3;
+    color:Black;
+}
+
+
+/* meta data about the upper and lower range for acceptable range */
+.rvGrid .range
+{
+    display:            none;
+}
+
+.tooltip
+{
+    border:             solid black 1px;
+    background-color:   #FFFFCC;
+    position:           absolute;
+    width:              250px;
+    height:             40px;
+    padding:            10px;
+    top:                0px;
+    left:               0px;
+    display:            none;
+}
+
+#patientDetails, #resultDetails
+{
+    width:              100%;
+    margin-top:         15px;
+}
+
+#resultDetails LABEL
+{
+    width:              120px;
+}
+
+.dialogButtonContainer
+{
+    vertical-align:     bottom;
+    text-align:         right;
+    padding-top:        10px;
+    padding-bottom:     10px;
+}
+
+.resultDetailTextReport, .resultDetailPreviousNotes, .resultDetailNewNote
+{
+    width:              100%;
+    overflow:           auto;
+    border:             solid 1px black;
+}
+
+.resultDetailTextReport, .resultDetailPreviousNotes
+{
+    padding:            5px;
+    background-color:   #F7F7F7;
+}
+
+.resultDetailTextReport
+{
+    margin-top:         10px;
+}
+
+.resultDetailPreviousNotes
+{
+    height:             140px;
+}
+
+.resultDetailNewNote
+{
+    height:             100px;
+}
+
+.resultDetailPreviousNotes, .resultDetailNewNote
+{
+    font-size:          8pt;
+    font-family:        Arial;
+}
+
+.resultDetailPreviousNotes div.dateAndWho
+{
+    font-style:         italic;
+    text-decoration:    underline;
+    padding-bottom:     5px;
+}
+
+.resultDetailPreviousNotes div.noteDetail
+{
+    padding-bottom:     20px;
+}
+
+.resultDetailNotesHeader
+{
+    background-repeat:      no-repeat;
+    float:                  right;
+    width:                  110px;
+    cursor:                 hand;
+    background-image:       url('../application/ResultsViewer/Images/Grid/stickyNote.gif');
+    background-position:    right;
+    font-weight:            normal;
+    font-style:             italic;
+    line-height:            16px;
+}
+
+.resultDetailNotesHidden
+{
+    display:                none;
+}
+
+.noNotesAttached
+{
+    font-style:         italic;
+}
+
+.resultsChartButtonSection
+{
+    background-repeat:      no-repeat;
+    float:                  left;
+    min-width:              75px;
+    cursor:                 hand;
+    background-position:    right;
+    text-align:             left;
+    margin-right:20px;
+}
+
+.resultsDisplayModeSection
+{
+    float:left;
+	margin-right: 10px;
+	margin-left:2px;
+}
+
+.resultsChartButton
+{
+    width:120px; background-image:url('../application/ResultsViewer/Images/Chart.png'); background-repeat:no-repeat; background-position:left center; padding-left:10px; margin-right:10px;
+}
+
+#displayModeSelect
+{
+	margin-left: 5px;
+}
+
+.componentSelectButton
+{
+    width:150px; margin-right:10px;
+}
+
+.allDataCellHeader
+{
+	font-weight: bold;
+}
+
+.resultsForDate 
+{
+	width: 100%;
+}
+
+.resultsForDate tr 
+{
+	border: none;
+}
+
+
+.resultsForDate td 
+{
+	width: 50%;
+	border: none;
+	vertical-align:auto;
+}
+
+.resultsByDate td {
+	vertical-align: text-top;
+}
+
+.tabularData .left {
+	border-left: solid 1px black;
+}
+
+.tabularData .right {
+	border-right: solid 1px black;
+}
+
+.tabularData .top {
+	border-top: solid 1px black;
+}
+
+.dVal
+{
+    white-space:nowrap;
+}
+
+.resultCancelled {
+	background-color: red;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+
+.resultCancelled div {
+	font-weight: bold;	
+}
+
+.cancellationShowOriginal {
+	float:left; 
+	cursor:pointer;
+	font-size: 120%;
+	text-decoration: underline;	
+}
+
+.cancelledGridText {
+	font-weight:bold;
+	text-align:center
+}

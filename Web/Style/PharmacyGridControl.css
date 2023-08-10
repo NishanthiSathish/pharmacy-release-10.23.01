@@ -1,0 +1,48 @@
+﻿.gridBody
+{
+    background-color: #ffffff
+}
+.gridTable
+{
+    background-color:   #ffffff;
+    table-layout:       fixed;
+    font-size:          10pt;
+}
+.gridHeader		
+{
+    background-image:   url(../images/grid/imp_grid_header.png);
+    background-repeat:  repeat;
+    background-position:center;
+    height:             20px;
+}
+
+.gridHeader	th
+{
+    border-right:   #335a7b 1px solid;
+    border-top:     #7ea9ce 1px solid;
+    border-left:    #7ea9ce 1px solid;
+    border-bottom:  #335a7b 1px solid;
+    font-weight:    bold;
+    color:          #ffffff;
+}    
+
+.gridTable td
+{
+    border-bottom:  #B2B2B2 1px solid;
+    min-height:     20px;
+    max-height:     500px;
+}
+
+.MultiSelect td
+{
+    background-color: #DEFFCC;
+}
+
+.Selected td
+{
+    background-color:   #D4FFBC;
+    border-bottom:      #4D9E1F 1px solid;
+    border-top:         #4D9E1F 1px solid;
+    min-height:         20px;
+    max-height:         500px;
+}

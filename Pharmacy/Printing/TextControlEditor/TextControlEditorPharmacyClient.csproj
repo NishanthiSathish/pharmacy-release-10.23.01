@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{511E470D-3F2B-4CB3-9624-B41B32C3A48E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TextControlEditorPharmacyClient</RootNamespace>
+    <AssemblyName>TextControlEditorPharmacyClient</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\bin</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TXDocumentServer, Version=27.0.1300.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TXDocumentServer.dll</HintPath>
+    </Reference>
+    <Reference Include="TXDocumentServer.Windows.Forms.Design, Version=27.0.107.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TXDocumentServer.Windows.Forms.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="TXDocumentServer.Windows.Forms, Version=27.0.1000.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TXDocumentServer.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="TXDrawing, Version=27.0.400.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TXDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="TXDrawing.Windows.Forms, Version=27.0.400.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TXDrawing.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="TXTextControl, Version=27.0.2000.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TXTextControl.dll</HintPath>
+    </Reference>
+    <Reference Include="TXTextControl.Windows.Forms.Design, Version=27.0.111.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TXTextControl.Windows.Forms.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="TXTextControl.Windows.Forms, Version=27.0.1200.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TXTextControl.Windows.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationMenuEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Constants.cs" />
+    <Compile Include="FileHandling\DocumentDirtyChangedEventArgs.cs" />
+    <Compile Include="FileHandling\DocumentFileNameChangedEventArgs.cs" />
+    <Compile Include="FileHandling\FileHandler.cs" />
+    <Compile Include="FileHandling\FontStyleMerger.cs" />
+    <Compile Include="FileHandling\ShowMessageBoxEventArgs.cs" />
+    <Compile Include="FileHandling\UserInputRequestedEventArgs.cs" />
+    <Compile Include="frmTextControlEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTextControlEditor.Designer.cs">
+      <DependentUpon>frmTextControlEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeEmulator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.de.Designer.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="Properties\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="TxWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\small_32bit\charactersettings.png" />
+    <Content Include="Images\small_32bit\chart\chart.png" />
+    <Content Include="Images\small_32bit\chart\chartarea.png" />
+    <Content Include="Images\small_32bit\chart\chartarea3d.png" />
+    <Content Include="Images\small_32bit\chart\chartaxes.png" />
+    <Content Include="Images\small_32bit\chart\chartbar.png" />
+    <Content Include="Images\small_32bit\chart\chartbar3d.png" />
+    <Content Include="Images\small_32bit\chart\chartbelowaxistitle.png" />
+    <Content Include="Images\small_32bit\chart\chartcolumn.png" />
+    <Content Include="Images\small_32bit\chart\chartcolumn3d.png" />
+    <Content Include="Images\small_32bit\chart\chartdatalabels.png" />
+    <Content Include="Images\small_32bit\chart\chartdatatable.png" />
+    <Content Include="Images\small_32bit\chart\chartformat.png" />
+    <Content Include="Images\small_32bit\chart\chartgridlinesmajorhor.png" />
+    <Content Include="Images\small_32bit\chart\chartgridlinesmajorvert.png" />
+    <Content Include="Images\small_32bit\chart\chartlayout.png" />
+    <Content Include="Images\small_32bit\chart\chartlegend.png" />
+    <Content Include="Images\small_32bit\chart\chartline.png" />
+    <Content Include="Images\small_32bit\chart\chartline3d.png" />
+    <Content Include="Images\small_32bit\chart\chartpie.png" />
+    <Content Include="Images\small_32bit\chart\chartpie3d.png" />
+    <Content Include="Images\small_32bit\chart\chartsetdatarelation.png" />
+    <Content Include="Images\small_32bit\chart\charttitlemain.png" />
+    <Content Include="Images\small_32bit\copy.png" />
+    <Content Include="Images\small_32bit\cut.png" />
+    <Content Include="Images\small_32bit\delete.png" />
+    <Content Include="Images\small_32bit\deletepagenumber.png" />
+    <Content Include="Images\small_32bit\deletetable.png" />
+    <Content Include="Images\small_32bit\deletetablecell.png" />
+    <Content Include="Images\small_32bit\deletetablecol.png" />
+    <Content Include="Images\small_32bit\deletetablerow.png" />
+    <Content Include="Images\small_32bit\drawingcanvas.png" />
+    <Content Include="Images\small_32bit\drawingmarkerlines.png" />
+    <Content Include="Images\small_32bit\edithyperlink.png" />
+    <Content Include="Images\small_32bit\exit.png" />
+    <Content Include="Images\small_32bit\export.png" />
+    <Content Include="Images\small_32bit\find.png" />
+    <Content Include="Images\small_32bit\formlayoutrtl.png" />
+    <Content Include="Images\small_32bit\header.png" />
+    <Content Include="Images\small_32bit\help.png" />
+    <Content Include="Images\small_32bit\hfdialog.png" />
+    <Content Include="Images\small_32bit\hyphenation.png" />
+    <Content Include="Images\small_32bit\image.png" />
+    <Content Include="Images\small_32bit\indentdecrease.png" />
+    <Content Include="Images\small_32bit\indentincrease.png" />
+    <Content Include="Images\small_32bit\insertbookmark.png" />
+    <Content Include="Images\small_32bit\insertfile.png" />
+    <Content Include="Images\small_32bit\inserthyperlink.png" />
+    <Content Include="Images\small_32bit\insertlinebreak.png" />
+    <Content Include="Images\small_32bit\insertpagenumber.png" />
+    <Content Include="Images\small_32bit\inserttablecolleft.png" />
+    <Content Include="Images\small_32bit\inserttablecolright.png" />
+    <Content Include="Images\small_32bit\inserttablerowabove.png" />
+    <Content Include="Images\small_32bit\inserttablerowbelow.png" />
+    <Content Include="Images\small_32bit\languagedetection.png" />
+    <Content Include="Images\small_32bit\listdialog.png" />
+    <Content Include="Images\small_32bit\mailmergedatefield.png" />
+    <Content Include="Images\small_32bit\mailmergedeletefield.png" />
+    <Content Include="Images\small_32bit\mailmergefieldproperties.png" />
+    <Content Include="Images\small_32bit\mailmergehighlightfields.png" />
+    <Content Include="Images\small_32bit\mailmergeiffield.png" />
+    <Content Include="Images\small_32bit\mailmergeincludetextfield.png" />
+    <Content Include="Images\small_32bit\mailmergeinsertfield.png" />
+    <Content Include="Images\small_32bit\mailmergenextfield.png" />
+    <Content Include="Images\small_32bit\mailmergenextiffield.png" />
+    <Content Include="Images\small_32bit\mailmergeshowfieldcodes.png" />
+    <Content Include="Images\small_32bit\mailmergeshowfieldtext.png" />
+    <Content Include="Images\small_32bit\mergetablecells.png" />
+    <Content Include="Images\small_32bit\moresymbols.png" />
+    <Content Include="Images\small_32bit\mousecursor.png" />
+    <Content Include="Images\small_32bit\newpage.png" />
+    <Content Include="Images\small_32bit\objectname.png" />
+    <Content Include="Images\small_32bit\open.png" />
+    <Content Include="Images\small_32bit\options.png" />
+    <Content Include="Images\small_32bit\pagebreak.png" />
+    <Content Include="Images\small_32bit\pagecolumnstwo.png" />
+    <Content Include="Images\small_32bit\pagedialog.png" />
+    <Content Include="Images\small_32bit\pageframedialog.png" />
+    <Content Include="Images\small_32bit\pagenumberbottom.png" />
+    <Content Include="Images\small_32bit\pagenumbertop.png" />
+    <Content Include="Images\small_32bit\pageviewnormal.png" />
+    <Content Include="Images\small_32bit\pageviewprint.png" />
+    <Content Include="Images\small_32bit\paragraphsettings.png" />
+    <Content Include="Images\small_32bit\paste.png" />
+    <Content Include="Images\small_32bit\print.png" />
+    <Content Include="Images\small_32bit\printpreview.png" />
+    <Content Include="Images\small_32bit\redo.png" />
+    <Content Include="Images\small_32bit\replace.png" />
+    <Content Include="Images\small_32bit\save.png" />
+    <Content Include="Images\small_32bit\saveas.png" />
+    <Content Include="Images\small_32bit\selectall.png" />
+    <Content Include="Images\small_32bit\selecttable.png" />
+    <Content Include="Images\small_32bit\selecttablecell.png" />
+    <Content Include="Images\small_32bit\selecttablecol.png" />
+    <Content Include="Images\small_32bit\selecttablerow.png" />
+    <Content Include="Images\small_32bit\setlanguage.png" />
+    <Content Include="Images\small_32bit\shapes\shapeaccentbordercallout1.png" />
+    <Content Include="Images\small_32bit\shapes\shapeaccentbordercallout2.png" />
+    <Content Include="Images\small_32bit\shapes\shapeaccentbordercallout3.png" />
+    <Content Include="Images\small_32bit\shapes\shapeaccentcallout1.png" />
+    <Content Include="Images\small_32bit\shapes\shapeaccentcallout2.png" />
+    <Content Include="Images\small_32bit\shapes\shapeaccentcallout3.png" />
+    <Content Include="Images\small_32bit\shapes\shapearc.png" />
+    <Content Include="Images\small_32bit\shapes\shapearrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapebentarrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapebentconnector3.png" />
+    <Content Include="Images\small_32bit\shapes\shapebentuparrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapebevel.png" />
+    <Content Include="Images\small_32bit\shapes\shapeblockarc.png" />
+    <Content Include="Images\small_32bit\shapes\shapebordercallout1.png" />
+    <Content Include="Images\small_32bit\shapes\shapebordercallout2.png" />
+    <Content Include="Images\small_32bit\shapes\shapebordercallout3.png" />
+    <Content Include="Images\small_32bit\shapes\shapebracepair.png" />
+    <Content Include="Images\small_32bit\shapes\shapebracketpair.png" />
+    <Content Include="Images\small_32bit\shapes\shapecallout1.png" />
+    <Content Include="Images\small_32bit\shapes\shapecallout2.png" />
+    <Content Include="Images\small_32bit\shapes\shapecallout3.png" />
+    <Content Include="Images\small_32bit\shapes\shapecan.png" />
+    <Content Include="Images\small_32bit\shapes\shapechevron.png" />
+    <Content Include="Images\small_32bit\shapes\shapechord.png" />
+    <Content Include="Images\small_32bit\shapes\shapecirculararrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapecloud.png" />
+    <Content Include="Images\small_32bit\shapes\shapecloudcallout.png" />
+    <Content Include="Images\small_32bit\shapes\shapecorner.png" />
+    <Content Include="Images\small_32bit\shapes\shapecube.png" />
+    <Content Include="Images\small_32bit\shapes\shapecurve.png" />
+    <Content Include="Images\small_32bit\shapes\shapecurvedarrowcon.png" />
+    <Content Include="Images\small_32bit\shapes\shapecurvedconnector3.png" />
+    <Content Include="Images\small_32bit\shapes\shapecurveddblarrowcon.png" />
+    <Content Include="Images\small_32bit\shapes\shapecurveddownarrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapecurvedleftarrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapecurvedrightarrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapecurveduparrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapedblarrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapedecagon.png" />
+    <Content Include="Images\small_32bit\shapes\shapediagonalstripe.png" />
+    <Content Include="Images\small_32bit\shapes\shapediamond.png" />
+    <Content Include="Images\small_32bit\shapes\shapedodecagon.png" />
+    <Content Include="Images\small_32bit\shapes\shapedonut.png" />
+    <Content Include="Images\small_32bit\shapes\shapedoublewave.png" />
+    <Content Include="Images\small_32bit\shapes\shapedownarrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapedownarrowcallout.png" />
+    <Content Include="Images\small_32bit\shapes\shapeelbowarrowcon.png" />
+    <Content Include="Images\small_32bit\shapes\shapeelbowdblarrowcon.png" />
+    <Content Include="Images\small_32bit\shapes\shapeellipse.png" />
+    <Content Include="Images\small_32bit\shapes\shapeellipseribbon.png" />
+    <Content Include="Images\small_32bit\shapes\shapeellipseribbon2.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartalternateprocess.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartcollate.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartconnector.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartdecision.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartdelay.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartdisplay.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartdocument.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartextract.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartinputoutput.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartinternalstorage.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartmagneticdisk.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartmagneticdrum.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartmagnetictape.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartmanualinput.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartmanualoperation.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartmerge.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartmultidocument.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartoffpageconnector.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartonlinestorage.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartor.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartpredefinedprocess.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartpreparation.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartprocess.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartpunchedcard.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartpunchedtape.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartsort.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartsummingjunction.png" />
+    <Content Include="Images\small_32bit\shapes\shapeflowchartterminator.png" />
+    <Content Include="Images\small_32bit\shapes\shapefoldedcorner.png" />
+    <Content Include="Images\small_32bit\shapes\shapeframe.png" />
+    <Content Include="Images\small_32bit\shapes\shapefreeform.png" />
+    <Content Include="Images\small_32bit\shapes\shapehalfframe.png" />
+    <Content Include="Images\small_32bit\shapes\shapeheart.png" />
+    <Content Include="Images\small_32bit\shapes\shapeheptagon.png" />
+    <Content Include="Images\small_32bit\shapes\shapehexagon.png" />
+    <Content Include="Images\small_32bit\shapes\shapehomeplate.png" />
+    <Content Include="Images\small_32bit\shapes\shapehorizontalscroll.png" />
+    <Content Include="Images\small_32bit\shapes\shapeirregularseal1.png" />
+    <Content Include="Images\small_32bit\shapes\shapeirregularseal2.png" />
+    <Content Include="Images\small_32bit\shapes\shapeleftarrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapeleftarrowcallout.png" />
+    <Content Include="Images\small_32bit\shapes\shapeleftbrace.png" />
+    <Content Include="Images\small_32bit\shapes\shapeleftbracket.png" />
+    <Content Include="Images\small_32bit\shapes\shapeleftrightarrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapeleftrightarrowcallout.png" />
+    <Content Include="Images\small_32bit\shapes\shapeleftrightuparrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapeleftuparrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapelightningbolt.png" />
+    <Content Include="Images\small_32bit\shapes\shapeline.png" />
+    <Content Include="Images\small_32bit\shapes\shapemathdivide.png" />
+    <Content Include="Images\small_32bit\shapes\shapemathequal.png" />
+    <Content Include="Images\small_32bit\shapes\shapemathminus.png" />
+    <Content Include="Images\small_32bit\shapes\shapemathmultiply.png" />
+    <Content Include="Images\small_32bit\shapes\shapemathnotequal.png" />
+    <Content Include="Images\small_32bit\shapes\shapemathplus.png" />
+    <Content Include="Images\small_32bit\shapes\shapemoon.png" />
+    <Content Include="Images\small_32bit\shapes\shapenonisoscelestrapezoid.png" />
+    <Content Include="Images\small_32bit\shapes\shapenosmoking.png" />
+    <Content Include="Images\small_32bit\shapes\shapenotchedrightarrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapeoctagon.png" />
+    <Content Include="Images\small_32bit\shapes\shapeparallelogram.png" />
+    <Content Include="Images\small_32bit\shapes\shapepentagon.png" />
+    <Content Include="Images\small_32bit\shapes\shapepie.png" />
+    <Content Include="Images\small_32bit\shapes\shapeplaque.png" />
+    <Content Include="Images\small_32bit\shapes\shapeplus.png" />
+    <Content Include="Images\small_32bit\shapes\shapequadarrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapequadarrowcallout.png" />
+    <Content Include="Images\small_32bit\shapes\shaperectangle.png" />
+    <Content Include="Images\small_32bit\shapes\shaperibbon.png" />
+    <Content Include="Images\small_32bit\shapes\shaperibbon2.png" />
+    <Content Include="Images\small_32bit\shapes\shaperightarrow.png" />
+    <Content Include="Images\small_32bit\shapes\shaperightarrowcallout.png" />
+    <Content Include="Images\small_32bit\shapes\shaperightbrace.png" />
+    <Content Include="Images\small_32bit\shapes\shaperightbracket.png" />
+    <Content Include="Images\small_32bit\shapes\shaperighttriangle.png" />
+    <Content Include="Images\small_32bit\shapes\shaperound1rectangle.png" />
+    <Content Include="Images\small_32bit\shapes\shaperound2diagonalrectangle.png" />
+    <Content Include="Images\small_32bit\shapes\shaperound2samerectangle.png" />
+    <Content Include="Images\small_32bit\shapes\shaperoundrectangle.png" />
+    <Content Include="Images\small_32bit\shapes\shapescribble.png" />
+    <Content Include="Images\small_32bit\shapes\shapesmileyface.png" />
+    <Content Include="Images\small_32bit\shapes\shapesnip1rectangle.png" />
+    <Content Include="Images\small_32bit\shapes\shapesnip2diagonalrectangle.png" />
+    <Content Include="Images\small_32bit\shapes\shapesnip2samerectangle.png" />
+    <Content Include="Images\small_32bit\shapes\shapesniproundrectangle.png" />
+    <Content Include="Images\small_32bit\shapes\shapestar10.png" />
+    <Content Include="Images\small_32bit\shapes\shapestar12.png" />
+    <Content Include="Images\small_32bit\shapes\shapestar16.png" />
+    <Content Include="Images\small_32bit\shapes\shapestar24.png" />
+    <Content Include="Images\small_32bit\shapes\shapestar32.png" />
+    <Content Include="Images\small_32bit\shapes\shapestar4.png" />
+    <Content Include="Images\small_32bit\shapes\shapestar5.png" />
+    <Content Include="Images\small_32bit\shapes\shapestar6.png" />
+    <Content Include="Images\small_32bit\shapes\shapestar7.png" />
+    <Content Include="Images\small_32bit\shapes\shapestar8.png" />
+    <Content Include="Images\small_32bit\shapes\shapestripedrightarrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapesun.png" />
+    <Content Include="Images\small_32bit\shapes\shapeteardrop.png" />
+    <Content Include="Images\small_32bit\shapes\shapetextbox.png" />
+    <Content Include="Images\small_32bit\shapes\shapetriangle.png" />
+    <Content Include="Images\small_32bit\shapes\shapeuparrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapeuparrowcallout.png" />
+    <Content Include="Images\small_32bit\shapes\shapeupdownarrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapeuturnarrow.png" />
+    <Content Include="Images\small_32bit\shapes\shapeverticalscroll.png" />
+    <Content Include="Images\small_32bit\shapes\shapewave.png" />
+    <Content Include="Images\small_32bit\shapes\shapewedgeellipsecallout.png" />
+    <Content Include="Images\small_32bit\shapes\shapewedgerectanglecallout.png" />
+    <Content Include="Images\small_32bit\shapes\shapewedgeroundrectanglecallout.png" />
+    <Content Include="Images\small_32bit\spelling.png" />
+    <Content Include="Images\small_32bit\splittable.png" />
+    <Content Include="Images\small_32bit\splittableabove.png" />
+    <Content Include="Images\small_32bit\splittablebelow.png" />
+    <Content Include="Images\small_32bit\splittablecells.png" />
+    <Content Include="Images\small_32bit\styledialog.png" />
+    <Content Include="Images\small_32bit\table.png" />
+    <Content Include="Images\small_32bit\tabledialog.png" />
+    <Content Include="Images\small_32bit\tablegridlines.png" />
+    <Content Include="Images\small_32bit\tabs.png" />
+    <Content Include="Images\small_32bit\textframe.png" />
+    <Content Include="Images\small_32bit\undo.png" />
+    <Content Include="Images\small_32bit\useraccess.png" />
+    <Content Include="Images\small_32bit\useradmin.png" />
+    <Content Include="Images\small_32bit\zoom.png" />
+    <Content Include="Images\txwords_info.png" />
+    <Content Include="tx27_css.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tx27_css.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tx27_doc.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tx27_dox.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tx27_htm.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tx27_pdf.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tx27_rtf.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tx27_xlx.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tx27_xml.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TXDocumentServer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TXDocumentServer.Windows.Forms.Design.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TXDocumentServer.Windows.Forms.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TXDrawing.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TXDrawing.Windows.Forms.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="txic.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="txkernel.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="txpdf.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TXTextControl.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TXTextControl.Server.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TXTextControl.Windows.Forms.Design.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TXTextControl.Windows.Forms.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="txtools.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmTextControlEditor.resx">
+      <DependentUpon>frmTextControlEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.de.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  <Target Name="BeforeBuild">
+    <Exec Command="clearRegistryKeyBeforeBuild.bat" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

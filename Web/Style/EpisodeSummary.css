@@ -1,0 +1,28 @@
+/* ----------------------------------------------------------------------------------------
+									EpisodeSummary_Default.css
+									
+	This stylesheet provides a set of default styles for the EpisodeSummary page.
+	It should not be edited; where other styles are required, these should be 
+	entered into the "_Customisations.css" stylesheet.
+	
+	16Apr04 AE  Written
+									
+-----------------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------------------------------
+	General page layout styles
+-----------------------------------------------------------------------------------------*/
+body
+{
+	overflow-y:auto;
+}
+
+hr
+{
+	width:95%;
+}
+
+table
+{
+	width:100%;
+}

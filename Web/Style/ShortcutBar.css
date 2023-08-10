@@ -1,0 +1,62 @@
+html, body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 10pt;
+}
+body
+{
+    background-color: #BFDBFF;
+    background-image: url(../images/Developer/shortcut-bar-background.png);
+    scrollbar-base-color: #206697;
+}
+BUTTON
+{
+    border-right: #6F9DD9 1px solid;
+    border-top: #E3EFFF 1px solid;
+    border-left: #E3EFFF 1px solid;
+    border-bottom: #6F9DD9 1px solid;
+    width: 70px;
+    font-size: 9pt;
+    background: transparent url(../images/Developer/button-bg.gif);
+    color: #000000;
+    behavior: url(../sharedscripts/Behavior/csshover3.htc);
+}
+BUTTON:hover
+{
+    background-image: url(../images/Developer/button-hover.png);
+}
+.ShortcutBarSurround
+{
+}
+.ShortcutBarGroupButton
+{
+}
+.ShortcutBarItem
+{
+    cursor: hand;
+    padding: 4px;
+    border: 1px solid transparent;
+    color: #ffffff;
+}
+.ShortcutBarItem_Hover
+{
+    background-image: url(../images/Developer/shortcut-bar-background-hover.png);
+    border: 1px solid #000000;
+}
+.ShortcutBarItem_Pressed
+{
+    background-image: url(../images/Developer/shortcut-bar-background-pressed.png);
+    border: 1px solid #ffffff
+}
+.ShortcutBarItemText
+{
+    font-size: 8pt;
+    padding: 4px;
+}
+.ShortcutBarImage
+{
+}

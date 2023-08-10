@@ -1,0 +1,131 @@
+.gridBody
+{
+    BACKGROUND-COLOR: #ffffff
+}
+.gridTable
+{
+    CURSOR: default;
+    BORDER-BOTTOM: #c0c0c0 1px solid;
+    BACKGROUND-COLOR: #ffffff;
+    table-layout:fixed;
+}
+.scrollContainer
+{
+    OVERFLOW-Y: auto
+}
+.gridHeader		
+{
+	background-color:#4682b4;
+	color:#ffffff;
+	border-top:#7EA9CE 1px solid;
+	border-bottom:#335A7B 1px solid;
+	border-left:#7EA9CE 1px solid;
+	border-right:#335A7B  1px solid;
+	height:20px;
+	padding-left:5px;
+	font-size:10pt;
+	font-weight:bold;
+}
+.titleCell
+{
+    BORDER-RIGHT: #c3bbff 2px solid;
+    BORDER-TOP: #2f0272 1px solid;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: small;
+    BORDER-LEFT: #2f0272 1px solid;
+    WIDTH: 40%;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #c3bbff 1px solid;
+    HEIGHT: 30px;
+    BACKGROUND-COLOR: steelblue
+}
+.infoCell
+{
+    BORDER-RIGHT: #c3bbff 1px solid;
+    BORDER-TOP: #2f0272 1px solid;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: small;
+    BORDER-LEFT: #2f0272 2px solid;
+    WIDTH: 60%;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #c3bbff 1px solid;
+    HEIGHT: 30px;
+    BACKGROUND-COLOR: steelblue
+}
+.infoButtonCell
+{
+    BORDER-RIGHT: #ffffff 2px solid;
+    BORDER-TOP: #2f0272 2px solid;
+    PADDING-LEFT: 5px;
+    BORDER-LEFT: #2f0272 2px solid;
+    WIDTH: 30px;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #ffffff 1px solid;
+    HEIGHT: 30px;
+    BACKGROUND-COLOR: #d6e3ff
+}
+.GridRow td
+{
+    BORDER-TOP: #c0c0c0 1px solid;
+    PADDING-LEFT: 5px;
+    FONT-SIZE: 10pt;
+    CURSOR: default;
+    min-height: 20px;
+    max-height:500px;
+}
+
+.Deleted td
+{
+	color:#a0a0a0;
+}
+
+.Deleted .Status
+{
+}
+
+/*  Highlighted row style */
+.Selected td
+{
+    COLOR: blue;
+    BACKGROUND-COLOR: #00599c
+}
+
+.Selected tr
+{
+    COLOR: blue;
+    BACKGROUND-COLOR: #00599c
+}
+
+.Selected table
+{
+    COLOR: blue;
+    BACKGROUND-COLOR: #00599c
+}
+
+/*  Focus box style */
+.focus td.TextCell
+{
+	border: black 1px dotted;
+}
+
+.SortImage
+{
+    WIDTH: 16px;
+    POSITION: relative;
+    TOP: 2px;
+    HEIGHT: 16px
+}
+.TreeControlImage
+{
+    WIDTH: 16px;
+    POSITION: relative;
+    TOP: 2px;
+    HEIGHT: 16px
+}
+.ExpandControl
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: xx-large
+}

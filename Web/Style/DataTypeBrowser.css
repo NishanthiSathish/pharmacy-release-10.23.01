@@ -1,0 +1,101 @@
+.TitleDiv
+{
+    BORDER-RIGHT: 2px;
+    BORDER-TOP: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: 2px;
+    BORDER-BOTTOM: 2px
+}
+.Browser
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    OVERFLOW: auto;
+    BORDER-LEFT: #000000 1px solid;
+    WIDTH: 100%;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 1px solid;
+    BACKGROUND-COLOR: #ffffff
+}
+UL
+{
+    CURSOR: default;
+    COLOR: #000000;
+    BACKGROUND-COLOR: #ffffff
+}
+.RootNode
+{
+    BORDER-TOP: #c0c0c0 1px solid;
+    FONT-SIZE: 12px;
+    font-weight:bold;
+    list-style-image:url('../images/developer/table_core.png');
+}
+
+.LookupsNode 
+{
+    BORDER-TOP: #c0c0c0 1px solid;
+    FONT-SIZE: 12px;
+    font-weight:bold;
+    list-style-image:url('../images/developer/folder.gif');
+}
+
+.ProductNode
+{
+    BORDER-TOP: #c0c0c0 1px solid;
+    FONT-SIZE: 12px;
+    font-weight:bold;
+    list-style-image:url('../images/developer/folder.gif');
+}
+
+
+.table
+{
+    list-style-image:url('../images/developer/table.png');
+
+}
+
+.lookup
+{
+    list-style-image:url('../images/developer/table_lookup.png');
+
+}
+
+.RequestTypeRow
+{
+    COLOR: #38951e;
+    list-style-image:url('../images/developer/type.png');
+
+}
+
+.ProductCategory
+{
+    list-style-image:url('../images/developer/folder.gif');
+}
+
+.Product
+{
+    list-style-image:url('../images/ocs/classProduct.gif');
+}
+
+
+LI
+{
+    padding-bottom:1px;
+    padding-left:2px;
+}
+.rootNode
+{
+}
+
+.fade
+{
+    color:#c0c0c0;
+}
+
+.Selected
+{
+    COLOR: #ffffff;
+    background-color:#0000ff;
+}
+

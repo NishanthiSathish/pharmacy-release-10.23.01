@@ -1,0 +1,54 @@
+body
+{
+    font-family: arial;
+    font-size: 14pt;
+    color: #163A86;
+    background-color: #888888;
+    background: transparent url(../images/Developer/login_background_strip.png) top left;
+    behavior: url(../sharedscripts/Behavior/PreventDrag.htc);
+}
+table
+{
+    font-size: 14pt;
+}
+input
+{
+    font-size: 14pt !important;
+    width: 284px !important;
+    height: 31px !important;
+    background: transparent url(../images/Developer/login-textbox-background.png) no-repeat scroll top left !important;
+    border: 0 !important;
+    padding-left: 6px !important;
+    padding-right: 4px !important;
+    padding-top: 4px !important;
+	float: right;
+}
+.tdLogin
+{
+    font-weight: bold;
+}
+a
+{
+    text-decoration: none;
+    color: #00AEED;
+}
+a img
+{
+    text-decoration: none;
+    border: 0 none;
+}
+button, input[type="submit"]
+{
+    font-size: 12pt !important;
+    font-weight: bold !important;
+    background: transparent url(../images/Developer/login-button.png) no-repeat scroll top left !important;
+    height: 29px !important;
+    width: 119px !important;
+	margin-left: 5px !important;
+    border: 0 !important;
+    behavior: url(../sharedscripts/Behavior/csshover3.htc);
+}
+button:hover, input[type="submit"]:hover
+{
+    background: transparent url(../images/Developer/login-button-hover.png) no-repeat scroll top left !important;
+}

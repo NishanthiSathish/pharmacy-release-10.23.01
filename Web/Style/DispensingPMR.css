@@ -1,0 +1,84 @@
+.GridHeadingCell
+{
+    BORDER-RIGHT: #335a7b 1px solid;
+    BORDER-TOP: #7ea9ce 1px solid;
+    FONT-WEIGHT: bold;
+    BORDER-LEFT: #7ea9ce 1px solid;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #335a7b 1px solid;
+    TEXT-ALIGN: left;
+}
+.GridHeading
+{
+    background-image: url(../images/grid/imp_grid_header.png);
+    background-repeat: repeat;
+    background-position: center;
+}
+#tbl-container TD
+{
+    BORDER-RIGHT: #B2B2B2 1px solid;
+    BORDER-BOTTOM: #B2B2B2 1px solid;
+}
+.GridBody
+{
+    BACKGROUND-COLOR: #ffffff;
+}
+.RowOdd
+{
+    BACKGROUND-COLOR: white;
+}
+.RowLevel0Even
+{
+    BACKGROUND-COLOR: #FFFFE5;
+}
+.RowLevel1Even
+{
+    BACKGROUND-COLOR: #EDEDFF;
+}
+.RowLevel2Even
+{
+    BACKGROUND-COLOR: #EAF7FF;
+}
+.RowSelected
+{
+    BACKGROUND-COLOR: #DEFFCC;
+}
+#tbl-container .RowFocus TD
+{
+    BACKGROUND-COLOR: #D4FFBC;
+    BORDER-BOTTOM: #4D9E1F 1px solid;
+    BORDER-TOP: #4D9E1F 1px solid;
+}
+.x
+{
+    BORDER-RIGHT: none
+}
+.LastQty
+{
+    WIDTH: 100px;
+    text-align: center;
+}
+.HighlightDate1
+{
+    color: #990000;
+    font-weight: bold; 
+}
+.HighlightDate2
+{
+    color: #990000;
+    font-style: italic;
+}       
+.ToolbarButton
+{
+    height:26px;
+    width:auto;
+    overflow:visible;
+    padding:0px 8px 0px 8px;
+}
+.ToolbarButtonImage
+{
+    display:block; 
+    margin: none; 
+    padding: none; 
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}

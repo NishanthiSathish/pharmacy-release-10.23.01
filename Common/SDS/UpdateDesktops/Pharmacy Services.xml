@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module FriendlyName="Update Version">
+  <SqlBatch Path="" Type="Scripts">
+    <SqlFile Filename="UpdateDesktops.sql" />
+	<SqlFile Filename="UpdateLocalFilPath.sql" />
+  </SqlBatch>
+</Module>

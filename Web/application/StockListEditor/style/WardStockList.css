@@ -1,0 +1,24 @@
+﻿
+.PanelBackground
+{
+    BACKGROUND-COLOR: #FFFFDE;
+}
+
+.PanelRight .PanelBackground
+{
+    BACKGROUND-COLOR: #DEFFDE;
+}
+
+.IsUseMessage
+{
+    width:100%;
+    text-align:center;
+    background-color:#FF0000;
+    color: White;
+}
+
+/* 108628 19Jan14 XN overrides default fro grid, so text is small enough the drug names do not wrap  */
+.gridTable
+{
+    font-size: 9pt;
+}

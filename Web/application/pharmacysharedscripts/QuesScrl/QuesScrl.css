@@ -1,0 +1,52 @@
+﻿/*
+
+    Style sheet for the quesscrl
+
+*/
+.ScrollTableContainerIE table
+{
+    border: 2px solid #B9DDA4;
+    border-left: 3px solid #B9DDA4;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=145, Strength=3);            
+}
+    
+.ScrollTableContainerIE td, .ScrollTableContainerIE th
+{
+    background: white;
+    border-left: 2px solid #B9DDA4;
+    border-bottom: 1px solid #B9DDA4;
+}
+    
+.ScrollTableContainerIE td.labelCell, .ScrollTableContainerIE th.labelCell
+{
+    padding-left: 2px;
+    border-left: none;
+    border-bottom: 1px solid #B9DDA4;
+    white-space: nowrap;
+}
+    
+.ScrollTableContainerIE tr[isSpacer] td
+{
+    border-left: none;
+}
+ 
+.ScrollTableContainerIE td.DisabledCell
+{
+    background: #F7F3F7;
+}
+    
+.ScrollTableContainerIE td.DisabledCell.selected
+{
+    background: #FFE792;
+}
+
+.ScrollTableContainerIE .selected
+{
+    background: #FFE792;
+}
+
+.ScrollTableContainerIE textarea 
+{
+   font-family: inherit;
+   font-size: inherit;
+}

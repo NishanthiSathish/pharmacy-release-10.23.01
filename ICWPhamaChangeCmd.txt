@@ -1,0 +1,28 @@
+@echo off
+setlocal EnableDelayedExpansion
+
+
+set "replace=	<add key="ICW_PharmacyLocation" value="PHARMACYWEBSERVER" />"
+rem Get the number of the target line minus one
+
+for /F "delims=:" %%a in ('findstr /I /N "ICW_PharmacyLocation" INSTALLDIR\Web.config') do set /A lines=%%a-1
+rem Redirect the input file to read it via SET /P
+< INSTALLDIR\Web.config (
+
+   rem Copy lines before the target one
+   for /L %%i in (1,1,%lines%) do (
+      set "line="
+      set /P "line="
+      echo/!line!
+   )
+
+   rem Read the target line and replace it
+   set /P "line="
+   echo !replace!
+
+   rem Copy the rest of lines
+   findstr "^"
+
+rem Store the output in a temporary file
+) > INSTALLDIR\TempWeb.config
+move /Y INSTALLDIR\TempWeb.config INSTALLDIR\Web.config

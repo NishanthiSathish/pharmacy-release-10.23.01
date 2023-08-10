@@ -1,0 +1,57 @@
+.TitleDiv
+{
+	font-size: 12pt;
+	font-weight: bold;
+	border-top: #F1F6FF 2px solid;
+	border-left: #F1F6FF 2px solid;
+	border-bottom: #87AFFF 2px solid;
+	border-right: #87AFFF 2px solid;
+}
+
+
+.Browser
+{
+	background-color:#ffffff;
+	color:#000000;
+	border: #000000 1px solid;
+	width:100%;
+	overflow:auto;
+}
+
+UL
+{
+	cursor:default;
+	background-color:#ffffff;
+	color:#000000;	
+}
+
+.RootNode
+{
+	font-size:12px;
+	font-weight:bold;
+	color:#0000ff;
+	border-top: #c0c0c0 1px solid;
+}
+
+.Selected
+{
+	
+	color:#FF0000;
+}
+
+.RequestTypeRow
+{
+	font-style:italic;
+	color:#38951E ;
+}
+
+LI
+{
+}
+
+
+.rootNode
+{
+
+}
+

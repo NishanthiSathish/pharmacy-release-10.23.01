@@ -1,0 +1,42 @@
+body
+{
+    background-color:#4A83B0;
+    background-image: url(../images/background_gradient.gif);
+}
+.clear
+{
+    clear:both;
+}
+.PropertyHolder
+{
+    float:left;
+    width:20%;
+    margin-left:-10px;
+}
+.RuleHolder
+{
+    width:100%;
+    border-bottom: solid 2px red;
+}
+.listbox
+{
+    width:100%;
+    border:none;
+}
+.divRuleProperties
+{
+    width:100%;
+}
+
+.divTitle
+{
+	width:100%;
+    font-weight:bold;
+    font-size:15px;
+    padding:2px;
+}
+
+.divTitle select
+{
+	width:90%;
+}

@@ -1,0 +1,28 @@
+.SpinButton
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    FONT-WEIGHT: bold;
+    BORDER-LEFT: 1px solid;
+    BORDER-BOTTOM: 1px solid
+}
+.LabelBox
+{
+    BORDER-RIGHT: #c0c0c0 1px solid;
+    BORDER-TOP: #c0c0c0 1px solid;
+    BORDER-LEFT: #c0c0c0 1px solid;
+    BORDER-BOTTOM: #c0c0c0 1px solid
+}
+.AdminWarning
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    OVERFLOW-Y: auto;
+    BORDER-LEFT: medium none;
+    COLOR: #ff0000;
+    BORDER-BOTTOM: medium none
+}
+.BadDoseWarning
+{
+    COLOR: #ff0000
+}

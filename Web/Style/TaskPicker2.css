@@ -1,0 +1,263 @@
+BODY
+{
+	overflow:hidden;
+}
+
+td
+{
+	margin:0px;
+	padding:0px;
+}
+
+
+/* ------------------------------ Top of page Buttons and Tabs ------------------------------------ */
+.Link 
+{
+	text-decoration:underline;
+	cursor:hand;
+	padding-left:5px;
+	padding-right:4px;
+}
+
+.PathLink
+{
+	text-decoration:underline;
+	cursor:hand;
+	color:#0000ff;	
+}
+
+.TabStrip td
+{
+	border-bottom:#d6e3ff 1px solid;
+}
+Button.Tab
+{
+	font-size: 8pt;
+	height:20px;
+	width:125px;
+}
+
+Button.TabSelected
+{
+	font-size: 8pt;
+	height:20px;
+	width:125px;
+}
+
+/* ------------------------------  The Result / Browsing Areas ------------------------------------ */
+.BrowseTable
+{
+
+	background-color:#ffffff;
+   TEXT-ALIGN: left
+}
+
+.BrowseTable td
+{
+	padding-left:3px;
+}
+
+.BrowseTable img
+{
+	padding-left:2px;
+}
+
+.BrowseDiv
+{
+	overflow-y:hidden;
+	border-bottom:#00599C 1px solid;
+}
+
+.BrowseDiv .liner
+{
+	overflow-y:auto;
+	height:100%;
+}
+
+
+.PaneCaption
+{
+	BACKGROUND-COLOR: #c6d3f0;
+	font-size:8pt;
+	font-weight:normal;
+	height:28px;
+}
+
+
+.MenuTable
+{
+	cursor:hand;
+	margin-top:5px;
+}
+
+
+.MenuTable td
+{
+	padding-bottom:1px;
+	padding-right:10px;
+	height:20px;
+	font-size:10pt;
+}
+
+.MenuTable .template td
+{
+	font-weight:bold;
+}
+
+.MenuTable .template td div
+{
+	color:#778899;
+	font-weight:normal;
+	font-size:10pt;
+}
+
+.MenuTable .template .Link
+{
+	font-size:8pt;	
+}
+
+.MenuTable .orderset td
+{
+	font-weight:bold;
+}
+
+.MenuTable .orderset td div
+{
+	color:#778899;
+	font-weight:normal;
+	font-size:8pt;
+}
+
+.MenuTable .orderset .Link
+{
+	font-size:8pt;	
+}
+
+.MenuTable .folder td
+{
+	font-weight:normal
+}
+
+.MenuTable .product td
+{
+	font-weight:normal
+}
+
+
+
+.spacer td
+{
+	border:none;
+}
+
+.GroupTitle td
+{
+	color:black;
+	background-color:#F7E49B;
+	border-top:#FCF3D1 2px solid;
+	border-left:#FCF3D1 2px solid;
+	border-bottom:#76610A 1px solid;
+	border-right:#76610A 1px solid;
+	cursor:default;
+}
+
+.ResultInfo td
+{
+	font-weight:bold;
+	font-size:12pt;
+	padding-top:8px;
+	padding-bottom:8px;
+	cursor:default;
+}
+
+.ImageCell
+{
+}
+
+
+
+.DecPt
+{
+	font-size:12pt;
+	font-weight:900;
+	padding:2px;
+}
+
+.applies_yes
+{
+}
+
+.applies_no
+{
+	color: #778899;
+}
+
+.applies_unknown
+{
+	color: #778899;	
+}
+
+
+.BasketTable
+{
+	border:none;
+	border-bottom:#00599C 1px solid;
+	border-right:#00599C 1px solid;
+	background-color:#ffffff;
+}
+
+.BasketItemsTable
+{
+	border:none;
+	background-color:#ffffff;
+}
+
+.BasketBarLeft
+{
+	width:20px;
+	height:20px;
+	color:#ffffff;
+	background-color:#2B714E;
+}
+
+.BasketBarHeader
+{
+	color:#ffffff;
+	height:20px;
+	background-color:#2B714E;
+}
+
+.standardRow	
+{
+	background-color:#ffffff;
+	color:#000000;
+	cursor:hand;
+}
+
+
+.pendingRow	
+{
+	background-color:#ffffff;
+	color:#707070;
+	cursor:default;
+}
+
+.standardRowSelected
+{
+	background-color:#00599C;
+	color:#ffffff;
+}
+
+.TaskPicker .StatusMessage
+{
+}
+
+button.disabled img
+{
+	filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
+
+.PaneCaption button
+{
+	height:25px;
+}

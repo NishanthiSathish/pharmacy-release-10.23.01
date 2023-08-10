@@ -1,0 +1,20 @@
+.TimesDisabled
+{
+    BACKGROUND-COLOR: lightgrey
+}
+.Border
+{
+    BORDER-RIGHT: black 1px solid;
+    BORDER-TOP: black 1px solid;
+    MARGIN: 5px;
+    BORDER-LEFT: black 1px solid;
+    BORDER-BOTTOM: black 1px solid;
+    BACKGROUND-COLOR: #ffffff
+}
+.LocationDescription
+{
+    FONT-SIZE: 12pt;
+    COLOR: white;
+    BACKGROUND-COLOR: steelblue;
+    TEXT-ALIGN: center
+}

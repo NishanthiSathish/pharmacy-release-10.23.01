@@ -1,0 +1,8 @@
+frmV8DatConv = 23, 215, 1259, 952, C, 22, 22, 947, 853, C
+modV8DatConv = 35, 26, 1227, 1062, 
+V8DataRoutines = -2, 96, 881, 698, 
+modErrorLogging = 154, 154, 1380, 902, 
+frmHospital = -43, 89, 865, 407, , 66, 87, 950, 689, C
+modShared = 44, 44, 1083, 658, 
+modWindowsRegistry = 132, 132, 1358, 880, 
+frmProgress = 66, 87, 819, 689, , 44, 58, 797, 660, C

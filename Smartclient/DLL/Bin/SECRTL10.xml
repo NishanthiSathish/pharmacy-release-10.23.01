@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SECRTL10
+</name>
+</assembly>
+<members>
+<member name="M:SECRTL10.Encryption64.Decrypt(System.String,System.String)">
+	<summary>
+ Decrypts an encrypted string
+ </summary>
+	<param name="stringToDecrypt">the string we want to decrypt</param>
+	<param name="sEncriptionKey">the encryption key we want to use</param>
+	<returns>the decrypted string</returns>
+</member><member name="M:SECRTL10.Encryption64.Encrypt(System.String,System.String)">
+	<summary>
+ Encrypts a string
+ </summary>
+	<param name="stringToEncrypt">the string we want to encrypt</param>
+	<param name="SEncryptionKey">the encryption key we want to use</param>
+	<returns>an encrypted string</returns>
+</member><member name="M:SECRTL10.SecurityRead.GetCurrentLoggedOnUserName(System.Int32)">
+	<summary>
+ Returns the username of the currently logged on user for this session
+ </summary>
+	<param name="SessionID">Standard system sessionid</param>
+	<returns>The username of the currently logged on user or blank if not found</returns>
+	<remarks>F0098035 21Oct10 ST Written</remarks>
+</member>
+</members>
+</doc>

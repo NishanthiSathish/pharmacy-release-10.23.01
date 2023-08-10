@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b136047d-9e8f-4207-88c2-39003a46d7e7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://asc-xnorman/IntegrationWebService-Testing/IntegrationWebService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IntegrationWebService.wsdl" MetadataType="Wsdl" ID="3748849c-b410-44d9-a820-f743b137c587" SourceId="1" SourceUrl="http://asc-xnorman.int.ascribe.com/IntegrationWebService-Testing/IntegrationWebService.svc?wsdl" />
+    <MetadataFile FileName="IntegrationWebService.xsd" MetadataType="Schema" ID="87b80384-173b-43c1-8c2d-ea98d864c54a" SourceId="1" SourceUrl="http://asc-xnorman.int.ascribe.com/IntegrationWebService-Testing/IntegrationWebService.svc?xsd=xsd1" />
+    <MetadataFile FileName="IntegrationWebService.disco" MetadataType="Disco" ID="a6151d9c-40d3-45e9-beba-fafab8cf9ee3" SourceId="1" SourceUrl="http://asc-xnorman.int.ascribe.com/IntegrationWebService-Testing/IntegrationWebService.svc?disco" />
+    <MetadataFile FileName="IntegrationWebService1.xsd" MetadataType="Schema" ID="000ace33-7fdf-414b-b035-87485832ceea" SourceId="1" SourceUrl="http://asc-xnorman.int.ascribe.com/IntegrationWebService-Testing/IntegrationWebService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

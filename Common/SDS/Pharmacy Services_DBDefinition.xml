@@ -1,0 +1,17 @@
+<DatabaseConfiguration>
+  <ConnectionStringProviderTypes>
+    <add name="SDSConfigConnectionStringProvider" type="SDS.Client.DatabasePatcher.SDSConfigConnectionStringProvider, SDS.Client.DatabasePatcher"/>
+  </ConnectionStringProviderTypes>
+  <DatabaseDefinitions>
+    <DatabaseDefinition name="HealthApplicationPlatform" isPatchable="true">
+      <ConnectionStringProvider>
+        <SDSConfigConnectionStringProvider>
+          <Format>{0}</Format>
+          <Parameters>
+            <SDSConfigLookup index="0" key="HAPDatabaseConnectionString"/>
+          </Parameters>
+        </SDSConfigConnectionStringProvider>
+      </ConnectionStringProvider>
+    </DatabaseDefinition>
+  </DatabaseDefinitions>
+</DatabaseConfiguration>

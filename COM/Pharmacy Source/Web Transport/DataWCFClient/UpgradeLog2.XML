@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PharmacyWCFDataClient">
+</Property><Property Name="Solution File" Value="D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Pharmacy\Web Transport\DataWCFClient\PharmacyWCFDataClient.sln">
+</Property><Property Name="Date" Value="21 January 2016">
+</Property><Property Name="Time" Value="12:05:42">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="2" Project="PharmacyWCFDataClient" Source="PharmacyWCFDataClient.csproj" Description="Project file is not writable: D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Pharmacy\Web Transport\DataWCFClient\PharmacyWCFDataClient.csproj">
+</Event><Event ErrorLevel="2" Project="PharmacyWCFDataClient" Source="PharmacyWCFDataClient.csproj" Description="Unable to save converted project file.">
+</Event><Event ErrorLevel="3" Project="PharmacyWCFDataClient" Source="PharmacyWCFDataClient.csproj" Description="Not Converted">
+</Event><Event ErrorLevel="2" Project="" Source="PharmacyWCFDataClient.csproj" Description="Access to the path 'D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Pharmacy\Web Transport\DataWCFClient\PharmacyWCFDataClient.csproj' is denied.">
+</Event></UpgradeLog>

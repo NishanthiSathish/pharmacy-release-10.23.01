@@ -1,0 +1,11 @@
+Config = 154, 154, 851, 770, C
+SystemTray32 = 0, 0, 0, 0, C
+modErrorLogging = 88, 88, 1005, 396, C
+frmShowMsg = 0, 0, 0, 0, C, 154, 203, 948, 946, C
+modEncrypt = 0, 0, 0, 0, C
+modXML = 0, 0, 0, 0, C
+modEventNotifierV1 = 110, 110, 783, 722, C
+modFileHandling = 132, 174, 926, 917, 
+modShared = 110, 145, 904, 888, C
+frmEventNotifierV1 = 44, 58, 838, 801, Z, 22, 29, 816, 772, C
+frmOptions = 88, 116, 882, 859, , 114, 36, 908, 779, C

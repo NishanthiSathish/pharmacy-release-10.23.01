@@ -1,0 +1,48 @@
+Type=Exe
+Reference=*\G{6AAFB283-E58A-4E7A-BC6A-FF5507A7A1A5}#1.0#0#..\..\..\..\bin\TextControlEditorPharmacyClient.tlb#TextControlEditorPharmacyClient
+Module=HIGHASC; HighAscPrintJob.bas
+Module=WINVER; ..\..\..\shared\source\libraries\WINVER.BAS
+Module=PrintJob; PrintJob.bas
+Module=CORELIB; CorelibPrintJob.bas
+Form=LISTBOX.FRM
+IconForm="LstBoxFrm"
+Startup="Sub Main"
+HelpFile=""
+Title="PrintJob"
+ExeName32="AscribePrintJob.exe"
+Command32="\\core-store\Development\innov\ascreprn_Admin PC.rtf|Microsoft XPS Document Writer,winspool,Ne00:|||||"
+Name="ICWPrintJob"
+HelpContextID="0"
+CompatibleMode="0"
+MajorVer=1
+MinorVer=0
+RevisionVer=0
+AutoIncrementVer=0
+ServerSupportFiles=0
+VersionCompanyName="EMIS Health Hospital"
+VersionFileDescription="Pharmacy Print Job"
+VersionLegalCopyright="Copyright © 1989-[CurrentYear] EMIS Health"
+VersionProductName="EMIS Health Hospital Pharmacy"
+CompilationType=0
+OptimizationType=0
+FavorPentiumPro(tm)=0
+CodeViewDebugInfo=0
+NoAliasing=0
+BoundsCheck=0
+OverflowCheck=0
+FlPointCheck=0
+FDIVCheck=0
+UnroundedFP=0
+StartMode=0
+Unattended=0
+Retained=0
+ThreadPerObject=0
+MaxNumberOfThreads=1
+DebugStartupOption=0
+
+[Requirement for Bob]
+CompatibleEXE32="..\..\Bin\AscribePrintJob.exe"
+ReadyToBuild=True
+
+[MS Transaction Server]
+AutoRefresh=1

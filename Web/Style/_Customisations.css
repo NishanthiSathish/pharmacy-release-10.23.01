@@ -1,0 +1,402 @@
+/* ----------------------------------------------------------------------------------------
+				Example Episode Summary Style
+				This gives a very basic default style, and can be edited.
+-----------------------------------------------------------------------------------------*/
+
+.EpisodeSummary td
+{
+	padding-left:10px;
+}
+
+.EpisodeSummary .Report
+{
+	border:none;
+	background-color:#f0f0f0;
+	background-color:#d6e3ff;
+}
+
+/* ----------------------------------------------------------------------------------------
+	Generic section definitions; titles, spacing etc
+-----------------------------------------------------------------------------------------*/
+.EpisodeSummary .PageTopMargin
+{
+	height:20px;
+}
+
+.EpisodeSummary .PaddingBetweenSections
+{
+	height:50px;
+}
+
+.EpisodeSummary .SectionDivider
+{
+}
+
+.EpisodeSummary .SectionHeader
+{
+	font-weight:bold;
+	font-size: 14pt;
+	text-decoration: none;
+	padding-bottom:10px;
+}
+
+.EpisodeSummary .SectionText
+{
+	font-style:italic;
+	height:30px;
+}
+
+/* ----------------------------------------------------------------------------------------
+	Attribute-value list sections - used where there is a single row containing many
+	different attributes (such as a patient summary)
+-----------------------------------------------------------------------------------------*/
+.EpisodeSummary .AttributeName
+{
+	
+}
+
+.EpisodeSummary .AttributeValue
+{
+	font-weight:bold;
+}
+
+/* ----------------------------------------------------------------------------------------
+	Tabulated sections - used for the display of multiple identical types of data
+	(such as "current medications")									
+-----------------------------------------------------------------------------------------*/
+
+.EpisodeSummary .TabulatedSection
+{
+	width:95%;
+}
+
+.EpisodeSummary .TabulatedSection td
+{
+	border-right:#d0d0d0 1px solid;
+	border-bottom:#d0d0d0 1px solid;
+	margin:0px;
+}
+
+.EpisodeSummary .TableHeading td
+{
+	font-weight:bold;
+	text-align:center;
+}
+
+/* ----------------------------------------------------------------------------------------
+	Specific Styles for the Administration View 								
+-----------------------------------------------------------------------------------------*/
+
+.EpisodeSummary .SectionAdmin table
+{
+	background-color:white;
+	border:black 1px solid;
+	width:500px;
+}
+
+
+.EpisodeSummary .SectionAdmin .SectionHeader
+{
+}
+
+
+.EpisodeSummary .OrdersetDetail .SectionHeader
+{
+	padding-top:10px;
+	text-decoration:none;
+}
+
+.EpisodeSummary .SectionAdmin .SectionHeader
+{
+	text-decoration:none;
+	font-size:12pt;
+}
+
+.EpisodeSummary .SectionAdmin table
+{
+	width:0px;
+}
+
+.EpisodeSummary .SectionAdmin table td
+{
+	padding:0px;
+}
+
+.EpisodeSummary .SectionAdmin .TableHeading td 
+{
+	padding:5px;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+
+.EpisodeSummary .SectionAdmin table span
+{
+	height:100%;
+	width:100%;
+	padding:6px;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+.EpisodeSummary .SectionAdmin .SectionDivider
+{
+	visibility:hidden;
+}
+
+.EpisodeSummary .SectionAdmin .Overdue
+{
+	background-color:Red;
+	color:White;
+}
+
+.EpisodeSummary .SectionAdmin .NotAdministered
+{
+	background-color:Orange;
+	color:Black;
+}
+
+.EpisodeSummary .SectionAdmin .Partial
+{
+	background-color:Orange;
+	color:Black;
+}
+
+
+.EpisodeSummary .SectionAdmin .OK
+{
+	background-color:Green;
+	color:White;
+}
+
+.EpisodeSummary .SectionAdmin .Due
+{
+	background-color:Blue;
+	color:White;
+}
+
+.EpisodeSummary .SectionAdmin .NotDue
+{
+	background-color:White;
+	border:Blue 1px solid;
+}
+
+
+.EpisodeSummary .SectionAdmin .Started
+{
+	background-color:Green;
+	color:White;
+}
+
+.EpisodeSummary .SectionAdmin .Ended
+{
+	background-color:Green;
+	color:White;
+}
+
+.EpisodeSummary .SectionAdmin .FluidChange
+{
+	background-color:Blue;
+	color:White;
+}
+
+.EpisodeSummary .SectionAdmin .ProblemRecorded
+{
+	background-color:Orange;
+	color:Black;
+}
+
+.EpisodeSummary .SectionAdmin .FlowRateChange
+{
+	background-color:Yellow;
+	color:Black;
+}
+
+/* ----------------------------------------------------------------------------------------
+	Specific Styles for Pharmacy notes								
+-----------------------------------------------------------------------------------------*/
+
+    .EpisodeSummary .ClinicalDesktops table
+,   .EpisodeSummary .ClinicalDesktopsNoHeader table
+{
+	background-color:white;
+	border:black 1px solid;
+}
+
+    .EpisodeSummary .ClinicalDesktops .SectionDivider
+,   .EpisodeSummary .ClinicalDesktopsNoHeader .SectionDivider
+{
+	visibility:hidden;
+}
+
+
+.EpisodeSummary .ClinicalDesktopsNoHeader .SectionHeader
+{
+      display:none;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+	ASC Geneirc Prescibing Styling
+-----------------------------------------------------------------------------------------*/
+/*Table colours*/
+	.EpisodeSummary .ASCObservationsSummary .TableHeading
+,	.EpisodeSummary .ASCMonitoringSummary .TableHeading
+,	.EpisodeSummary .ASCAssessmentSummary .TableHeading
+{
+	background-color:lightgrey;
+	color:black;
+	font-weight:bold;
+	text-align:left;
+	padding-left:7px;
+}
+
+
+	.EpisodeSummary .ASCObservationsSummary table
+,	.EpisodeSummary .ASCMonitoringSummary table
+,	.EpisodeSummary .ASCAssessmentSummary table
+{
+	background-color:white;
+}
+
+	.EpisodeSummary .ASCObservationsSummary .ASCPreviousEpisode
+,	.EpisodeSummary .ASCMonitoringSummary .ASCPreviousEpisode
+,	.EpisodeSummary .ASCAssessmentSummary .ASCPreviousEpisode
+{
+	font-style: italic;
+	color: grey;
+}
+
+/*Set column widths */
+	.EpisodeSummary .ASCObservationsSummary td.Col1
+,	.EpisodeSummary .ASCObservationsSummary td.Col2
+
+,	.EpisodeSummary .ASCMonitoringSummary td.Col1
+,	.EpisodeSummary .ASCMonitoringSummary td.Col2
+
+,	.EpisodeSummary .ASCAssessmentSummary td.Col1
+,	.EpisodeSummary .ASCAssessmentSummary td.Col2
+{
+	width: 25%;
+}
+
+	.EpisodeSummary .ASCObservationsSummary td.Col3
+,	.EpisodeSummary .ASCMonitoringSummary td.Col3
+,	.EpisodeSummary .ASCAssessmentSummary td.Col3
+{
+	width: 50%;
+}
+
+/* ----------------------------------------------------------------------------------------
+	Specific Styles for Paged Worklist Cells
+-----------------------------------------------------------------------------------------*/
+
+.MEWSWarningHighlight
+{
+    background-color:rgb(222,33,33);   
+}
+
+.MEWSMonitorHighlight
+{
+    background-color:rgb(233,165,22);   
+}
+
+.MEWSStableHighlight
+{
+    background-color:rgb(237,232,18);   
+}
+
+.TimerWarningHighlight
+{
+    background-color:rgb(222,33,33);   
+}
+
+
+/* CPIAlerts Styling */
+#CpiAlerts.EpisodeSummary .PaddingBetweenSections {
+    height: 15px;
+}
+
+#CPIAlerts.EpisodeSummary .AttributeName
+{
+    display: none;
+}
+
+#CPIAlerts.EpisodeSummary .TabulatedSection
+{
+    border: 0;
+}
+
+#CPIAlerts.EpisodeSummary .TableHeading
+{
+    display: none;
+}
+
+#CPIAlerts.EpisodeSummary .TabulatedSection td
+{
+    border: 0;
+    font-weight: bold;
+    padding: 0;
+}
+
+/*CPIAlerts Styling END*/
+
+/* ----------------------------------------------------------------------------------------
+	eMM Specific Styles for Paged Worklist Cells
+-----------------------------------------------------------------------------------------*/
+
+.worklist_emmaccuracychecking_priority
+{
+	background-color:red;
+	color:white;
+	font-weight:bold;
+	font-style:italic;
+}
+
+.worklist_emmaccuracychecking_conditionalcheck
+{
+	background-color:orange;
+	color:black;
+        font-style:italic;
+
+}
+
+.worklist_emmaccuracychecking_tofollow
+{
+	background-color:orange;
+	color:black;
+        font-style:italic;
+
+}
+
+.worklist_emmaccuracychecking_eMMProblem
+{
+        background-color:orange;
+        color:black;
+        font-style:italic;
+}
+
+
+.worklist_emmproblemlist_priority
+{
+	background-color:red;
+	color:white;
+	font-weight:bold;
+	font-style:italic;
+}
+
+.worklist_emmproblemlist_conditionalcheck
+{
+	background-color:orange;
+	color:black;
+        font-style:italic;
+
+}
+
+.worklist_emmproblemlist_tofollow
+{
+	background-color:orange;
+	color:black;
+        font-style:italic;
+
+}

@@ -1,0 +1,1538 @@
+﻿<?xml version="1.0" encoding="utf-8"?><root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BTN_CANCEL" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="DSP_USERNAME_EVERYONE" xml:space="preserve">
+    <value>Jeder</value>
+  </data>
+  <data name="EDIT_USER_DLG_LBL_NEW_PASSWORD" xml:space="preserve">
+    <value>&amp;Neues Kennwort:</value>
+  </data>
+  <data name="EDIT_USER_DLG_LBL_PASSWORD" xml:space="preserve">
+    <value>&amp;Kennwort:</value>
+  </data>
+  <data name="EDIT_USER_DLG_LBL_PASSWORD_CONFIRM" xml:space="preserve">
+    <value>K&amp;ennwort bestätigen:</value>
+  </data>
+  <data name="EDIT_USER_DLG_LBL_USER_NAME" xml:space="preserve">
+    <value>&amp;Benutzername:</value>
+  </data>
+  <data name="EDIT_USER_DLG_TITLE" xml:space="preserve">
+    <value>Benutzer bearbeiten</value>
+  </data>
+  <data name="EDIT_USER_DLG_USER_EXISTS" xml:space="preserve">
+    <value>Ein Benutzer mit diesem Namen existiert bereits.</value>
+  </data>
+  <data name="EDIT_USER_DLG_WRONG_PASSWORD" xml:space="preserve">
+    <value>Das eingegebene Kennwort stimmt nicht mit dem Kennwort des Benutzers überein.</value>
+  </data>
+  <data name="EXC_MERGE_BLOCK_CONVERSION" xml:space="preserve">
+    <value>TX Text Control Reports:
+Die folgenden wiederholenden Blöcke konnten nicht konvertiert werden:
+{0}
+
+Die zugehörigen Textmarken können folgendermaßen
+entfernt werden:
+Einfügen - Textmarke - Textmarke Löschen.
+Ein neuer wiederholender Block kann folgendermaßen erzeugt werden:
+Seriendruck - Wiederholenden Block Einfügen - Eigenen Wiederholenden Block einfügen.</value>
+    <comment>{0} is a list of merge block names separated by line breaks</comment>
+  </data>
+  <data name="EXC_PDF_SIGNATURE" xml:space="preserve">
+    <value>Es konnte keine PDF-Signatur erzeugt werden: {0}</value>
+    <comment>{0} is the exception text</comment>
+  </data>
+  <data name="HEADER_BasicShapesCategory" xml:space="preserve">
+    <value>Grundformen</value>
+  </data>
+  <data name="HEADER_BlockArrowsCategory" xml:space="preserve">
+    <value>Blockpfeile</value>
+  </data>
+  <data name="HEADER_CalloutsCategory" xml:space="preserve">
+    <value>Sprechblasen</value>
+  </data>
+  <data name="HEADER_EquationShapesCategory" xml:space="preserve">
+    <value>Gleichungsformen</value>
+  </data>
+  <data name="HEADER_FlowChartCategory" xml:space="preserve">
+    <value>Flussdiagramm</value>
+  </data>
+  <data name="HEADER_LinesCategory" xml:space="preserve">
+    <value>Linien</value>
+  </data>
+  <data name="HEADER_RectanglesCategory" xml:space="preserve">
+    <value>Rechtecke</value>
+  </data>
+  <data name="HEADER_StarsAndBannersCategory" xml:space="preserve">
+    <value>Sternen und Banner</value>
+  </data>
+  <data name="MSG_CONFIRM_UPDATE_MERGE_BLOCK_TYPE" xml:space="preserve">
+    <value>Die Dokumentvorlage war vorher in einem älteren TX Text Control Format abgespeichert.
+Soll sie im aktuellen Format gespeichert werden?</value>
+  </data>
+  <data name="MSG_FILE_DOES_NOT_EXIST" xml:space="preserve">
+    <value>Datei "{0}" wurde nicht gefunden.</value>
+    <comment>{0} is the file name</comment>
+  </data>
+  <data name="MSG_REMOVE_FILE_FROM_LIST" xml:space="preserve">
+    <value>Die gewählte Datei existiert nicht. Soll sie 
+von der Liste der zuletzt geöffneten Dateien
+entfernt werden?</value>
+  </data>
+  <data name="MSG_UNKNOWN_FILE_TYPE" xml:space="preserve">
+    <value>Unbekannter Dateityp (*{0}).</value>
+    <comment>{0} is the file extension of the file which could not be loaded.</comment>
+  </data>
+  <data name="OPT_DLG_CSS_GRP_SAVEOPTS" xml:space="preserve">
+    <value>Speicheroptionen</value>
+  </data>
+  <data name="OPT_DLG_CSS_INLINE" xml:space="preserve">
+    <value>I&amp;nline-Stylesheet</value>
+  </data>
+  <data name="OPT_DLG_CSS_LBL_FILE" xml:space="preserve">
+    <value>Stylesheet-&amp;Datei:</value>
+  </data>
+  <data name="OPT_DLG_CSS_NONE" xml:space="preserve">
+    <value>&amp;Kein Stylesheet</value>
+  </data>
+  <data name="OPT_DLG_CSS_SAVE_NOT_OVR" xml:space="preserve">
+    <value>S&amp;peichern, vorhandene Datei aber nicht überschreiben</value>
+  </data>
+  <data name="OPT_DLG_CSS_SEPARATE_FILE" xml:space="preserve">
+    <value>&amp;Stylesheet in separater Datei speichern</value>
+  </data>
+  <data name="OPT_DLG_PDFEXP_ENABLE_PDFA" xml:space="preserve">
+    <value>&amp;PDF/A aktivieren</value>
+  </data>
+  <data name="OPT_DLG_PDFEXP_GRP_OPTS" xml:space="preserve">
+    <value>PDF Export-Optionen</value>
+  </data>
+  <data name="OPT_DLG_PDFIMP_GRP_OPTS" xml:space="preserve">
+    <value>PDF Import-Optionen</value>
+  </data>
+  <data name="OPT_DLG_PDFIMP_LBL_MODE" xml:space="preserve">
+    <value>I&amp;mport-Modus:</value>
+  </data>
+  <data name="OPT_DLG_PDFIMP_MODE_FRAMES" xml:space="preserve">
+    <value>Textrahmen</value>
+  </data>
+  <data name="OPT_DLG_PDFIMP_MODE_PAR" xml:space="preserve">
+    <value>Absatzerkennung</value>
+  </data>
+  <data name="OPT_DLG_PDFIMP_MODE_PLAIN" xml:space="preserve">
+    <value>Einfacher Text</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_CHNGALLOW_ANY" xml:space="preserve">
+    <value>Alle bis auf Seitenextraktion</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_CHNGALLOW_COMMENTS" xml:space="preserve">
+    <value>Kommentieren, Formularfelder ausfüllen und Signierung</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_CHNGALLOW_FORMFLDS" xml:space="preserve">
+    <value>Formularfelder ausfüllen und Signierung</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_CHNGALLOW_INSDEL" xml:space="preserve">
+    <value>Einfügen, löschen und Seitendrehung</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_CHNGALLOW_NONE" xml:space="preserve">
+    <value>Keine</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_ERR_NO_DOC_PWD" xml:space="preserve">
+    <value>Das Dokumentkennwort-Feld ist leer. Bitte legen sie ein Kennwort fest oder deaktivieren sie die Option.</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_ERR_NO_MASTER_PWD" xml:space="preserve">
+    <value>Das Haupt-Kennwortfeld ist leer. Bitte legen sie ein Kennwort fest oder deaktivieren sie die Option.</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_ERR_SAME_PWD" xml:space="preserve">
+    <value>Haupt- und Dokumentkennwort sind identisch. Bitte ändern sie entweder das Haupt- oder das Dokumentkennwort.</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_GRP_DIG_SIG" xml:space="preserve">
+    <value>Digitale Signatur</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_GRP_DOC_PWD" xml:space="preserve">
+    <value>PDF-Dokument-Kennwort</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_LBL_CERT_FILE" xml:space="preserve">
+    <value>&amp;Zertifikatsdatei (*.pfx):</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_LBL_CERT_PWD" xml:space="preserve">
+    <value>Zertifikat-&amp;Kennwort:</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_LBL_DOC_PWD" xml:space="preserve">
+    <value>Kenn&amp;wort:</value>
+  </data>
+  <data name="OPT_DLG_PDFSEC_REQ_DOC_PWD" xml:space="preserve">
+    <value>&amp;Dokument mit einem Kennwort schützen</value>
+  </data>
+  <data name="OPT_DLG_TAB_HTMLOPTS" xml:space="preserve">
+    <value>HTML-Optionen</value>
+  </data>
+  <data name="OPT_DLG_TAB_PDFEXP" xml:space="preserve">
+    <value>PDF-Export</value>
+  </data>
+  <data name="OPT_DLG_TAB_PDFIMP" xml:space="preserve">
+    <value>PDF-Import</value>
+  </data>
+  <data name="OPT_DLG_TAB_PDFSEC" xml:space="preserve">
+    <value>PDF-Berechtigungen</value>
+  </data>
+  <data name="OPT_DLG_TITLE" xml:space="preserve">
+    <value>Optionen</value>
+  </data>
+  <data name="SAVE_CHANGES_TO" xml:space="preserve">
+    <value>Änderungen an {0} speichern?</value>
+    <comment>{0} is the document title</comment>
+  </data>
+  <data name="strChartDataRelMenuItemName" xml:space="preserve">
+    <value>Diagrammdaten setzen...</value>
+  </data>
+  <data name="strChartEditDataMenuItemName" xml:space="preserve">
+    <value>Diagrammdaten bearbeiten...</value>
+  </data>
+  <data name="strChartPropertiesMenuItemName" xml:space="preserve">
+    <value>Diagramm Eigenschaften...</value>
+  </data>
+  <data name="strMsgFileHandler01" xml:space="preserve">
+    <value>Manche Formatierungsmöglichkeiten werden von diesem Speicherungsformat nicht unterstützt.
+Diese Eigenschaften gehen möglichweise  verloren oder werden herabgestuft nach dem erneutem Laden des Dokumentes.</value>
+  </data>
+  <data name="strMsgFileHandler02" xml:space="preserve">
+    <value>Der Export nach PDF/A ist derzeit nicht möglich, da die PDF/A-Einstellung nicht aktiviert ist.
+Die PDF/A-Einstellung kann über  'Optionen' → 'PDF Einstellungen' → 'Export Einstellungen' aktiviert werden. Der Exportprozess wird nun abgebrochen.</value>
+  </data>
+  <data name="strObjectName" xml:space="preserve">
+    <value>Objektnamen setzen...</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Arc" xml:space="preserve">
+    <value>Bogen</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Arrow" xml:space="preserve">
+    <value>Pfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BentArrow" xml:space="preserve">
+    <value>Gebogener Pfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BentUpArrow" xml:space="preserve">
+    <value>Nach oben gebogener Pfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Bevel" xml:space="preserve">
+    <value>Rahmen</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BlockArc" xml:space="preserve">
+    <value>Halbbogen</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Can" xml:space="preserve">
+    <value>Zylinder</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Chevron" xml:space="preserve">
+    <value>Eingekerbter Richtungspfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Chord" xml:space="preserve">
+    <value>Kreissehne</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CircularArrow" xml:space="preserve">
+    <value>Gebogener Pfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Cloud" xml:space="preserve">
+    <value>Wolke</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CloudCallout" xml:space="preserve">
+    <value>Wolkenförmige Legende</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Plus" xml:space="preserve">
+    <value>Kreuz</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Cube" xml:space="preserve">
+    <value>Würfel</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Curve" xml:space="preserve">
+    <value>Kurve</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CurvedArrowCon" xml:space="preserve">
+    <value>Gekrümmte Verbindung mit Pfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CurvedConnector3" xml:space="preserve">
+    <value>Gekrümmte Verbindung</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CurvedDblArrowCon" xml:space="preserve">
+    <value>Gekrümmte Verbindung mit Doppelpfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CurvedDownArrow" xml:space="preserve">
+    <value>Nach unten gekrümmter Pfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_EllipseRibbon" xml:space="preserve">
+    <value>Nach unten gekrümmtes Band</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CurvedLeftArrow" xml:space="preserve">
+    <value>Nach links gekrümmter Pfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CurvedRightArrow" xml:space="preserve">
+    <value>Nach rechts gekrümmter Pfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_CurvedUpArrow" xml:space="preserve">
+    <value>Nach oben gekrümmter Pfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_EllipseRibbon2" xml:space="preserve">
+    <value>Nach oben gekrümmtes Band</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_DblArrow" xml:space="preserve">
+    <value>Doppelpfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BracePair" xml:space="preserve">
+    <value>Geschweifte Klammer links / rechts</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BracketPair" xml:space="preserve">
+    <value>Runde Klammer links / rechts</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_DoubleWave" xml:space="preserve">
+    <value>Doppelte Welle</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Decagon" xml:space="preserve">
+    <value>Zehneck</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_DiagonalStripe" xml:space="preserve">
+    <value>Diagonaler Streifen</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Diamond" xml:space="preserve">
+    <value>Raute</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_MathDivide" xml:space="preserve">
+    <value>Division</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Dodecagon" xml:space="preserve">
+    <value>Zwölfeck</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Donut" xml:space="preserve">
+    <value>Rad</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_DownArrow" xml:space="preserve">
+    <value>Pfeil nach unten</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_DownArrowCallout" xml:space="preserve">
+    <value>Legende mit Pfeil nach unten</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Ribbon" xml:space="preserve">
+    <value>Band nach unten</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_ElbowArrowCon" xml:space="preserve">
+    <value>Gewinkelte Verbindung mit Pfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BentConnector3" xml:space="preserve">
+    <value>Gewinkelte Verbindung</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_ElbowDblArrowCon" xml:space="preserve">
+    <value>Gewinkelte Verbindung mit Doppelpfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_MathEqual" xml:space="preserve">
+    <value>Gleich</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_IrregularSeal1" xml:space="preserve">
+    <value>Explosion 1</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_IrregularSeal2" xml:space="preserve">
+    <value>Explosion 2</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartAlternateProcess" xml:space="preserve">
+    <value>Flussdiagramm: Alternativer Prozess</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartPunchedCard" xml:space="preserve">
+    <value>Flussdiagramm: Karte</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartCollate" xml:space="preserve">
+    <value>Flussdiagramm: Zusammenstellen</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartConnector" xml:space="preserve">
+    <value>Flussdiagramm: Verbindungsstelle</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartInputOutput" xml:space="preserve">
+    <value>Flussdiagramm: Daten</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartDecision" xml:space="preserve">
+    <value>Flussdiagramm: Verzweigung</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartDelay" xml:space="preserve">
+    <value>Flussdiagramm: Verzögerung</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartMagneticDrum" xml:space="preserve">
+    <value>Flussdiagramm: Datenträger mit direktem Zugriff</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartDisplay" xml:space="preserve">
+    <value>Flussdiagramm: Anzeige</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartDocument" xml:space="preserve">
+    <value>Flussdiagramm: Dokument</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartExtract" xml:space="preserve">
+    <value>Flussdiagramm: Auszug</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartInternalStorage" xml:space="preserve">
+    <value>Flussdiagramm: Zentralspeicher</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartMagneticDisk" xml:space="preserve">
+    <value>Flussdiagramm: Magnetplattenspeicher</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartManualInput" xml:space="preserve">
+    <value>Flussdiagramm: Manuelle Eingabe</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartManualOperation" xml:space="preserve">
+    <value>Flussdiagramm: Manuelle Verarbeitung</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartMerge" xml:space="preserve">
+    <value>Flussdiagramm: Zusammenführen</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartMultidocument" xml:space="preserve">
+    <value>Flussdiagramm: Mehrere Dokumente</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartOffpageConnector" xml:space="preserve">
+    <value>Flussdiagramm: Verbindungsstelle zu einer anderen Seite</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartOr" xml:space="preserve">
+    <value>Flussdiagramm: Oder</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartPredefinedProcess" xml:space="preserve">
+    <value>Flussdiagramm: Vordefinierter Prozess</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartPreparation" xml:space="preserve">
+    <value>Flussdiagramm: Vorbereitung</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartProcess" xml:space="preserve">
+    <value>Flussdiagramm: Prozess</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartPunchedTape" xml:space="preserve">
+    <value>Flussdiagramm: Lochstreifen</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartMagneticTape" xml:space="preserve">
+    <value>Flussdiagramm: Datenträger mit sequenziellem Zugriff</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartSort" xml:space="preserve">
+    <value>Flussdiagramm: Sortieren</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartOnlineStorage" xml:space="preserve">
+    <value>Flussdiagramm: Gespeicherte Daten</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartSummingJunction" xml:space="preserve">
+    <value>Flussdiagramm: Zusammenführung</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FlowChartTerminator" xml:space="preserve">
+    <value>Flussdiagramm: Grenzstelle</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_FoldedCorner" xml:space="preserve">
+    <value>Gefaltete Ecke</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Frame" xml:space="preserve">
+    <value>Rahmen</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Freeform" xml:space="preserve">
+    <value>Freihandform</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_HalfFrame" xml:space="preserve">
+    <value>Halber Rahmen</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Heart" xml:space="preserve">
+    <value>Herz</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Heptagon" xml:space="preserve">
+    <value>Siebeneck</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Hexagon" xml:space="preserve">
+    <value>Sechseck</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_HorizontalScroll" xml:space="preserve">
+    <value>Horizontaler Bildlauf</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Triangle" xml:space="preserve">
+    <value>Gleichschenkliges Dreieck</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftArrow" xml:space="preserve">
+    <value>Pfeil nach links</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftArrowCallout" xml:space="preserve">
+    <value>Legende mit Pfeil nach links</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftBrace" xml:space="preserve">
+    <value>Geschweifte Klammer links</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftBracket" xml:space="preserve">
+    <value>Runde Klammer links</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftRightArrow" xml:space="preserve">
+    <value>Pfeil nach links und rechts</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftRightArrowCallout" xml:space="preserve">
+    <value>Legende mit Pfeil nach links und rechts</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftRightUpArrow" xml:space="preserve">
+    <value>Pfeil nach links, rechts und oben</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LeftUpArrow" xml:space="preserve">
+    <value>Pfeil nach links und oben</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_LightningBolt" xml:space="preserve">
+    <value>Gewitterblitz</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Line" xml:space="preserve">
+    <value>Linie</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BorderCallout1" xml:space="preserve">
+    <value>Legende mit Linie 1</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_AccentCallout1" xml:space="preserve">
+    <value>Legende mit Linie 1 (Akzentuierungsbalken)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_AccentBorderCallout1" xml:space="preserve">
+    <value>Legende mit Linie 1 (Rahmen und Akzentuierungsbalken)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Callout1" xml:space="preserve">
+    <value>Legende mit Linie 1 (ohne Rahmen)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BorderCallout2" xml:space="preserve">
+    <value>Legende mit Linie 2</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_AccentCallout2" xml:space="preserve">
+    <value>Legende mit Linie 2 (Akzentuierungsbalken)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_AccentBorderCallout2" xml:space="preserve">
+    <value>Legende mit Linie 2 (Rahmen und Akzentuierungsbalken)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Callout2" xml:space="preserve">
+    <value>Legende mit Linie 2 (ohne Rahmen)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_BorderCallout3" xml:space="preserve">
+    <value>Legende mit Linie 3</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_AccentCallout3" xml:space="preserve">
+    <value>Legende mit Linie 3 (Akzentuierungsbalken)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_AccentBorderCallout3" xml:space="preserve">
+    <value>Legende mit Linie 3 (Rahmen und Akzentuierungsbalken)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Callout3" xml:space="preserve">
+    <value>Legende mit Linie 3 (ohne Rahmen)</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Corner" xml:space="preserve">
+    <value>L-Form</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_MathMinus" xml:space="preserve">
+    <value>Minus</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Moon" xml:space="preserve">
+    <value>Mond</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_MathMultiply" xml:space="preserve">
+    <value>Multiplizieren</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_NotchedRightArrow" xml:space="preserve">
+    <value>Eingekerbter Pfeil nach rechts</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_MathNotEqual" xml:space="preserve">
+    <value>Ungleich</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_NoSmoking" xml:space="preserve">
+    <value>„Nein“-Symbol</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Octagon" xml:space="preserve">
+    <value>Achteck</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Ellipse" xml:space="preserve">
+    <value>Ellipse</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_WedgeEllipseCallout" xml:space="preserve">
+    <value>Ovale Legende</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Parallelogram" xml:space="preserve">
+    <value>Parallelogramm</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_HomePlate" xml:space="preserve">
+    <value>Richtungspfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Pie" xml:space="preserve">
+    <value>Kuchen</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Plaque" xml:space="preserve">
+    <value>Zierrahmen</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_MathPlus" xml:space="preserve">
+    <value>Plus</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_QuadArrow" xml:space="preserve">
+    <value>Pfeil in vier Richtungen</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_QuadArrowCallout" xml:space="preserve">
+    <value>Legende mit Pfeil in vier Richtungen</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Rectangle" xml:space="preserve">
+    <value>Rechteck</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_WedgeRectangleCallout" xml:space="preserve">
+    <value>Rechteckige Legende</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Pentagon" xml:space="preserve">
+    <value>Regelmäßiges Fünfeck</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_RightArrow" xml:space="preserve">
+    <value>Pfeil nach rechts</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_RightArrowCallout" xml:space="preserve">
+    <value>Legende mit Pfeil nach rechts</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_RightBrace" xml:space="preserve">
+    <value>Geschweifte Klammer rechts</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_RightBracket" xml:space="preserve">
+    <value>Runde Klammer rechts</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_RightTriangle" xml:space="preserve">
+    <value>Rechtwinkliges Dreieck</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Round2DiagonalRectangle" xml:space="preserve">
+    <value>Diagonal liegende Ecken des Rechtecks abrunden</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_RoundRectangle" xml:space="preserve">
+    <value>Abgerundetes Rechteck</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_WedgeRoundRectangleCallout" xml:space="preserve">
+    <value>Abgerundete rechteckige Legende</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Round2SameRectangle" xml:space="preserve">
+    <value>Auf der gleichen Seite des Rechtecks liegende Ecken abrunden</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Round1Rectangle" xml:space="preserve">
+    <value>Eine Ecke des Rechtecks abrunden</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Scribble" xml:space="preserve">
+    <value>Skizze</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_SmileyFace" xml:space="preserve">
+    <value>Smiley</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Snip2DiagonalRectangle" xml:space="preserve">
+    <value>Diagonal liegende Ecken des Rechtecks schneiden</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_SnipRoundRectangle" xml:space="preserve">
+    <value>Eine Ecke des Rechtecks schneiden und abrunden</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Snip2SameRectangle" xml:space="preserve">
+    <value>Ecken des Rechtecks auf der gleichen Seite schneiden</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Snip1Rectangle" xml:space="preserve">
+    <value>Eine Ecke des Rechtecks schneiden</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star4" xml:space="preserve">
+    <value>Stern mit 4 Zacken</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star5" xml:space="preserve">
+    <value>Stern mit 5 Zacken</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star6" xml:space="preserve">
+    <value>Stern mit 6 Zacken</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star7" xml:space="preserve">
+    <value>Stern mit 7 Zacken</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star8" xml:space="preserve">
+    <value>Stern mit 8 Zacken</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star10" xml:space="preserve">
+    <value>Stern mit 10 Zacken</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star12" xml:space="preserve">
+    <value>Stern mit 12 Zacken</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star16" xml:space="preserve">
+    <value>Stern mit 16 Zacken</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star24" xml:space="preserve">
+    <value>Stern mit 24 Zacken</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Star32" xml:space="preserve">
+    <value>Stern mit 32 Zacken</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_StripedRightArrow" xml:space="preserve">
+    <value>Gestreifter Pfeil nach rechts</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Sun" xml:space="preserve">
+    <value>Sonne</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Teardrop" xml:space="preserve">
+    <value>Träne</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_TextBox" xml:space="preserve">
+    <value>Textfeld</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_NonIsoscelesTrapezoid" xml:space="preserve">
+    <value>Trapezoid</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_UpArrow" xml:space="preserve">
+    <value>Pfeil nach oben</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_UpArrowCallout" xml:space="preserve">
+    <value>Legende mit Pfeil nach oben</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_UpDownArrow" xml:space="preserve">
+    <value>Pfeil nach oben und unten</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Ribbon2" xml:space="preserve">
+    <value>Band nach oben</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_UTurnArrow" xml:space="preserve">
+    <value>180-Grad-Pfeil</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_VerticalScroll" xml:space="preserve">
+    <value>Vertikaler Bildlauf</value>
+  </data>
+  <data name="TOOLTIP_SHAPE_Wave" xml:space="preserve">
+    <value>Welle</value>
+  </data>
+  <data name="USER_ACC_DLG_BTN_GRANT" xml:space="preserve">
+    <value>Zugriff &amp;erteilen</value>
+  </data>
+  <data name="USER_ACC_DLG_BTN_MANAGE" xml:space="preserve">
+    <value>&amp;Benutzer verwalten…</value>
+  </data>
+  <data name="USER_ACC_DLG_BTN_REVOKE" xml:space="preserve">
+    <value>Zugriff &amp;verweigern</value>
+  </data>
+  <data name="USER_ACC_DLG_ENTER_PASSWORD" xml:space="preserve">
+    <value>Zugriff erteilen</value>
+  </data>
+  <data name="USER_ACC_DLG_ENTER_PASSWORD_LABEL" xml:space="preserve">
+    <value>Kennwort:</value>
+  </data>
+  <data name="USER_ACC_DLG_LBL_USERS" xml:space="preserve">
+    <value>&amp;Registrierte Benutzer:</value>
+  </data>
+  <data name="USER_ACC_DLG_TITLE" xml:space="preserve">
+    <value>Benutzern Zugriff erteilen</value>
+  </data>
+  <data name="USER_ACC_DLG_WRONG_PASSWORD" xml:space="preserve">
+    <value>Das eingegebene Kennwort stimmt nicht mit dem Kennwort des ausgewählten Benutzers überein.</value>
+  </data>
+  <data name="USER_ADD_REGION_DLG_TITLE" xml:space="preserve">
+    <value>Editierbare Region hinzufügen</value>
+  </data>
+  <data name="USER_ADMIN_DLG_BTN_DELETE" xml:space="preserve">
+    <value>&amp;Löschen</value>
+  </data>
+  <data name="USER_ADMIN_DLG_BTN_EDIT" xml:space="preserve">
+    <value>&amp;Bearbeiten…</value>
+  </data>
+  <data name="USER_ADMIN_DLG_BTN_NEW" xml:space="preserve">
+    <value>&amp;Neu…</value>
+  </data>
+  <data name="USER_ADMIN_DLG_LBL_USERS" xml:space="preserve">
+    <value>&amp;Registrierte Benutzer:</value>
+  </data>
+  <data name="USER_ADMIN_DLG_TITLE" xml:space="preserve">
+    <value>Benutzer verwalten</value>
+  </data>
+  <data name="USR_INP_PASSWORD_LABEL" xml:space="preserve">
+    <value>Bitte geben Sie das Kennwort für die kennwortgeschützte Datei ein:</value>
+  </data>
+  <data name="USR_INP_PASSWORD_TITLE" xml:space="preserve">
+    <value>Kennworteingabe</value>
+  </data>
+  <data name="MNUBTNCOLUMNS_TEXT" xml:space="preserve">
+    <value>Spalten</value>
+  </data>
+  <data name="MNUBTNCOPY_TEXT" xml:space="preserve">
+    <value>Kopieren</value>
+  </data>
+  <data name="MNUBTNCUT_TEXT" xml:space="preserve">
+    <value>Ausschneiden</value>
+  </data>
+  <data name="MNUBTNDELETE_TEXT" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="MNUBTNFIND_TEXT" xml:space="preserve">
+    <value>Suchen</value>
+  </data>
+  <data name="MNUBTNHEADERSANDFOOTERS_TEXT" xml:space="preserve">
+    <value>Kopf- und Fußzeilen</value>
+  </data>
+  <data name="MNUBTNMARGINSANDPAPER_TEXT" xml:space="preserve">
+    <value>Abstände und Papier</value>
+  </data>
+  <data name="MNUBTNNEWFILE_TEXT" xml:space="preserve">
+    <value>Neues Dokument</value>
+  </data>
+  <data name="MNUBTNOPENFILE_TEXT" xml:space="preserve">
+    <value>Dokument öffnen</value>
+  </data>
+  <data name="MNUBTNPAGEBORDERS_TEXT" xml:space="preserve">
+    <value>Seitenränder</value>
+  </data>
+  <data name="MNUBTNPASTE_TEXT" xml:space="preserve">
+    <value>Einfügen</value>
+  </data>
+  <data name="MNUBTNPRINTPREVIEW_TEXT" xml:space="preserve">
+    <value>Druckvorschau</value>
+  </data>
+  <data name="MNUBTNPRINT_TEXT" xml:space="preserve">
+    <value>Dokument drucken</value>
+  </data>
+  <data name="MNUBTNREDO_TEXT" xml:space="preserve">
+    <value>Erneut</value>
+  </data>
+  <data name="MNUBTNSAVE_TEXT" xml:space="preserve">
+    <value>Dokument Speichern</value>
+  </data>
+  <data name="MNUBTNSELECTOBJECTS_TEXT" xml:space="preserve">
+    <value>Objekte Selektieren</value>
+  </data>
+  <data name="MNUBTNUNDO_TEXT" xml:space="preserve">
+    <value>Wiederherstellen</value>
+  </data>
+  <data name="MNUEDIT_COPY_TEXT" xml:space="preserve">
+    <value>&amp;Kopieren</value>
+  </data>
+  <data name="MNUEDIT_CUT_TEXT" xml:space="preserve">
+    <value>&amp;Ausschneiden</value>
+  </data>
+  <data name="MNUEDIT_DELETE_TEXT" xml:space="preserve">
+    <value>&amp;Löschen</value>
+  </data>
+  <data name="MNUEDIT_FIND_TEXT" xml:space="preserve">
+    <value>S&amp;uchen</value>
+  </data>
+  <data name="MNUEDIT_HYPERLINK_TEXT" xml:space="preserve">
+    <value>&amp;Hyperlink…</value>
+  </data>
+  <data name="MNUEDIT_PASTE_TEXT" xml:space="preserve">
+    <value>&amp;Einfügen</value>
+  </data>
+  <data name="MNUEDIT_PERMISSIONS_ALLOWCOPY_TEXT" xml:space="preserve">
+    <value>&amp;Kopieren erlauben</value>
+  </data>
+  <data name="MNUEDIT_PERMISSIONS_ALLOWFORMATTINGSTYLES_TEXT" xml:space="preserve">
+    <value>F&amp;ormatierungsstile erlauben</value>
+  </data>
+  <data name="MNUEDIT_PERMISSIONS_ALLOWFORMATTING_TEXT" xml:space="preserve">
+    <value>&amp;Formatieren erlauben</value>
+  </data>
+  <data name="MNUEDIT_PERMISSIONS_ALLOWPRINTING_TEXT" xml:space="preserve">
+    <value>&amp;Drucken erlauben</value>
+  </data>
+  <data name="MNUEDIT_PERMISSIONS_READONLY_TEXT" xml:space="preserve">
+    <value>&amp;Schreibgeschützt</value>
+  </data>
+  <data name="MNUEDIT_PERMISSIONS_TEXT" xml:space="preserve">
+    <value>&amp;Rechte</value>
+  </data>
+  <data name="MNUEDIT_PROTECTDOCUMENT_TEXT" xml:space="preserve">
+    <value>&amp;Dokument schützen</value>
+  </data>
+  <data name="MNUEDIT_REDO_TEXT" xml:space="preserve">
+    <value>&amp;Wiederherstellen</value>
+  </data>
+  <data name="MNUEDIT_REPLACE_TEXT" xml:space="preserve">
+    <value>Erset&amp;zen</value>
+  </data>
+  <data name="MNUEDIT_SELECTALL_TEXT" xml:space="preserve">
+    <value>Alles &amp;Selektieren</value>
+  </data>
+  <data name="MNUEDIT_TARGET_TEXT" xml:space="preserve">
+    <value>&amp;Textmarke…</value>
+  </data>
+  <data name="MNUEDIT_TEXT" xml:space="preserve">
+    <value>&amp;Bearbeiten</value>
+  </data>
+  <data name="MNUEDIT_UNDO_TEXT" xml:space="preserve">
+    <value>Rückgä&amp;ngig</value>
+  </data>
+  <data name="MNUFILE_EXIT_TEXT" xml:space="preserve">
+    <value>&amp;Beenden</value>
+  </data>
+  <data name="MNUFILE_EXPORT_TEXT" xml:space="preserve">
+    <value>&amp;Exportieren…</value>
+  </data>
+  <data name="MNUFILE_NEW_TEXT" xml:space="preserve">
+    <value>&amp;Neu</value>
+  </data>
+  <data name="MNUFILE_OPEN_TEXT" xml:space="preserve">
+    <value>&amp;Öffnen</value>
+  </data>
+  <data name="MNUFILE_OPTIONS_TEXT" xml:space="preserve">
+    <value>&amp;Optionen…</value>
+  </data>
+  <data name="MNUFILE_PAGESETUP_TEXT" xml:space="preserve">
+    <value>&amp;Seiteneinstellung…</value>
+  </data>
+  <data name="MNUFILE_PRINTPREVIEW_TEXT" xml:space="preserve">
+    <value>Druck&amp;vorschau…</value>
+  </data>
+  <data name="MNUFILE_PRINT_TEXT" xml:space="preserve">
+    <value>&amp;Drucken…</value>
+  </data>
+  <data name="MNUFILE_RECENTFILES_TEXT" xml:space="preserve">
+    <value>&amp;Letzte Dateien</value>
+  </data>
+  <data name="MNUFILE_SAVEAS_TEXT" xml:space="preserve">
+    <value>Speichern &amp;Unter...</value>
+  </data>
+  <data name="MNUFILE_SAVE_TEXT" xml:space="preserve">
+    <value>S&amp;peichern</value>
+  </data>
+  <data name="MNUFILE_TEXT" xml:space="preserve">
+    <value>&amp;Datei</value>
+  </data>
+  <data name="MNUFILE_USERACCESS_TEXT" xml:space="preserve">
+    <value>&amp;Zugriffsrechte...</value>
+  </data>
+  <data name="MNUFILE_USERMANAGEMENT_TEXT" xml:space="preserve">
+    <value>Benutzerver&amp;waltung...</value>
+  </data>
+  <data name="MNUFORMAT_CHARACTER_TEXT" xml:space="preserve">
+    <value>&amp;Zeichen…</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_AXES_LEFTTORIGHT_TEXT" xml:space="preserve">
+    <value>&amp;Links nach Rechts Achse anzeigen</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_AXES_TEXT" xml:space="preserve">
+    <value>&amp;Koordinatenachsen</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_AXES_WITHOUTLABELING_TEXT" xml:space="preserve">
+    <value>&amp;Ohne Bezeichnung</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_AXISTITLES_BELOWCHART_TEXT" xml:space="preserve">
+    <value>&amp;Unterhalb des Diagramms</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_AXISTITLES_NONE_TEXT" xml:space="preserve">
+    <value>&amp;Bezeichnung ausblenden</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_AXISTITLES_TEXT" xml:space="preserve">
+    <value>&amp;Achsenbezeichnung</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_AXISTITLES_VERTICAL_TEXT" xml:space="preserve">
+    <value>&amp;Vertikale Achsenbezeichnung</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_CHARTTITLE_ABOVECHART_TEXT" xml:space="preserve">
+    <value>&amp;Oberhalb</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_CHARTTITLE_CENTEREDOVERLAY_TEXT" xml:space="preserve">
+    <value>&amp;Zentriert</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_CHARTTITLE_NONE_TEXT" xml:space="preserve">
+    <value>&amp;Keinen</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_CHARTTITLE_TEXT" xml:space="preserve">
+    <value>&amp;Überschrift</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_DATALABELS_NONE_TEXT" xml:space="preserve">
+    <value>&amp;Keinen</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_DATALABELS_OUTSIDEEND_TEXT" xml:space="preserve">
+    <value>&amp;Äußeres Ende</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_DATALABELS_TEXT" xml:space="preserve">
+    <value>&amp;Datenbeschriftung</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_HORGRIDLINES_TEXT" xml:space="preserve">
+    <value>&amp;Horizontale Gitternetzlinien</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_HORIZGRIDLINES_MAJANDMIN_TEXT" xml:space="preserve">
+    <value>Große &amp;&amp; kleine &amp;Gitternetzlinien</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_HORIZGRIDLINES_MAJOR_TEXT" xml:space="preserve">
+    <value>G&amp;roße Gitternetzlinien</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_HORIZGRIDLINES_MINOR_TEXT" xml:space="preserve">
+    <value>K&amp;leine Gitternetzlinien</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_HORIZGRIDLINES_NONE_TEXT" xml:space="preserve">
+    <value>&amp;Keine</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_LEGEND_BOTTOM_TEXT" xml:space="preserve">
+    <value>Legende &amp;Unten Anzeigen</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_LEGEND_LEFT_TEXT" xml:space="preserve">
+    <value>Legende &amp;Links Anzeigen</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_LEGEND_NONE_TEXT" xml:space="preserve">
+    <value>&amp;Keine</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_LEGEND_RIGHT_TEXT" xml:space="preserve">
+    <value>Legende &amp;Rechts Anzeigen</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_LEGEND_TEXT" xml:space="preserve">
+    <value>&amp;Legende</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_LEGEND_TOP_TEXT" xml:space="preserve">
+    <value>Legende &amp;Oben Anzeigen</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_TEXT" xml:space="preserve">
+    <value>&amp;Diagramm</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_VERTGRIDLINES_MAJANDMIN_TEXT" xml:space="preserve">
+    <value>Große &amp;&amp; kleine &amp;Gitternetzlinien</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_VERTGRIDLINES_MAJOR_TEXT" xml:space="preserve">
+    <value>G&amp;roße Gitternetzlinien</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_VERTGRIDLINES_MINOR_TEXT" xml:space="preserve">
+    <value>K&amp;leine Gitternetzlinien</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_VERTGRIDLINES_NONE_TEXT" xml:space="preserve">
+    <value>&amp;Keine</value>
+  </data>
+  <data name="MNUFORMAT_CHARTLAYOUT_VERTGRIDLINES_TEXT" xml:space="preserve">
+    <value>&amp;Vertikale Gitternetzlinien</value>
+  </data>
+  <data name="MNUFORMAT_COLUMNS_TEXT" xml:space="preserve">
+    <value>Sp&amp;alten...</value>
+  </data>
+  <data name="MNUFORMAT_HEADERSANDFOOTERS_TEXT" xml:space="preserve">
+    <value>&amp;Kopf- und Fußzeilen</value>
+  </data>
+  <data name="MNUFORMAT_IMAGE_TEXT" xml:space="preserve">
+    <value>&amp;Bild...</value>
+  </data>
+  <data name="MNUFORMAT_LANGUAGE_TEXT" xml:space="preserve">
+    <value>Sprac&amp;he...</value>
+  </data>
+  <data name="MNUFORMAT_LIST_ARABICNUMBERS_TEXT" xml:space="preserve">
+    <value>&amp;1, 2, 3</value>
+  </data>
+  <data name="MNUFORMAT_LIST_ATTRIBUTES_TEXT" xml:space="preserve">
+    <value>&amp;Eigenschaften…</value>
+  </data>
+  <data name="MNUFORMAT_LIST_BULLETS_TEXT" xml:space="preserve">
+    <value>B&amp;ullets</value>
+  </data>
+  <data name="MNUFORMAT_LIST_CAPITALLETTERS_TEXT" xml:space="preserve">
+    <value>A, &amp;B, C</value>
+  </data>
+  <data name="MNUFORMAT_LIST_DECREASELEVEL_TEXT" xml:space="preserve">
+    <value>Level &amp;Absenken</value>
+  </data>
+  <data name="MNUFORMAT_LIST_INCREASELEVEL_TEXT" xml:space="preserve">
+    <value>&amp;Level Erhöhen</value>
+  </data>
+  <data name="MNUFORMAT_LIST_LETTERS_TEXT" xml:space="preserve">
+    <value>a, b, &amp;c</value>
+  </data>
+  <data name="MNUFORMAT_LIST_ROMANNUMBERS_TEXT" xml:space="preserve">
+    <value>&amp;I, II, III, IV</value>
+  </data>
+  <data name="MNUFORMAT_LIST_SMALLROMANNUMBERS_TEXT" xml:space="preserve">
+    <value>i, ii, iii, i&amp;v</value>
+  </data>
+  <data name="MNUFORMAT_LIST_TEXT" xml:space="preserve">
+    <value>Bullets und &amp;Nummerierung</value>
+  </data>
+  <data name="MNUFORMAT_PAGEBORDERS_TEXT" xml:space="preserve">
+    <value>&amp;Seitenränder…</value>
+  </data>
+  <data name="MNUFORMAT_PARAGRAPH_TEXT" xml:space="preserve">
+    <value>&amp;Paragraph…</value>
+  </data>
+  <data name="MNUFORMAT_SHAPE_TEXT" xml:space="preserve">
+    <value>&amp;Form…</value>
+  </data>
+  <data name="MNUFORMAT_STYLES_TEXT" xml:space="preserve">
+    <value>Format&amp;vorlagen…</value>
+  </data>
+  <data name="MNUFORMAT_TABS_TEXT" xml:space="preserve">
+    <value>&amp;Tabulatoren…</value>
+  </data>
+  <data name="MNUFORMAT_TEXT" xml:space="preserve">
+    <value>&amp;Formatierung</value>
+  </data>
+  <data name="MNUFORMAT_TEXTFRAME_TEXT" xml:space="preserve">
+    <value>Textrah&amp;men</value>
+  </data>
+  <data name="MNUHELP_ABOUTTXTEXTCONTROLWORDS_TEXT" xml:space="preserve">
+    <value>&amp;Über TX Text Control Words…</value>
+  </data>
+  <data name="MNUHELP_TEXT" xml:space="preserve">
+    <value>&amp;Hilfe</value>
+  </data>
+  <data name="MNUINSERT_BREAK_TEXT" xml:space="preserve">
+    <value>&amp;Umbruch...</value>
+  </data>
+  <data name="MNUINSERT_CHART_AREA3D_TEXT" xml:space="preserve">
+    <value>F&amp;läche 3D</value>
+  </data>
+  <data name="MNUINSERT_CHART_AREA_TEXT" xml:space="preserve">
+    <value>&amp;Fläche</value>
+  </data>
+  <data name="MNUINSERT_CHART_BAR3D_TEXT" xml:space="preserve">
+    <value>B&amp;alken 3D</value>
+  </data>
+  <data name="MNUINSERT_CHART_BAR_TEXT" xml:space="preserve">
+    <value>&amp;Balken</value>
+  </data>
+  <data name="MNUINSERT_CHART_COLUMN3D_TEXT" xml:space="preserve">
+    <value>S&amp;palten 3D</value>
+  </data>
+  <data name="MNUINSERT_CHART_COLUMN_TEXT" xml:space="preserve">
+    <value>Spal&amp;ten</value>
+  </data>
+  <data name="MNUINSERT_CHART_LINE3D_TEXT" xml:space="preserve">
+    <value>Li&amp;nie 3D</value>
+  </data>
+  <data name="MNUINSERT_CHART_LINE_TEXT" xml:space="preserve">
+    <value>L&amp;inie</value>
+  </data>
+  <data name="MNUINSERT_CHART_PIE3D_TEXT" xml:space="preserve">
+    <value>K&amp;reis 3D</value>
+  </data>
+  <data name="MNUINSERT_CHART_PIE_TEXT" xml:space="preserve">
+    <value>Kr&amp;eis</value>
+  </data>
+  <data name="MNUINSERT_CHART_TEXT" xml:space="preserve">
+    <value>&amp;Diagramm</value>
+  </data>
+  <data name="MNUINSERT_EDITABLEREGION_ADD_EVERYONE_TEXT" xml:space="preserve">
+    <value>Für &amp;Jeden</value>
+  </data>
+  <data name="MNUINSERT_EDITABLEREGION_ADD_TEXT" xml:space="preserve">
+    <value>Editierbaren Bereich &amp;hinzufügen</value>
+  </data>
+  <data name="MNUINSERT_EDITABLEREGION_ADD_USER_TEXT" xml:space="preserve">
+    <value>Für einen bestimmten &amp;Benutzer...</value>
+  </data>
+  <data name="MNUINSERT_EDITABLEREGION_REMOVE_EVERYONE_TEXT" xml:space="preserve">
+    <value>Für &amp;Jeden</value>
+  </data>
+  <data name="MNUINSERT_EDITABLEREGION_REMOVE_TEXT" xml:space="preserve">
+    <value>Editierbaren Bereich &amp;löschen</value>
+  </data>
+  <data name="MNUINSERT_EDITABLEREGION_REMOVE_USER_TEXT" xml:space="preserve">
+    <value>Für einen bestimmten &amp;Benutzer...</value>
+  </data>
+  <data name="MNUINSERT_EDITABLEREGION_TEXT" xml:space="preserve">
+    <value>&amp;Editierbaren Bereich</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_DELETEFIELD_TEXT" xml:space="preserve">
+    <value>Feld &amp;löschen</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_HIGHLIGHTMERGEFIELDS_TEXT" xml:space="preserve">
+    <value>Seriendruckfeld &amp;hervorheben</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_INSERTMERGEFIELD_TEXT" xml:space="preserve">
+    <value>Seriendruckfeld &amp;einfügen</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_INSERTSPECIALFIELD_DATE_TEXT" xml:space="preserve">
+    <value>&amp;Datum...</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_INSERTSPECIALFIELD_IF_TEXT" xml:space="preserve">
+    <value>&amp;IF...</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_INSERTSPECIALFIELD_INCLTEXT_TEXT" xml:space="preserve">
+    <value>&amp;Text einbeziehen...</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_INSERTSPECIALFIELD_NEXTIF_TEXT" xml:space="preserve">
+    <value>Nächstes I&amp;F...</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_INSERTSPECIALFIELD_NEXT_TEXT" xml:space="preserve">
+    <value>&amp;Nächstes</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_INSERTSPECIALFIELD_TEXT" xml:space="preserve">
+    <value>&amp;Spezielles Feld einfügen</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_SHOWFIELDCODES_TEXT" xml:space="preserve">
+    <value>Feld&amp;kodierung anzeigen</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_SHOWFIELDTEXT_TEXT" xml:space="preserve">
+    <value>Feld&amp;text anzeigen</value>
+  </data>
+  <data name="MNUINSERT_FIELDS_TEXT" xml:space="preserve">
+    <value>&amp;Felder</value>
+  </data>
+  <data name="MNUINSERT_FILE_TEXT" xml:space="preserve">
+    <value>D&amp;atei...</value>
+  </data>
+  <data name="MNUINSERT_HYPERLINK_TEXT" xml:space="preserve">
+    <value>&amp;Hyperlink…</value>
+  </data>
+  <data name="MNUINSERT_IMAGE_TEXT" xml:space="preserve">
+    <value>&amp;Bild...</value>
+  </data>
+  <data name="MNUINSERT_PAGENUM_TEXT" xml:space="preserve">
+    <value>&amp;Seitennummer</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_BASIC_TEXT" xml:space="preserve">
+    <value>&amp;Grundformen</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_BLOCKARROWS_TEXT" xml:space="preserve">
+    <value>B&amp;lockpfeile</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_CALLOUTS_TEXT" xml:space="preserve">
+    <value>L&amp;egenden</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_DRAWINGCANVAS_TEXT" xml:space="preserve">
+    <value>&amp;Drawing Canvas</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_EQUATION_TEXT" xml:space="preserve">
+    <value>F&amp;ormelformen</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_FLOWCHART_TEXT" xml:space="preserve">
+    <value>Fl&amp;ussdiagramm</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_LINES_TEXT" xml:space="preserve">
+    <value>L&amp;inien</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_RECTANGLES_TEXT" xml:space="preserve">
+    <value>&amp;Rechtecke</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_STARSBANNERS_TEXT" xml:space="preserve">
+    <value>Ster&amp;ne und Banner</value>
+  </data>
+  <data name="MNUINSERT_SHAPES_TEXT" xml:space="preserve">
+    <value>For&amp;m</value>
+  </data>
+  <data name="MNUINSERT_SYMBOL_TEXT" xml:space="preserve">
+    <value>Symb&amp;ol…</value>
+  </data>
+  <data name="MNUINSERT_TARGET_TEXT" xml:space="preserve">
+    <value>Bookmar&amp;k…</value>
+  </data>
+  <data name="MNUINSERT_TEXT" xml:space="preserve">
+    <value>&amp;Einfügen</value>
+  </data>
+  <data name="MNUINSERT_TEXTFRAME_TEXT" xml:space="preserve">
+    <value>&amp;Textrahmen</value>
+  </data>
+  <data name="MNUINSERT_PAGENUM_INSERT_TEXT" xml:space="preserve">
+    <value>&amp;Seitennummer einfügen</value>
+  </data>
+  <data name="MNUINSERT_PAGENUM_DELETE_TEXT" xml:space="preserve">
+    <value>Seiten&amp;nummer löschen</value>
+  </data>
+  <data name="MNUTABLE_DELETE_CELLS_ENTIRECOLUMN_TEXT" xml:space="preserve">
+    <value>&amp;Spalten löschen</value>
+  </data>
+  <data name="MNUTABLE_DELETE_CELLS_ENTIREROW_TEXT" xml:space="preserve">
+    <value>Zeilen &amp;löschen</value>
+  </data>
+  <data name="MNUTABLE_DELETE_CELLS_SHIFTLEFT_TEXT" xml:space="preserve">
+    <value>Zellen nach &amp;Links verschieben</value>
+  </data>
+  <data name="MNUTABLE_DELETE_CELLS_TEXT" xml:space="preserve">
+    <value>&amp;Zellen...</value>
+  </data>
+  <data name="MNUTABLE_DELETE_COLUMN_TEXT" xml:space="preserve">
+    <value>S&amp;palten</value>
+  </data>
+  <data name="MNUTABLE_DELETE_ROWS_TEXT" xml:space="preserve">
+    <value>Z&amp;eilen</value>
+  </data>
+  <data name="MNUTABLE_DELETE_TABLE_TEXT" xml:space="preserve">
+    <value>T&amp;abelle</value>
+  </data>
+  <data name="MNUTABLE_DELETE_TEXT" xml:space="preserve">
+    <value>L&amp;öschen</value>
+  </data>
+  <data name="MNUTABLE_GRIDLINES_TEXT" xml:space="preserve">
+    <value>&amp;Gitternetzlinien</value>
+  </data>
+  <data name="MNUTABLE_INSERT_COLUMNTOTHELEFT_TEXT" xml:space="preserve">
+    <value>Spalte &amp;links hinzufügen</value>
+  </data>
+  <data name="MNUTABLE_INSERT_COLUMNTOTHERIGHT_TEXT" xml:space="preserve">
+    <value>Spalte &amp;rechts hinzufügen</value>
+  </data>
+  <data name="MNUTABLE_INSERT_ROWABOVE_TEXT" xml:space="preserve">
+    <value>Zeile &amp;oberhalb hinzufügen</value>
+  </data>
+  <data name="MNUTABLE_INSERT_ROWBELOW_TEXT" xml:space="preserve">
+    <value>Zeilen &amp;unterhalb hinzufügen</value>
+  </data>
+  <data name="MNUTABLE_INSERT_TABLE_TEXT" xml:space="preserve">
+    <value>&amp;Tabelle...</value>
+  </data>
+  <data name="MNUTABLE_INSERT_TEXT" xml:space="preserve">
+    <value>Ei&amp;nfügen</value>
+  </data>
+  <data name="MNUTABLE_MERGE_CELLS_TEXT" xml:space="preserve">
+    <value>&amp;Verbundene Zellen</value>
+  </data>
+  <data name="MNUTABLE_PROPERTIES_TEXT" xml:space="preserve">
+    <value>&amp;Eigenschaften...</value>
+  </data>
+  <data name="MNUTABLE_SELECT_CELL_TEXT" xml:space="preserve">
+    <value>&amp;Zelle</value>
+  </data>
+  <data name="MNUTABLE_SELECT_COLUMN_TEXT" xml:space="preserve">
+    <value>&amp;Spalte</value>
+  </data>
+  <data name="MNUTABLE_SELECT_ROW_TEXT" xml:space="preserve">
+    <value>&amp;Reihe</value>
+  </data>
+  <data name="MNUTABLE_SELECT_TABLE_TEXT" xml:space="preserve">
+    <value>&amp;Tabelle</value>
+  </data>
+  <data name="MNUTABLE_SELECT_TEXT" xml:space="preserve">
+    <value>&amp;Auswählen</value>
+  </data>
+  <data name="MNUTABLE_SPLIT_ABOVE_TEXT" xml:space="preserve">
+    <value>&amp;Oberhalb</value>
+  </data>
+  <data name="MNUTABLE_SPLIT_BELOW_TEXT" xml:space="preserve">
+    <value>&amp;Unterhalb</value>
+  </data>
+  <data name="MNUTABLE_SPLIT_CELLS_TEXT" xml:space="preserve">
+    <value>&amp;Zellen teilen</value>
+  </data>
+  <data name="MNUTABLE_SPLIT_TEXT" xml:space="preserve">
+    <value>&amp;Tabelle teilen</value>
+  </data>
+  <data name="MNUTABLE_TEXT" xml:space="preserve">
+    <value>&amp;Tabelle</value>
+  </data>
+  <data name="MNUVIEW_BUTTONBAR_TEXT" xml:space="preserve">
+    <value>&amp;Funktionsleiste</value>
+  </data>
+  <data name="MNUVIEW_DOCUMENTTARGETMARKERS_TEXT" xml:space="preserve">
+    <value>Textmarke&amp;n</value>
+  </data>
+  <data name="MNUVIEW_DRAFT_TEXT" xml:space="preserve">
+    <value>&amp;Entwurf</value>
+  </data>
+  <data name="MNUVIEW_DRAWINGMARKERLINES_TEXT" xml:space="preserve">
+    <value>Textm&amp;arkenlinien anzeigen</value>
+  </data>
+  <data name="MNUVIEW_FORMLAYOUT_TEXT" xml:space="preserve">
+    <value>&amp;Links nach Rechts Layout</value>
+  </data>
+  <data name="MNUVIEW_HEADERSANDFOOTERS_TEXT" xml:space="preserve">
+    <value>&amp;Kopf- und Fußzeilen</value>
+  </data>
+  <data name="MNUVIEW_HORIZONTALRULER_TEXT" xml:space="preserve">
+    <value>&amp;H&amp;orizontales Lineal</value>
+  </data>
+  <data name="MNUVIEW_PAGELAYOUT_TEXT" xml:space="preserve">
+    <value>&amp;Seitenlayout</value>
+  </data>
+  <data name="MNUVIEW_STATUSBAR_TEXT" xml:space="preserve">
+    <value>Stat&amp;usleiste</value>
+  </data>
+  <data name="MNUVIEW_TEXT" xml:space="preserve">
+    <value>&amp;Ansicht</value>
+  </data>
+  <data name="MNUVIEW_TEXTFRAMEMARKERLINES_TEXT" xml:space="preserve">
+    <value>Textrahmen &amp;Markierungslinien</value>
+  </data>
+  <data name="MNUVIEW_TOOLBAR_TEXT" xml:space="preserve">
+    <value>&amp;Toolbar</value>
+  </data>
+  <data name="MNUVIEW_VERTICALRULER_TEXT" xml:space="preserve">
+    <value>&amp;Vertikales Lineal</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_100_TEXT" xml:space="preserve">
+    <value>&amp;4  100%</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_150_TEXT" xml:space="preserve">
+    <value>&amp;5  150%</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_200_TEXT" xml:space="preserve">
+    <value>&amp;6  200%</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_25_TEXT" xml:space="preserve">
+    <value>&amp;1  25%</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_300_TEXT" xml:space="preserve">
+    <value>&amp;7  300%</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_50_TEXT" xml:space="preserve">
+    <value>&amp;2  50%</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_75_TEXT" xml:space="preserve">
+    <value>&amp;3  75%</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_TEXT" xml:space="preserve">
+    <value>&amp;Zoom</value>
+  </data>
+  <data name="MNUVIEW_ZOOM_400_TEXT" xml:space="preserve">
+    <value>&amp;8  400%</value>
+  </data>
+  <data name="OPT_DLG_BTN_BROWSE" xml:space="preserve">
+    <value>Durchsuchen...</value>
+  </data>
+  <data name="USER_ACC_DLG_BTN_CURRENTAUTHOR" xml:space="preserve">
+    <value>Aktueller Autor</value>
+  </data>
+  <data name="MNUEDIT_REVIEWING_REVIEWCHANGES_TEXT" xml:space="preserve">
+    <value>&amp;Änderungen überprüfen...</value>
+  </data>
+  <data name="MNUEDIT_REVIEWING_TEXT" xml:space="preserve">
+    <value>&amp;Änderungsaufzeichnung</value>
+  </data>
+  <data name="MNUEDIT_REVIEWING_TRACKCHANGES_TEXT" xml:space="preserve">
+    <value>Änderungen &amp;aufzeichnen</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_BTN_ACCEPT" xml:space="preserve">
+    <value>Überneh&amp;men</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_BTN_ACCEPTALL" xml:space="preserve">
+    <value>Alle &amp;Übernehmen</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_BTN_CLOSE" xml:space="preserve">
+    <value>&amp;Schließen</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_BTN_NEXT" xml:space="preserve">
+    <value>&amp;Nächste</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_BTN_REJECT" xml:space="preserve">
+    <value>Ver&amp;werfen</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_BTN_REJECTALL" xml:space="preserve">
+    <value>Alle &amp;Verwerfen</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_CHANGEKIND_DELETEDTEXT" xml:space="preserve">
+    <value>löschte</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_CHANGEKIND_INSERTEDTEXT" xml:space="preserve">
+    <value>fügte ein</value>
+  </data>
+  <data name="TRACKED_CHANGES_DLG_TITLE" xml:space="preserve">
+    <value>Änderungen überprüfen</value>
+  </data>
+  <data name="OPT_DLG_PDFIMP_MODE_XML" xml:space="preserve">
+    <value>XML Struktur</value>
+  </data>
+  <data name="MNUTABLE_FORMULAS_A1STYLE_TEXT" xml:space="preserve">
+    <value>&amp;A1 Referenz Stil</value>
+  </data>
+  <data name="MNUTABLE_FORMULAS_AUTOMATICCALCULATION_TEXT" xml:space="preserve">
+    <value>Automatisch &amp;Berechnen</value>
+  </data>
+  <data name="MNUTABLE_FORMULAS_EDITFORMULA_TEXT" xml:space="preserve">
+    <value>&amp;Formel bearbeiten...</value>
+  </data>
+  <data name="MNUTABLE_FORMULAS_R1C1STYLE_TEXT" xml:space="preserve">
+    <value>&amp;R1C1 Referenz Stil</value>
+  </data>
+  <data name="MNUTABLE_FORMULAS_TEXT" xml:space="preserve">
+    <value>&amp;Formeln</value>
+  </data>
+  <data name="FILEHANDLER_MSGTEMPLATE_NAFILEFORMAT" xml:space="preserve">
+    <value>Dieses Dokumentenformat ist in der TX Text Control {0} Version nicht verfügbar.</value>
+  </data>
+  <data name="DOC_TITLE_UNTITLED" xml:space="preserve">
+    <value>[unbenannt]</value>
+  </data>
+  <data name="ABOUTBOX_LBL_APPLICATIONTYPE" xml:space="preserve">
+    <value>(Menü and Toolbar Version)</value>
+  </data>
+  <data name="ERR_NEEDSPROFLICENSE" xml:space="preserve">
+    <value>Diese Funktion ist in der TX Text Control Standard Version nicht verfügbar. Es wird mindestens die Professional Version benötigt.</value>
+  </data>
+</root>

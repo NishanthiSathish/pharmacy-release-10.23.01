@@ -1,0 +1,50 @@
+Type=Exe
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\..\..\..\..\..\..\Windows\SysWOW64\stdole2.tlb#OLE Automation
+Reference=*\G{2A75196C-D9EB-4129-B803-931327F72D5C}#2.8#0#..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Common Files\System\ado\msado28.tlb#Microsoft ActiveX Data Objects 2.8 Library
+Reference=*\G{F5078F18-C551-11D3-89B9-0000F81FE221}#5.0#0#..\..\..\BIN\msxml5.dll#Microsoft XML, v5.0
+Reference=*\G{E9BD9EEF-E40F-4A96-82AC-0C7047C90551}#1.0#0#..\..\..\DLL\Bin\PharmacyData.dll#PharmacyData
+Form=frmConversion.frm
+Module=DrugConversion; transactionconv.bas
+Module=WGeneralIO; ..\..\..\Shared\Source\IOlayer\WGeneralIO.bas
+Module=WProductIO; ..\..\..\Shared\Source\IOlayer\WProduct.bas
+Module=Module1; Module1.bas
+Form=..\..\..\Shared\Source\Libraries\FRMHEAP.FRM
+Startup="frmConversion"
+HelpFile=""
+ExeName32="DrugConversion.exe"
+Path32="..\..\..\..\.."
+Command32=""
+Name="Project1"
+HelpContextID="0"
+CompatibleMode="0"
+MajorVer=1
+MinorVer=0
+RevisionVer=0
+AutoIncrementVer=0
+ServerSupportFiles=0
+VersionFileDescription="Drug Conversion Tool"
+VersionCompanyName="EMIS Health"
+VersionLegalCopyright="Copyright © 1989-[CurrentYear] EMIS Health"
+VersionProductName="EMIS Health Hospital Pharmacy"
+CompilationType=0
+OptimizationType=0
+FavorPentiumPro(tm)=0
+CodeViewDebugInfo=0
+NoAliasing=0
+BoundsCheck=0
+OverflowCheck=0
+FlPointCheck=0
+FDIVCheck=0
+UnroundedFP=0
+StartMode=0
+Unattended=0
+Retained=0
+ThreadPerObject=0
+MaxNumberOfThreads=1
+
+[MS Transaction Server]
+AutoRefresh=1
+
+[Requirement for Bob]
+CompatibleEXE32="..\..\Bin\DrugConversion.exe"
+ReadyToBuild=True

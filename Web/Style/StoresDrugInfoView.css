@@ -1,0 +1,30 @@
+.Border
+{
+    BORDER-RIGHT: black 1px solid;
+    BORDER-TOP: black 1px solid;
+    MARGIN: 5px;
+    BORDER-LEFT: black 1px solid;
+    BORDER-BOTTOM: black 1px solid;
+    BACKGROUND-COLOR: #ffffff
+}
+.Heading
+{
+	PADDING-RIGHT: 10px;
+	PADDING-LEFT: 10px;
+	FONT-SIZE: small;
+	COLOR: black;
+	HEIGHT: 35px;
+}
+.FieldText
+{
+	border: 1px solid #C0C0C0;
+	FONT-FAMILY: Arial;
+	BACKGROUND-COLOR: #ffffff;
+	width: 99%;
+	vertical-align: middle;
+}
+.ContractExpired
+{
+    font-style: italic;
+    color: Red;
+}

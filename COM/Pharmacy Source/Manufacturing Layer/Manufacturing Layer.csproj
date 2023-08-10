@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D203D26B-5A7A-47B5-8AE2-C81D28B7312C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ascribe.pharmacy.manufacturinglayer</RootNamespace>
+    <AssemblyName>Manufacturing Layer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICWTransaction, Version=10.12.0.2, Culture=neutral, PublicKeyToken=ef4f0acfe19f4a5d, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Web\bin\ICWTransaction.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Web\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AMMErrorReport.cs" />
+    <Compile Include="aMMProcessor.cs" />
+    <Compile Include="Reports\AMMRequestHistory.cs">
+      <DependentUpon>AMMRequestHistory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManufacturingSettings.cs" />
+    <Compile Include="aMMShift.cs" />
+    <Compile Include="AMMStateChangeNote.cs" />
+    <Compile Include="aMMSupplyRequest.cs" />
+    <Compile Include="AMMSupplyRequestIngredient.cs" />
+    <Compile Include="AMMSupplyRequestIngredientAccessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\AMMRequestHistory.Designer.cs">
+      <DependentUpon>AMMRequestHistory.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <Compile Include="WFormula.cs" />
+    <Compile Include="WLayout.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base Data Layer\Base Data Layer.csproj">
+      <Project>{1E425244-912E-4C6F-A313-E636311F34A6}</Project>
+      <Name>Base Data Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICW Data Layer\ICW Data Layer.csproj">
+      <Project>{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}</Project>
+      <Name>ICW Data Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pharmacy Data Layer\Pharmacy Data Layer.csproj">
+      <Project>{5882B905-230A-4EA2-B4BE-81331C68804C}</Project>
+      <Name>Pharmacy Data Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pharmacy Shared\Pharmacy Shared.csproj">
+      <Project>{6A3007BE-808C-4570-B488-1892B85B0322}</Project>
+      <Name>Pharmacy Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuesScrl Layer\QuesScrl Layer.csproj">
+      <Project>{7C78890E-2C84-4CB6-8BF0-F38532E78D45}</Project>
+      <Name>QuesScrl Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\aMMSupplyRequestHistory.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\AMMRequestHistory.xsc">
+      <DependentUpon>AMMRequestHistory.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\AMMRequestHistory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>AMMRequestHistory.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\AMMRequestHistory.xss">
+      <DependentUpon>AMMRequestHistory.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if (%25COMPUTERNAME%25)==(CORE-TFSBuild) "C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\signtool.exe" sign /a /t "http://timestamp.comodoca.com/authenticode" /v "$(ProjectDir)\obj\Release\$(TargetFileName)"
+if (%25COMPUTERNAME%25)==(CORE-TFSBuild2) "C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\signtool.exe" sign /a /t "http://timestamp.comodoca.com/authenticode" /v "$(ProjectDir)\obj\Release\$(TargetFileName)"
+
+copy "$(ProjectDir)Reports\*.rdlc" "$(ProjectDir)..\..\..\Web\Reports\Manufacturing\*.*" /Y
+ATTRIB +R "$(ProjectDir)..\..\..\Web\Reports\Manufacturing\*.rdlc"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>ATTRIB -R "$(ProjectDir)..\..\..\Web\Reports\Manufacturing\*.rdlc"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

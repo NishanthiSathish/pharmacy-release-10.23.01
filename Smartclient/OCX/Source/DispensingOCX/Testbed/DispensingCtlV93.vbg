@@ -1,0 +1,4 @@
+VBGROUP 5.0
+StartupProject=V93Disp.vbp
+Project=..\DispensingCtl.vbp
+Project=..\..\..\..\DLL\Source\PharmacyWebData\PharmacyWebData.vbp

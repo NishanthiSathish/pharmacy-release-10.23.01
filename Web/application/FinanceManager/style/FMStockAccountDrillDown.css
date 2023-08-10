@@ -1,0 +1,36 @@
+﻿/* Syle sheet for the Finanace Manager stock account drill down page. */
+.fm-drilldown-heading
+{
+    color: #417F8F;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.fm-drilldown-info
+{
+    color: #417F8F;
+    font-size: 10pt;
+    font-weight: bold;
+}
+      
+.fm-drilldown-table
+{
+    font-size:   9pt;
+    margin-left: 10px;
+}
+
+.fm-drilldown-table-header0
+{
+    color:            #417f8f;
+    background-color: #eaeaea;
+    font-weight:      bold;
+    text-align:       center;
+    top:              expression(document.getElementById('table').scrollTop);
+    position:         relative;
+    text-align:       center;
+}
+
+.fm-drilldown-table-row
+{
+    height: 20px;
+}

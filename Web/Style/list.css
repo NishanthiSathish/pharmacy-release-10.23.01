@@ -1,0 +1,59 @@
+.TitleTable
+{
+    BORDER-RIGHT: #87afff 2px solid;
+    BORDER-TOP: #f1f6ff 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    BORDER-LEFT: #f1f6ff 2px solid;
+    WIDTH: 100%;
+    BORDER-BOTTOM: #87afff 2px solid
+}
+.ListContainer
+{
+    MARGIN-LEFT: 5px;
+    WIDTH: 100%;
+    MARGIN-RIGHT: 5px
+}
+.TitleCell
+{
+    BORDER-RIGHT: #2f0272 1px solid;
+    BORDER-TOP: #c3bbff 1px solid;
+    PADDING-LEFT: 3px;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: #c3bbff 1px solid;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #2f0272 1px solid;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #4682b4
+}
+.MedicationList
+{
+    BORDER-RIGHT: #c0c0c0 1px solid;
+    BORDER-TOP: #c0c0c0 1px solid;
+    BORDER-LEFT: #c0c0c0 1px solid;
+    WIDTH: 100%;
+    BORDER-BOTTOM: #c0c0c0 1px solid;
+    BACKGROUND-COLOR: #ffffff
+}
+.scrollContainer
+{
+    OVERFLOW-Y: auto;
+    WIDTH: 100%;
+    HEIGHT: 50px
+}
+LI
+{
+    FONT-SIZE: 12pt
+}
+.TDSummary
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14pt
+}
+.LinkSpan
+{
+    FONT-SIZE: 8pt;
+    WIDTH: 60px;
+    CURSOR: hand;
+    TEXT-DECORATION: underline
+}

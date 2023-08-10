@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<patchTemplate productGuid="F8B8D49D-9419-41D8-9532-7B03B0CDE91B">
+	<patchAction name="StopIISApplicationPool">
+		<appPool appPoolName="EHSCICW_Pharmacy_AppPool"/>
+	</patchAction>
+	<patchAction name="CopyFiles">
+		<patchFolder relativePath="Pharmacy\Web" copyType="Contents">
+			<patchFilePattern extension=".pdb" exclude="true"/>
+		</patchFolder>
+	</patchAction>
+	<patchAction name="RunExe" performOnConfigSwitch="false" abortOnFailure="true">
+		<executable filename="System File Setup.exe" arguments="/quiet" fileLocation="ProductRoot" waitForExit="true" reportStandardOutput="false" failOnStandardError="false" />
+	</patchAction>
+  	<patchAction name="PatchDatabase">
+    		<targetDatabase name="HealthApplicationPlatform"/>
+    		<ndoLocation path="Database\Pharmacy Services\NDOController.xml"/>
+  	</patchAction>
+	<patchAction name="AddApplicationPoolToIIS">
+		<appPoolSettings appPoolName="EHSCICW_Pharmacy_AppPool" managedRuntimeVersion="v4.0" managedPipelineMode="Integrated" enable32BitAppOnWin64="true" queueLength="1000" autoStart="true" loadUserProfile="false" idleTimeoutMinutes="0" recyclingSpecificTimes="04:00:00" />
+	</patchAction>
+	<patchAction name="AddApplicationToIIS">
+		<applicationDetails websiteName="Default Web Site" path="EHSCICW_Pharmacy" physicalPath="{AppRoot}" applicationPoolName="EHSCICW_Pharmacy_AppPool"/>
+	</patchAction>
+	<patchAction name="StartIISApplicationPool">
+		<appPool appPoolName="EHSCICW_Pharmacy_AppPool"/>
+	</patchAction>
+</patchTemplate>

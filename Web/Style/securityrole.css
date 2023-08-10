@@ -1,0 +1,60 @@
+.TitleDiv
+{
+    BORDER-RIGHT: 2px;
+    BORDER-TOP: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: 2px;
+    BORDER-BOTTOM: 2px
+}
+.Browser
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    OVERFLOW: auto;
+    BORDER-LEFT: #000000 1px solid;
+    WIDTH: 100%;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 1px solid;
+    BACKGROUND-COLOR: #ffffff
+}
+UL
+{
+    CURSOR: default;
+    COLOR: #000000;
+    BACKGROUND-COLOR: #ffffff
+}
+.RootNode
+{
+    BORDER-TOP: #c0c0c0 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    COLOR: #0000ff
+}
+.Selected
+{
+    COLOR: #ff0000
+}
+.RequestTypeRow
+{
+    COLOR: #38951e;
+    FONT-STYLE: italic
+}
+LI
+{
+}
+.rootNode
+{
+}
+.THeader
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: 1px solid;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: 1px solid;
+    BACKGROUND-COLOR: #4682b4
+}

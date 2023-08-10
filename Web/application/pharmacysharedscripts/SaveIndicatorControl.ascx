@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="SaveIndicatorControl.ascx.cs" Inherits="application_pharmacysharedscripts_SaveIndicatorControl" %>
+<span id="<%= this.UniqueID %>" class="saveIndicator" style="padding:4px;font-size:11pt;font-weight:bold;color:White;text-align:center;border-radius:10px;">&nbsp;</span>

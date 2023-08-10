@@ -1,0 +1,34 @@
+﻿.MainTable tr
+{
+    vertical-align: text-top;
+}
+
+.HeaderRow
+{ 
+    background-color: #537AB8; 
+    color: #FFFFFF;
+}
+
+.LinkButton:link 
+{
+    text-decoration: none; 
+    color: blue;
+}
+
+.LinkButton:visited 
+{
+    text-decoration: none; 
+    color: blue;
+}
+
+.LinkButton:active 
+{
+    text-decoration: none; 
+    color: blue;
+}
+
+.LinkButton:hover 
+{
+    text-decoration: underline; 
+    color: blue;
+}

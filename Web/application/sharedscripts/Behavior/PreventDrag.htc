@@ -1,0 +1,10 @@
+<public:attach event="ondragstart" handler="preventDrag" />
+<script type="text/javascript">
+    function preventDrag() {
+        try {
+            event.returnValue = false;
+        } catch (e) {
+
+        }
+    }
+</script>

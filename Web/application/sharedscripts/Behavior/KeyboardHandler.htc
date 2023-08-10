@@ -1,0 +1,11 @@
+<PUBLIC:COMPONENT>
+<PUBLIC:ATTACH EVENT="onkeydown" ONEVENT="HandleKeyDown()" />
+<SCRIPT LANGUAGE="JScript">
+
+function HandleKeyDown()
+{
+//	alert(event.keyCode);
+}
+
+</SCRIPT>
+</PUBLIC:COMPONENT>

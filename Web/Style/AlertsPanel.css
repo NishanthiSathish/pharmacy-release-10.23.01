@@ -1,0 +1,22 @@
+#divWarning
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: larger;
+    MARGIN-BOTTOM: 3px;
+    COLOR: red;
+    TEXT-ALIGN: center
+}
+
+.no-patient
+{
+	font-size:12pt;
+	height:100%;
+	padding:26px;
+	padding-top:27px;
+    padding-bottom:32px;
+	background-color:#e0e0e0;
+	color:#555555;
+    border:#c0c0c0 2px solid;
+    border-left:none;
+    border-right:none;
+}

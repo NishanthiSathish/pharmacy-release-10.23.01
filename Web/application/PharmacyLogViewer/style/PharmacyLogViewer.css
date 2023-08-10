@@ -1,0 +1,32 @@
+﻿/*
+
+    Display log rows styling
+
+*/
+.gridTable
+{
+    border-left: solid 1px #333333;
+}
+
+.gridHeader	
+{
+    font-size: 8pt;
+    font-family: arial, verdana, sans-serif;
+    background: #d6e3ff;
+}
+
+.gridHeader	th
+{
+    border-right: solid 1px #333333;
+    border-top: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+}
+
+.GridRow td
+{
+    font-size: 8pt;
+    font-family: arial, verdana, sans-serif;
+    border-right: solid 1px #333333;
+    border-bottom: solid 1px #333333;
+}
+

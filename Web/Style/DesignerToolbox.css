@@ -1,0 +1,25 @@
+.LabelBack
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #4A83B0;
+    color:#ffffff;
+    font-weight:bold;
+    padding-left:5px;
+}
+.ControlNotSelected
+{
+    color:#ffffff; 
+    font-weight:bold; 
+    margin-top:10px; 
+    margin-left:10px;
+}
+.MainPage
+{
+    font-family: Arial; 
+    font-size: 10pt; 
+    background-color:#4A83B0; 
+    height:97%;  
+    margin:8px -8px 0px 8px;    
+    background-image: url(../images/background_gradient.gif); 
+}

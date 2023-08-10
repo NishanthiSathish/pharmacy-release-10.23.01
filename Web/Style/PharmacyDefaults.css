@@ -1,0 +1,54 @@
+﻿body
+{
+    font: 10pt arial;
+}
+
+textarea 
+{
+    font: 10pt arial;
+}
+
+.ErrorMessage 
+{
+    color: #FF0000; 
+    font-weight: bold;
+}
+
+.InfoMessage
+{
+    color: #008000;
+}
+
+.PharmButton 
+{
+    width: 70px;  
+    height: 30px;  
+    color: #555555; 
+    background-color: white;
+    text-align: center;  
+    font-size: 12px;  
+    border: solid 1px #999999;
+}
+ 
+.PharmButton:hover 
+{
+    border: 1px solid #E4C48B;
+    filter: progid:DXImageTransform.Microsoft.Gradient(enabled=true, startColorstr=#FFFCD9, endColorstr=#FFE792);
+}
+
+.PharmButtonSmall 
+{
+    width: 50px;  
+    height: 20px;  
+    color: #555555; 
+    background-color: white;
+    text-align: center;  
+    font-size: 10px;
+    border: solid 1px #999999;
+}
+ 
+.PharmButtonSmall:hover 
+{
+    border: 1px solid #E4C48B;
+    filter: progid:DXImageTransform.Microsoft.Gradient(enabled=true, startColorstr=#FFFCD9, endColorstr=#FFE792);
+}

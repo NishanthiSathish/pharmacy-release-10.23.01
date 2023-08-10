@@ -1,0 +1,126 @@
+body
+{
+	overflow:hidden;
+	padding-left:5px;
+}
+
+input
+{
+	width:300px;
+}
+
+.OptionButton
+{
+	width:20px;
+}
+
+div
+{
+	padding:0px; 
+	padding-left:5px; 
+	padding-right:5px;
+}
+
+.TitleDiv
+{
+	font-size: 12pt;
+	font-weight: bold;
+	border-top: #F1F6FF 2px solid;
+	border-left: #F1F6FF 2px solid;
+	border-bottom: #87AFFF 2px solid;
+	border-right: #87AFFF 2px solid;
+}
+
+.EditTable
+{
+	background-color:#FFFFFF;
+	width:100%;
+	height:90%;
+	position:absolute;
+	border:#000000 1px solid;
+}
+
+.EditTable td
+{
+	border-bottom:#c0c0c0 1px solid;
+	border-right:#c0c0c0 1px solid;
+}
+
+.titleCell
+{
+	width:250px;
+	border-bottom: #c0c0c0 1px solid;
+	border-left:#c0c0c0 1px solid;
+}
+
+.inputCell
+{
+	border-bottom: #c0c0c0 1px solid;
+	border-right:#c0c0c0 1px solid;
+	width:100%;
+}
+
+.EditTable table td
+{
+	border:none;
+}
+
+button
+{
+	width:50px;
+}
+
+textarea
+{
+   font-family: Arial;
+	font-size:10pt;
+}
+
+
+.OrderSetList
+{
+	width:100%;
+	height:100%;
+	background-color:#FFFFFF;
+}
+
+.OrderSetList td
+{
+	border-bottom: #c0c0c0 1px solid;
+}
+
+.GridHeader
+{
+	font-size: 10pt;
+	border-top: #F1F6FF 1px solid;
+	border-left: #F1F6FF 1px solid;
+	border-bottom: #87AFFF 1px solid;
+	border-right: #87AFFF 1px solid;	
+	background-color:#d6e3ff;
+}
+
+
+
+.OrderSetIcon
+{
+	border-bottom:#c0c0c0;
+	width:20px;
+	height:20px;
+	cursor:default;
+}
+
+.OrderSetItem
+{
+	border-bottom:#c0c0c0;
+	cursor:default;
+	text-align:left;
+}
+
+.Selected
+{
+	background-color: #00599C;
+	color:#ffffff;
+}
+
+
+

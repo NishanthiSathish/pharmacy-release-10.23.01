@@ -1,0 +1,111 @@
+BODY
+{
+    MARGIN: 10px
+}
+.Heading
+{
+    PADDING-RIGHT: 10px;
+    PADDING-LEFT: 10px;
+    FONT-SIZE: small;
+    COLOR: white;
+    HEIGHT: 35px;
+    BACKGROUND-COLOR: #006699
+}
+BUTTON.ButtonSize
+{
+    WIDTH: 95px;
+    HEIGHT: 22px
+}
+DIV.Message
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: x-small;
+    BORDER-LEFT: 1px solid;
+    COLOR: navy;
+    BORDER-BOTTOM: 1px solid;
+    BACKGROUND-COLOR: #ffebeb
+}
+DIV.DivLabel
+{
+    PADDING-RIGHT: 10px;
+    PADDING-LEFT: 10px;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: x-small;
+    COLOR: black
+}
+DIV.DivLabelDisabled
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: x-small;
+    COLOR: gray
+}
+.Disabled
+{
+    COLOR: black;
+    BACKGROUND-COLOR: #ececed
+}
+TR.BorderTop
+{
+    BORDER-TOP: red ridge
+}
+.AscribeLabel
+{
+    COLOR: black
+}
+.AscribeLabelDisabled
+{
+    COLOR: silver
+}
+
+
+/* ---------------------------- Attached Note Editor Styles ---------------------------- */
+
+
+.AttachedNoteTypeEntry .LinkTable td
+{
+	background-color:#ffffff;
+}
+
+.AttachedNoteTypeEntry td.Link
+{
+	cursor:hand;
+	background-color:#d6e3ff;
+}
+
+.AttachedNoteTypeEntry .TypeTitle
+{
+	font-weight:bold;
+}
+
+.AttachedNoteTypeEntry .LinkTable .ButtonCell
+{
+	background-color:#d6e3ff;
+}
+
+.AttachedNoteTypeEntry .LinkTable tr
+{
+	cursor:hand;	
+}
+
+.AttachedNoteTypeEntry .LinkTable tr.TypeHeader td
+{
+	cursor:default;	
+	background-color:#e2e2e2;
+	padding-left:5px;
+	height: 20px;
+}
+
+
+.AttachedNoteTypeEntry .LinkTable th
+{
+	background-color:#F7E49B;
+	cursor:default;	
+}
+
+.AttachedNoteTypeEntry  .Hover td
+{
+	background-color: #00599C;
+	color:#ffffff;
+}

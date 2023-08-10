@@ -1,0 +1,10 @@
+﻿.SMSDisabledField
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    BORDER-LEFT: 1px solid;
+    BORDER-BOTTOM: 1px solid;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #EEEEFF;
+    color: darkgrey;
+}

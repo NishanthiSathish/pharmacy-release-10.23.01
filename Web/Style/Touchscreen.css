@@ -1,0 +1,309 @@
+/* -------------------------------------------------------------------------------------------------- */
+/*									Shared Styles for Touchscreen applications											*/
+/*																																		*/
+/*	Note:  Heights and widths are held in code, not style, since the application must script pages		*/
+/*			 of buttons with no scrollbars.  Setting size styles here will have no effect.					*/
+/* -------------------------------------------------------------------------------------------------- */
+
+.Touchscreen
+{
+	margin:0px;
+	overflow:hidden;
+	background-color:white;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/*									Generic Touchscreen Buttons																*/
+/* -------------------------------------------------------------------------------------------------- */
+.TouchButton
+{
+	cursor:hand;
+	background-color:#E1E1E1;
+	border:#c0c0c0 4px solid;
+	padding:3px;
+	padding-bottom:0px;
+}
+
+
+.TouchButton .TouchCaption
+{
+	font-weight:bold;
+	font-size:10pt;
+	width:100%;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.Touchscreen .Toolbar
+{
+	border-bottom:#c0c0c0 4px solid;
+	padding-bottom:2px;
+	padding-top:2px;
+	height:100px;
+}
+
+.Hover, .Hover td
+{
+	background-color:#FFFF80;
+}
+
+
+.Mousedown
+{
+	background-color:#FC3503;
+}
+
+.Touchscreen .Prompt
+{
+	font-size:20px;
+	text-align:left;
+	padding-top:10px;
+	padding-left:10px;
+}
+
+/* The Empty class is applied to placholder buttons which do not contain any data */
+.Touchscreen .Empty
+{
+	visibility:hidden;
+}
+
+.Touchscreen .StatusIndicator 
+{
+	background-color:#E1E1E1;
+	border:#c0c0c0 4px solid;
+	padding:3px;
+	padding-bottom:0px;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/*													Banners																			*/
+/* -------------------------------------------------------------------------------------------------- */
+.Banner
+{
+	background-color:#E1E1E1;
+	border:#c0c0c0 4px solid;
+	padding:3px;
+	padding-bottom:0px;
+}
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/*													Dialogs (confirm, etc)														*/
+/* -------------------------------------------------------------------------------------------------- */
+
+.Dialog
+{
+	margin-top:10px;
+	border:black 0px solid;
+	background-color:transparent;
+}
+
+
+.Dialog .Surround
+{
+	background-color:#999999;
+	border:#c0c0c0 4px solid;
+}
+
+.Dialog .Surround td
+{
+	margin:10px;
+}
+
+
+.Dialog .Prompt
+{
+	text-align:center;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/*													On Screen Keyboard															*/
+/* -------------------------------------------------------------------------------------------------- */
+.ScreenKeyboard
+{
+	margin-top:10px;
+	background-color:transparent;
+}
+
+.ScreenKeyboard .Surround
+{
+	background-color:#999999;
+	padding:10px;
+	border:#c0c0c0 4px solid;
+}
+
+.ScreenKeyboard .Prompt
+{
+	text-align:center;
+}
+
+.ScreenKeyboard .Prompt Label
+{
+	font-size:20pt;
+	margin:5px;
+	text-align:left;
+}
+
+.ScreenKeyboard .Display
+{
+	height:50px;
+	margin-left:50px;
+	margin-right:90px;
+	margin-bottom:20px;
+	text-align:left;
+}
+
+.ScreenKeyboard .Display Label
+{
+	width:600px;
+	height:50px;
+	border: #333333 1px solid;
+	background-color:#f5f5f5;
+	color:blue;
+	padding:5px;
+	font-size:20pt;
+	
+}
+
+.ScreenKeyboard .Keyboard td
+{
+	height:50px;
+	width:50px;
+	text-align:center;
+	cursor:default;
+	background-color:#E1E1E1;
+	border-top:#EEEEEE 5px solid;
+	border-left:#EEEEEE 5px solid;
+	border-right:#A7A7A7 5px solid;
+	border-bottom:#A7A7A7 5px solid;
+
+
+}
+
+.ScreenKeyboard .TallKey
+{
+	width:50px;
+	background-color:#E1E1E1;
+	border-top:#EEEEEE 5px solid;
+	border-left:#EEEEEE 5px solid;
+	border-right:#A7A7A7 5px solid;
+	border-bottom:#A7A7A7 5px solid;
+	text-align:center;
+	cursor:default;
+}
+
+.ScreenKeyboard .Keyboard .Hover
+{
+	background-color:#FFFF80;
+}
+
+.ScreenKeyboard .Hover
+{
+	background-color:#FFFF80;
+}
+
+.ScreenKeyboard .Mousedown
+{
+	background-color:#FC3503;
+	border-bottom:#EEEEEE 5px solid;
+	border-right:#EEEEEE 5px solid;
+	border-left:#A7A7A7 5px solid;
+	border-top:#A7A7A7 5px solid;
+}	
+
+.ScreenKeyboard .Keyboard .Mousedown
+{
+	background-color:#FC3503;
+	border-bottom:#EEEEEE 5px solid;
+	border-right:#EEEEEE 5px solid;
+	border-left:#A7A7A7 5px solid;
+	border-top:#A7A7A7 5px solid;
+}	
+
+
+.ScreenKeyboard .Keyboard .WideKey
+{
+	width:400px;
+	border-top:#EEEEEE 5px solid;
+	border-left:#EEEEEE 5px solid;
+	border-right:#A7A7A7 5px solid;
+	border-bottom:#A7A7A7 5px solid;
+	text-align:center;
+	cursor:default;
+}
+
+.ScreenKeyboard .Keyboard .MediumKey
+{
+	width:100px;
+	border-top:#EEEEEE 5px solid;
+	border-left:#EEEEEE 5px solid;
+	border-right:#A7A7A7 5px solid;
+	border-bottom:#A7A7A7 5px solid;
+	text-align:center;
+	cursor:default;
+}
+.ScreenKeyboard .Keyboard .FunctionKey
+{
+	width:80px;
+	border-top:#EEEEEE 5px solid;
+	border-left:#EEEEEE 5px solid;
+	border-right:#A7A7A7 5px solid;
+	border-bottom:#A7A7A7 5px solid;
+	text-align:center;
+	cursor:default;
+}
+.ScreenKeyboard .Keyboard .Spacer1
+{
+	border:none;
+	background-color:#999999;
+	width:10px;
+}
+.ScreenKeyboard .Keyboard .Spacer2
+{
+	border:none;
+	background-color:#999999;
+	width:35px;
+}
+.ScreenKeyboard .Keyboard .Spacer3
+{
+	border:none;
+	background-color:#999999;	
+	width:45px;
+}
+
+.ScreenKeyboard .Keyboard .Spacer4
+{
+	border:none;
+	background-color:#999999;
+	width:80px;
+}
+.ScreenKeyboard .Keyboard .Spacer5
+{
+	border:none;
+	background-color:#999999;
+	width:100px;
+}
+
+.ScreenKeyboard .Keyboard .Spacer6
+{
+	border:none;
+	background-color:#999999;
+}
+
+.ScreenKeyboard .Keyboard .Spacer7
+{
+	border:none;
+	width:50px;
+	background-color:#999999;
+}
+
+.ScreenKeyboard #tdNumpad
+{
+	padding-left:20px;
+}
+
+
+.ScreenKeyboard #tdNumpadPrompt
+{
+	padding-left:50px;
+}

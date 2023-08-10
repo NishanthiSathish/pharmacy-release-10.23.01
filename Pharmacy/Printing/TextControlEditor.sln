@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextControlEditorPharmacyClient", "TextControlEditor\TextControlEditorPharmacyClient.csproj", "{511E470D-3F2B-4CB3-9624-B41B32C3A48E}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://core-bol-tfs01.int.ascribe.com:8080/tfs/sourcecollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TextControlEditor\\TextControlEditorPharmacyClient.csproj
+		SccProjectName1 = TextControlEditor
+		SccLocalPath1 = TextControlEditor
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{511E470D-3F2B-4CB3-9624-B41B32C3A48E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{511E470D-3F2B-4CB3-9624-B41B32C3A48E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{511E470D-3F2B-4CB3-9624-B41B32C3A48E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{511E470D-3F2B-4CB3-9624-B41B32C3A48E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

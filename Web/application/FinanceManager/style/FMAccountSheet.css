@@ -1,0 +1,88 @@
+﻿/*
+
+    Style sheet for the account Enquiry control
+
+*/
+.fm-as-table
+{
+    font-size:          8pt;
+    background-color:   white;
+    color:              #565652;
+}
+
+.fm-as-table-header-emptycell
+{
+    background-color: white;
+    top:              expression(document.getElementById('table').scrollTop - 2);
+    position:         relative;
+}
+
+.fm-as-table-header0
+{
+    height: 0px;
+}
+
+.fm-as-table-header1
+{
+    color:            #417f8f;
+    background-color: #eaeaea;
+    font-weight:      bold;
+    text-align:       center;
+    height:           22px;
+    top:              expression(document.getElementById('table').scrollTop - 2);
+    position:         relative;
+    text-align:       center;
+}
+
+.fm-as-table-header2
+{
+    color:            #417f8f;
+    background-color: #DCE6FB;
+    font-weight:      bold;
+    text-align:       center;
+    height:           22px;
+    top:              expression(document.getElementById('table').scrollTop - 2);
+    position:         relative;
+    text-align:       center;
+}
+
+.fm-as-green-border
+{
+    border-right: #4D9E1F 2px solid;
+}
+
+.fm-as-table-sitesupplier
+{
+    background-color: #eaeaea;
+    height:           22px;
+}
+
+.fm-as-table-even
+{
+}
+
+.fm-as-table-odd
+{
+    background-color: #FFFFE5;
+}
+
+.fm-as-table-emptyrow
+{
+    height: 15px;
+}
+
+.fm-as-table-greycell
+{
+    background-color: #eaeaea;
+}
+
+.fm-as-table-blackcell
+{
+    background-color: #000000;
+    color:            #FFFFFF;
+}
+
+.fm-as-table-whitecell
+{
+    background-color: #FFFFFF;
+}

@@ -1,0 +1,45 @@
+.Standard 
+{
+	background-color:#d6e3ff;
+	font-size:10pt;
+	font-weight:normal;
+	font-family:arial; 
+	color: black;
+
+}
+
+
+.bGround 
+{
+	color:black; 
+	background-color:#d6e3ff; 
+	font-size:10pt; 
+	font-weight:normal; 
+	font-family:arial;
+}
+
+
+.failContainer
+{
+	BORDER-RIGHT: red thick solid; 
+	BORDER-TOP: red thick solid; 
+	LEFT: 50px; 
+	BORDER-LEFT: red thick solid;
+	WIDTH: 750px; 
+	BORDER-BOTTOM: red thick solid; 
+	BACKGROUND-COLOR: #ffffff;
+}
+
+
+.failAreaExtra
+{
+	overflow:auto;
+	font-weight:bold; 
+	WIDTH: 700px; 
+	HEIGHT: 90px;
+	BORDER-TOP: black thin solid; 
+	BORDER-LEFT: black thin solid;  
+	BORDER-BOTTOM: black thin solid;
+	BORDER-RIGHT: black thin solid ; 
+	BACKGROUND-COLOR: #ffffff;
+}

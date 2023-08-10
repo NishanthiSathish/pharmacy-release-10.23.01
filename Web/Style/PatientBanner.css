@@ -1,0 +1,319 @@
+﻿body
+{
+	background-color:white;
+	overflow:hidden;
+    font-size: 10pt arial;
+}
+
+.patientpanel
+{
+	overflow:hidden;
+	background-color:white;
+	border:#c0c0c0 2px solid;
+	border-left:none;
+	border-right:none;
+	padding:0px;
+	margin:0px;
+}
+
+.no-patient
+{
+	font-size:16pt;
+	height:100%;
+	padding:26px;
+	padding-top:27px;
+	background-color:#e0e0e0;
+	color:#555555
+}
+
+.patientpanel table
+{
+	width:100%;
+}
+
+.patientpanel table td
+{
+	padding:5px;
+}
+
+.top-zone td
+{
+	border-bottom:#c0c0c0 2px solid;
+	height:47px
+}
+
+.top-zone .label
+{
+	font-size:10pt;
+	font-style:italic;
+	font-weight:normal;
+	padding:2px;
+	padding-right:5px;
+}
+
+.top-zone .value
+{
+	font-size:12pt;
+	font-weight:bold;
+	font-style:normal;
+	padding-right:5px;
+}
+
+.left-zone
+{
+
+	overflow:hidden;
+}
+
+#address-container
+{
+	height:18px;
+	overflow:hidden;
+}
+
+.warning
+{
+	background-color:Red;
+	color:white;
+    float: left;
+    width: 100%;
+}
+
+#PatientBannerDropdown .warning
+{
+	padding:5px;
+	margin-bottom:10px;
+}
+
+.deceased
+{
+	background-color:#e0e0e0;
+}
+
+.deceased .top-zone .left-zone 
+{
+	color:white;
+	background-color:Black;
+	border-bottom:#808080 2px solid;
+	border-right:#808080 2px solid;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+.deceased .left-zone div
+{
+	font-size:12pt;
+}
+
+.top-zone .middle-zone
+{
+	width:400px
+}
+
+.bottom-zone .left-zone
+{
+	border-right:#c0c0c0 2px solid;
+}
+
+.bottom-zone .value
+{
+	font-size:10pt;
+	font-weight:bold;
+	font-style:normal;
+    padding:2px;
+	float: left;
+}
+.bottom-zone .label
+{
+	font-size:10pt;
+	font-style:italic;
+	font-weight:normal;
+	padding:2px;
+	float: left;
+}
+
+
+.patientpanel .locking_users
+{
+	padding-bottom:3px;
+	padding-top:3px;
+	padding:2px;
+    float: left;
+}
+
+.dots {
+    float: left;
+}
+
+.locking_users .lockinguser
+{
+	padding-left:5px;
+	padding-right:5px;	
+    float: left;
+}
+
+.locking_users .location
+{
+	padding-left:5px;
+	padding-right:5px;
+	padding:2px;
+}
+
+.locking_users .label
+{
+    float: left;
+}
+
+.locking_users .name 
+{
+    padding:2px;
+    float: left;
+}
+
+#PatientBannerDropdown
+{
+	border:#c0c0c0 2px solid;
+	background-color:White;
+	
+}
+
+#PatientBannerDropdown .left-zone
+{
+	width:300px;
+}
+#PatientBannerDropdown .value
+{
+	font-size:10pt;
+	font-weight:bold;
+	font-style:normal;
+}
+
+#PatientBannerDropdown .right-zone
+{
+	border-left:#c0c0c0 2px solid
+}
+#PatientBannerDropdown .left-zone
+{
+	border-right:#c0c0c0 2px solid;
+	padding:3px;
+}
+
+#PatientBannerDropdown .label
+{
+	font-size:10pt;
+	font-style:italic;
+	font-weight:normal;
+}
+
+#PatientBannerDropdown  #generic-items-container td,
+#PatientBannerDropdown  #id-list td
+{
+	padding:3px;
+}
+
+#PatientBannerDropdown  td
+{
+}
+
+#PatientBannerDropdown  .left-zone .address-line
+{
+	font-size:10pt;
+	display:block;
+    font-weight:bold;
+}
+
+#PatientBannerDropdown  .left-zone .contact-no
+{
+    display:block;
+    padding-top:3px;
+}
+#PatientBannerDropdown  .left-zone .value
+{
+	font-size:10pt;
+    padding-left:3px;
+}
+
+.forename,.surname
+{
+	font-size:16pt;
+	font-weight:bold;
+}
+
+.title
+{
+	font-size:16pt;
+	font-weight:bold;
+	padding-left:5px;
+}
+
+.name,.dob,.gender,.id1,.id2,.dod
+{
+	white-space:nowrap;
+}
+
+#generic-item
+{
+	white-space:nowrap;
+	padding-left:5px;
+    float: left;
+}
+
+.patientpanel button
+{
+	width:25px;
+	height:21px;
+	position:relative;
+	height:-3px;
+}
+
+.button-zone
+{
+	width:25px;
+	padding:0px;
+	margin:0px;
+	
+}
+
+#PatientBannerDropdown button
+{
+	width:25px;
+	height:21px;
+}
+
+#PatientBannerDropdown .button-zone
+{
+	padding:3px;
+}
+
+.generic-items-cell
+{
+	height:18px;
+	padding:0px;
+	margin:0px;
+}
+
+#generic-items-container
+{
+	height:18px;
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+	
+}
+
+.bottom-zone .right-zone table
+{
+	width:100%;
+
+}
+.bottom-zone .right-zone 
+{
+	margin:0px;
+	padding:0px;
+}
+
+.warningPatientNotFound {
+    background-color: yellow;
+    color: black;
+    font-size: 16pt;
+}

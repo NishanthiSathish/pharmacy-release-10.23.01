@@ -1,0 +1,29 @@
+.datatype
+{
+	cursor:hand;
+	padding-left: 15px;
+}
+
+.highlight
+{
+	color:blue;
+}
+
+.selected
+{
+	border: #c0c0c0 1px dotted;
+	background-color:blue;
+	color:#ffffff;
+}
+
+.form
+{
+	cursor:hand;
+	padding-left: 15px;
+	font-weight:bold;
+}
+
+.tableButton
+{
+    height:25px;
+}

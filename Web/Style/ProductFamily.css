@@ -1,0 +1,37 @@
+#divTree
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 1px solid;
+    BACKGROUND-COLOR: #ffffff
+}
+UL
+{
+    PADDING-LEFT: 20px;
+    MARGIN: 0px
+}
+.liFolder
+{
+    MARGIN-TOP: 8px;
+    FONT-WEIGHT: bold;
+    MARGIN-BOTTOM: 8px;
+    COLOR: #435ba5;
+    LIST-STYLE-TYPE: none
+}
+.liProduct
+{
+    LIST-STYLE: square url(../images/menu/dot.gif) outside;
+    MARGIN-TOP: 1px;
+    FONT-WEIGHT: normal;
+    CURSOR: hand;
+    COLOR: #000000
+}
+.liHover
+{
+    TEXT-DECORATION: underline
+}
+.liSelected
+{
+    FONT-WEIGHT: bold
+}

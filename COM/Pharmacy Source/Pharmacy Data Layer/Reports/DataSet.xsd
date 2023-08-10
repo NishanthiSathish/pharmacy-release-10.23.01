@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://tempuri.org/DataSet.xsd" xmlns:mstns="http://tempuri.org/DataSet.xsd" xmlns="http://tempuri.org/DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=DEVDB6-2008R2;Initial Catalog=XN_Regression;User ID=icwsys" IsAppSettingsProperty="false" Modifier="Assembly" Name="devdb6-2008r2.XN_Regression.icwsys" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet" msprop:Generator_UserDSName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WPharmacyLog" msprop:Generator_TableClassName="WPharmacyLogDataTable" msprop:Generator_TableVarName="tableWPharmacyLog" msprop:Generator_TablePropName="WPharmacyLog" msprop:Generator_RowDeletingName="WPharmacyLogRowDeleting" msprop:Generator_UserTableName="WPharmacyLog" msprop:Generator_RowChangingName="WPharmacyLogRowChanging" msprop:Generator_RowEvHandlerName="WPharmacyLogRowChangeEventHandler" msprop:Generator_RowDeletedName="WPharmacyLogRowDeleted" msprop:Generator_RowEvArgName="WPharmacyLogRowChangeEvent" msprop:Generator_RowChangedName="WPharmacyLogRowChanged" msprop:Generator_RowClassName="WPharmacyLogRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WPharmacyLogID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnWPharmacyLogID" msprop:Generator_ColumnPropNameInRow="WPharmacyLogID" msprop:Generator_ColumnPropNameInTable="WPharmacyLogIDColumn" msprop:Generator_UserColumnName="WPharmacyLogID" type="xs:int" />
+              <xs:element name="DateTime" msprop:Generator_ColumnVarNameInTable="columnDateTime" msprop:Generator_ColumnPropNameInRow="DateTime" msprop:Generator_ColumnPropNameInTable="DateTimeColumn" msprop:Generator_UserColumnName="DateTime" type="xs:dateTime" />
+              <xs:element name="Terminal" msprop:Generator_ColumnVarNameInTable="columnTerminal" msprop:Generator_ColumnPropNameInRow="Terminal" msprop:Generator_ColumnPropNameInTable="TerminalColumn" msprop:Generator_UserColumnName="Terminal" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Detail" msprop:Generator_ColumnVarNameInTable="columnDetail" msprop:Generator_ColumnPropNameInRow="Detail" msprop:Generator_ColumnPropNameInTable="DetailColumn" msprop:Generator_UserColumnName="Detail" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn" msprop:Generator_UserColumnName="State" type="xs:int" minOccurs="0" />
+              <xs:element name="Thread" msprop:Generator_ColumnVarNameInTable="columnThread" msprop:Generator_ColumnPropNameInRow="Thread" msprop:Generator_ColumnPropNameInTable="ThreadColumn" msprop:Generator_UserColumnName="Thread" type="xs:int" minOccurs="0" />
+              <xs:element name="NSVCode" msprop:Generator_ColumnVarNameInTable="columnNSVCode" msprop:Generator_ColumnPropNameInRow="NSVCode" msprop:Generator_ColumnPropNameInTable="NSVCodeColumn" msprop:Generator_UserColumnName="NSVCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DBID" msprop:Generator_ColumnVarNameInTable="columnDBID" msprop:Generator_ColumnPropNameInRow="DBID" msprop:Generator_ColumnPropNameInTable="DBIDColumn" msprop:Generator_UserColumnName="DBID" type="xs:int" minOccurs="0" />
+              <xs:element name="User" msprop:Generator_ColumnVarNameInTable="columnUser" msprop:Generator_ColumnPropNameInRow="User" msprop:Generator_ColumnPropNameInTable="UserColumn" msprop:Generator_UserColumnName="User" type="xs:string" minOccurs="0" />
+              <xs:element name="WPharmacyLogType" msprop:Generator_ColumnVarNameInTable="columnWPharmacyLogType" msprop:Generator_ColumnPropNameInRow="WPharmacyLogType" msprop:Generator_ColumnPropNameInTable="WPharmacyLogTypeColumn" msprop:Generator_UserColumnName="WPharmacyLogType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Title" msprop:Generator_TableClassName="TitleDataTable" msprop:Generator_TableVarName="tableTitle" msprop:Generator_TablePropName="Title" msprop:Generator_RowDeletingName="TitleRowDeleting" msprop:Generator_UserTableName="Title" msprop:Generator_RowChangingName="TitleRowChanging" msprop:Generator_RowEvHandlerName="TitleRowChangeEventHandler" msprop:Generator_RowDeletedName="TitleRowDeleted" msprop:Generator_RowEvArgName="TitleRowChangeEvent" msprop:Generator_RowChangedName="TitleRowChanged" msprop:Generator_RowClassName="TitleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" type="xs:string" minOccurs="0" />
+              <xs:element name="Info" msprop:Generator_ColumnVarNameInTable="columnInfo" msprop:Generator_ColumnPropNameInRow="Info" msprop:Generator_ColumnPropNameInTable="InfoColumn" msprop:Generator_UserColumnName="Info" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="fromDate" msprop:Generator_TableClassName="fromDateDataTable" msprop:Generator_TableVarName="tablefromDate" msprop:Generator_TablePropName="fromDate" msprop:Generator_RowDeletingName="fromDateRowDeleting" msprop:Generator_UserTableName="fromDate" msprop:Generator_RowChangingName="fromDateRowChanging" msprop:Generator_RowEvHandlerName="fromDateRowChangeEventHandler" msprop:Generator_RowDeletedName="fromDateRowDeleted" msprop:Generator_RowEvArgName="fromDateRowChangeEvent" msprop:Generator_RowChangedName="fromDateRowChanged" msprop:Generator_RowClassName="fromDateRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FromDate" msprop:Generator_ColumnVarNameInTable="columnFromDate" msprop:Generator_ColumnPropNameInRow="FromDate" msprop:Generator_ColumnPropNameInTable="FromDateColumn" msprop:Generator_UserColumnName="FromDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:WPharmacyLog" />
+      <xs:field xpath="mstns:WPharmacyLogID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

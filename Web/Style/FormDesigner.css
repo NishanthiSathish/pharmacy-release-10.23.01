@@ -1,0 +1,84 @@
+.body
+{
+    background-color:#4A83B0;
+    border-bottom:solid 2px #C6D3F0;
+    border-right:solid 2px #C6D3F0;
+    border-left:solid 2px #C6D3F0;
+}
+.control
+{
+    BORDER-RIGHT: medium none;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: medium none;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    BORDER-LEFT: medium none;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: medium none
+}
+.control .nullclass
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: 1px solid;
+    BORDER-BOTTOM: 1px solid;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #ffffff
+}
+.control .notnullclass
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: 1px solid;
+    BORDER-BOTTOM: 1px solid;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #ffc89b
+}
+.banner
+{
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #d6e3ff
+}
+.banner .title
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    FONT-FAMILY: Arial
+}
+.control .label
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: 0px;
+    BORDER-BOTTOM: 0px;
+    FONT-FAMILY: Arial
+}
+input 
+{
+    vertical-align: middle;
+    border: 1px solid #CCCCCC;
+    line-height: 15px;
+    padding-left: 10px;
+    font-size: 11px;
+    font-family: tahoma, arial, verdana, sans-serif;	    
+    font-weight:900;
+}
+input.dropdown
+{
+    background:url(../images/formdesigner/dropdown.png) no-repeat 100% 50%;    
+}
+input.datetime
+{
+    font-style:italic;
+    color:#CCCCCC;
+}
+.imgStyle
+{
+    position: absolute; margin-left:5px; margin-top:2px; margin-bottom:2px;    
+}

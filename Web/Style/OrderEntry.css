@@ -1,0 +1,770 @@
+BODY
+{
+    MARGIN-LEFT: 0px;
+    MARGIN-RIGHT: 0px;
+	 margin-top:2px;
+    SCROLLBAR-BASE-COLOR: #c6d3f0    
+}
+.OrderFormBody
+{
+	background-color:#ffffff;
+	margin:0px;
+}
+TABLE
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: arial
+	
+}
+TEXTAREA
+{
+    OVERFLOW-Y: auto
+}
+
+/*------------------- Headers - item titles, "page 1 of 4", and episode information if present ---------------------*/
+
+.pageHeader
+{
+	border-left:#00599c 1px solid;
+	border-right:#00599c 1px solid;
+}
+.pageHeader td
+{
+	border:none;
+	background-color:#ffffff;
+}
+
+#tdHeaderL
+{
+	border-top:#00599c 1px solid;
+	border-left:#00599c 1px solid;
+	border-right:#00599c 1px solid;
+	background-color: #dadada;
+	width:90%;
+}
+
+#tdHeaderR
+{
+	border-top:#00599c 1px solid;
+	border-right:#00599c 1px solid;
+	background-color: #dadada;
+}
+
+#tdInfo
+{
+	border-top:#00599c 1px solid;
+	border-left:#00599c 1px solid;
+	border-right:#00599c 1px solid;
+}
+
+.pageHeader .AttrName
+{
+	font-weight:bold;
+	padding-right:5px;
+	border:none;
+	text-align:left;
+}
+
+.pageHeader .AttrValue
+{
+	padding-right:30px;
+	border:none;
+	text-align:left;
+}
+
+.ItemTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    WIDTH: 100%;
+    TEXT-ALIGN: center;
+    border:#00599c 1px solid;
+    padding-left:10px;
+    background-color: #dadada;
+}
+
+.pageHeader .ItemTitle
+{
+	border:none;
+	background-color: #dadada;
+}
+.ItemCurrent
+{
+	font-weight:normal;
+	width:100px;
+	text-align:center;
+}
+
+
+
+/*---------------------------------  Toolbars, index & navigation controls ------------------------------*/
+.ToolButton
+{
+    PADDING-BOTTOM: 2px
+}
+.Toolbar TD
+{
+    PADDING-BOTTOM: 4px;
+}
+
+#tblControl td
+{
+	height:30px;
+	BACKGROUND-COLOR: #b5cfff;
+	padding-right:10px;
+	padding-left:10px;
+}
+
+#tblControl.Closed td
+{
+	padding:0px;
+}
+
+
+Input.toolButton
+{
+	BACKGROUND-COLOR: #b5cfff;
+}
+
+.ShortcutTable
+{
+  BACKGROUND-COLOR: #ffffff;
+}
+
+.StatusBar
+{
+    BORDER-RIGHT: #025a02 2px solid;
+    BORDER-TOP: #48b848 2px solid;
+    FONT-SIZE: xx-small;
+    BORDER-LEFT: #48b848 2px solid;
+    CURSOR: default;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #025a02 2px solid;
+    BACKGROUND-COLOR: #008000
+}
+.StatusTable
+{
+    BORDER-RIGHT: medium none;
+    DISPLAY: none;
+    FONT-SIZE: x-small;
+    BORDER-LEFT: medium none;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: medium none;
+    BACKGROUND-COLOR: #008000;
+}
+.StatusCell
+{
+    VERTICAL-ALIGN: top;
+    width:200px;
+    
+}
+.StatusCancelled
+{
+    BORDER-RIGHT: #860010 2px solid;
+    BORDER-TOP: #ff8196 2px solid;
+    BORDER-LEFT: #ff8196 2px solid;
+    BACKGROUND-COLOR: #bf0113;
+    BORDER-Bottom: #860010 2px solid
+}
+
+/*	----------------------------  Index ---------------------------------- */
+#tblIndex 
+{
+    CURSOR: hand;
+}
+.IndexItem
+{
+    FONT-SIZE: x-small;
+    COLOR: black;
+    border-bottom: #c0c0c0 1px solid;
+    BACKGROUND-COLOR: #ffffff;
+    font-weight:bold;
+}
+
+.Info
+{
+    BACKGROUND-COLOR: #F7E49B;
+}
+
+.Completed
+{
+    font-weight:normal;
+}
+.Highlight
+{
+	background-color:#00599C;
+	color:#ffffff;
+}
+
+.Unavailable
+{
+    COLOR: #c0c0c0;
+    BACKGROUND-COLOR: #ffffff;
+}
+
+/*------------------------------------ Scheduler bits ---------------------------- */
+.ControlBar
+{
+    BORDER-RIGHT: #335a7b 2px solid;
+    BORDER-TOP: #7ea9ce 2px solid;
+    FONT-SIZE: x-small;
+    CURSOR: default;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #335a7b 2px solid;
+    BACKGROUND-COLOR: #4682b4;
+}
+.ControlBarButton
+{
+    BORDER-RIGHT: #335a7b 2px solid;
+    BORDER-TOP: #7ea9ce 2px solid;
+    FONT-SIZE: xx-small;
+    BORDER-LEFT: #7ea9ce 2px solid;
+    CURSOR: default;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #335a7b 2px solid;
+    BACKGROUND-COLOR: #4682b4
+}
+.ScheduleInfoBar
+{
+    BORDER: #c0c0c0 1px solid;
+    background-color:#FEE8A5;
+    FONT-SIZE: 8pt;
+    WIDTH: 100%;
+    HEIGHT: 15px;
+}
+
+
+.ScheduleInfoBar INPUT
+{
+    HEIGHT: 20px
+}
+.scheduleText
+{
+    CURSOR: hand
+}
+
+/*  -------------------------------------------- General infrastructure --------------------------------------- */
+
+#OrderFormDiv
+{
+	background-color:#d6e3ff;
+}
+
+.FormsContainer
+{
+    BORDER-RIGHT: #00599c;
+    BORDER-TOP: #00599c;
+    BORDER-LEFT: #00599c;
+    BORDER-BOTTOM: #00599c;
+    HEIGHT: 100%;
+    BACKGROUND-COLOR: #d6e3ff
+}
+.FormsContainerTopCell
+{
+    BORDER-RIGHT: #00599c;
+    BORDER-TOP: #00599c;
+    BORDER-LEFT: #00599c;
+    WIDTH: 100%;
+    BORDER-BOTTOM: #00599c 1px solid;
+    BACKGROUND-COLOR: #ffffff
+}
+.IndexPaneCell
+{
+    BORDER-RIGHT: medium none;
+    border-top:#00599c 1px solid;
+    BORDER-LEFT: 1px solid;
+    WIDTH: 20%;
+    COLOR: black;
+    BORDER-BOTTOM: medium none;
+    BACKGROUND-COLOR: #ffffff
+}
+.OrderFormCell
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    BORDER-LEFT: 1px solid;
+    WIDTH: 100%;
+    BACKGROUND-COLOR: #ffffff
+}
+.OrderFormContainer
+{
+    WIDTH: 100%;
+    HEIGHT: 100%;
+}
+.OrderFormFrameFocused
+{
+    border: #0000ff 2px solid;
+}
+.ButtonTable
+{
+    BACKGROUND-COLOR: #d6e3ff
+}
+
+.ButtonTable td
+{
+	text-align:right;
+	width:0px;
+}
+
+/* ---------------------------------- Controls on the Order Forms themselves ------------------------------- */
+
+.ControlSpan
+{
+    POSITION: absolute;
+}
+.ControlSpan label 
+{
+	height:20px;
+}
+
+.DisabledField {
+/* This to prevent the callendar control from wrapping when a date field is disabled */
+	font-weight:normal; 
+	width:150px;
+}
+
+.LookupSearchControl
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    BORDER-LEFT: medium none;
+    BORDER-BOTTOM: medium none;
+    POSITION: relative;
+    TOP: 0px
+}
+.Numeric
+{
+    WIDTH: 100px
+}
+.Summary
+{
+    FONT-WEIGHT: bold
+}
+.FormLink
+{
+    CURSOR: hand;
+    COLOR: blue;
+    FONT-STYLE: normal;
+    BACKGROUND-COLOR: #ffffff;
+    TEXT-DECORATION: underline
+}
+.LinkImage
+{
+    CURSOR: hand;
+    width:16px;
+    height:16px;
+}
+.LinkImageDisabled
+{
+    width:16px;
+    height:16px;
+    filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
+
+
+.OrderFormFrame
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    BORDER-LEFT: medium none;
+    WIDTH: 98%;
+    BORDER-BOTTOM: medium none;
+    HEIGHT: 100%
+}
+.EmptyPageTitle
+{
+    FONT-SIZE: x-large
+}
+.EmptyPageDetail
+{
+    FONT-SIZE: medium
+}
+.SpinButton
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    FONT-WEIGHT: bold;
+    BORDER-LEFT: 1px solid;
+    WIDTH: 20px;
+    BORDER-BOTTOM: 1px solid;
+    HEIGHT: 20px
+}
+.LookupButton
+{
+    WIDTH: 20px;
+    HEIGHT: 20px
+}
+.LabelBox
+{
+    BORDER-RIGHT: #c0c0c0 1px solid;
+    BORDER-TOP: #c0c0c0 1px solid;
+    OVERFLOW: hidden;
+    BORDER-LEFT: #c0c0c0 1px solid;
+    WIDTH: 100%;
+    BORDER-BOTTOM: #c0c0c0 1px solid
+}
+.FormStyle_Exists
+{
+    BACKGROUND-COLOR: #ffa4a4
+}
+
+.OrderFormBody .DrugTitle
+{
+	font-size:12pt;
+	font-weight:bold;
+	padding-bottom:10px;
+}
+
+Label.StandardField
+{
+	padding:2px;
+}
+
+.OrderFormBody .TemplateDetail
+{
+
+}
+
+.OrderFormBody .ChangeReport
+{
+	font-weight:bold;
+	font-size:11pt;
+	color:#ff0000;
+}
+
+/* ----------  Drug Admin Custom Control Styles --------------- */
+.AdminBody
+{
+	BACKGROUND-COLOR: #ffffff;	
+}
+
+.AdminBody td
+{
+	padding-bottom:10px;
+}
+
+.AdminBody .PrescriptionTitle
+{
+	font-size:10pt;
+	font-weight:bold;
+	border:#c0c0c0 1px solid;
+	padding-bottom:10px;
+}
+
+.AdminBody .WarningLabel
+{
+	font-weight:bold;
+	color:#ff0000;
+}
+
+.AdminBody td.WarningLabel
+{
+	height:50px;
+	margin-top:20px;
+}
+
+.AdminBody #tblDrugList 
+{
+	border: #909090 1px solid;
+}
+
+.AdminBody #tblDrugList td
+{
+	border:none;
+	border-color:#c0c0c0;	
+	padding:1px;
+	padding-left:5px;
+}
+
+.AdminBody #tblDrugList td.ButtonCell
+{
+	width:20px;
+	border-bottom:1px solid;
+	padding:0px;
+}
+
+.AdminBody #tblDrugList .Header td
+{
+	font-weight:bold;
+	border-color: #909090;
+}
+
+.AdminBody .DrugRow
+{
+	color:#000000;
+}
+
+.AdminBody #tblDrugList .DrugRow .StandardField
+{
+	border:none;
+}
+
+.AdminBody .Hover
+{
+	background-color:#00599C;
+	color:#ffffff;
+}
+
+.AdminBody .Disabled
+{
+	color:#c0c0c0;
+}
+
+.AdminBody .Selected td
+{
+	color:#009F00;
+	font-weight:bold;
+}
+
+.AdminBody .Selected input
+{
+	color:#009F00;
+	font-weight:bold;
+}
+
+/*---------------------------------Prescription Custom Control Styles--------------------------------*/
+
+.PrescriptionBody
+{
+	margin: 10px;
+}
+
+
+.PrescriptionBody .DisabledField
+{
+	width:70px;
+}
+
+.PrescriptionBody .SelectionList
+{
+	margin-top:50px;
+}
+
+.PrescriptionBody .SelectionList td
+{
+	cursor:hand;
+	font-size:14pt;
+	margin-top:60px;
+	padding:10px;
+}
+
+.PrescriptionBody .SelectionList .Padding
+{
+	height:50px;
+}
+
+
+.PrescriptionBody .SelectionList .SelectionImage
+{
+	width:200px;
+}
+.PrescriptionBody .SelectionList .SelectionText
+{
+	font-weight:bold;
+	font-size:12pt;
+}
+
+
+.PrescriptionBody .SelectionList .Extra
+{
+	color:#778899;
+	display:block;
+	font-size:10pt;
+	display:block;
+}
+
+.PrescriptionBody .SelectionList .Hover
+{
+	border:#FEBF2C 2px solid;
+	background-color:#FFFF80;
+}
+
+.PrescriptionBody .SelectionList .Hover .SelectionText
+{
+	background-color:#FFFF80;
+}
+
+.PrescriptionBody .SelectionList a
+{
+	text-decoration:none;
+	color:#000000;
+}
+.PrescriptionBody .SelectionList a:visited
+{
+	text-decoration:none;
+	color:#000000;
+}
+.PrescriptionBody .SelectionList a:hover
+{
+	text-decoration:none;
+}
+
+.PrescriptionBody .InfoMessage
+{
+	color:#008000;
+	font-weight:bold;
+}
+
+.PrescriptionBody .Ingredients 
+{
+	margin-top:20px;
+	margin-bottom:20px;
+
+}
+
+.PrescriptionBody .Ingredients td
+{
+	padding:2px;
+	padding-bottom:3px;
+	background-color:#DDE9FF;
+}
+
+
+.PrescriptionBody .Rate td
+{
+	padding:2px;
+	padding-bottom:3px;
+	background-color:#DDE9FF;
+}
+
+.PrescriptionBody .Heading td
+{
+	background-color:steelblue;
+	font-weight:bold;
+	padding:2px;
+	color:#ffffff;
+}
+
+.PrescriptionBody .Ingredients .IngredientName, .PrescriptionBody #tdDiluentName
+{
+	font-weight:bold;
+}
+
+.PrescriptionBody .Ingredients .FormLink
+{
+	background-color:#DDE9FF;
+}
+.PrescriptionBody .Rate .FormLink
+{
+	background-color:#DDE9FF;
+}
+
+/*---------------------------------Formula Builder-------------------------------------------------*/
+
+.FormulaBody
+{
+}
+
+.FormulaBody table
+{
+	background-color:#ffffff;
+}
+
+.FormulaBody .HeadingActive td
+{
+	background-color:#cfcfcf;
+	font-weight:bold
+}
+
+.FormulaBody .HeadingDiluent td
+{
+	background-color: #cfcfcf;
+	font-weight:bold	
+}
+
+.FormulaBody .TotalLabel 
+{
+	background-color: #cfcfcf;
+	font-weight:bold	
+}
+
+.FormulaBody .Active .Product
+{
+	font-weight:bold
+}
+
+.FormulaBody .Diluent .Product
+{
+	font-weight:bold;
+}
+
+.FormulaBody .Active td
+{
+	border-bottom:#c0c0c0 1px solid;
+}
+
+.FormulaBody .Diluent td
+{
+	border-bottom:#c0c0c0 1px solid;
+}
+
+.FormulaBody .Quantity td
+{
+	border:none;
+}
+
+.FormulaBody .Formula
+{
+	border: #000000 1px solid;
+	padding:3px;
+}
+
+
+/*---------------------------------Problem Capture-------------------------------------------------*/
+div.Problem 
+{
+	
+	border-top: #000000 1px solid;
+	margin-left:10px;
+	margin-right:10px;
+	padding-top:10px;
+	width:90%;
+}
+
+div.Problem span
+{
+	padding-right:10px;
+	width:40%;
+}
+
+div.Problem select
+{
+	position:relative;
+	top:2px;
+}
+
+
+/*---------------------------------Info Pages-------------------------------------------------*/
+.InfoPage
+{
+	background-color:#FFFEEA;
+	margin:10px;
+}
+
+.InfoPage h1
+{
+	font-size:12pt;
+	font-family:arial;
+	padding-top:20px;
+}
+
+.InfoPage hr
+{
+}
+
+.InfoPage .linkImage
+{
+	cursor:hand;
+}
+
+.InfoPage .Contents
+{
+	padding-bottom:30px;
+	padding-top:20px;
+	padding-left:10px;
+}
+.OrderEntryFormsContainer
+{
+	height:90%;
+	overflow :auto;
+}

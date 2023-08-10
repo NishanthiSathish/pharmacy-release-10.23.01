@@ -1,0 +1,122 @@
+.SectionHeader
+{
+    BORDER-RIGHT: blue 1px solid;
+    PADDING-RIGHT: 3px;
+    BORDER-TOP: blue 1px solid;
+    PADDING-LEFT: 3px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: x-small;
+    PADDING-BOTTOM: 3px;
+    BORDER-LEFT: blue 1px solid;
+    PADDING-TOP: 3px;
+    BORDER-BOTTOM: blue 1px solid;
+    BACKGROUND-COLOR: lavender;
+    TEXT-ALIGN: center
+}
+.SectionLayout
+{
+    MARGIN: 10px;
+    WIDTH: 700px
+}
+.Panel
+{
+    BORDER-RIGHT: darkblue 1px solid;
+    BORDER-TOP: darkblue 1px solid;
+    BORDER-LEFT: darkblue 1px solid;
+    BORDER-BOTTOM: darkblue 1px solid;
+    BACKGROUND-COLOR: white;
+}
+.StandardField
+{
+    BORDER-RIGHT: black 1px solid;
+    BORDER-TOP: black 1px solid;
+    BORDER-LEFT: black 1px solid;
+    BORDER-BOTTOM: black 1px solid
+}
+.LabelField
+{
+    FONT-SIZE: 93%;
+    MARGIN-BOTTOM: 1px
+}
+.ReadOnlyField
+{
+    BORDER-RIGHT: blue 1px solid;
+    PADDING-RIGHT: 2px;
+    BORDER-TOP: blue 1px solid;
+    PADDING-LEFT: 2px;
+    PADDING-BOTTOM: 2px;
+    BORDER-LEFT: blue 1px solid;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: blue 1px solid;
+    HEIGHT: 10px;
+    BACKGROUND-COLOR: #f2f2f2
+}
+.xgrid_body
+{
+    FONT-SIZE: x-small;
+    MARGIN: 10px;
+    WIDTH: 700px;
+    COLOR: black;
+    FONT-FAMILY: Arial
+}
+.xgrid_body .xgrid_heading
+{
+    BORDER-RIGHT: #2f0272 1px solid;
+    BORDER-TOP: #c3bbff 1px solid;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 90%;
+    BORDER-LEFT: #c3bbff 1px solid;
+    BORDER-BOTTOM: #2f0272 1px solid;
+    BACKGROUND-COLOR: #edf5fa;
+    TEXT-ALIGN: center
+}
+.xgrid_body .xItemDiv
+{
+    PADDING-RIGHT: 3px;
+    PADDING-LEFT: 3px;
+    PADDING-BOTTOM: 3px;
+    PADDING-TOP: 3px
+}
+.xgrid_body .xitemtextarea
+{
+    FONT-SIZE: x-small;
+    WIDTH: 100%;
+    FONT-FAMILY: Arial
+}
+.Tooltip
+{
+    COLOR: #9e329e
+}
+.SentNotice
+{
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: large;
+    PADDING-BOTTOM: 5px;
+    COLOR: green;
+    PADDING-TOP: 5px;
+    TEXT-ALIGN: center
+}
+.StatusNotice
+{
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: x-small;
+    PADDING-BOTTOM: 5px;
+    COLOR: red;
+    PADDING-TOP: 5px;
+    TEXT-ALIGN: center
+}
+.xgrid_body .xgrid_headingMandatory
+{
+    BORDER-RIGHT: #2f0272 1px solid;
+    BORDER-TOP: #c3bbff 1px solid;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 90%;
+    BORDER-LEFT: #c3bbff 1px solid;
+    BORDER-BOTTOM: #2f0272 1px solid;
+    BACKGROUND-COLOR: #ffc89b;
+    TEXT-ALIGN: center
+}

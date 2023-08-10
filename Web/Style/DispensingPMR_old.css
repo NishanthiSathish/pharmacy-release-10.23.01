@@ -1,0 +1,89 @@
+/**********************************************************************************************
+*                                                                                            *
+* THIS IS FOR OLD VERSION OF THE PMR AND YOU SHOULD NOT BE MAKING YOUR CHANGES HERE.         *
+* FOR THE NEW PMR ALL THIS CODE NOW EXISTS IN THE DispensingPMR.css                          *
+*                                                                                            * 
+**********************************************************************************************/
+
+.GridHeadingCell
+{
+    BORDER-RIGHT: #335a7b 1px solid;
+    BORDER-TOP: #7ea9ce 1px solid;
+    FONT-WEIGHT: bold;
+    BORDER-LEFT: #7ea9ce 1px solid;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #335a7b 1px solid;
+    TEXT-ALIGN: left
+}
+.GridHeading
+{
+    BACKGROUND-COLOR: #4682b4
+}
+#tbl-container TD
+{
+    BORDER-RIGHT: #808080 1px solid;
+    BORDER-BOTTOM: #808080 1px solid
+}
+.GridBody
+{
+    BACKGROUND-COLOR: #ffffff
+}
+.P
+{
+}
+.RowSelected
+{
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #00599c;
+}
+.RowUnfocused
+{
+    COLOR: black;
+    BACKGROUND-COLOR: lightgrey;
+}
+.RowCurrent
+{
+    FONT-STYLE: normal
+}
+.RowOdd
+{
+    BACKGROUND-COLOR: white;
+}
+.RowLevel0Even
+{
+    BACKGROUND-COLOR: #FFFFE5;
+}
+.RowLevel1Even
+{
+    BACKGROUND-COLOR: #E5E5FF;
+}
+.RowLevel2Even
+{
+    BACKGROUND-COLOR: #E5FFE5;
+}
+.RowHistory
+{
+}
+.x
+{
+    BORDER-RIGHT: medium none
+}
+.LastQty
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    BORDER-LEFT: medium none;
+    WIDTH: 48px;
+    BORDER-BOTTOM: medium none;
+    BACKGROUND-COLOR: transparent;
+}
+.HighlightDate1
+{
+    color: #990000;
+    font-weight: bold; 
+}
+.HighlightDate2
+{
+    color: #990000;
+    font-style: italic;
+}

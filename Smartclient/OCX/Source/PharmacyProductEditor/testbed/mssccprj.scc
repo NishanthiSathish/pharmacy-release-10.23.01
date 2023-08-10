@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[testbed.vbp]
+SCC_Aux_Path =\\Nbi-devel-fs4\Development\SourceSafeDatabase
+SCC_Project_Name =this project is not under source code control

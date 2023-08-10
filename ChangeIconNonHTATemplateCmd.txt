@@ -1,0 +1,27 @@
+@echo off
+setlocal EnableDelayedExpansion
+
+set "replace=IconFile=//[WEBSERVER]/[WEBSITE]/images/icons/ASCRIBE.ICO"
+rem Get the number of the target line minus one
+
+for /F "delims=:" %%a in ('findstr /I /N "IconFile" INSTALLDIR\NonHTATemplate.txt') do set /A lines=%%a-1
+rem Redirect the input file to read it via SET /P
+< INSTALLDIR\NonHTATemplate.txt (
+
+   rem Copy lines before the target one
+   for /L %%i in (1,1,%lines%) do (
+      set "line="
+      set /P "line="
+      echo/!line!
+   )
+
+   rem Read the target line and replace it
+   set /P "line="
+   echo !replace!
+
+   rem Copy the rest of lines
+   findstr "^"
+
+rem Store the output in a temporary file
+) > INSTALLDIR\TempNonHTATemplate.txt
+move /Y INSTALLDIR\TempNonHTATemplate.txt INSTALLDIR\NonHTATemplate.txt

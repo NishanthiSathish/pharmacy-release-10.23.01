@@ -1,0 +1,2556 @@
+﻿@import url("_Customisations.css");
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    filter: expression(document.execCommand("BackgroundImageCache", false, true));
+}
+
+body
+{
+    padding: 0px;
+    font: 10pt arial;
+    margin: 0px;
+    color: #000;
+    background: #d6e3ff; /* IE Specific */
+    scrollbar-base-color: #c6d3f0;
+}
+.application
+{
+    font-family: Arial;
+}
+.application .menu
+{
+    background-color: silver;
+}
+.grid_body
+{
+    font-size: x-small;
+    color: black;
+    font-family: Arial;
+    background-color: #d6e3ff;
+}
+.grid_body .grid_heading
+{
+    border-right: #2f0272 1px solid;
+    border-top: #c3bbff 1px solid;
+    border-left: #c3bbff 1px solid;
+    border-bottom: #2f0272 1px solid;
+    color: #fff;
+    background-color: #4682b4;
+}
+.grid_body .grid_row
+{
+    background-color: white;
+}
+.grid_body .grid_row .grid_cell
+{
+    border-bottom: #c0c0c0 1px solid;
+}
+.grid_body .grid_row_selected
+{
+    border-right: #00599c;
+    border-top: #00599c;
+    border-left: #00599c;
+    color: white;
+    border-bottom: #00599c;
+    background-color: #00599c;
+}
+.grid_body .grid_row_selected .grid_cell_selected
+{
+    border-right: midnightblue 1px solid;
+    border-top: midnightblue 1px solid;
+    border-left: midnightblue 1px solid;
+    border-bottom: midnightblue 1px solid;
+}
+.grid_body .grid_title
+{
+    font-size: larger;
+    color: black;
+    background-color: #c6d3f0;
+    text-align: left;
+}
+BUTTON
+{
+    border-right: #6F9DD9 1px solid;
+    border-top: #E3EFFF 1px solid;
+    border-left: #E3EFFF 1px solid;
+    border-bottom: #6F9DD9 1px solid;
+    width: 70px;
+    font-size: 9pt;
+    background: transparent url(../images/Developer/button-bg.gif);
+    color: #000000;
+}
+.ICWButton
+{
+    border-right: #7598b4 1px solid;
+    border-top: #e7f4ff 1px solid;
+    font-size: 9pt;
+    border-left: #e7f4ff 1px solid;
+    width: 70px;
+    border-bottom: #7598b4 1px solid;
+    background-color: #BFDBFF;
+}
+.ButtonAutoWidth
+{
+    border-right: #7598b4 1px solid;
+    border-top: #e7f4ff 1px solid;
+    font-size: 9pt;
+    width: auto;
+    border-left: #e7f4ff 1px solid;
+    border-bottom: #7598b4 1px solid;
+    background-color: #BFDBFF;
+}
+.background_disabled
+{
+    background-color: #d6e3ff;
+}
+.BrokenRule_Text
+{
+    font-weight: normal;
+    font-size: 10pt;
+    color: #ee2d00;
+}
+TABLE
+{
+    font-size: 9pt;
+    font-family: Arial;
+}
+.PaneCaption
+{
+    border-right: medium none;
+    border-top: medium none;
+    border-left: medium none;
+    border-bottom: medium none;
+    font-size: 11pt;
+    color: black;
+    background-color: #c6d3f0;
+    text-align: left;
+    background-image: url(../images/Developer/window-title-background.png);
+}
+.PaneBody
+{
+    border-right: silver 1px groove;
+    border-top: silver 1px groove;
+    border-left: silver 1px groove;
+    border-bottom: silver 1px groove;
+}
+.TabSelected
+{
+    border-right: midnightblue 2px solid;
+    border-top: white 2px solid;
+    font-weight: bold;
+    border-left: white 2px solid;
+    border-bottom: medium none;
+    background-color: #d6e3ff;
+    text-align: center;
+}
+.Tab
+{
+    border-right: midnightblue 1px solid;
+    border-top: white 1px solid;
+    border-left: white 1px solid;
+    border-bottom: white 1px solid;
+    background-color: #c6d3f0;
+    text-align: center;
+}
+.TabPadLeft
+{
+    width: 6px;
+    border-bottom: white 1px solid;
+    background-color: #c6d3f0;
+}
+.TabPadRight
+{
+    border-bottom: white 1px solid;
+    background-color: #c6d3f0;
+}
+.EditBox
+{
+    border-right: steelblue 1px solid;
+    border-top: steelblue 1px solid;
+    border-left: steelblue 1px solid;
+    width: 1%;
+    color: black;
+    border-bottom: steelblue 1px solid;
+    background-color: white;
+    text-align: left;
+}
+.BodyFocused
+{
+    border-right: blue thick solid;
+    border-top: blue thick solid;
+    border-left: blue thick solid;
+    border-bottom: blue thick solid;
+}
+.PaneBodyActive
+{
+    border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+}
+.PaneTitleBar
+{
+    border-right: steelblue 1px solid;
+    border-top: steelblue 1px solid;
+    border-left: steelblue 1px solid;
+    border-bottom: steelblue 1px solid;
+    height: 24px;
+    background-color: #6878a9;
+    text-align: left;
+}
+.PaneTitleBarActive
+{
+    border-right: steelblue 1px solid;
+    border-top: steelblue 1px solid;
+    border-left: steelblue 1px solid;
+    border-bottom: steelblue 1px solid;
+    height: 24px;
+    background-color: #297bbe;
+    text-align: left;
+}
+.PaneTitleBarText
+{
+    color: lightgrey;
+}
+.PaneTitleBarTextActive
+{
+    color: white;
+    background-color: #2476b8;
+}
+.BannerTitle
+{
+    font-weight: normal;
+    font-size: 18pt;
+    color: rgb(21, 66, 139);
+    font-style: normal;
+    text-align: center;
+}
+.Field
+{
+    border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    background-color: white;
+}
+.MenuApplications
+{
+    width: 80px;
+}
+.FieldDisabled
+{
+    border-right: gray 1px solid;
+    border-top: gray 1px solid;
+    border-left: gray 1px solid;
+    border-bottom: gray 1px solid;
+    background-color: #d6e3ff;
+}
+.TabButton
+{
+    border-right: medium none;
+    border-top: medium none;
+    border-left: medium none;
+    width: 100%;
+    border-bottom: medium none;
+    height: 100%;
+    background-color: transparent;
+}
+.PropertyPage
+{
+}
+.PropertyCaption
+{
+    width: 1%;
+}
+.PropertyValue
+{
+    width: 100%;
+}
+.PropertyTitle
+{
+    width: 100%;
+    color: #1d2b4d;
+    background-color: #c6d3f0;
+}
+.PropTab
+{
+    border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: white 1px solid;
+    border-bottom: black 1px solid;
+    background-color: #c6d3f0;
+}
+.PropTabSelected
+{
+    border-right: black 2px solid;
+    border-left: white 2px solid;
+    border-bottom: black 2px solid;
+    background-color: #d6e3ff;
+}
+.PropTabPadLeft
+{
+    border-top: black 1px solid;
+    width: 6px;
+    background-color: #c6d3f0;
+}
+.PropTabPadRight
+{
+    border-top: black 1px solid;
+    background-color: #c6d3f0;
+}
+.PropTabPadTop
+{
+    height: 4px;
+    background-color: #d6e3ff;
+}
+.PropTabPadBottom
+{
+    height: 4px;
+    background-color: #c6d3f0;
+}
+.TabPadTop
+{
+    height: 4px;
+    background-color: #c6d3f0;
+}
+.TabPadBottom
+{
+    height: 4px;
+    background-color: #d6e3ff;
+}
+.URL
+{
+    font-weight: bold;
+}
+.Username
+{
+    font-size: 9pt;
+    color: white;
+}
+.divWidthHeightCalculator
+{
+    border-right: 1px solid;
+    border-top: 1px solid;
+    font-size: 9pt;
+    left: 0px;
+    visibility: hidden;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    font-family: Arial, 'Courier New';
+    position: absolute;
+}
+.MenuPopUp
+{
+    background-color: #F0F0F0;
+    color: #000000;
+}
+.MenuPopup_BorderOutline
+{
+    border: #000000 1px solid;
+    height: 100%;
+    overflow-y: auto;
+}
+.MenuPopup_Left
+{
+    background-image: url(../images/Developer/menu-popup-background.png);
+}
+.MenuPopup_Left image
+{
+    margin-top: 4px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.MenuItemText
+{
+    margin: 0px;
+    padding-top: 3px;
+    padding-left: 1px;
+    padding-right: 5px;
+    border: transparent 1px solid;
+}
+.MenuItemText_Hover
+{
+    border: #96D9F9 1px solid;
+    background-image: url(../images/Developer/menu-popup-hover.png);
+}
+.menu
+{
+    font-weight: bold;
+    font-size: 10pt;
+    cursor: default;
+    color: #ffffff;
+    font-family: Arial, 'Courier New';
+    background: transparent;
+}
+.menuLive
+{
+    background-color: #23518C;
+    background-image: url(../images/Developer/menu-background.png);
+}
+.menuTraining
+{
+    background-color: #ffa500;
+}
+.menuTesting
+{
+    background-color: #800080;
+}
+.menuUnknown
+{
+    background-color: #23518C;
+    background-image: url(../images/Developer/menu-background.png);
+}
+
+.menu .menunormal
+{
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    cursor: default;
+    color: white;
+    padding-top: 1px;
+}
+.menu .menuhover
+{
+    border-right: #165285 1px solid;
+    border-top: #86c2f4 1px solid;
+    border-left: #86c2f4 1px solid;
+    cursor: default;
+    color: white;
+    border-bottom: #165285 1px solid;
+}
+.menu .menuopen
+{
+    border-right: #4682b4 1px solid;
+    border-top: #4682b4 1px solid;
+    border-left: #4682b4 1px solid;
+    cursor: default;
+    border-bottom: black 1px solid;
+    background-color: #4682b4;
+    color: #ffffff;
+}
+.ImageSelector
+{
+    background-color: white;
+}
+.ImageSelector .ImageSelectorNormal
+{
+    border-right: white 1px solid;
+    border-top: white 1px solid;
+    border-left: white 1px solid;
+    border-bottom: white 1px solid;
+}
+.ImageSelector .ImageSelectorSelected
+{
+    border-right: #4682b4 1px solid;
+    border-top: #4682b4 1px solid;
+    border-left: #4682b4 1px solid;
+    border-bottom: #4682b4 1px solid;
+}
+.ImageSelector .ImageSelectorHover
+{
+    border-right: #4682b4 1px solid;
+    border-top: #4682b4 1px solid;
+    border-left: #4682b4 1px solid;
+    border-bottom: #4682b4 1px solid;
+}
+.MenuDesignerSubItem
+{
+    font-size: 9pt;
+    cursor: default;
+    font-family: Arial, 'Courier New';
+    background-color: white;
+}
+.MenuDesignerSubItem .SubMenuHover
+{
+    border-right: black 1px;
+    border-top: black 1px;
+    border-left: black 1px;
+    color: white;
+    border-bottom: black 1px;
+    background-color: blue;
+}
+.MenuDesignerSubItem .SubMenuHover .SubMenuLeft
+{
+    border-right: black;
+    border-top: black;
+    border-left: black;
+    width: 16px;
+    border-bottom: black;
+    background-color: blue;
+}
+.MenuDesignerSubItem .SubMenuNormal
+{
+    font-size: 9pt;
+    font-family: Arial, 'Courier New';
+}
+.MenuDesignerSubItem .SubMenuNormal .SubMenuLeft
+{
+    border-right: 1px;
+    border-top: 1px;
+    border-left: 1px;
+    width: 16px;
+    border-bottom: 1px;
+    height: 16px;
+    background-color: #BFDBFF;
+}
+.MenuDesignerSubItem .SubMenuOpen
+{
+    font-size: 9pt;
+    font-family: Arial, 'Courier New';
+}
+.MenuDesignerSubItem .SubMenuSelected
+{
+    font-weight: bolder;
+    font-size: 9pt;
+    color: white;
+    font-family: Arial, 'Courier New';
+    background-color: #00599c;
+}
+.MenuDesignerSubItem .SubMenuSelected .SubMenuLeft
+{
+    width: 16px;
+    background-color: #00599c;
+}
+.MenuDesigner
+{
+    font-size: 9pt;
+    cursor: default;
+    color: white;
+    font-family: Arial, 'Courier New';
+    background-color: #4682b4;
+}
+.MenuDesigner .MenuHover
+{
+    border-right: #4682b4 1px solid;
+    border-top: white 1px solid;
+    border-left: white 1px solid;
+    color: white;
+    border-bottom: #4682b4 1px solid;
+    background-color: #BFDBFF;
+}
+.MenuDesigner .MenuNormal
+{
+    border-right: #BFDBFF 1px solid;
+    border-top: #BFDBFF 1px solid;
+    border-left: #BFDBFF 1px solid;
+    color: black;
+    border-bottom: #BFDBFF 1px solid;
+    background-color: #BFDBFF;
+}
+.MenuDesigner .MenuOpen
+{
+    border-right: white 1px solid;
+    border-top: #4682b4 1px solid;
+    border-left: #4682b4 1px solid;
+    color: white;
+    border-bottom: white 1px solid;
+    background-color: #BFDBFF;
+}
+.MenuDesigner .MenuSelected
+{
+    border-right: white 1px solid;
+    border-top: #4682b4 1px solid;
+    border-left: #4682b4 1px solid;
+    color: white;
+    border-bottom: white 1px solid;
+    background-color: #00599c;
+}
+.MenuDesigner .MenuSelected .MenuSelectedText
+{
+    color: white;
+}
+.ToolbarDesigner
+{
+    cursor: default;
+    background-color: #BFDBFF;
+}
+.ToolbarDesigner .ImageNormal
+{
+    border-right: #4682b4 1px solid;
+    border-top: #4682b4 1px solid;
+    border-left: #4682b4 1px solid;
+    border-bottom: #4682b4 1px solid;
+}
+.ToolbarDesigner .ImageSelected
+{
+    border-right: orange 1px solid;
+    border-top: orange 1px solid;
+    border-left: orange 1px solid;
+    border-bottom: orange 1px solid;
+}
+.ToolbarDesigner .ImageHover
+{
+    border-right: white 1px solid;
+    border-top: white 1px solid;
+    border-left: white 1px solid;
+    border-bottom: white 1px solid;
+}
+.MenuPopUp .SubMenuBorder
+{
+    border-right: black 1px solid;
+    border-left: #bcb8ff 1px solid;
+    cursor: default;
+    border-bottom: black 1px solid;
+}
+.SubMenuFrame
+{
+    border-right: medium none;
+    border-top: medium none;
+    visibility: hidden;
+    border-left: medium none;
+    width: 100px;
+    border-bottom: medium none;
+    position: absolute;
+    top: 60px;
+}
+.Toolbar
+{
+    border-top: #d6e3ff 1px solid;
+    background-color: #BFDBFF;
+}
+.ToolButton
+{
+    border-right: #7598b4 1px solid;
+    border-top: #e7f4ff 1px solid;
+    font-size: 9pt;
+    border-left: #e7f4ff 1px solid;
+    border-bottom: #7598b4 1px solid;
+    height: 10px;
+}
+
+.ToolImage
+{
+}
+.grid_container
+{
+    border-right: #c0c0c0 1px solid;
+    border-top: #c0c0c0 1px solid;
+    border-left: #c0c0c0 1px solid;
+    border-bottom: #c0c0c0 1px solid;
+    background-color: #ffffff;
+}
+.TreeViewNodeSelected
+{
+    font-weight: bold;
+    color: white;
+    background-color: #00599c;
+}
+.SaveResultsFrame_Display
+{
+    right: 3px;
+    bottom: 3px;
+    border-right: black 3px solid;
+    border-top: black 3px solid;
+    border-left: black 3px solid;
+    border-bottom: black 3px solid;
+    display: block;
+    position: absolute;
+}
+.SaveResultsFrame_Hide
+{
+    display: none;
+}
+.StatusMessage
+{
+    font-weight: normal;
+    color: #ff2d00;
+    text-align: center;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color: #d6e3ff;
+    border: black 1px double;
+}
+.ICWStatusWindow
+{
+    cursor: wait;
+    background-color: transparent;
+}
+.ICWStatusMessage
+{
+    color: #0000CC;
+    height: 92px;
+    width: 171px;
+    vertical-align: middle;
+    padding-top: 18px;
+    background-color: transparent;
+    background-image: url(../images/Developer/status-box.png);
+    font-weight: bold;
+}
+.ICWStatusMessage #spanMsg
+{
+    display: block;
+}
+.ICWStatusMessage img
+{
+    display: block;
+    margin-top: 8px;
+}
+.PaneCaptionFont
+{
+    font-size: 11pt;
+}
+.LabelField
+{
+    border-right: 0px;
+    border-top: 0px;
+    font-size: 10pt;
+    overflow: hidden;
+    border-left: 0px;
+    border-bottom: 0px;
+    font-family: Arial;
+    background-color: transparent;
+}
+.StandardField
+{
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    font-family: Arial;
+    background-color: #ffffff;
+}
+.MandatoryField
+{
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    font-family: Arial;
+    background-color: #ffc89b;
+}
+.DisabledField
+{
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    font-family: Arial;
+    background-color: #b7b7b7;
+}
+.ErrorField
+{
+    border-right: #ff0000 1px solid;
+    border-top: #ff0000 1px solid;
+    border-left: #ff0000 1px solid;
+    border-bottom: #ff0000 1px solid;
+}
+.ICWBody
+{
+    background-color: #4682b4;
+}
+.ShortcutBarSurround
+{
+    border-right: #72b2e5 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: #72b2e5 1px solid;
+    background-color: #4682b4;
+}
+.ShortcutBarGroupButton
+{
+}
+.ShortcutBarItem
+{
+    cursor: hand;
+}
+.ShortcutBarItemText
+{
+    font-size: 8pt;
+    color: #ffffff;
+}
+.ShortcutBarImage
+{
+    border-right: #4682b4 1px solid;
+    border-top: #4682b4 1px solid;
+    border-left: #4682b4 1px solid;
+    border-bottom: #4682b4 1px solid;
+}
+.ShortcutBarImageHover
+{
+    border-right: #165285 1px solid;
+    border-top: #86c2f4 1px solid;
+    border-left: #86c2f4 1px solid;
+    border-bottom: #165285 1px solid;
+}
+.ShortcutBarImagePress
+{
+    border-right: #86c2f4 1px solid;
+    border-top: #165285 1px solid;
+    border-left: #165285 1px solid;
+    border-bottom: #86c2f4 1px solid;
+}
+.ShortcutBarBody
+{
+    scrollbar-base-color: #4682b4;
+}
+.dialog_title
+{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: medium;
+    color: black;
+    border-bottom: 1px solid;
+    background-color: white;
+}
+
+#__EVENTVALIDATION
+{
+    display: none;
+}
+
+/*--F0024665   disabled for now as causing issues where the caption is contained in a table and does not cover whole page width
+               was causing data in later columns to be pushed off edge of screen PR 03/06/08
+#divICWCaption
+{
+	DISPLAY: inline-block; 
+	width:expression(document.body.clientWidth - 30 + "px"); 
+	overflow: hidden;
+	text-overflow:ellipsis;
+
+}
+---*/
+
+
+
+/* ----------------------------------------------------------------------------------------
+	SMS Historic Prescription viewer CSS
+-----------------------------------------------------------------------------------------*/
+
+.EpisodeSummary .SMSHistoricPrescription .SectionHeader
+{
+    font-size: 12pt;
+    padding-bottom: 0;
+    font-weight: normal;
+}
+
+.EpisodeSummary .SMSCancelled .SectionHeader, .EpisodeSummary .SMSCancelled .SectionText, .EpisodeSummary .SMSCancelled
+{
+    color: red;
+}
+
+.EpisodeSummary .SMSHistoricPrescription .SectionText
+{
+    font-style: normal;
+    font-size: 10pt;
+}
+
+.EpisodeSummary .SMSHistoricPrescription .TableHeading
+{
+    display: none;
+}
+
+.EpisodeSummary .SMSHistoricPrescription .TabulatedSection
+{
+    border-collapse: collapse;
+    margin-top: 2px;
+    width: 800px;
+}
+
+.EpisodeSummary .SMSHistoricPrescription .TabulatedSection td
+{
+    border: #d0d0d0 1px solid;
+    background-color: white;
+}
+
+.EpisodeSummary .SMSHistoricPrescription .PaddingBetweenSections
+{
+    height: 25px;
+}
+
+/* ----------------------------------------------------------------------------------------
+	SMS Historic Prescription viewer CSS END
+-----------------------------------------------------------------------------------------*/
+
+
+/*
+	These styles are for the Episode Summaries on the eds Patient Notes desktop.
+	While technically they could all be the same class (rather than EDSProcedures, EDSClinicalNotes etc)
+	I have kept them separate in case we ever need to style one of them differently, will save having 
+	to change the SQL.
+*/
+/*Change size of the header text*/
+.EpisodeSummary .EDSDiagnosisComorbidity .SectionHeader, .EpisodeSummary .EDSInvestigations .SectionHeader, .EpisodeSummary .EDSProcedures .SectionHeader, .EpisodeSummary .EDSClinicalNotes .SectionHeader, .EpisodeSummary .EDSGPActions .SectionHeader, .EpisodeSummary .EDSReferral .SectionHeader, .EpisodeSummary .EDSClinicAppointment .SectionHeader
+{
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+/*Hide the line in the Section Divider*/
+.EpisodeSummary .EDSDiagnosisComorbidity .SectionDivider, .EpisodeSummary .EDSInvestigations .SectionDivider, .EpisodeSummary .EDSProcedures .SectionDivider, .EpisodeSummary .EDSClinicalNotes .SectionDivider, .EpisodeSummary .EDSGPActions .SectionDivider, .EpisodeSummary .EDSReferral .SectionDivider, .EpisodeSummary .EDSClinicAppointment .SectionDivider
+{
+    display: none;
+}
+
+/*Header row on the tables*/
+.EpisodeSummary .EDSDiagnosisComorbidity .TableHeading td, .EpisodeSummary .EDSInvestigations .TableHeading td, .EpisodeSummary .EDSProcedures .TableHeading td, .EpisodeSummary .EDSClinicalNotes .TableHeading td, .EpisodeSummary .EDSGPActions .TableHeading td, .EpisodeSummary .EDSReferral .TableHeading td, .EpisodeSummary .EDSClinicAppointment .TableHeading td
+{
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 7px;
+}
+
+/*Make the rest of the table white*/
+.EpisodeSummary .EDSDiagnosisComorbidity table, .EpisodeSummary .EDSInvestigations table, .EpisodeSummary .EDSProcedures table, .EpisodeSummary .EDSClinicalNotes table, .EpisodeSummary .EDSGPActions table, .EpisodeSummary .EDSReferral table, .EpisodeSummary .EDSClinicAppointment table
+{
+    background-color: white;
+}
+
+/*Narrow the gap between sections*/
+.EpisodeSummary .EDSDiagnosisComorbidity .PaddingBetweenSections, .EpisodeSummary .EDSInvestigations .PaddingBetweenSections, .EpisodeSummary .EDSProcedures .PaddingBetweenSections, .EpisodeSummary .EDSClinicalNotes .PaddingBetweenSections, .EpisodeSummary .EDSGPActions .PaddingBetweenSections, .EpisodeSummary .EDSReferral .PaddingBetweenSections, .EpisodeSummary .EDSClinicAppointment .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+/*Column Widths*/
+.EpisodeSummary .EDSDiagnosisComorbidity td.Col1, .EpisodeSummary .EDSDiagnosisComorbidity td.Col2, .EpisodeSummary .EDSProcedures td.Col1, .EpisodeSummary .EDSProcedures td.Col2
+{
+    width: 33%;
+}
+
+.EpisodeSummary .EDSDiagnosisComorbidity td.Col3, .EpisodeSummary .EDSDiagnosisComorbidity td.Col4, .EpisodeSummary .EDSProcedures td.Col3, .EpisodeSummary .EDSProcedures td.Col4
+{
+    width: 16.67%;
+}
+
+
+.EpisodeSummary .EDSMedicalSummary td.Col1
+{
+    width: 50%;
+}
+
+.EpisodeSummary .EDSMedicalSummary td.Col2, .EpisodeSummary .EDSMedicalSummary td.Col3
+{
+    width: 25%;
+}
+
+
+
+.EpisodeSummary .EDSClinicalNotes td.Col1
+{
+    width: 66.6%;
+}
+
+
+.EpisodeSummary .EDSClinicalNotes td.Col2, .EpisodeSummary .EDSClinicalNotes td.Col3
+{
+    width: 16.66%;
+}
+
+
+
+/*EDS Discharge Summary styling/
+
+/*Make table auto width + set background */
+.EpisodeSummary .EDSDSDemographics table, .EpisodeSummary .EDSDSGPDetails table, .EpisodeSummary .EDSDSAdmission table, .EpisodeSummary .EDSDSDiagnosis table, .EpisodeSummary .EDSDSMedication table, .EpisodeSummary .EDSDSComorbidities table, .EpisodeSummary .EDSDSInvestigations table, .EpisodeSummary .EDSDSProcedures table, .EpisodeSummary .EDSDSMedicalSummary table, .EpisodeSummary .EDSDSGPActions table, .EpisodeSummary .EDSDSSummaryInformation table, .EpisodeSummary .EDSDSCondition table, .EpisodeSummary .EDSDSFollowUp table, .EpisodeSummary .EDSDSMandatorySectionsWarning table
+{
+    background-color: white;
+    width: auto;
+}
+
+/*remove cell borders*/
+.EpisodeSummary .EDSDSDemographics td, .EpisodeSummary .EDSDSGPDetails td, .EpisodeSummary .EDSDSAdmission td, .EpisodeSummary .EDSDSDiagnosis td, .EpisodeSummary .EDSDSMedication td, .EpisodeSummary .EDSDSComorbidities td, .EpisodeSummary .EDSDSInvestigations td, .EpisodeSummary .EDSDSProcedures td, .EpisodeSummary .EDSDSMedicalSummary td, .EpisodeSummary .EDSDSGPActions td, .EpisodeSummary .EDSDSSummaryInformation td, .EpisodeSummary .EDSDSCondition td, .EpisodeSummary .EDSDSFollowUp td, .EpisodeSummary .EDSDSMandatorySectionsWarning td
+{
+    border: none;
+}
+
+/*hide section divider*/
+.EpisodeSummary .EDSDSDemographics .SectionDivider, .EpisodeSummary .EDSDSGPDetails .SectionDivider, .EpisodeSummary .EDSDSGPWarning .SectionDivider, .EpisodeSummary .EDSDSAdmission .SectionDivider, .EpisodeSummary .EDSDSDiagnosis.SectionDivider, .EpisodeSummary .EDSDSMedication .SectionDivider, .EpisodeSummary .EDSDSComorbidities .SectionDivider, .EpisodeSummary .EDSDSInvestigations .SectionDivider, .EpisodeSummary .EDSDSProcedures .SectionDivider, .EpisodeSummary .EDSDSMedicalSummary .SectionDivider, .EpisodeSummary .EDSDSGPActions .SectionDivider, .EpisodeSummary .EDSDSSummaryInformation .SectionDivider, .EpisodeSummary .EDSDSCondition .SectionDivider, .EpisodeSummary .EDSDSFollowUp .SectionDivider
+{
+    display: none;
+}
+
+/*Narrow the gap between sections*/
+.EpisodeSummary .EDSDSDemographics .PaddingBetweenSections, .EpisodeSummary .EDSDSGPDetails .PaddingBetweenSections, .EpisodeSummary .EDSDSGPWarning .PaddingBetweenSections, .EpisodeSummary .EDSDSAdmission .PaddingBetweenSections, .EpisodeSummary .EDSDSDiagnosis .PaddingBetweenSections, .EpisodeSummary .EDSDSMedication .PaddingBetweenSections, .EpisodeSummary .EDSDSComorbidities .PaddingBetweenSections, .EpisodeSummary .EDSDSInvestigations .PaddingBetweenSections, .EpisodeSummary .EDSDSProcedures .PaddingBetweenSections, .EpisodeSummary .EDSDSMedicalSummary .PaddingBetweenSections, .EpisodeSummary .EDSDSGPActions .PaddingBetweenSections, .EpisodeSummary .EDSDSSummaryInformation .PaddingBetweenSections, .EpisodeSummary .EDSDSCondition .PaddingBetweenSections, .EpisodeSummary .EDSDSFollowUp .PaddingBetweenSections, .EpisodeSummary .EDSDSReadyForDischarge .PaddingBetweenSections, .EpisodeSummary .EDSDSHasBeenDischarged .PaddingBetweenSections, .EpisodeSummary .EDSDSMandatorySectionsWarning .PaddingBetweenSections
+{
+    height: 7px;
+}
+
+/*Change size of the header text, plus sort padding and make it white*/
+.EpisodeSummary .EDSDSDemographics .SectionHeader, .EpisodeSummary .EDSDSGPDetails .SectionHeader, .EpisodeSummary .EDSDSAdmission .SectionHeader, .EpisodeSummary .EDSDSDiagnosis .SectionHeader, .EpisodeSummary .EDSDSMedication .SectionHeader, .EpisodeSummary .EDSDSComorbidities .SectionHeader, .EpisodeSummary .EDSDSInvestigations .SectionHeader, .EpisodeSummary .EDSDSProcedures .SectionHeader, .EpisodeSummary .EDSDSMedicalSummary .SectionHeader, .EpisodeSummary .EDSDSGPActions .SectionHeader, .EpisodeSummary .EDSDSSummaryInformation .SectionHeader, .EpisodeSummary .EDSDSCondition .SectionHeader, .EpisodeSummary .EDSDSFollowUp .SectionHeader
+{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: white;
+}
+
+/*hide column names*/
+.EpisodeSummary .EDSDSAdmission .TableHeading, .EpisodeSummary .EDSDSGPDetails .TableHeading, .EpisodeSummary .EDSDSDiagnosis .TableHeading, .EpisodeSummary .EDSDSComorbidities .TableHeading, .EpisodeSummary .EDSDSProcedures .TableHeading, .EpisodeSummary .EDSDSSummaryInformation .TableHeading, .EpisodeSummary .EDSDSCondition .TableHeading, .EpisodeSummary .EDSDSDemographics .TableHeading, .EpisodeSummary .EDSDSMandatorySectionsWarning .TableHeading
+{
+    display: none;
+}
+
+/*Alignment on Table headings*/
+.EpisodeSummary .EDSDSDemographics .TableHeading td, .EpisodeSummary .EDSDSAdmission .TableHeading td, .EpisodeSummary .EDSDSDiagnosis .TableHeading td, .EpisodeSummary .EDSDSMedication .TableHeading td, .EpisodeSummary .EDSDSComorbidities .TableHeading td, .EpisodeSummary .EDSDSInvestigations .TableHeading td, .EpisodeSummary .EDSDSProcedures .TableHeading td, .EpisodeSummary .EDSDSMedicalSummary .TableHeading td, .EpisodeSummary .EDSDSGPActions .TableHeading td, .EpisodeSummary .EDSDSSummaryInformation .TableHeading td, .EpisodeSummary .EDSDSCondition .TableHeading td, .EpisodeSummary .EDSDSFollowUp .TableHeading td
+{
+    text-align: left;
+}
+
+
+/*Set the whole EpisodeSummary to be white.
+Note that this is done as an ID not a class due to a wierd bug in the code
+which meant a class wouldn't work*/
+#EDSDischargeSummary.EpisodeSummary .Report, #EDSDischargeSummary.EpisodeSummary
+{
+    background-color: white;
+}
+
+/*Message indicating they're ready for discharge*/
+#EDSDischargeSummary.EpisodeSummary .EDSDSReadyForDischarge .SectionHeader
+{
+    font-size: 18px;
+    color: green;
+    padding-bottom: 5px;
+}
+
+/*Message indicating they've been discharged*/
+#EDSDischargeSummary.EpisodeSummary .EDSDSHasBeenDischarged .SectionHeader
+{
+    font-size: 18px;
+    color: red;
+    padding-bottom: 5px;
+}
+
+/*Message indicating they've not got a GP set*/
+#EDSDischargeSummary.EpisodeSummary .EDSDSGPWarning .SectionHeader
+{
+    font-size: 18px;
+    color: red;
+    padding-bottom: 5px;
+}
+
+/*Message indicating there's mandatory sections not filled in.*/
+#EDSDischargeSummary.EpisodeSummary .EDSDSMandatorySectionsWarning .SectionHeader, #EDSDischargeSummary.EpisodeSummary .EDSDSMandatorySectionsWarning td
+{
+    font-size: 18px;
+    color: red;
+    padding-bottom: 0;
+}
+
+/*Remove table borders */
+#EDSDischargeSummary.EpisodeSummary td
+{
+    border: none;
+}
+
+
+/* Discharge Tracker Styling*/
+
+#EDSTracker.EpisodeSummary .EDSDischargeTracker .SectionText
+{
+    padding: 0;
+}
+
+
+/*Hide the line*/
+#EDSTracker.EpisodeSummary .EDSDischargeTracker .SectionDivider
+{
+    display: none;
+}
+
+/*Header row on the tables*/
+#EDSTracker.EpisodeSummary .EDSDischargeTracker .TableHeading td
+{
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 7px;
+}
+
+/*Make the rest of the table white*/
+#EDSTracker.EpisodeSummary .EDSDischargeTracker table
+{
+    background-color: white;
+    width: 900px;
+}
+
+#EDSTracker.EpisodeSummary .EDSDischargeTracker img
+{
+    height: 32px;
+    width: 32px;
+}
+
+
+#EDSTracker.EpisodeSummary .EDSDischargeTracker .TableRow td
+{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+
+#EDSTracker.EpisodeSummary .EDSDischargeTracker td.Col2
+{
+    width: 100px;
+}
+
+#EDSTracker.EpisodeSummary .EDSDischargeTracker td.Col3, #EDSTracker.EpisodeSummary .EDSDischargeTracker td.Col4, #EDSTracker.EpisodeSummary .EDSDischargeTracker td.Col5, #EDSTracker.EpisodeSummary .EDSDischargeTracker td.Col6
+{
+    width: 50px;
+    text-align: center;
+}
+
+/*EDS Styling END*/
+
+
+/*
+Medicines Management Styling
+*/
+.EpisodeSummary .eMMRxNotChecked .TableHeading, .EpisodeSummary .eMMRxNotChecked .PaddingBetweenSections, .EpisodeSummary .eMMRxNotChecked .SectionDivider
+{
+    display: none;
+}
+
+
+.EpisodeSummary .eMMRxNotChecked table
+{
+    background-color: white;
+}
+
+.EpisodeSummary .eMMRxNotChecked td
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.EpisodeSummary .eMMRxNotChecked .SectionHeader
+{
+    font-size: 16px;
+    padding-left: 50px;
+    background-image: url(../images/Developer/stop_large.gif);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    height: 30px;
+}
+
+.EpisodeSummary .eMMNoRxNotChecked .SectionHeader
+{
+    font-size: 16px;
+    padding-left: 50px;
+    background-image: url(../images/Developer/tick.png);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    height: 30px;
+}
+/*
+Medicines Management Styling END
+*/
+
+/* Splash/Overlay Loading Screen */
+#tboverlay
+{
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: #FFFFFF url(/Web/images/greystripe.png) repeat; /* NHS Blue background or Grey Stripey */
+    opacity: .75; /* Standard: FF > 1.5, Opera, Safari */
+    filter: alpha(opacity=75); /* IE 6-7 */
+    -ms-filter: "alpha(opacity=75)"; /* IE 8 */
+    -khtml-opacity: .75; /* Safari 1.x */
+    -moz-opacity: .75; /* FireFox 1.5 older, Netscape */
+}
+
+
+#tbwindow
+{
+    font: 12px arial;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    width: 100%;
+    z-index: 1002;
+    text-align: center;
+}
+#tbwindow #win
+{
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    border: 4px solid #1572b8;
+    text-align: center;
+    width: 250px;
+    height: 145px;
+}
+#tbwindow #win input
+{
+    margin: 6px 0;
+}
+#tbwindow #win #loadingimg
+{
+    padding: 4px;
+}
+/*#tbwindow #cancelthickbox{ background: */
+
+
+/* ----------------------------------------------------------------------------------------
+	MDM styling - Referral summary
+-----------------------------------------------------------------------------------------*/
+#MDMReferral.EpisodeSummary .Report
+{
+    background-color: #f2f2f2;
+}
+
+#MDMReferral.EpisodeSummary
+{
+    background-color: #f2f2f2;
+}
+
+/*Header*/
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Header .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Header .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Header .SectionHeader
+{
+    padding-bottom: 0;
+    font-size: 18px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Header .SectionText
+{
+    height: 20px;
+}
+
+
+/*Clinical Notes section*/
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Notes .SectionHeader
+{
+    padding-bottom: 0;
+    font-size: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Notes .TableHeading
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Notes td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Notes .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+
+
+/*Question for the Meetin*/
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Question .SectionHeader
+{
+    padding-bottom: 0;
+    font-size: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Question .AttributeName
+{
+    display: None;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Question .AttributeValue
+{
+    font-weight: normal;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Question .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+
+/*Imaging section*/
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Imaging .SectionHeader
+{
+    padding-bottom: 3px;
+    font-size: 15px;
+}
+
+
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Imaging .TableHeading td
+{
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 7px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Imaging .TableRow td, #MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Imaging .TableHeading td
+{
+    border-right-color: lightgrey;
+    border-bottom-color: lightgrey;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Imaging .TableRow td.Col1, #MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Imaging .TableHeading td.Col1
+{
+    border-left: 1px lightgrey solid;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Imaging .table
+{
+    background-color: white;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Imaging .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+/*Pathology section*/
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Pathology.SectionHeader
+{
+    padding-bottom: 3px;
+    font-size: 15px;
+}
+
+
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Pathology .TableHeading td
+{
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 7px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Pathology .TableRow td, #MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Pathology .TableHeading td
+{
+    border-right-color: lightgrey;
+    border-bottom-color: lightgrey;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Pathology .TableRow td.Col1, #MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Pathology .TableHeading td.Col1
+{
+    border-left: 1px lightgrey solid;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Pathology .table
+{
+    background-color: white;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMReferalSummary_Pathology .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+	MDM styling - History
+-----------------------------------------------------------------------------------------*/
+
+/*Header*/
+#MDMHistory.EpisodeSummary .ASCMDMHistory .SectionDivider
+{
+    display: block;
+}
+
+#MDMHistory.EpisodeSummary .ASCMDMHistory .PaddingBetweenSections
+{
+    height: 25px;
+}
+
+#MDMHistory.EpisodeSummary .ASCMDMHistory .SectionHeader
+{
+    padding-bottom: 0;
+    font-size: 18px;
+}
+
+#MDMHistory.EpisodeSummary .ASCMDMHistory .SectionText
+{
+    height: 20px;
+}
+
+
+#MDMHistory.EpisodeSummary .ASCMDMHistory .TableHeading td
+{
+    display: none;
+}
+
+#MDMHistory.EpisodeSummary .ASCMDMHistory .TableRow td
+{
+    border-bottom: 1px lightgrey solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #f2f2f2;
+}
+
+#MDMHistory.EpisodeSummary .ASCMDMHistory td.Col1
+{
+    font-weight: bold;
+}
+
+#MDMHistory.EpisodeSummary .Report
+{
+    background-color: #f2f2f2;
+}
+
+#MDMHistory.EpisodeSummary
+{
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+	MDM styling - Run Sheet
+-----------------------------------------------------------------------------------------*/
+
+
+#MDMMeetingRunSheet.EpisodeSummary .Report
+{
+    background-color: #f2f2f2;
+}
+
+#MDMMeetingRunSheet.EpisodeSummary
+{
+    background-color: #f2f2f2;
+}
+
+
+#MDMMeetingRunSheet.EpisodeSummary .MDMMeetingRunSheet td.Col1
+{
+    border-left: 1px lightgrey solid;
+}
+
+#MDMMeetingRunSheet.EpisodeSummary .MDMMeetingRunSheet .TableHeading td
+{
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 7px;
+}
+
+.OverdueDelete td
+{
+    padding-left: 10px;
+}
+
+.OverdueDelete .PageTopMargin
+{
+    height: 20px;
+}
+
+.OverdueDelete .SectionHeader
+{
+    font-weight: bold;
+    font-size: 13pt;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.OverdueDelete .SectionTextWarning
+{
+    color: Red;
+    font-size: 12pt;
+    font-weight: bold;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.OverdueDelete .SectionTextInfo
+{
+    font-size: 10pt;
+    height: 30px;
+}
+
+.OverdueDelete .SectionInfoHint
+{
+    font-size: 8pt;
+    font-style: italic;
+}
+
+/* ----------------------------------------------------------------------------------------
+	MDM styling - Treatment Plan - Breast summary
+-----------------------------------------------------------------------------------------*/
+
+
+/*Header*/
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Header .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Header .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Header .SectionHeader
+{
+    padding-bottom: 0;
+    font-size: 18px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Header .SectionText
+{
+    height: 20px;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Header .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Header .TableRow td
+{
+    border-bottom: 1px lightgrey solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Header td.Col1
+{
+    font-style: italic;
+    width: 30%;
+}
+
+
+
+
+/*Surgical Summary */
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_SurgicalSummary .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_SurgicalSummary .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_SurgicalSummary .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_SurgicalSummary .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_SurgicalSummary .TableRow td
+{
+    border: none;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_SurgicalSummary .TableRow td.Col1
+{
+    width: 30%;
+    font-style: italic;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_SurgicalSummary .TableRow .SubHeading
+{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+/*Post-op Patients */
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_PostOpPatients .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_PostOpPatients .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_PostOpPatients .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_PostOpPatients .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_PostOpPatients .TableRow td
+{
+    border: none;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_PostOpPatients .TableRow td.Col1
+{
+    width: 30%;
+    font-style: italic;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_PostOpPatients .TableRow .SubHeading
+{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/*Systemic Therapy  */
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Systemic .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Systemic .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Systemic .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Systemic .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Systemic .TableRow td
+{
+    border: none;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Systemic .TableRow td.Col1
+{
+    width: 30%;
+    font-style: italic;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Systemic .TableRow .SubHeading
+{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+
+/*Follow Up */
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_FollowUp .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_FollowUp .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_FollowUp .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_FollowUp .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_FollowUp .TableRow td
+{
+    border: none;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_FollowUp .TableRow td.Col1
+{
+    width: 30%;
+    font-style: italic;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_FollowUp .TableRow .SubHeading
+{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+
+
+/*Treatment Plan */
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_TreatmentPlan .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_TreatmentPlan .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_TreatmentPlan .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_TreatmentPlan .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_TreatmentPlan .TableRow td
+{
+    border: none;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_TreatmentPlan .TableRow td.Col1
+{
+    width: 30%;
+    font-style: italic;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_TreatmentPlan .TableRow .SubHeading
+{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+/*Actual Treatment */
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Actual .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Actual .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBreast_Actual .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+	MDM styling - Treatment Plan -summary
+-----------------------------------------------------------------------------------------*/
+
+
+/*Header*/
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Header .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Header .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Header .SectionHeader
+{
+    padding-bottom: 0;
+    font-size: 18px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Header .SectionText
+{
+    height: 20px;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Header .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Header .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Header td.Col1
+{
+    font-style: italic;
+    width: 30%;
+}
+
+
+
+
+/*Follow Up */
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Follow .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Follow .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Follow .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Follow .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Follow .TableRow td
+{
+    border: none;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Actual .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Actual .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryBase_Actual .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+	MDM styling - Treatment Plan - Haematology summary
+-----------------------------------------------------------------------------------------*/
+
+
+/*Header*/
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Header .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Header .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Header .SectionHeader
+{
+    padding-bottom: 0;
+    font-size: 18px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Header .SectionText
+{
+    height: 20px;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Header .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Header .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Header td.Col1
+{
+    font-style: italic;
+    width: 30%;
+}
+
+
+
+
+/*Follow Up */
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Follow .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Follow .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Follow .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Follow .TableHeading td
+{
+    display: none;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Follow .TableRow td
+{
+    border: none;
+}
+
+
+/*Further Details*/
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Further .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Further .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Further .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Further .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Further .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Further td.Col1
+{
+    font-style: italic;
+    width: 30%;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Actual .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Actual .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryHaematology_Actual .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+	MDM styling - Treatment Plan - Lung summary
+-----------------------------------------------------------------------------------------*/
+
+
+/*Header*/
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryUrological_Header .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryUrological_Header .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryUrological_Header .SectionHeader
+{
+    padding-bottom: 0;
+    font-size: 18px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryUrological_Header .SectionText
+{
+    height: 20px;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryUrological_Header .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryUrological_Header .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryUrological_Header td.Col1
+{
+    font-style: italic;
+    width: 30%;
+}
+
+
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryUrological .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryUrological .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryUrological .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------
+	MDM styling - Treatment Plan - Colrectal summary
+-----------------------------------------------------------------------------------------*/
+
+
+/*Header*/
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Header .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Header .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Header .SectionHeader
+{
+    padding-bottom: 0;
+    font-size: 18px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Header .SectionText
+{
+    height: 20px;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Header .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Header .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Header td.Col1
+{
+    font-style: italic;
+    width: 30%;
+}
+
+
+
+/* Subheadings */
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_SubHeading .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_SubHeading .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_SubHeading .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_SubHeading .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_SubHeading td.Col1
+{
+    font-style: italic;
+    width: 30%;
+}
+
+
+
+
+/* Follow Up */
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Follow .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Follow .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Follow .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Follow .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Follow td.Col1
+{
+    font-style: italic;
+    width: 30%;
+}
+
+
+
+/* Actual Treatment */
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Actual .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Actual .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Actual .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Actual .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryColorectal_Actual td.Col1
+{
+    font-style: italic;
+    width: 30%;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+	MDM styling - Treatment Plan - Lung summary
+-----------------------------------------------------------------------------------------*/
+
+
+/*Header*/
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Header .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Header .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Header .SectionHeader
+{
+    padding-bottom: 0;
+    font-size: 18px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Header .SectionText
+{
+    height: 20px;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Header .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Header .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Header td.Col1
+{
+    font-style: italic;
+    width: 30%;
+}
+
+
+
+
+/*Follow Up */
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Follow .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Follow .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Follow .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Follow .TableHeading td
+{
+    display: none;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Follow .TableRow td
+{
+    border: none;
+}
+
+
+/*Further Details*/
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Further .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Further .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Further .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Further .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Further .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Further td.Col1
+{
+    font-style: italic;
+    width: 30%;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Actual .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Actual .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryLung_Actual .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+	MDM styling - Treatment Plan - Other summary
+-----------------------------------------------------------------------------------------*/
+
+
+/*Header*/
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Header .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Header .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Header .SectionHeader
+{
+    padding-bottom: 0;
+    font-size: 18px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Header .SectionText
+{
+    height: 20px;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Header .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Header .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Header td.Col1
+{
+    font-style: italic;
+    width: 30%;
+}
+
+
+
+
+/*Follow Up */
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Follow .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Follow .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Follow .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Follow .TableHeading td
+{
+    display: none;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Follow .TableRow td
+{
+    border: none;
+}
+
+
+/*Further Details*/
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Further .SectionDivider
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Further .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Further .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Further .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Further .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Further td.Col1
+{
+    font-style: italic;
+    width: 30%;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Actual .TableHeading td
+{
+    display: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Actual .TableRow td
+{
+    border: none;
+}
+
+#MDMReferral.EpisodeSummary .ASCMDMTreatmentPlanSummaryOther_Actual.SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+}
+
+/* ----------------------------------------------------------------------------------------
+	ASCAppointmentsInFuture styling - 
+-----------------------------------------------------------------------------------------*/
+#ASCAppointmentsInFuture.EpisodeSummary .Report
+{
+    background-color: #f2f2f2;
+}
+
+#ASCAppointmentsInFuture.EpisodeSummary
+{
+    background-color: #f2f2f2;
+}
+
+/*Header*/
+#ASCAppointmentsInFuture.EpisodeSummary .Header .SectionDivider
+{
+    display: none;
+}
+
+#ASCAppointmentsInFuture.EpisodeSummary .Header .PaddingBetweenSections
+{
+    height: 15px;
+}
+
+#ASCAppointmentsInFuture.EpisodeSummary .Header .SectionHeader
+{
+    padding-bottom: 0;
+    background-color: lightgray;
+    padding-bottom: 5px;
+}
+
+#ASCAppointmentsInFuture.EpisodeSummary .Header .SectionText
+{
+    height: 20px;
+}
+
+#notificationBar
+{
+}
+
+#icwNotificationBarContent
+{
+    height: 100%;
+    width: 100%;
+    font-size: 16pt;
+}
+
+#icwNotificationBarContent td
+{
+    vertical-align: top;
+     height: 100%;
+    width: 100%;
+}
+
+#panICWNotificationBarMessage {
+	
+}
+
+#panICWNotificationBarMessage div {
+    height: 99%;
+    width: 100%;
+    overflow: auto;
+}
+
+#panICWNotificationBarButton button
+{
+    float: right;
+    width: auto;
+    vertical-align: middle;
+}

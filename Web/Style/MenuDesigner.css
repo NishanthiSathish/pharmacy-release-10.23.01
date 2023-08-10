@@ -1,0 +1,276 @@
+BODY
+{
+}
+.SubMenuFrame
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    VISIBILITY: hidden;
+    BORDER-LEFT: medium none;
+    WIDTH: 100px;
+    BORDER-BOTTOM: medium none;
+    POSITION: absolute;
+    TOP: 24px
+}
+.divWidthHeightCalculator
+{
+    FONT-SIZE: 9pt;
+    LEFT: 0px;
+    VISIBILITY: hidden;
+    FONT-FAMILY: Arial, 'Courier New';
+    POSITION: absolute
+}
+.MenuPopUp
+{
+    BORDER-RIGHT: blue 1px;
+    BORDER-TOP: blue 1px;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: blue 1px;
+    COLOR: black;
+    BORDER-BOTTOM: blue 1px;
+    FONT-FAMILY: Arial, 'Courier New';
+    BACKGROUND-COLOR: white
+}
+.MenuPopUp .MenuBorderOutline
+{
+    BORDER-RIGHT: #4682b4 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: white 1px solid;
+    BORDER-BOTTOM: #4682b4 1px solid;
+    FONT-FAMILY: Arial, 'Courier New'
+}
+.MenuPopUp .MenuBorderOutline .MenuHover
+{
+    COLOR: white;
+    BACKGROUND-COLOR: #00599c
+}
+.MenuPopUp .MenuBorderOutline .MenuNormal
+{
+}
+.MenuPopUp .MenuBorderOutline .MenuNormal .menuleft
+{
+    BACKGROUND-COLOR: #b5cfff
+}
+.MenuPopUp .MenuBorderOutline .MenuHover .menuleft
+{
+}
+.menu
+{
+    FONT-SIZE: 9pt;
+    CURSOR: default;
+    FONT-FAMILY: Arial, 'Courier New';
+    BACKGROUND-COLOR: #4682b4
+}
+.menu .menunormal
+{
+    BORDER-RIGHT: #4682b4 1px solid;
+    BORDER-TOP: #4682b4 1px solid;
+    BORDER-LEFT: #4682b4 1px solid;
+    COLOR: white;
+    BORDER-BOTTOM: #4682b4 1px solid
+}
+.menu .menuhover
+{
+    BORDER-RIGHT: #3672a5 1px solid;
+    BORDER-TOP: #66a2d4 1px solid;
+    BORDER-LEFT: #66a2d4 1px solid;
+    COLOR: white;
+    BORDER-BOTTOM: #3672a5 1px solid
+}
+.menu .menuopen
+{
+    BORDER-RIGHT: #66a2d4 1px solid;
+    BORDER-TOP: #3672a5 1px solid;
+    BORDER-LEFT: #3672a5 1px solid;
+    COLOR: white;
+    BORDER-BOTTOM: #66a2d4 1px solid
+}
+.toolbar
+{
+    CURSOR: default;
+    BACKGROUND-COLOR: #b5cfff
+}
+.toolbar .toolbarButton
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    BORDER-LEFT: medium none;
+    WIDTH: 1%;
+    CURSOR: default;
+    BORDER-BOTTOM: medium none;
+    HEIGHT: 21px;
+    BACKGROUND-COLOR: transparent
+}
+.toolbar .toolbarButton .toolbarNormal
+{
+    BORDER-RIGHT: #b5cfff 1px solid;
+    BORDER-TOP: #b5cfff 1px solid;
+    BORDER-LEFT: #b5cfff 1px solid;
+    BORDER-BOTTOM: #b5cfff 1px solid
+}
+.toolbar .toolbarButton .toolbarHover
+{
+    BORDER-RIGHT: #97b1e1 1px solid;
+    BORDER-TOP: #d3edff 1px solid;
+    BORDER-LEFT: #d3edff 1px solid;
+    BORDER-BOTTOM: #97b1e1 1px solid
+}
+.toolbar .toolbarButton .toolbarSelected
+{
+    BORDER-RIGHT: #d3edff 1px solid;
+    BORDER-TOP: #97b1e1 1px solid;
+    BORDER-LEFT: #97b1e1 1px solid;
+    BORDER-BOTTOM: #d3edff 1px solid
+}
+.ImageSelector
+{
+    BACKGROUND-COLOR: white
+}
+.ImageSelector .ImageSelectorNormal
+{
+    BORDER-RIGHT: white 1px solid;
+    BORDER-TOP: white 1px solid;
+    BORDER-LEFT: white 1px solid;
+    BORDER-BOTTOM: white 1px solid
+}
+.ImageSelector .ImageSelectorSelected
+{
+    BORDER-RIGHT: #4682b4 1px solid;
+    BORDER-TOP: #4682b4 1px solid;
+    BORDER-LEFT: #4682b4 1px solid;
+    BORDER-BOTTOM: #4682b4 1px solid
+}
+.ImageSelector .ImageSelectorHover
+{
+    BORDER-RIGHT: #4682b4 1px solid;
+    BORDER-TOP: #4682b4 1px solid;
+    BORDER-LEFT: #4682b4 1px solid;
+    BORDER-BOTTOM: #4682b4 1px solid
+}
+.MenuDesignerSubItem
+{
+    FONT-SIZE: 9pt;
+    CURSOR: default;
+    FONT-FAMILY: Arial, 'Courier New';
+    BACKGROUND-COLOR: white
+}
+.MenuDesignerSubItem .SubMenuHover
+{
+    BORDER-RIGHT: black 1px;
+    BORDER-TOP: black 1px;
+    BORDER-LEFT: black 1px;
+    COLOR: white;
+    BORDER-BOTTOM: black 1px;
+    BACKGROUND-COLOR: blue
+}
+.MenuDesignerSubItem .SubMenuHover .SubMenuLeft
+{
+    BORDER-RIGHT: black;
+    BORDER-TOP: black;
+    BORDER-LEFT: black;
+    WIDTH: 16px;
+    BORDER-BOTTOM: black;
+    BACKGROUND-COLOR: blue
+}
+.MenuDesignerSubItem .SubMenuNormal
+{
+}
+.MenuDesignerSubItem .SubMenuNormal .SubMenuLeft
+{
+    BORDER-RIGHT: 1px;
+    BORDER-TOP: 1px;
+    BORDER-LEFT: 1px;
+    WIDTH: 16px;
+    BORDER-BOTTOM: 1px;
+    HEIGHT: 16px;
+    BACKGROUND-COLOR: #b5cfff
+}
+.MenuDesignerSubItem .SubMenuOpen
+{
+}
+.MenuDesignerSubItem .SubMenuSelected
+{
+    FONT-WEIGHT: bolder;
+    COLOR: white;
+    BACKGROUND-COLOR: #00599c
+}
+.MenuDesignerSubItem .SubMenuSelected .SubMenuLeft
+{
+    WIDTH: 16px;
+    BACKGROUND-COLOR: #00599c
+}
+.MenuDesigner
+{
+    FONT-SIZE: 9pt;
+    CURSOR: default;
+    COLOR: white;
+    FONT-FAMILY: Arial, 'Courier New';
+    BACKGROUND-COLOR: #4682b4
+}
+.MenuDesigner .MenuHover
+{
+    BORDER-RIGHT: #4682b4 1px solid;
+    BORDER-TOP: white 1px solid;
+    BORDER-LEFT: white 1px solid;
+    COLOR: white;
+    BORDER-BOTTOM: #4682b4 1px solid;
+    BACKGROUND-COLOR: #b5cfff
+}
+.MenuDesigner .MenuNormal
+{
+    BORDER-RIGHT: #b5cfff 1px solid;
+    BORDER-TOP: #b5cfff 1px solid;
+    BORDER-LEFT: #b5cfff 1px solid;
+    COLOR: black;
+    BORDER-BOTTOM: #b5cfff 1px solid;
+    BACKGROUND-COLOR: #b5cfff
+}
+.MenuDesigner .MenuOpen
+{
+    BORDER-RIGHT: white 1px solid;
+    BORDER-TOP: #4682b4 1px solid;
+    BORDER-LEFT: #4682b4 1px solid;
+    COLOR: white;
+    BORDER-BOTTOM: white 1px solid;
+    BACKGROUND-COLOR: #b5cfff
+}
+.MenuDesigner .MenuSelected
+{
+    BORDER-RIGHT: white 1px solid;
+    BORDER-TOP: #4682b4 1px solid;
+    BORDER-LEFT: #4682b4 1px solid;
+    COLOR: white;
+    BORDER-BOTTOM: white 1px solid;
+    BACKGROUND-COLOR: #00599c
+}
+.MenuDesigner .MenuSelected .MenuSelectedText
+{
+    COLOR: white
+}
+.ToolbarDesigner
+{
+    CURSOR: default;
+    BACKGROUND-COLOR: #b5cfff
+}
+.ToolbarDesigner .ImageNormal
+{
+    BORDER-RIGHT: #4682b4 1px solid;
+    BORDER-TOP: #4682b4 1px solid;
+    BORDER-LEFT: #4682b4 1px solid;
+    BORDER-BOTTOM: #4682b4 1px solid
+}
+.ToolbarDesigner .ImageSelected
+{
+    BORDER-RIGHT: orange 1px solid;
+    BORDER-TOP: orange 1px solid;
+    BORDER-LEFT: orange 1px solid;
+    BORDER-BOTTOM: orange 1px solid
+}
+.ToolbarDesigner .ImageHover
+{
+    BORDER-RIGHT: white 1px solid;
+    BORDER-TOP: white 1px solid;
+    BORDER-LEFT: white 1px solid;
+    BORDER-BOTTOM: white 1px solid
+}

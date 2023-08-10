@@ -1,0 +1,36 @@
+﻿.psmMenu 
+{
+    background: #EFEFF7; 
+    border-right-style: inset; 
+    border-right-width: thick;    
+}
+
+.psmMenuHeader
+{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 22px;
+    text-align: left;
+    color: #73617B;
+}
+
+.psmMenuItem
+{
+    vertical-align: middle;
+    text-align: right;
+    font-size: 18px;
+    background: #EFEFF7; 
+    height: 35px; 
+    width: 100%;
+    border: none;
+    color: #426DCE;
+    padding-right: 10px;
+    cursor:hand;
+    border: none;
+}
+
+.psmMenuItemSelected
+{
+    background: #BDCFEF;
+    color: black;
+}

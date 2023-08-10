@@ -1,0 +1,46 @@
+.SettingsEditor .Warning
+{
+	color:red;
+	font-size:12pt;
+	width:100%;
+	text-align:center;
+	font-weight:bold;
+}
+
+.SettingsEditor td
+{
+	padding:2px;
+}
+
+.SettingsEditor .Roles 
+{
+	margin-top:20px;
+}
+
+.SettingsEditor .Settings
+{
+	margin-top:20px;
+}
+
+.SettingsEditor th
+{
+	background-color:#F7E49B;
+}
+
+.SettingsEditor .Roles td
+{
+	cursor:hand;
+	background-color:#ffffff;
+}
+
+.SettingsEditor .Settings td
+{
+	cursor:hand;
+	background-color:#ffffff;
+}
+
+.SettingsEditor .Hover td
+{
+	background-color: #00599C;
+	color:#ffffff;
+}

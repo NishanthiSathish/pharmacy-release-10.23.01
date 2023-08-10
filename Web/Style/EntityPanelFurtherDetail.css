@@ -1,0 +1,34 @@
+BODY
+{
+}
+.Caption
+{
+    FONT-SIZE: 11pt;
+    WIDTH: 25%;
+    COLOR: white;
+    BACKGROUND-COLOR: steelblue
+}
+.Text
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    BACKGROUND-COLOR: white
+}
+.table
+{
+    BORDER-RIGHT: black 1px solid;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: black 1px solid;
+    BORDER-LEFT: black 1px solid;
+    WIDTH: 100%;
+    BORDER-BOTTOM: black 1px solid;
+    HEIGHT: 100%;
+    BACKGROUND-COLOR: #d6e3ff
+}
+.heading
+{
+	font-weight: bold;
+	font-size: 14pt;
+	color: White;
+	background-color: steelblue
+}

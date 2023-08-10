@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="UpdateClientSetupTask">
+</Property><Property Name="Solution File" Value="D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\UpdateClientSetupTask\UpdateClientSetupTask.sln">
+</Property><Property Name="Date" Value="02 February 2016">
+</Property><Property Name="Time" Value="09:36">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="UpdateClientSetupTask.sln" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\UpdateClientSetupTask\Backup\UpdateClientSetupTask.sln">
+</Event><Event ErrorLevel="0" Project="UpdateClientSetupTask" Source="UpdateClientSetupTask.csproj" Description="Project file successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\UpdateClientSetupTask\Backup\UpdateClientSetupTask.csproj">
+</Event><Event ErrorLevel="0" Project="UpdateClientSetupTask" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\UpdateClientSetupTask\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="UpdateClientSetupTask" Source="UpdateClientSetupTask.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\UpdateClientSetupTask\Backup\UpdateClientSetupTask.cs">
+</Event><Event ErrorLevel="0" Project="UpdateClientSetupTask" Source="UpdateClientSetupTask.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="UpdateClientSetupTask" Source="UpdateClientSetupTask.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="UpdateClientSetupTask.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="UpdateClientSetupTask.sln" Description="Converted">
+</Event></UpgradeLog>

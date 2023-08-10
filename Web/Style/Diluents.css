@@ -1,0 +1,29 @@
+.MandatoryField
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    BORDER-LEFT: 1px solid;
+    BORDER-BOTTOM: 1px solid;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #ffc89b
+}
+
+BUTTON
+{
+    BORDER-RIGHT: #7598b4 1px solid;
+    BORDER-TOP: #e7f4ff 1px solid;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: #e7f4ff 1px solid;
+    WIDTH: 70px;
+    BORDER-BOTTOM: #7598b4 1px solid;
+    BACKGROUND-COLOR: #b5cfff;
+}
+
+.calculated {
+	background-color:#D9FFD9;	
+}
+
+.readonly 
+{
+	background-color:#b7b7b7;
+}

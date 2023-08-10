@@ -1,0 +1,74 @@
+﻿<html>
+<head>
+<style>
+* { font: 9px Arial; }
+</style>
+</head>
+
+<body>
+<button id="start">Start</button>
+<div id="responseDiv"><!--//--></div>
+
+
+<script>
+var ajaxInProgress=false;
+var j=0;
+ 
+function syncAjaxCalls() {
+   document.getElementById("responseDiv").innerHTML="";
+   ajaxInProgress=false;
+   j=0;
+   syncAjaxCall();
+}
+ 
+function syncAjaxCall(){
+	if (!ajaxInProgress && j < 5) {
+		if (kill == true) {j = 5;  kill = false; }
+		else {
+			ajaxInProgress = true;
+			httpRequest(j);
+			j++;
+			syncAjaxCall();
+		}
+   }
+   else {
+      var t=setTimeout(syncAjaxCall, 50);
+   }
+}
+ 
+function httpRequest(id) {
+   var http;
+   if (window.XMLHttpRequest) { 
+	// code for IE7+, FF, Chrome, Opera, Safari
+      http = new XMLHttpRequest();
+   }
+   else { // code for IE6, IE5
+      http = new ActiveXObject("Microsoft.XMLHTTP");
+   }
+   http.onreadystatechange=function() {
+      if (http.readyState==4 && http.status==200) {
+         var response = http.responseText;
+         var responseDiv = document.getElementById("responseDiv");
+         var origText = responseDiv.innerHTML;
+         responseDiv.innerHTML = origText + "\n<br>\n" + response;
+         ajaxInProgress=false;
+      }
+   }
+   var dest="http://localhost/Web/application/ClinicalModules/EpisodeEventHelper.ashx?episode=6&session=164343&entity=7&method=rEpisodeSelected";
+   http.open("GET", dest);
+   http.send();
+}
+
+var Clicked = false;
+var kill = false;
+
+document.getElementById("start").onclick = function() {
+	if (Clicked == false) { syncAjaxCalls(); Clicked = true; }
+	else { ajaxInProgress = false; Clicked = false; kill = true;  }
+
+};
+
+</script>
+
+</body>
+</html>

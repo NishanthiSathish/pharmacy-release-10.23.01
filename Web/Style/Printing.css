@@ -1,0 +1,86 @@
+.PrintHistory .Search
+{
+	height:140px;
+}
+
+.PrintHistory .List td
+{
+	border:#000000 1px solid;
+}
+
+.PrintHistory .List
+{
+	height:100%;
+}
+
+/*----------------------------	Search Page  -----------------------------------*/
+
+.PrintHistory_Search .SearchControls label
+{
+	border: #000000 1px solid;
+	background-color:#ffffff;
+	width:200px;
+}
+
+.PrintHistory_Search .SearchControls button.ToolMenu
+{
+	width:20px;
+	height:20px;
+}
+
+.PrintHistory_Search td.Header
+{
+	font-weight:bold;
+}
+
+.PrintHistory_Search .Header td
+{
+	font-weight:bold;
+}
+
+/*----------------------------	List Page  -----------------------------------*/
+
+.PrintHistory_List .NoResults td
+{
+	height:400px;
+	text-align:center;
+}
+
+.PrintHistory_List .PrintBatch td
+{
+	height:20px;
+	background-color:#F7E49B;
+	border-bottom:#c0c0c0 1px solid;
+}
+
+.PrintHistory_List .PrintItem td
+{
+	height:20px;
+	background-color:#ffffff;
+	border-bottom:#c0c0c0 1px solid;
+}
+
+.PrintHistory_List .PrintItem td.Printed
+{
+	color:#00C100;
+}
+
+.PrintHistory_List .PrintItem td.Reprinted
+{
+	color:#00C100;
+}
+
+.PrintHistory_List .PrintItem td.Cancelled
+{
+	color:#FF0000;
+}
+
+.PrintHistory_List .PrintItem td.Error
+{
+	color:#FF0000;
+}
+
+.PrintHistory_List .Spacer td
+{
+	height:40px;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="VB6BuilderTask">
+</Property><Property Name="Solution File" Value="D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\VB6BuilderTask.sln">
+</Property><Property Name="Date" Value="02 February 2016">
+</Property><Property Name="Time" Value="16:20">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="VB6BuilderTask.sln" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\VB6BuilderTask.sln">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="VB6BuilderTask.csproj" Description="Project file successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\VB6BuilderTask.csproj">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="Builder\Build.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\Builder\Build.cs">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="Builder\Ocxcontrol.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\Builder\Ocxcontrol.cs">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="Builder\Ocxcontrols.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\Builder\Ocxcontrols.cs">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="Builder\Project.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\Builder\Project.cs">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="Builder\Projects.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\Builder\Projects.cs">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="Builder\Reference.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\Builder\Reference.cs">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="Builder\References.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\Builder\References.cs">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="Builder\SourceSafe.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\Builder\SourceSafe.cs">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="Builder\Target.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\Builder\Target.cs">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="Builder\Webpage.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\Builder\Webpage.cs">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="Builder\Webpages.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\Builder\Webpages.cs">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="VB6BuilderTask.cs" Description="File successfully backed up as D:\SourceCode\Pharmacy\Branches\Features\Web Transport 10.11\Tools\SOURCE\VB6BuilderTask\Backup\VB6BuilderTask.cs">
+</Event><Event ErrorLevel="0" Project="VB6BuilderTask" Source="VB6BuilderTask.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="VB6BuilderTask" Source="VB6BuilderTask.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="VB6BuilderTask.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="VB6BuilderTask.sln" Description="Converted">
+</Event></UpgradeLog>

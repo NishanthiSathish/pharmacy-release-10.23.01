@@ -1,0 +1,502 @@
+////////////////////////////////////////////////////////////////////////////////
+//                                                                            
+//  This template script provides the code necessary to build an entry-point 
+//  function to be called in an InstallScript custom action. 
+//                                                                            
+//                                                                            
+//    File Name:  Setup.rul                                                   
+//                                                                            
+//  Description:  InstallShield script                                        
+//
+////////////////////////////////////////////////////////////////////////////////
+#define FILENAME1 "ConnectionStringEncryptCmd.txt" 
+#define FILENAME2 "ConnectionStringEncryptCmd.bat"
+#define FILENAME3 "ICWConnectionStringDecryptCmd.txt"
+#define FILENAME4 "ICWConnectionStringDecryptCmd.bat"
+#define FILENAME5 "ConfigPrintObjChangeCmd.txt" 
+#define FILENAME6 "ConfigPrintObjChangeCmd.bat"
+#define FILENAME7 "ICWPhamaChangeCmd.txt" 
+#define FILENAME8 "ICWPhamaChangeCmd.bat"
+#define FILENAME9 "ICWConnectionStringEncryptCmd.txt"
+#define FILENAME10 "ICWConnectionStringEncryptCmd.bat"
+#define FILENAME11 "ConnectionStringDecryptCmd.txt" 
+#define FILENAME12 "ConnectionStringDecryptCmd.bat"
+#define WebConfigFile "web.config"
+// Include Ifx.h for built-in InstallScript function prototypes, for Windows 
+// Installer API function prototypes and constants, and to declare code for 
+// the OnBegin and OnEnd events.
+#include "ifx.h"
+
+// The keyword export identifies MyFunction() as an entry-point function.
+// The argument it accepts must be a handle to the Installer database.
+export prototype MyFunction(HWND);
+export prototype EncryptConnectionString(HWND);
+export prototype DecryptConnectionString(HWND);
+export prototype ReplaceCfgPrintObjID(HWND);
+export prototype ReplaceICWPharmacy(HWND);
+export prototype ValidateProperties(HWND);
+export prototype SetComputerName(HWND);
+export prototype DecryptICWConnectionString(HWND);
+export prototype EncryptICWConnectionString(HWND);
+export prototype OpenICWConfigFile(HWND);
+export prototype DeleteRootDirectory(HWND);
+prototype FindAndReplace(STRING, STRING, STRING);
+// To Do:  Declare global variables, define constants, and prototype user-
+//         defined and DLL functions here.
+
+
+// To Do:  Create a custom action for this entry-point function:
+// 1.  Right-click on "Custom Actions" in the Sequences/Actions view.
+// 2.  Select "Custom Action Wizard" from the context menu.
+// 3.  Proceed through the wizard and give the custom action a unique name.
+// 4.  Select "Run InstallScript code" for the custom action type, and in
+//     the next panel select "MyFunction" (or the new name of the entry-
+//     point function) for the source.
+// 5.  Click Next, accepting the default selections until the wizard
+//     creates the custom action.
+//
+// Once you have made a custom action, you must execute it in your setup by
+// inserting it into a sequence or making it the result of a dialog's
+// control event.
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  MyFunction
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+function MyFunction(hMSI)
+// To Do:  Declare local variables.
+     STRING svPath, svPropName;
+	 NUMBER nvSize;
+begin
+    nvSize = 256;
+    //MessageBox("MyFunction", INFORMATION);
+    //Here I am taking the value from USERNAME property and setting to ICW_VD_NAME property
+    //Because, it helps me while repair option during Maintenence.
+    MsiGetProperty(hMSI, "USERNAME", svPropName, nvSize);
+    MsiSetProperty(hMSI, "ICW_VD_NAME", svPropName);
+	MsiGetProperty(hMSI, "ICW_VD_NAME", svPropName, nvSize);	
+    svPath = IISROOTFOLDER + svPropName;    
+    if (ExistsDir (svPath) = EXISTS) then
+    else
+		MessageBox("HAP Virtual Directory doesn't exists! Aborting the operation", SEVERE);
+		abort;
+    endif;
+    //MessageBox("MyFunction", INFORMATION);
+end;
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  EncryptConnectionString
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+function EncryptConnectionString(hMSI)
+    // To Do:  Declare local variables.
+	STRING szProgram,szCmdLine,szResult;
+	NUMBER nResult;
+begin
+//MessageBox("EncryptConnectionString", INFORMATION);
+RenameFile(INSTALLDIR+FILENAME1,INSTALLDIR+FILENAME2);
+
+szProgram = INSTALLDIR+"\\ConnectionStringEncryptCmd.bat";
+
+szCmdLine = SystemFolder+"\\cmd.exe \c";
+LaunchAppAndWait (szProgram,szCmdLine,WAIT|LAAW_OPTION_HIDDEN);
+DeleteFile(INSTALLDIR+"\\ConnectionStringEncryptCmd.bat");
+//MessageBox("Encryption", INFORMATION);
+    // To Do:  Write script that will be executed when MyFunction is called.
+
+end;
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  DecryptConnectionString
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+function DecryptConnectionString(hMSI)
+    // To Do:  Declare local variables.
+	STRING szProgram,szCmdLine,szResult;
+	NUMBER nResult;
+begin
+//MessageBox("DecryptConnectionString", INFORMATION);
+RenameFile(INSTALLDIR+FILENAME11,INSTALLDIR+FILENAME12);
+szProgram = INSTALLDIR+"\\ConnectionStringDecryptCmd.bat";
+
+szCmdLine = SystemFolder+"\\cmd.exe \c";
+LaunchAppAndWait (szProgram,szCmdLine,WAIT|LAAW_OPTION_HIDDEN);
+DeleteFile(INSTALLDIR+"\\ConnectionStringDecryptCmd.bat");
+end;
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  ReplaceCfgPrintObjID
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+//Note: Not required as of now
+function ReplaceCfgPrintObjID(hMSI)
+	STRING szProgram,szCmdline;
+begin	
+//MessageBox("ReplaceCfgPrintObjID", INFORMATION);
+	RenameFile(INSTALLDIR+FILENAME5,INSTALLDIR+FILENAME6);
+	szProgram = INSTALLDIR+"\\ConfigPrintObjChangeCmd.bat";
+
+szCmdline = SystemFolder+"\\cmd.exe \c";
+LaunchAppAndWait (szProgram,szCmdline,WAIT|LAAW_OPTION_HIDDEN);
+
+DeleteFile(INSTALLDIR+"\\ConfigPrintObjChangeCmd.bat");
+end;
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  ReplaceICWPharmacy
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+function ReplaceICWPharmacy(hMSI)
+	STRING szProgram,szCmdline;
+begin	
+//MessageBox("ReplaceICWPharmacy", INFORMATION);
+	RenameFile(INSTALLDIR+FILENAME7,INSTALLDIR+FILENAME8);
+	szProgram = INSTALLDIR+"\\ICWPhamaChangeCmd.bat";
+
+szCmdline = SystemFolder+"\\cmd.exe \c";
+LaunchAppAndWait (szProgram,szCmdline,WAIT|LAAW_OPTION_HIDDEN);
+
+DeleteFile(INSTALLDIR+"\\ICWPhamaChangeCmd.bat");
+
+//MessageBox("ICWPharma", INFORMATION);
+end;
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  ValidateProperties
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+function ValidateProperties(hMSI)
+	STRING szIcwVDProp,szPharmaVDProp,szWebServerProp;
+	NUMBER nvSize;
+begin	
+	nvSize = 256;
+	//MessageBox("ValidateProperties", INFORMATION);
+	MsiGetProperty(hMSI, "USERNAME", szIcwVDProp, nvSize);
+	MsiGetProperty(hMSI, "VD_NAME", szPharmaVDProp, nvSize);
+	MsiGetProperty(hMSI, "LOADBALANCEDSERVER", szWebServerProp, nvSize);
+	if(szIcwVDProp == "") then
+		MessageBox("ICW Virtual directory can't be empty, Aborting operation", SEVERE);
+		abort;
+	elseif (szPharmaVDProp == "") then
+		MessageBox("Virtual directory can't be empty, Aborting operation", SEVERE);
+		abort;
+	elseif (szWebServerProp == "") then
+		MessageBox("Loadserver can't be empty, Aborting operation", SEVERE);
+		abort;
+	endif;
+	//MessageBox("ValidateProp", INFORMATION);
+end;
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  SetComputerName
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+
+function SetComputerName(hMSI)
+//Desclare local variable
+STRING sCompname;
+STRING svPropertyName,svprop;
+NUMBER nvSize;
+begin
+nvSize = 256;
+//UPDATE "USERNAME" PROPERTY VALUE TO "ICW_VD_NAME" PROPERTY
+//Here I am taking the value from USERNAME property and setting to ICW_VD_NAME property
+//Because, it helps me while repair option during Maintenence.
+MsiGetProperty(hMSI, "USERNAME", svPropertyName, nvSize);
+MsiSetProperty(hMSI, "ICW_VD_NAME", svPropertyName);
+MsiGetProperty(hMSI, "ICW_VD_NAME", svprop, nvSize);
+//MessageBox("SetComputerName " + svprop, INFORMATION);
+GetEnvVar("ComputerName",sCompname);
+MsiSetProperty(hMSI, "LOADBALANCEDSERVER", sCompname);
+end;
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  DecryptICWConnectionString
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+function DecryptICWConnectionString(hMSI)
+    // To Do:  Declare local variables.
+	STRING szProgram,szCmdLine,szResult;
+	NUMBER nResult;
+begin
+//MessageBox("DecryptICWConnectionString", INFORMATION);
+RenameFile(INSTALLDIR+FILENAME3,INSTALLDIR+FILENAME4);
+szProgram = INSTALLDIR+"\\ICWConnectionStringDecryptCmd.bat";
+szCmdLine = SystemFolder+"\\cmd.exe \c";
+LaunchAppAndWait (szProgram,szCmdLine,WAIT|LAAW_OPTION_HIDDEN);
+DeleteFile(INSTALLDIR+"\\ICWConnectionStringDecryptCmd.bat");
+end;
+
+/*--------------------------------------------------------------*\
+* Function: OpenICWConfigFile (To Read the decrypted connection String
+*								and Paste it in Pharmacy)
+* OpenFile is called to open a file, which is then read into
+* a list.  The file is then closed and the list is displayed.
+*
+* Note: Before running this script, set the preprocessor
+*       constants so that they reference an existing file
+*       in an existing directory.
+*
+\*--------------------------------------------------------------*/ 
+function OpenICWConfigFile(hMSI) 
+    LIST    listID;    
+    STRING  svLine, szIcwVDProp, ICWWebConfigDir, svConnectionString, svPharmacyConString, PharmaWebConfigDir;
+    STRING  dataSource, versionMajor;    
+    NUMBER	nvSize, nvFileHandle;
+    //NUMBER nResult, n, nvPharmFileHandle ;
+    //LIST 	connectionStringList, dsConnStringList, icConnStringList, uidConnStringList, pwdConnStringList;
+    //STRING initialCatalog, userID, password;
+begin
+	nvSize = 256;
+	dataSource = "";
+	versionMajor ="";
+	MsiGetProperty(hMSI, "ICW_VD_NAME", szIcwVDProp, nvSize);
+	svPharmacyConString = '<add name="TRNRTL10.My.MySettings.ConnectionString" connectionString="Data Source=EHSC-ATAYLOR\\ATAYLOR_2016;Initial Catalog=10.20;User Id=icwsys_default;Password=ascribe_default;" />';
+	ICWWebConfigDir = IISROOTFOLDER+szIcwVDProp;
+	PharmaWebConfigDir = INSTALLDIR+WebConfigFile;
+    // Set the file mode to normal.
+    OpenFileMode (FILE_MODE_NORMAL);
+    // Open the text file.
+    if (OpenFile (nvFileHandle, ICWWebConfigDir, WebConfigFile) < 0) then
+		MessageBox ("OpenFile failed.", SEVERE);
+        abort;
+    endif;
+    
+    // Create an empty string list.
+    listID = ListCreate (STRINGLIST);
+    /*dsConnStringList= ListCreate (STRINGLIST);
+    connectionStringList = ListCreate (STRINGLIST);
+    icConnStringList = ListCreate (STRINGLIST);
+    uidConnStringList = ListCreate (STRINGLIST);
+    pwdConnStringList = ListCreate (STRINGLIST);*/
+    
+    // Read lines from the text file into the string list.
+    while GetLine (nvFileHandle, svLine) = 0
+        ListAddString (listID, svLine, AFTER);
+        if(svLine % "Data Source" && svLine % "Initial Catalog") then
+			FindAndReplace(INSTALLDIR+"web.config", svPharmacyConString, svLine);			
+			/*StrTrim(svLine);
+			svConnectionString = svLine;
+			StrGetTokens(connectionStringList, svConnectionString, ";");
+			n = ListCount(connectionStringList);
+			
+			nResult = ListGetFirstString (connectionStringList, dataSource);
+			if(dataSource % "Data Source") then
+				StrGetTokens(dsConnStringList, dataSource, "=");
+				nResult = ListGetFirstString (dsConnStringList, dataSource);
+				if (nResult != END_OF_LIST) then
+					nResult = ListGetNextString (dsConnStringList, dataSource);
+				endif;
+				if (nResult != END_OF_LIST) then
+					nResult = ListGetNextString (dsConnStringList, dataSource);
+				endif;
+				if (nResult != END_OF_LIST) then
+					nResult = ListGetNextString (dsConnStringList, dataSource);
+				endif;
+			endif;
+			if (nResult != END_OF_LIST) then
+				nResult = ListGetNextString (connectionStringList, initialCatalog);
+				if(initialCatalog % "Initial Catalog") then
+					StrGetTokens(icConnStringList, initialCatalog, "=");
+					nResult = ListGetFirstString (icConnStringList, initialCatalog);
+					if (nResult != END_OF_LIST) then
+						nResult = ListGetNextString (icConnStringList, initialCatalog);
+					endif;
+				endif;
+			endif;
+			if (nResult != END_OF_LIST) then
+				nResult = ListGetNextString (connectionStringList, userID);
+				if(userID % "User Id") then
+					StrGetTokens(uidConnStringList, userID, "=");
+					nResult = ListGetFirstString (uidConnStringList, userID);
+					if (nResult != END_OF_LIST) then
+						nResult = ListGetNextString (uidConnStringList, userID);
+					endif;
+				endif;
+			endif;
+			if (nResult != END_OF_LIST) then
+				nResult = ListGetNextString (connectionStringList, password);
+				if(password % "Password") then
+					StrGetTokens(pwdConnStringList, password, "=");
+					nResult = ListGetFirstString (pwdConnStringList, password);
+					if (nResult != END_OF_LIST) then
+						nResult = ListGetNextString (pwdConnStringList, password);
+					endif;
+				endif;
+			endif;
+			
+			
+			//MessageBox(dataSource, INFORMATION);			
+			FindAndReplace(INSTALLDIR+"web.config", "EHSC\-ATAYLOR\\ATAYLOR_2016", dataSource);
+			//FindAndReplace(INSTALLDIR+"web.config", svPharmacyConString, svLine);
+			/*MessageBox(initialCatalog, INFORMATION);
+			FindAndReplace(INSTALLDIR+"web.config", "10.20", initialCatalog);				
+			MessageBox(userID, INFORMATION);
+			FindAndReplace(INSTALLDIR+"web.config", "icwsys_default", userID);							
+			MessageBox(password, INFORMATION);						
+			FindAndReplace(INSTALLDIR+"web.config", "ascribe_default", password);*/
+		endif;        
+    endwhile;
+    CloseFile (nvFileHandle);
+end;
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           
+// Function:  DecryptICWConnectionString
+//                                                                           
+//  Purpose:  This function will be called by the script engine when
+//            Windows(TM) Installer executes your custom action (see the "To
+//            Do," above).
+//                                                                           
+///////////////////////////////////////////////////////////////////////////////
+function EncryptICWConnectionString(hMSI)
+    // To Do:  Declare local variables.
+	STRING szProgram,szCmdLine,szResult;
+	NUMBER nResult;
+begin
+//MessageBox("EncryptICWConnectionString", INFORMATION);
+RenameFile(INSTALLDIR+FILENAME9,INSTALLDIR+FILENAME10);
+szProgram = INSTALLDIR+"\\ICWConnectionStringEncryptCmd.bat";
+szCmdLine = SystemFolder+"\\cmd.exe \c";
+LaunchAppAndWait (szProgram,szCmdLine,WAIT|LAAW_OPTION_HIDDEN);
+DeleteFile(INSTALLDIR+"\\ICWConnectionStringEncryptCmd.bat");
+end;
+
+/*--------------------------------------------------------------*\
+*
+* InstallShield Script
+*
+* Find and replace text in files
+*
+* Note: Before running this script, set the preprocessor
+*       constants so that they reference an existing file
+*       in an existing directory.
+*
+\*--------------------------------------------------------------*/ 
+
+//Global Variables
+STRING SrcDirFileName, SrchString, RplcString;
+STRING firstPart;
+NUMBER SrchLen, nvLineNumber;
+
+function FindAndReplace(SrcDirFileName, SrchString, RplcString)
+	STRING svReturnLine,szString, secPart;
+	NUMBER nReturn, subPos, nStart;
+begin
+//MessageBox("FindAndReplace", INFORMATION);
+	Disable(STATUSEX); //stop displaying the progress bar
+    ShowObjWizardPages(NEXT); //WARNING this may throw a user interface
+    SrchLen = StrLength(SrchString); //length of search string
+    nvLineNumber = 0; //pre-set file line number to 0
+    nStart = 0;
+    //if (SrchString != "icwsys" && SrchString != "ascribe1") then
+    Din: 
+		while (FileGrep (SrcDirFileName, SrchString, svReturnLine, nvLineNumber, RESTART)=0)
+		
+				//StrReplace ( svReturnLine, SrchString, RplcString, 0 );
+			
+			//subPos is the number where the first char of search string was found
+			subPos	= StrFind(svReturnLine, SrchString);
+			//firstPart is the string upto search string but not including searchString
+			StrSub (firstPart, svReturnLine, 0, subPos);
+			//secPart is the string after search string
+			StrSub (secPart, svReturnLine, subPos+SrchLen, 100);
+			//new string is firstPart followed by replace string followed by secPart
+			TextSub.Value( "SUBBED" ) = RplcString;
+			szString = firstPart+"<SUBBED>"+secPart;
+			TextSub.Substitute( szString );			
+			//write line replacing original  
+			FileInsertLine (SrcDirFileName, szString, nvLineNumber, REPLACE);
+			
+			/*if(szString % "<SUBBED>") then
+				StrReplace(szString, "<SUBBED>", RplcString, nStart);
+				FileInsertLine (SrcDirFileName, szString, nvLineNumber, REPLACE);
+				MessageBox("AFTER COPY: "+szString, INFORMATION);
+			endif;*/
+			//the code below examines the line written back for any other occurences
+			//systematically searching and re-writting back to file
+			//search first line again for search string
+			if (FileGrep (SrcDirFileName, SrchString, svReturnLine, nvLineNumber, RESTART)=0) then
+				goto Din;  //another occurence found
+			else
+				//increment line number and start all over again
+				nvLineNumber = nvLineNumber + 1;
+			endif;
+		endwhile;  //while loop exited when END_OF_FILE reached
+		//endif;  
+end;
+/*--------------------------------------------------------------*\
+*
+* InstallShield Example Script
+*
+* Demonstrates the DeleteDir function.
+*
+* First, CreateDir is called to create a directory.  Then,
+* DeleteDir is called to delete it.
+*
+\*--------------------------------------------------------------*/
+function DeleteRootDirectory(hMSI)
+STRING svPropName, svPath;
+NUMBER nvSize;
+begin
+    MsiGetProperty(hMSI, "VD_NAME", svPropName, nvSize);	
+    svPath = IISROOTFOLDER + svPropName;   
+    if (ExistsDir (svPath) = EXISTS) then
+		DeleteDir (svPath, ALLCONTENTS);
+    endif;
+end;
+
+//	if MSICONDITION_TRUE = MsiEvaluateCondition(hMSI, 'REMOVE!="ALL"') then
+	//        MessageBox("First-time installation2", INFORMATION);
+	//endif;
+	//	if MSICONDITION_TRUE = MsiEvaluateCondition(hMSI, 'REINSTALL<>""') then
+	//        MessageBox("First-time installation3", INFORMATION);
+	//endif;
+	//	if MSICONDITION_TRUE = MsiEvaluateCondition(hMSI, 'PATCH<>""') then
+	//        MessageBox("First-time installation4", INFORMATION);
+	//endif;	
+	//	if MSICONDITION_TRUE = MsiEvaluateCondition(hMSI, "REMOVEALLMODE") then
+	//        MessageBox("First-time installation5", INFORMATION);
+	//endif;	
+	//	if MSICONDITION_TRUE = MsiEvaluateCondition(hMSI, "NOT REMOVE") then
+	//        MessageBox("First-time installation6", INFORMATION);
+	//endif;

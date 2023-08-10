@@ -1,0 +1,120 @@
+BUTTON
+{
+	background: none;
+}
+BUTTON:hover
+{
+    background-image: none;
+}
+.i
+{
+    BACKGROUND-COLOR: #f7f780;
+}
+.GridTable
+{
+    FONT-SIZE: 10pt;
+    BACKGROUND-COLOR: white;
+    TEXT-ALIGN: center
+}
+#tbl TD
+{
+    BORDER-TOP: solid 1px silver;
+    BORDER-LEFT: solid 1px silver;
+}
+.Page
+{
+    BACKGROUND-COLOR: white
+}
+.GridPageBody
+{
+}
+.DayButton
+{
+}
+
+.GHFixed
+{
+    BACKGROUND-COLOR: #f7f7de
+}
+.GHWeekend
+{
+    BACKGROUND-COLOR: #d1d1b2
+}
+.GHNormal
+{
+    BACKGROUND-COLOR: #e1e1d2
+}
+
+.GCFixed
+{
+    BACKGROUND-COLOR: #fffff9
+}
+.GCInPast
+{
+    BACKGROUND-COLOR: #a3a3a3;
+    BORDER-TOP: solid 1px silver;
+    BORDER-LEFT: solid 1px silver;
+}
+.GCOutsideDateRange
+{
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #ffffff
+}
+.GCWeekend
+{
+    BACKGROUND-COLOR: #f1f1f1
+}
+.GCNotYetIssued
+{
+}
+.GCSelectedForIssue
+{
+    BACKGROUND-COLOR: #f7f780;
+}
+.GCSelectedClosed
+{
+    BACKGROUND-COLOR: Fuchsia;
+}
+.GCSelectedBankHoliday
+{
+    BACKGROUND-COLOR: Red;
+}
+.GCAlreadyIssued
+{
+    BACKGROUND-COLOR: #80ea80
+}
+.GCxSelected
+{
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #330099
+}
+.LegendCellBox
+{
+    BORDER-RIGHT: black 1px solid;
+    BORDER-TOP: black 1px solid;
+    BORDER-LEFT: black 1px solid;
+    BORDER-BOTTOM: black 1px solid
+}
+.m
+{
+    BACKGROUND-COLOR: #ffa580
+}
+.f
+{
+    BACKGROUND-COLOR: #e0e0ff
+}
+.Body
+{
+    BACKGROUND-COLOR: #ffffff
+}
+#CellKey
+{
+    BORDER-RIGHT: #90a0b0 1px solid;
+    PADDING-RIGHT: 5px;
+    BORDER-TOP: #90a0b0 1px solid;
+    PADDING-LEFT: 5px;
+    PADDING-BOTTOM: 5px;
+    BORDER-LEFT: #90a0b0 1px solid;
+    PADDING-TOP: 5px;
+    BORDER-BOTTOM: #90a0b0 1px solid
+}

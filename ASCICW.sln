@@ -1,0 +1,553 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pharmacy", "Pharmacy", "{D6365113-FD76-4531-B80D-449313B9440F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{2B7D798D-EDE6-491B-9903-0FE5932194C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bespoke", "bespoke", "{5D5FE159-4174-41B3-8F0B-8E1DE9FDA837}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{243903D1-E9A8-48BE-8C6B-0B6EA9DFAB45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web Custom", "Installation\Web Custom\Web Custom.csproj", "{03F0130A-E3C6-4261-A6AA-6D056123C9B3}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web", "{D28225A9-060F-4098-A82C-B7976D31B62B}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{1E425244-912E-4C6F-A313-E636311F34A6}|Base Data Layer.dll;{6A3007BE-808C-4570-B488-1892B85B0322}|Pharmacy Shared.dll;{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}|Business Layer.dll;{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}|ICW Data Layer.dll;{5882B905-230A-4EA2-B4BE-81331C68804C}|Pharmacy Data Layer.dll;{0D07DB8B-3A07-4FAE-9031-D45773679D32}|RobotLoading Layer.dll;{B05A7050-6411-412D-9C7D-808473CA5313}|UMMC Data Layer.dll;{EAAFA097-DC90-422D-B7F6-20B50BE2FCD9}|Asymmetric Dosing.dll;{04ACB4B1-DEBF-447A-8C72-2FCE39D94AD2}|Parenteral Nutrition Layer.dll;{6FC72043-1B27-46FD-90A7-964378BE1247}|Dispensing PMR Layer.dll;{B8F185EC-D6BA-4FE8-8DD2-F4C44BAE2906}|Report Layer.dll;{8CE038B9-017F-4CBE-90F6-3E2D16FB0C10}|Finance Manager Layer.dll;{9D30272E-5C53-4E80-86B1-74D5DF16F20E}|RobotLoader Reply Component.dll;{7C78890E-2C84-4CB6-8BF0-F38532E78D45}|QuesScrl Layer.dll;{0FBC5C82-E2C7-4880-9DF1-F858E8E6354F}|Ward Stock List Layer.dll;{5DAE6B75-09EB-4E80-B578-97ACE3CB9A72}|PECOS Reply Component.dll;{D8E0DB12-61A8-476A-996E-164003A392CD}|WCFDataService.dll;{D203D26B-5A7A-47B5-8AE2-C81D28B7312C}|Manufacturing Layer.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/Web"
+		Debug.AspNetCompiler.PhysicalPath = "Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Web"
+		Release.AspNetCompiler.PhysicalPath = "Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59248"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client Custom", "Installation\Client Custom\Client Custom.csproj", "{4B4A53B9-3106-4550-8F64-24164AF327BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientConfiguration", "Installation\ClientConfiguration\ClientConfiguration.csproj", "{91B999ED-8B78-41D0-BCA1-67D88F356810}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HAP and Pharmacy Admin Client Setup", "Installation\Admin Client Setup\Admin Client Setup.vdproj", "{49D4F6C2-BEBB-4D1B-AEEC-41081F725333}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HAP and Pharmacy Admin Client Setup - Testing", "Installation\Admin Client Setup - Testing\Admin Client Setup - Testing.vdproj", "{17930D27-B8EF-425E-B29C-3C7009A7D0A0}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HAP and Pharmacy Admin Client Setup - Training", "Installation\Admin Client Setup - Training\Admin Client Setup - Training.vdproj", "{F36BF0E2-191F-43EB-B285-EA160D93FD26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base Data Layer", "COM\Pharmacy Source\Base Data Layer\Base Data Layer.csproj", "{1E425244-912E-4C6F-A313-E636311F34A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business Layer", "COM\Pharmacy Source\Business Layer\Business Layer.csproj", "{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICW Data Layer", "COM\Pharmacy Source\ICW Data Layer\ICW Data Layer.csproj", "{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy Data Layer", "COM\Pharmacy Source\Pharmacy Data Layer\Pharmacy Data Layer.csproj", "{5882B905-230A-4EA2-B4BE-81331C68804C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy Shared", "COM\Pharmacy Source\Pharmacy Shared\Pharmacy Shared.csproj", "{6A3007BE-808C-4570-B488-1892B85B0322}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT Base Data Layer", "COM\Pharmacy Source\UT Base Data Layer\UT Base Data Layer.csproj", "{BA4F83B4-616A-429B-90D9-A0D77B9C0726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT Business Layer", "COM\Pharmacy Source\UT Business Layer\UT Business Layer.csproj", "{970F7141-E499-4151-B789-DDB3988F560F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT Pharmacy Shared", "COM\Pharmacy Source\UT Pharmacy Shared\UT Pharmacy Shared.csproj", "{2BB84C23-BD5D-429C-B108-D12C979DC3DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT RobotLoading Layer", "COM\Pharmacy Source\UT RobotLoading Layer\UT RobotLoading Layer.csproj", "{9629F6D6-475E-4F26-8269-A41491164105}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotLoading Layer", "COM\Pharmacy Source\RobotLoader Layer\RobotLoading Layer.csproj", "{0D07DB8B-3A07-4FAE-9031-D45773679D32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMMC Data Layer", "COM\Pharmacy Source\UMMC Data Layer\UMMC Data Layer.csproj", "{B05A7050-6411-412D-9C7D-808473CA5313}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotLoader Reply Component", "Pharmacy\Interfaces\RobotLoader\src\RobotLoader Reply Component.csproj", "{9D30272E-5C53-4E80-86B1-74D5DF16F20E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asymmetric Dosing", "COM\Pharmacy Source\Asymmetric Dosing\Asymmetric Dosing.csproj", "{EAAFA097-DC90-422D-B7F6-20B50BE2FCD9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Web Pharmacy Setup", "Installation\Web Pharmacy Setup\Web Pharmacy Setup.vdproj", "{55B3514C-3DCA-4A78-A148-62E0D78467A6}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Web Pharmacy Setup - Testing", "Installation\Web Pharmacy Setup - Testing\Web Pharmacy Setup - Testing.vdproj", "{E9943210-5585-4F33-9BC2-1F9E0BDCA17F}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Web Pharmacy Setup - Training", "Installation\Web Pharmacy Setup - Training\Web Pharmacy Setup - Training.vdproj", "{39396008-2DEB-49D0-AB65-95F1F4BC995D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parenteral Nutrition Layer", "COM\Pharmacy Source\Parenteral Nutrition Layer\Parenteral Nutrition Layer\Parenteral Nutrition Layer.csproj", "{04ACB4B1-DEBF-447A-8C72-2FCE39D94AD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT Parenteral Nutrition Layer", "COM\Pharmacy Source\UT Parenteral Nutrition Layer\UT Parenteral Nutrition Layer.csproj", "{2F006BBF-528D-4969-BC98-497683C46617}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dispensing PMR Layer", "COM\Pharmacy Source\Dispensing PMR Layer\Dispensing PMR Layer.csproj", "{6FC72043-1B27-46FD-90A7-964378BE1247}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report Layer", "COM\Pharmacy Source\Report Layer\Report Layer.csproj", "{B8F185EC-D6BA-4FE8-8DD2-F4C44BAE2906}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT Pharmacy Data Layer", "COM\Pharmacy Source\UT Pharmacy Data Layer\UT Pharmacy Data Layer.csproj", "{0281183D-6EEC-46DC-8EC4-F7F236250D67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finance Manager Layer", "COM\Pharmacy Source\Finance Manager Layer\Finance Manager Layer.csproj", "{8CE038B9-017F-4CBE-90F6-3E2D16FB0C10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT Finance Manager Layer", "COM\Pharmacy Source\UT Finance Manager Layer\UT Finance Manager Layer.csproj", "{D4E6D475-4AF8-4F77-B468-FE5DF2C8B9A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuesScrl Layer", "COM\Pharmacy Source\QuesScrl Layer\QuesScrl Layer.csproj", "{7C78890E-2C84-4CB6-8BF0-F38532E78D45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ward Stock List Layer", "COM\Pharmacy Source\WardStockList\Ward Stock List Layer.csproj", "{0FBC5C82-E2C7-4880-9DF1-F858E8E6354F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5B3B138E-C5A9-44FC-8E56-0DAFCA19E734}"
+	ProjectSection(SolutionItems) = preProject
+		ASCICW.vsmdi = ASCICW.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT Report Layer", "COM\Pharmacy Source\UT Report Layer\UT Report Layer.csproj", "{159D3908-A3CE-4363-8FAA-35F8E3E5C71F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Harnesses", "Test Harnesses", "{DC6C7222-F22C-4B5F-9DF8-EC2432CF8D9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HK PMS", "HK PMS", "{4C512350-DB4A-4F20-B06B-9DE9F51A4C45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HK PMS", "Test Harnesses\HK PMS\HK PMS.csproj", "{F40C6748-0838-4F0D-B212-CA87C66CD5C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PECOS Reply Component", "Pharmacy\Interfaces\PECOS\PECOS Reply Component.csproj", "{5DAE6B75-09EB-4E80-B578-97ACE3CB9A72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web Transport", "Web Transport", "{FDB0C49E-8B87-4FBE-AB8A-0574104AEDC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFDataClient", "COM\Pharmacy Source\Web Transport\DataWCFClient\WCFDataClient.csproj", "{EC513725-F000-4B46-B2FE-13BA336161F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFDataService", "COM\Pharmacy Source\Web Transport\DataWCFService\WCFDataService.csproj", "{D8E0DB12-61A8-476A-996E-164003A392CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manufacturing Layer", "COM\Pharmacy Source\Manufacturing Layer\Manufacturing Layer.csproj", "{D203D26B-5A7A-47B5-8AE2-C81D28B7312C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT ICW Data Layer", "COM\Pharmacy Source\UT ICW Data Layer\UT ICW Data Layer.csproj", "{E829E349-CD4A-4E44-A867-513ED6A4E895}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT Manufacturing Layer", "COM\Pharmacy Source\UT Manufacturing Layer\UT Manufacturing Layer.csproj", "{4943F405-E422-4E49-8707-3070AA86DB33}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "System File Setup", "Installation\System Files Setup\System Files Setup.vdproj", "{98A57087-45A3-4553-BC0E-56B1ACC7DE0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextControlEditorWebClient", "Pharmacy\Printing-Web Client\TxTextControl\TextUserControl\TextControlEditorWebClient.csproj", "{8B63B962-DA9B-448E-BF92-52127D7B37A1}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 44
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://core-bol-tfs01:8080/tfs/sourcecollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Installation\\Web\u0020Custom\\Web\u0020Custom.csproj
+		SccProjectName1 = Installation/Web\u0020Custom
+		SccLocalPath1 = Installation\\Web\u0020Custom
+		SccProjectUniqueName2 = Installation\\Client\u0020Custom\\Client\u0020Custom.csproj
+		SccProjectName2 = Installation/Client\u0020Custom
+		SccLocalPath2 = Installation\\Client\u0020Custom
+		SccProjectUniqueName3 = Installation\\ClientConfiguration\\ClientConfiguration.csproj
+		SccProjectName3 = Installation/ClientConfiguration
+		SccLocalPath3 = Installation\\ClientConfiguration
+		SccProjectUniqueName4 = Installation\\Admin\u0020Client\u0020Setup\\Admin\u0020Client\u0020Setup.vdproj
+		SccProjectName4 = Installation/Admin\u0020Client\u0020Setup
+		SccLocalPath4 = Installation\\Admin\u0020Client\u0020Setup
+		SccProjectUniqueName5 = Installation\\Admin\u0020Client\u0020Setup\u0020-\u0020Testing\\Admin\u0020Client\u0020Setup\u0020-\u0020Testing.vdproj
+		SccProjectName5 = Installation/Admin\u0020Client\u0020Setup\u0020-\u0020Testing
+		SccLocalPath5 = Installation\\Admin\u0020Client\u0020Setup\u0020-\u0020Testing
+		SccProjectUniqueName6 = Installation\\Admin\u0020Client\u0020Setup\u0020-\u0020Training\\Admin\u0020Client\u0020Setup\u0020-\u0020Training.vdproj
+		SccProjectName6 = Installation/Admin\u0020Client\u0020Setup\u0020-\u0020Training
+		SccLocalPath6 = Installation\\Admin\u0020Client\u0020Setup\u0020-\u0020Training
+		SccProjectUniqueName7 = COM\\Pharmacy\u0020Source\\Base\u0020Data\u0020Layer\\Base\u0020Data\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName7 = ASCICW.sln
+		SccProjectName7 = COM/Pharmacy\u0020Source/Base\u0020Data\u0020Layer
+		SccLocalPath7 = COM\\Pharmacy\u0020Source\\Base\u0020Data\u0020Layer
+		SccProjectUniqueName8 = COM\\Pharmacy\u0020Source\\Business\u0020Layer\\Business\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName8 = ASCICW.sln
+		SccProjectName8 = COM/Pharmacy\u0020Source/Business\u0020Layer
+		SccLocalPath8 = COM\\Pharmacy\u0020Source\\Business\u0020Layer
+		SccProjectUniqueName9 = COM\\Pharmacy\u0020Source\\ICW\u0020Data\u0020Layer\\ICW\u0020Data\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName9 = ASCICW.sln
+		SccProjectName9 = COM/Pharmacy\u0020Source/ICW\u0020Data\u0020Layer
+		SccLocalPath9 = COM\\Pharmacy\u0020Source\\ICW\u0020Data\u0020Layer
+		SccProjectUniqueName10 = COM\\Pharmacy\u0020Source\\Pharmacy\u0020Data\u0020Layer\\Pharmacy\u0020Data\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName10 = ASCICW.sln
+		SccProjectName10 = COM/Pharmacy\u0020Source/Pharmacy\u0020Data\u0020Layer
+		SccLocalPath10 = COM\\Pharmacy\u0020Source\\Pharmacy\u0020Data\u0020Layer
+		SccProjectUniqueName11 = COM\\Pharmacy\u0020Source\\Pharmacy\u0020Shared\\Pharmacy\u0020Shared.csproj
+		SccProjectTopLevelParentUniqueName11 = ASCICW.sln
+		SccProjectName11 = COM/Pharmacy\u0020Source/Pharmacy\u0020Shared
+		SccLocalPath11 = COM\\Pharmacy\u0020Source\\Pharmacy\u0020Shared
+		SccProjectUniqueName12 = COM\\Pharmacy\u0020Source\\UT\u0020Base\u0020Data\u0020Layer\\UT\u0020Base\u0020Data\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName12 = ASCICW.sln
+		SccProjectName12 = COM/Pharmacy\u0020Source/UT\u0020Base\u0020Data\u0020Layer
+		SccLocalPath12 = COM\\Pharmacy\u0020Source\\UT\u0020Base\u0020Data\u0020Layer
+		SccProjectUniqueName13 = COM\\Pharmacy\u0020Source\\UT\u0020Business\u0020Layer\\UT\u0020Business\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName13 = ASCICW.sln
+		SccProjectName13 = COM/Pharmacy\u0020Source/UT\u0020Business\u0020Layer
+		SccLocalPath13 = COM\\Pharmacy\u0020Source\\UT\u0020Business\u0020Layer
+		SccProjectUniqueName14 = COM\\Pharmacy\u0020Source\\UT\u0020Pharmacy\u0020Shared\\UT\u0020Pharmacy\u0020Shared.csproj
+		SccProjectTopLevelParentUniqueName14 = ASCICW.sln
+		SccProjectName14 = COM/Pharmacy\u0020Source/UT\u0020Pharmacy\u0020Shared
+		SccLocalPath14 = COM\\Pharmacy\u0020Source\\UT\u0020Pharmacy\u0020Shared
+		SccProjectUniqueName15 = COM\\Pharmacy\u0020Source\\UT\u0020RobotLoading\u0020Layer\\UT\u0020RobotLoading\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName15 = ASCICW.sln
+		SccProjectName15 = COM/Pharmacy\u0020Source/UT\u0020RobotLoading\u0020Layer
+		SccLocalPath15 = COM\\Pharmacy\u0020Source\\UT\u0020RobotLoading\u0020Layer
+		SccProjectUniqueName16 = COM\\Pharmacy\u0020Source\\RobotLoader\u0020Layer\\RobotLoading\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName16 = ASCICW.sln
+		SccProjectName16 = COM/Pharmacy\u0020Source/RobotLoader\u0020Layer
+		SccLocalPath16 = COM\\Pharmacy\u0020Source\\RobotLoader\u0020Layer
+		SccProjectUniqueName17 = COM\\Pharmacy\u0020Source\\UMMC\u0020Data\u0020Layer\\UMMC\u0020Data\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName17 = ASCICW.sln
+		SccProjectName17 = COM/Pharmacy\u0020Source/UMMC\u0020Data\u0020Layer
+		SccLocalPath17 = COM\\Pharmacy\u0020Source\\UMMC\u0020Data\u0020Layer
+		SccProjectUniqueName18 = COM\\Pharmacy\u0020Source\\Asymmetric\u0020Dosing\\Asymmetric\u0020Dosing.csproj
+		SccProjectTopLevelParentUniqueName18 = ASCICW.sln
+		SccProjectName18 = COM/Pharmacy\u0020Source/Asymmetric\u0020Dosing
+		SccLocalPath18 = COM\\Pharmacy\u0020Source\\Asymmetric\u0020Dosing
+		SccProjectUniqueName19 = Installation\\Web\u0020Pharmacy\u0020Setup\\Web\u0020Pharmacy\u0020Setup.vdproj
+		SccProjectName19 = Installation/Web\u0020Pharmacy\u0020Setup
+		SccLocalPath19 = Installation\\Web\u0020Pharmacy\u0020Setup
+		SccProjectUniqueName20 = Installation\\Web\u0020Pharmacy\u0020Setup\u0020-\u0020Testing\\Web\u0020Pharmacy\u0020Setup\u0020-\u0020Testing.vdproj
+		SccProjectName20 = Installation/Web\u0020Pharmacy\u0020Setup\u0020-\u0020Testing
+		SccLocalPath20 = Installation\\Web\u0020Pharmacy\u0020Setup\u0020-\u0020Testing
+		SccProjectUniqueName21 = Installation\\Web\u0020Pharmacy\u0020Setup\u0020-\u0020Training\\Web\u0020Pharmacy\u0020Setup\u0020-\u0020Training.vdproj
+		SccProjectName21 = Installation/Web\u0020Pharmacy\u0020Setup\u0020-\u0020Training
+		SccLocalPath21 = Installation\\Web\u0020Pharmacy\u0020Setup\u0020-\u0020Training
+		SccProjectUniqueName22 = COM\\Pharmacy\u0020Source\\Parenteral\u0020Nutrition\u0020Layer\\Parenteral\u0020Nutrition\u0020Layer\\Parenteral\u0020Nutrition\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName22 = ASCICW.sln
+		SccProjectName22 = COM/Pharmacy\u0020Source/Parenteral\u0020Nutrition\u0020Layer/Parenteral\u0020Nutrition\u0020Layer
+		SccLocalPath22 = COM\\Pharmacy\u0020Source\\Parenteral\u0020Nutrition\u0020Layer\\Parenteral\u0020Nutrition\u0020Layer
+		SccProjectUniqueName23 = COM\\Pharmacy\u0020Source\\UT\u0020Parenteral\u0020Nutrition\u0020Layer\\UT\u0020Parenteral\u0020Nutrition\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName23 = ASCICW.sln
+		SccProjectName23 = COM/Pharmacy\u0020Source/UT\u0020Parenteral\u0020Nutrition\u0020Layer
+		SccLocalPath23 = COM\\Pharmacy\u0020Source\\UT\u0020Parenteral\u0020Nutrition\u0020Layer
+		SccProjectUniqueName24 = COM\\Pharmacy\u0020Source\\Dispensing\u0020PMR\u0020Layer\\Dispensing\u0020PMR\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName24 = ASCICW.sln
+		SccProjectName24 = COM/Pharmacy\u0020Source/Dispensing\u0020PMR\u0020Layer
+		SccLocalPath24 = COM\\Pharmacy\u0020Source\\Dispensing\u0020PMR\u0020Layer
+		SccProjectUniqueName25 = COM\\Pharmacy\u0020Source\\Report\u0020Layer\\Report\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName25 = ASCICW.sln
+		SccProjectName25 = COM/Pharmacy\u0020Source/Report\u0020Layer
+		SccLocalPath25 = COM\\Pharmacy\u0020Source\\Report\u0020Layer
+		SccProjectUniqueName26 = COM\\Pharmacy\u0020Source\\UT\u0020Pharmacy\u0020Data\u0020Layer\\UT\u0020Pharmacy\u0020Data\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName26 = ASCICW.sln
+		SccProjectName26 = COM/Pharmacy\u0020Source/UT\u0020Pharmacy\u0020Data\u0020Layer
+		SccLocalPath26 = COM\\Pharmacy\u0020Source\\UT\u0020Pharmacy\u0020Data\u0020Layer
+		SccProjectUniqueName27 = COM\\Pharmacy\u0020Source\\Finance\u0020Manager\u0020Layer\\Finance\u0020Manager\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName27 = ASCICW.sln
+		SccProjectName27 = COM/Pharmacy\u0020Source/Finance\u0020Manager\u0020Layer
+		SccLocalPath27 = COM\\Pharmacy\u0020Source\\Finance\u0020Manager\u0020Layer
+		SccProjectUniqueName28 = COM\\Pharmacy\u0020Source\\UT\u0020Finance\u0020Manager\u0020Layer\\UT\u0020Finance\u0020Manager\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName28 = ASCICW.sln
+		SccProjectName28 = COM/Pharmacy\u0020Source/UT\u0020Finance\u0020Manager\u0020Layer
+		SccLocalPath28 = COM\\Pharmacy\u0020Source\\UT\u0020Finance\u0020Manager\u0020Layer
+		SccProjectUniqueName29 = Pharmacy\\Interfaces\\RobotLoader\\src\\RobotLoader\u0020Reply\u0020Component.csproj
+		SccProjectTopLevelParentUniqueName29 = ASCICW.sln
+		SccProjectName29 = Pharmacy/Interfaces/RobotLoader/src
+		SccLocalPath29 = Pharmacy\\Interfaces\\RobotLoader\\src
+		SccProjectUniqueName30 = COM\\Pharmacy\u0020Source\\QuesScrl\u0020Layer\\QuesScrl\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName30 = ASCICW.sln
+		SccProjectName30 = COM/Pharmacy\u0020Source/QuesScrl\u0020Layer
+		SccLocalPath30 = COM\\Pharmacy\u0020Source\\QuesScrl\u0020Layer
+		SccWebProject31 = true
+		SccProjectUniqueName31 = Web
+		SccLocalPath31 = .
+		SccProjectFilePathRelativizedFromConnection31 = Web\\
+		SccProjectEnlistmentChoice31 = 2
+		SccProjectUniqueName32 = COM\\Pharmacy\u0020Source\\WardStockList\\Ward\u0020Stock\u0020List\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName32 = ASCICW.sln
+		SccProjectName32 = COM/Pharmacy\u0020Source/WardStockList
+		SccLocalPath32 = COM\\Pharmacy\u0020Source\\WardStockList
+		SccProjectUniqueName33 = COM\\Pharmacy\u0020Source\\UT\u0020Report\u0020Layer\\UT\u0020Report\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName33 = ASCICW.sln
+		SccProjectName33 = COM/Pharmacy\u0020Source/UT\u0020Report\u0020Layer
+		SccLocalPath33 = COM\\Pharmacy\u0020Source\\UT\u0020Report\u0020Layer
+		SccProjectUniqueName34 = Test\u0020Harnesses\\HK\u0020PMS\\HK\u0020PMS.csproj
+		SccProjectTopLevelParentUniqueName34 = ASCICW.sln
+		SccProjectName34 = Test\u0020Harnesses/HK\u0020PMS
+		SccLocalPath34 = Test\u0020Harnesses\\HK\u0020PMS
+		SccProjectUniqueName35 = Pharmacy\\Interfaces\\PECOS\\PECOS\u0020Reply\u0020Component.csproj
+		SccProjectTopLevelParentUniqueName35 = ASCICW.sln
+		SccLocalPath35 = Pharmacy\\Interfaces\\PECOS		
+		SccProjectFilePathRelativizedFromConnection35 = ..\\PECOS\\
+		SccProjectUniqueName36 = COM\\Pharmacy\u0020Source\\Web\u0020Transport\\DataWCFClient\\WCFDataClient.csproj
+		SccProjectTopLevelParentUniqueName36 = ASCICW.sln
+		SccProjectName36 = COM/Pharmacy\u0020Source/Web\u0020Transport/DataWCFClient
+		SccLocalPath36 = COM\\Pharmacy\u0020Source\\Web\u0020Transport\\DataWCFClient
+		SccProjectUniqueName37 = COM\\Pharmacy\u0020Source\\Web\u0020Transport\\DataWCFService\\WCFDataService.csproj
+		SccProjectTopLevelParentUniqueName37 = ASCICW.sln
+		SccProjectName37 = COM/Pharmacy\u0020Source/Web\u0020Transport/DataWCFService
+		SccLocalPath37 = COM\\Pharmacy\u0020Source\\Web\u0020Transport\\DataWCFService
+		SccProjectUniqueName38 = COM\\Pharmacy\u0020Source\\Manufacturing\u0020Layer\\Manufacturing\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName38 = ASCICW.sln
+		SccProjectName38 = COM/Pharmacy\u0020Source/Manufacturing\u0020Layer
+		SccLocalPath38 = COM\\Pharmacy\u0020Source\\Manufacturing\u0020Layer
+		SccProjectUniqueName39 = COM\\Pharmacy\u0020Source\\UT\u0020ICW\u0020Data\u0020Layer\\UT\u0020ICW\u0020Data\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName39 = ASCICW.sln
+		SccProjectName39 = COM/Pharmacy\u0020Source/UT\u0020ICW\u0020Data\u0020Layer
+		SccLocalPath39 = COM\\Pharmacy\u0020Source\\UT\u0020ICW\u0020Data\u0020Layer
+		SccProjectUniqueName40 = COM\\Pharmacy\u0020Source\\UT\u0020Manufacturing\u0020Layer\\UT\u0020Manufacturing\u0020Layer.csproj
+		SccProjectTopLevelParentUniqueName40 = ASCICW.sln
+		SccProjectName40 = COM/Pharmacy\u0020Source/UT\u0020Manufacturing\u0020Layer
+		SccLocalPath40 = COM\\Pharmacy\u0020Source\\UT\u0020Manufacturing\u0020Layer
+		SccProjectUniqueName41 = Installation\\System\u0020Files\u0020Setup\\System\u0020Files\u0020Setup.vdproj
+		SccProjectName41 = Installation/System\u0020Files\u0020Setup
+		SccLocalPath41 = Installation\\System\u0020Files\u0020Setup
+		SccProjectUniqueName42 = Pharmacy\\Printing-Web\u0020Client\\TxTextControl\\TextUserControl\\TextControlEditorWebClient.csproj
+		SccProjectName42 = Pharmacy/Printing-Web\u0020Client/TxTextControl/TextUserControl
+		SccLocalPath42 = Pharmacy\\Printing-Web\u0020Client\\TxTextControl\\TextUserControl
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ASCICW.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Install|Any CPU = Install|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03F0130A-E3C6-4261-A6AA-6D056123C9B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03F0130A-E3C6-4261-A6AA-6D056123C9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03F0130A-E3C6-4261-A6AA-6D056123C9B3}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{03F0130A-E3C6-4261-A6AA-6D056123C9B3}.Install|Any CPU.Build.0 = Release|Any CPU
+		{03F0130A-E3C6-4261-A6AA-6D056123C9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D28225A9-060F-4098-A82C-B7976D31B62B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D28225A9-060F-4098-A82C-B7976D31B62B}.Install|Any CPU.ActiveCfg = Debug|Any CPU
+		{D28225A9-060F-4098-A82C-B7976D31B62B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4A53B9-3106-4550-8F64-24164AF327BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4A53B9-3106-4550-8F64-24164AF327BD}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{4B4A53B9-3106-4550-8F64-24164AF327BD}.Install|Any CPU.Build.0 = Release|Any CPU
+		{4B4A53B9-3106-4550-8F64-24164AF327BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B4A53B9-3106-4550-8F64-24164AF327BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91B999ED-8B78-41D0-BCA1-67D88F356810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B999ED-8B78-41D0-BCA1-67D88F356810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B999ED-8B78-41D0-BCA1-67D88F356810}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{91B999ED-8B78-41D0-BCA1-67D88F356810}.Install|Any CPU.Build.0 = Release|Any CPU
+		{91B999ED-8B78-41D0-BCA1-67D88F356810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B999ED-8B78-41D0-BCA1-67D88F356810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49D4F6C2-BEBB-4D1B-AEEC-41081F725333}.Debug|Any CPU.ActiveCfg = Debug
+		{49D4F6C2-BEBB-4D1B-AEEC-41081F725333}.Install|Any CPU.ActiveCfg = Release
+		{49D4F6C2-BEBB-4D1B-AEEC-41081F725333}.Release|Any CPU.ActiveCfg = Release
+		{17930D27-B8EF-425E-B29C-3C7009A7D0A0}.Debug|Any CPU.ActiveCfg = Debug
+		{17930D27-B8EF-425E-B29C-3C7009A7D0A0}.Install|Any CPU.ActiveCfg = Release
+		{17930D27-B8EF-425E-B29C-3C7009A7D0A0}.Release|Any CPU.ActiveCfg = Release
+		{F36BF0E2-191F-43EB-B285-EA160D93FD26}.Debug|Any CPU.ActiveCfg = Debug
+		{F36BF0E2-191F-43EB-B285-EA160D93FD26}.Install|Any CPU.ActiveCfg = Release
+		{F36BF0E2-191F-43EB-B285-EA160D93FD26}.Release|Any CPU.ActiveCfg = Release
+		{1E425244-912E-4C6F-A313-E636311F34A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E425244-912E-4C6F-A313-E636311F34A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E425244-912E-4C6F-A313-E636311F34A6}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{1E425244-912E-4C6F-A313-E636311F34A6}.Install|Any CPU.Build.0 = Release|Any CPU
+		{1E425244-912E-4C6F-A313-E636311F34A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E425244-912E-4C6F-A313-E636311F34A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}.Install|Any CPU.Build.0 = Release|Any CPU
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}.Install|Any CPU.Build.0 = Release|Any CPU
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5882B905-230A-4EA2-B4BE-81331C68804C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5882B905-230A-4EA2-B4BE-81331C68804C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5882B905-230A-4EA2-B4BE-81331C68804C}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{5882B905-230A-4EA2-B4BE-81331C68804C}.Install|Any CPU.Build.0 = Release|Any CPU
+		{5882B905-230A-4EA2-B4BE-81331C68804C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5882B905-230A-4EA2-B4BE-81331C68804C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A3007BE-808C-4570-B488-1892B85B0322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3007BE-808C-4570-B488-1892B85B0322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3007BE-808C-4570-B488-1892B85B0322}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3007BE-808C-4570-B488-1892B85B0322}.Install|Any CPU.Build.0 = Release|Any CPU
+		{6A3007BE-808C-4570-B488-1892B85B0322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3007BE-808C-4570-B488-1892B85B0322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA4F83B4-616A-429B-90D9-A0D77B9C0726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA4F83B4-616A-429B-90D9-A0D77B9C0726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA4F83B4-616A-429B-90D9-A0D77B9C0726}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{BA4F83B4-616A-429B-90D9-A0D77B9C0726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{970F7141-E499-4151-B789-DDB3988F560F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{970F7141-E499-4151-B789-DDB3988F560F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{970F7141-E499-4151-B789-DDB3988F560F}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{970F7141-E499-4151-B789-DDB3988F560F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB84C23-BD5D-429C-B108-D12C979DC3DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB84C23-BD5D-429C-B108-D12C979DC3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB84C23-BD5D-429C-B108-D12C979DC3DC}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB84C23-BD5D-429C-B108-D12C979DC3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9629F6D6-475E-4F26-8269-A41491164105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9629F6D6-475E-4F26-8269-A41491164105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9629F6D6-475E-4F26-8269-A41491164105}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{9629F6D6-475E-4F26-8269-A41491164105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32}.Install|Any CPU.Build.0 = Release|Any CPU
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B05A7050-6411-412D-9C7D-808473CA5313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05A7050-6411-412D-9C7D-808473CA5313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05A7050-6411-412D-9C7D-808473CA5313}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{B05A7050-6411-412D-9C7D-808473CA5313}.Install|Any CPU.Build.0 = Release|Any CPU
+		{B05A7050-6411-412D-9C7D-808473CA5313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05A7050-6411-412D-9C7D-808473CA5313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E}.Install|Any CPU.Build.0 = Release|Any CPU
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAAFA097-DC90-422D-B7F6-20B50BE2FCD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAAFA097-DC90-422D-B7F6-20B50BE2FCD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAAFA097-DC90-422D-B7F6-20B50BE2FCD9}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{EAAFA097-DC90-422D-B7F6-20B50BE2FCD9}.Install|Any CPU.Build.0 = Release|Any CPU
+		{EAAFA097-DC90-422D-B7F6-20B50BE2FCD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAAFA097-DC90-422D-B7F6-20B50BE2FCD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B3514C-3DCA-4A78-A148-62E0D78467A6}.Debug|Any CPU.ActiveCfg = Debug
+		{55B3514C-3DCA-4A78-A148-62E0D78467A6}.Install|Any CPU.ActiveCfg = Release
+		{55B3514C-3DCA-4A78-A148-62E0D78467A6}.Release|Any CPU.ActiveCfg = Release
+		{E9943210-5585-4F33-9BC2-1F9E0BDCA17F}.Debug|Any CPU.ActiveCfg = Debug
+		{E9943210-5585-4F33-9BC2-1F9E0BDCA17F}.Install|Any CPU.ActiveCfg = Release
+		{E9943210-5585-4F33-9BC2-1F9E0BDCA17F}.Release|Any CPU.ActiveCfg = Release
+		{39396008-2DEB-49D0-AB65-95F1F4BC995D}.Debug|Any CPU.ActiveCfg = Debug
+		{39396008-2DEB-49D0-AB65-95F1F4BC995D}.Install|Any CPU.ActiveCfg = Release
+		{39396008-2DEB-49D0-AB65-95F1F4BC995D}.Release|Any CPU.ActiveCfg = Release
+		{04ACB4B1-DEBF-447A-8C72-2FCE39D94AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04ACB4B1-DEBF-447A-8C72-2FCE39D94AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04ACB4B1-DEBF-447A-8C72-2FCE39D94AD2}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{04ACB4B1-DEBF-447A-8C72-2FCE39D94AD2}.Install|Any CPU.Build.0 = Release|Any CPU
+		{04ACB4B1-DEBF-447A-8C72-2FCE39D94AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04ACB4B1-DEBF-447A-8C72-2FCE39D94AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F006BBF-528D-4969-BC98-497683C46617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F006BBF-528D-4969-BC98-497683C46617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F006BBF-528D-4969-BC98-497683C46617}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{2F006BBF-528D-4969-BC98-497683C46617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC72043-1B27-46FD-90A7-964378BE1247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC72043-1B27-46FD-90A7-964378BE1247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC72043-1B27-46FD-90A7-964378BE1247}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC72043-1B27-46FD-90A7-964378BE1247}.Install|Any CPU.Build.0 = Release|Any CPU
+		{6FC72043-1B27-46FD-90A7-964378BE1247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC72043-1B27-46FD-90A7-964378BE1247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F185EC-D6BA-4FE8-8DD2-F4C44BAE2906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F185EC-D6BA-4FE8-8DD2-F4C44BAE2906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F185EC-D6BA-4FE8-8DD2-F4C44BAE2906}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F185EC-D6BA-4FE8-8DD2-F4C44BAE2906}.Install|Any CPU.Build.0 = Release|Any CPU
+		{B8F185EC-D6BA-4FE8-8DD2-F4C44BAE2906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F185EC-D6BA-4FE8-8DD2-F4C44BAE2906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0281183D-6EEC-46DC-8EC4-F7F236250D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0281183D-6EEC-46DC-8EC4-F7F236250D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0281183D-6EEC-46DC-8EC4-F7F236250D67}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{0281183D-6EEC-46DC-8EC4-F7F236250D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE038B9-017F-4CBE-90F6-3E2D16FB0C10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CE038B9-017F-4CBE-90F6-3E2D16FB0C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CE038B9-017F-4CBE-90F6-3E2D16FB0C10}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE038B9-017F-4CBE-90F6-3E2D16FB0C10}.Install|Any CPU.Build.0 = Release|Any CPU
+		{8CE038B9-017F-4CBE-90F6-3E2D16FB0C10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE038B9-017F-4CBE-90F6-3E2D16FB0C10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4E6D475-4AF8-4F77-B468-FE5DF2C8B9A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4E6D475-4AF8-4F77-B468-FE5DF2C8B9A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4E6D475-4AF8-4F77-B468-FE5DF2C8B9A4}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{D4E6D475-4AF8-4F77-B468-FE5DF2C8B9A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C78890E-2C84-4CB6-8BF0-F38532E78D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C78890E-2C84-4CB6-8BF0-F38532E78D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C78890E-2C84-4CB6-8BF0-F38532E78D45}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{7C78890E-2C84-4CB6-8BF0-F38532E78D45}.Install|Any CPU.Build.0 = Release|Any CPU
+		{7C78890E-2C84-4CB6-8BF0-F38532E78D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C78890E-2C84-4CB6-8BF0-F38532E78D45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FBC5C82-E2C7-4880-9DF1-F858E8E6354F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FBC5C82-E2C7-4880-9DF1-F858E8E6354F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FBC5C82-E2C7-4880-9DF1-F858E8E6354F}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{0FBC5C82-E2C7-4880-9DF1-F858E8E6354F}.Install|Any CPU.Build.0 = Release|Any CPU
+		{0FBC5C82-E2C7-4880-9DF1-F858E8E6354F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FBC5C82-E2C7-4880-9DF1-F858E8E6354F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{159D3908-A3CE-4363-8FAA-35F8E3E5C71F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{159D3908-A3CE-4363-8FAA-35F8E3E5C71F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{159D3908-A3CE-4363-8FAA-35F8E3E5C71F}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{159D3908-A3CE-4363-8FAA-35F8E3E5C71F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F40C6748-0838-4F0D-B212-CA87C66CD5C7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F40C6748-0838-4F0D-B212-CA87C66CD5C7}.Debug|Any CPU.Build.0 = Debug|x86
+		{F40C6748-0838-4F0D-B212-CA87C66CD5C7}.Install|Any CPU.ActiveCfg = Release|x86
+		{F40C6748-0838-4F0D-B212-CA87C66CD5C7}.Release|Any CPU.ActiveCfg = Release|x86
+		{5DAE6B75-09EB-4E80-B578-97ACE3CB9A72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DAE6B75-09EB-4E80-B578-97ACE3CB9A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DAE6B75-09EB-4E80-B578-97ACE3CB9A72}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{5DAE6B75-09EB-4E80-B578-97ACE3CB9A72}.Install|Any CPU.Build.0 = Release|Any CPU
+		{5DAE6B75-09EB-4E80-B578-97ACE3CB9A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DAE6B75-09EB-4E80-B578-97ACE3CB9A72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC513725-F000-4B46-B2FE-13BA336161F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC513725-F000-4B46-B2FE-13BA336161F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC513725-F000-4B46-B2FE-13BA336161F7}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{EC513725-F000-4B46-B2FE-13BA336161F7}.Install|Any CPU.Build.0 = Release|Any CPU
+		{EC513725-F000-4B46-B2FE-13BA336161F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC513725-F000-4B46-B2FE-13BA336161F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8E0DB12-61A8-476A-996E-164003A392CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E0DB12-61A8-476A-996E-164003A392CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E0DB12-61A8-476A-996E-164003A392CD}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E0DB12-61A8-476A-996E-164003A392CD}.Install|Any CPU.Build.0 = Release|Any CPU
+		{D8E0DB12-61A8-476A-996E-164003A392CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E0DB12-61A8-476A-996E-164003A392CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D203D26B-5A7A-47B5-8AE2-C81D28B7312C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D203D26B-5A7A-47B5-8AE2-C81D28B7312C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D203D26B-5A7A-47B5-8AE2-C81D28B7312C}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{D203D26B-5A7A-47B5-8AE2-C81D28B7312C}.Install|Any CPU.Build.0 = Release|Any CPU
+		{D203D26B-5A7A-47B5-8AE2-C81D28B7312C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D203D26B-5A7A-47B5-8AE2-C81D28B7312C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E829E349-CD4A-4E44-A867-513ED6A4E895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E829E349-CD4A-4E44-A867-513ED6A4E895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E829E349-CD4A-4E44-A867-513ED6A4E895}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{E829E349-CD4A-4E44-A867-513ED6A4E895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4943F405-E422-4E49-8707-3070AA86DB33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4943F405-E422-4E49-8707-3070AA86DB33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4943F405-E422-4E49-8707-3070AA86DB33}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{4943F405-E422-4E49-8707-3070AA86DB33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A57087-45A3-4553-BC0E-56B1ACC7DE0D}.Debug|Any CPU.ActiveCfg = Debug
+		{98A57087-45A3-4553-BC0E-56B1ACC7DE0D}.Install|Any CPU.ActiveCfg = Release
+		{98A57087-45A3-4553-BC0E-56B1ACC7DE0D}.Release|Any CPU.ActiveCfg = Release
+		{8B63B962-DA9B-448E-BF92-52127D7B37A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B63B962-DA9B-448E-BF92-52127D7B37A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B63B962-DA9B-448E-BF92-52127D7B37A1}.Install|Any CPU.ActiveCfg = Release|Any CPU
+		{8B63B962-DA9B-448E-BF92-52127D7B37A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B7D798D-EDE6-491B-9903-0FE5932194C6} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{5D5FE159-4174-41B3-8F0B-8E1DE9FDA837} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{243903D1-E9A8-48BE-8C6B-0B6EA9DFAB45} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{1E425244-912E-4C6F-A313-E636311F34A6} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{F96005EE-CDA3-4635-9328-1FFFAA53DE0C} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{E8D41C66-0CB9-43BA-A7C5-6BB074824F65} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{5882B905-230A-4EA2-B4BE-81331C68804C} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{6A3007BE-808C-4570-B488-1892B85B0322} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{0D07DB8B-3A07-4FAE-9031-D45773679D32} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{EAAFA097-DC90-422D-B7F6-20B50BE2FCD9} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{04ACB4B1-DEBF-447A-8C72-2FCE39D94AD2} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{6FC72043-1B27-46FD-90A7-964378BE1247} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{B8F185EC-D6BA-4FE8-8DD2-F4C44BAE2906} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{8CE038B9-017F-4CBE-90F6-3E2D16FB0C10} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{7C78890E-2C84-4CB6-8BF0-F38532E78D45} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{0FBC5C82-E2C7-4880-9DF1-F858E8E6354F} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{5B3B138E-C5A9-44FC-8E56-0DAFCA19E734} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{DC6C7222-F22C-4B5F-9DF8-EC2432CF8D9A} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{FDB0C49E-8B87-4FBE-AB8A-0574104AEDC7} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{D203D26B-5A7A-47B5-8AE2-C81D28B7312C} = {D6365113-FD76-4531-B80D-449313B9440F}
+		{BA4F83B4-616A-429B-90D9-A0D77B9C0726} = {2B7D798D-EDE6-491B-9903-0FE5932194C6}
+		{970F7141-E499-4151-B789-DDB3988F560F} = {2B7D798D-EDE6-491B-9903-0FE5932194C6}
+		{2BB84C23-BD5D-429C-B108-D12C979DC3DC} = {2B7D798D-EDE6-491B-9903-0FE5932194C6}
+		{9629F6D6-475E-4F26-8269-A41491164105} = {2B7D798D-EDE6-491B-9903-0FE5932194C6}
+		{2F006BBF-528D-4969-BC98-497683C46617} = {2B7D798D-EDE6-491B-9903-0FE5932194C6}
+		{0281183D-6EEC-46DC-8EC4-F7F236250D67} = {2B7D798D-EDE6-491B-9903-0FE5932194C6}
+		{D4E6D475-4AF8-4F77-B468-FE5DF2C8B9A4} = {2B7D798D-EDE6-491B-9903-0FE5932194C6}
+		{159D3908-A3CE-4363-8FAA-35F8E3E5C71F} = {2B7D798D-EDE6-491B-9903-0FE5932194C6}
+		{E829E349-CD4A-4E44-A867-513ED6A4E895} = {2B7D798D-EDE6-491B-9903-0FE5932194C6}
+		{4943F405-E422-4E49-8707-3070AA86DB33} = {2B7D798D-EDE6-491B-9903-0FE5932194C6}
+		{B05A7050-6411-412D-9C7D-808473CA5313} = {5D5FE159-4174-41B3-8F0B-8E1DE9FDA837}
+		{9D30272E-5C53-4E80-86B1-74D5DF16F20E} = {243903D1-E9A8-48BE-8C6B-0B6EA9DFAB45}
+		{5DAE6B75-09EB-4E80-B578-97ACE3CB9A72} = {243903D1-E9A8-48BE-8C6B-0B6EA9DFAB45}
+		{4C512350-DB4A-4F20-B06B-9DE9F51A4C45} = {DC6C7222-F22C-4B5F-9DF8-EC2432CF8D9A}
+		{F40C6748-0838-4F0D-B212-CA87C66CD5C7} = {4C512350-DB4A-4F20-B06B-9DE9F51A4C45}
+		{EC513725-F000-4B46-B2FE-13BA336161F7} = {FDB0C49E-8B87-4FBE-AB8A-0574104AEDC7}
+		{D8E0DB12-61A8-476A-996E-164003A392CD} = {FDB0C49E-8B87-4FBE-AB8A-0574104AEDC7}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,242 @@
+<html>
+<head>
+
+<title>Input Box</title>
+
+<link rel="stylesheet" type="text/css" href="../../style/application.css" >
+
+<script language="javascript" src="../sharedscripts/icwfunctions.js"></script>
+<script language="javascript" src="../sharedscripts/controls.js"></script>
+<script language="javascript">
+//===========================================================================
+//
+//								InputBox.htm
+//
+//	Provides a message box that allows text input, with choice of 2 buttons, 
+//  and masked inputs.
+//
+//  Return value user entered if they press then button with returnvalue of y
+//  else return null.
+//
+//	Usage:
+//		Called using the InputBox() function in icwFunctions.js, do not call 
+//      this page directly.
+//
+//		Expects window.dialogArguements as follows:
+//			window.dialogArguements.title
+//			window.dialogArguements.text
+//          window.dialogArguements.defaultValue
+//			window.dialogArguements.button1      // {buttontext},{returnvalue}
+//			window.dialogArguements.button2      // {buttontext},{returnvalue} (or undefined if not required)
+//          window.dialogArguements.mask
+//          window.dialogArguements.required
+//
+//      mask see controls.js for full range of valid chars normally one of
+//			INTEGER
+//			NUMBERS
+//			LETTERS
+//			ANY
+//			DATE[:dateformat]
+//			TIME
+//
+//		button1 must always be present; there can be no more than 2 buttons specified.
+//
+//
+//	Modification History:
+//	07Jan09 XN  Written
+//  03Jul09 XN  Improved by allow default input box to cope with ; and = values.
+//              and return null if user clicks any button without a return value of 'y'.
+//  21Jan15 XN  Added required option 26734        
+//===========================================================================
+
+var returnValueHasBeenSet = false;  // If return value has been set
+
+function Initialise() 
+{
+    // Initalise the form parsing the window.dialogArguements
+
+    var intCount    = new Number();
+    var astrItem    = new Array();
+    var astrButton  = new Array();
+    var strText     = new String();
+    var strAccessKey= new String();
+    var intItems    = new Number();
+
+	window.returnValue = '';
+
+    // Script the specified values onto the page
+	var objArgs = window.dialogArguments;
+	
+	txtTitle.innerHTML = objArgs.title;
+    divText.innerHTML  = objArgs.text;
+    txtInput.setAttribute('validchars', objArgs.mask);
+    txtInput.value     = ToHTML(objArgs.defaultValue, true);
+    
+    // Read in info about button 1
+    if (objArgs.button1 != undefined)
+    {
+	    astrButton = objArgs.button1.split(',');
+	    strText = astrButton[0];
+	    strAccessKey = strText.substring(0,1);
+	    cmdButton[0].accessKey = strAccessKey;
+    	
+	    void cmdButton[0].setAttribute ('returnVal', astrButton[1]);
+	    cmdButton[0].innerHTML = UnderlineFirst(strText);
+    }
+    
+    // Read in info about button 2
+    if (objArgs.button2 != undefined)
+    {
+	    astrButton = objArgs.button2.split(',');
+	    strText = astrButton[0];
+	    strAccessKey = strText.substring(0,1);
+    				
+	    cmdButton[1].accessKey = strAccessKey;
+	    void cmdButton[1].setAttribute ('returnVal', astrButton[1]);
+	    cmdButton[1].innerHTML = UnderlineFirst(strText);
+    }
+
+    // Hide buttons which have not been used
+	for (intCount=0; intCount < 2; intCount ++) 
+	{
+		if (cmdButton[intCount].innerHTML == '')
+			cmdButton[intCount].style.display='none';
+	}	
+	
+    // Expand the window to fit the text
+	var intHeight = divText.offsetHeight + tdTitle.offsetHeight + tblButtons.offsetHeight + 50;
+	if (intHeight < 200) intHeight = 200;
+	if (intHeight > screen.availableHeight) intHeight = screen.availableHeight;
+	window.dialogHeight = intHeight + 'px';
+
+}
+
+//===========================================================================
+
+function UnderlineFirst(strText) 
+{
+	return ('<u>' + strText.substring(0,1) + '</u>' + strText.substring(1));
+}
+
+//===========================================================================
+
+function UnLoad()
+{
+    if (!returnValueHasBeenSet)
+        window.returnValue = null;
+}
+
+//===========================================================================
+
+function CancelFrm()
+{
+    // Called when user closes the input box without saving
+    window.returnValue    = null;  
+    returnValueHasBeenSet = true;
+    window.close();
+}
+
+//===========================================================================
+
+function SaveFrm()
+{
+    // Called when user closes the input box wishing to save
+    if (window.dialogArguments.required && trim(txtInput.value) == '') 
+    {
+        errorMessage.innerHTML = "Please enter a value";    // 21Jan15 XN  26734
+    }
+    else 
+    {
+        window.returnValue = txtInput.value;
+        returnValueHasBeenSet = true;
+        window.close();
+    }
+}
+
+//===========================================================================
+
+function CloseWindow(objButton) 
+{
+    // If window is closed with 'Ok', or 'Yes', then returnValue is set to input box text
+    // anything else will set returnValue to blank string.
+    var button = objButton.getAttribute('returnVal').toLowerCase();
+
+    switch (button)
+    {
+    case "y":
+        SaveFrm();  
+        break;                
+    default:  
+        CancelFrm();
+        break;        
+    }
+}
+
+//===========================================================================
+
+function body_onkeydown()
+{
+    // Handle escape key press.  
+    // Close window and return "cancelled"
+    
+	if (event.keyCode==27)
+	    CancelFrm(); 
+	else if (event.keyCode==13)
+	    SaveFrm(); 
+	else 
+	{
+		for (i=0; i<2; i++)
+		{
+			//If this button is in use, and its accesskey is the same as the key just pressed, click it
+			if ( (cmdButton[i].innerHTML != '') && (cmdButton[i].accessKey.toLowerCase() == String.fromCharCode(event.keyCode).toLowerCase()) && event.altKey )
+				cmdButton[i].click();
+		}
+	}
+}
+</script>
+
+<style>
+
+div
+{
+	overflow-y:auto;
+}
+
+</style>
+
+</head>
+<body onload="Initialise()" onkeydown="body_onkeydown()" onunload="UnLoad()">
+
+<table style="height:100%; width:100%" border="0">
+	<tr><td id="tdTitle"><h3 align="center" id="txtTitle"></h3></td></tr>
+	<tr>
+		<td id="tdText">
+			<div id="divText" style="padding-left:10px;" />
+		</td>
+	</tr>
+	<tr>
+        <td>
+            <input style="margin-left:10px;height:20px;width:100%" type="text" id="txtInput" name="txtInput" validchars="ANY" onkeypress="MaskInput(this);" onpaste="MaskInput(this);" />
+        </td>
+    </tr>
+	<tr>
+        <td>
+            <div id="errorMessage" style="text-align:center;color:#FF0000;font-style:italic;">&nbsp;</div>
+        </td>
+    </tr>
+	<tr>
+		<td align="center">
+			<table cellpadding="2" cellspacing="0" id="tblButtons">
+				<tr>
+					<td>
+						<button id="cmdButton" onclick="CloseWindow(this)" style="border: thin inset #000000" />
+					</td>
+					<td>
+						<button id="cmdButton" onclick="CloseWindow(this)" />
+					</td>
+				</tr>			
+			</table>
+		</td>	
+	</tr>
+</table>
+</body>

@@ -1,0 +1,51 @@
+.TimeLineBasic
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial;
+    POSITION: absolute
+}
+.TimeObject
+{
+    FONT-SIZE: 0pt;
+    Z-INDEX: 1;
+    CURSOR: hand;
+    FONT-FAMILY: Arial;
+    POSITION: absolute;
+    BACKGROUND-COLOR: navy
+}
+.Reflex
+{
+    BORDER-BOTTOM: red 1px solid;
+    FONT-FAMILY: Arial;
+    POSITION: absolute;
+    BACKGROUND-COLOR: transparent
+}
+.Direction
+{
+    FONT-SIZE: 1pt;
+    FONT-FAMILY: Arial;
+    POSITION: absolute;
+    BACKGROUND-COLOR: red
+}
+.DateLabel
+{
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: Arial
+}
+.DateLabelInput
+{
+    BORDER-RIGHT: gray 1px solid;
+    BORDER-TOP: gray 1px solid;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: gray 1px solid;
+    CURSOR: hand;
+    COLOR: black;
+    BORDER-BOTTOM: gray 1px solid;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: white
+}
+.histogramtimeaxis
+{
+    BACKGROUND-COLOR: #4682b4
+}

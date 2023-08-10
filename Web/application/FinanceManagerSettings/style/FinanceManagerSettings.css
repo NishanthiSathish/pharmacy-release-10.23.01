@@ -1,0 +1,99 @@
+﻿body
+{
+    background: white;
+}
+/* Styles for the settings page */
+.FinanceManagerSettings
+{
+    background: white;
+}
+
+.FinanceManagerSettings .menu 
+{
+    background: #EFEFF7; 
+    border-right-style: inset; 
+    border-right-width: thick;    
+}
+
+.FinanceManagerSettings .menuHeader
+{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 22px;
+    text-align: left;
+    color: #73617B;
+}
+
+.FinanceManagerSettings .menuItem
+{
+    vertical-align: middle;
+    text-align: right;
+    font-size: 18px;
+    background: #EFEFF7; 
+    height: 35px; 
+    width: 100%;
+    border: none;
+    color: #426DCE;
+    padding-right: 10px;
+    cursor:hand;
+}
+
+.FinanceManagerSettings .menuItemSelected
+{
+    background: #BDCFEF;
+    color: black;
+}
+
+
+.FinanceManagerSettings .Section
+{
+    width: 95%;
+    border-bottom: solid 2px #DDDDDD;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}        
+
+.FinanceManagerSettings .SectionHeader
+{
+    display: inline-block;
+    width: 100px;
+    padding-left: 10px;
+    font-weight: bold;
+    vertical-align: top;
+}        
+
+.FinanceManagerSettings .SectionControls
+{
+    display: inline-block;
+}        
+
+.FinanceManagerSettings input[readonly]
+{
+    border: none;
+}        
+
+.FinanceManagerSettings input[disabled="disabled"]
+{
+    color: black;
+    border: none;
+}        
+
+.FinanceManagerSettings select[disabled="disabled"]
+{
+    color: black;
+    border: none;
+} 
+
+.FinanceManagerSettings .ControlLabel
+{
+    display: inline-block;
+    width: 200px;
+}
+
+.FinanceManagerSettings .EditControlLabel
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 150px;            
+}   
+

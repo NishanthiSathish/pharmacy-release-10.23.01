@@ -1,0 +1,27 @@
+@echo off
+setlocal EnableDelayedExpansion
+
+set "replace=	<add key="PrintControlObjectId" value="2ACA46A2-FA7B-304F-BA7D-0FFED1B7BBBC" />"
+rem Get the number of the target line minus one
+
+for /F "delims=:" %%a in ('findstr /I /N "PrintControlObjectId" INSTALLDIR\Web.config') do set /A lines=%%a-1
+rem Redirect the input file to read it via SET /P
+< INSTALLDIR\Web.config (
+
+   rem Copy lines before the target one
+   for /L %%i in (1,1,%lines%) do (
+      set "line="
+      set /P "line="
+      echo/!line!
+   )
+
+   rem Read the target line and replace it
+   set /P "line="
+   echo !replace!
+
+   rem Copy the rest of lines
+   findstr "^"
+
+rem Store the output in a temporary file
+) > INSTALLDIR\TempWeb.config
+move /Y INSTALLDIR\TempWeb.config INSTALLDIR\Web.config

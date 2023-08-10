@@ -1,0 +1,35 @@
+﻿/*
+
+    Style sheet for the editlist
+
+*/
+.ScrollTableContainerIE table
+{
+    border-right: 1px solid #B9DDA4;
+    border-top: 1px solid #B9DDA4;
+}
+    
+.ScrollTableContainerIE td, .ScrollTableContainerIE th
+{
+    background: white;
+    border-left: 2px solid #B9DDA4;
+    border-bottom: 1px solid #B9DDA4;
+}
+
+.ScrollTableContainerIE td.labelCell, .ScrollTableContainerIE th.labelCell
+{
+    border-left: none;
+    border-bottom: 1px solid #B9DDA4;
+    white-space: nowrap;
+}
+    
+.ScrollTableContainerIE .selected
+{
+    background: #FFE792;
+}
+
+.ScrollTableContainerIE textarea 
+{
+   font-family: inherit;
+   font-size: inherit;
+}

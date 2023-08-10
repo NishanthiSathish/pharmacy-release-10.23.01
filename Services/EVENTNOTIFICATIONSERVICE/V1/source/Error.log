@@ -1,0 +1,1390 @@
+<Error InstanceName="TEST" Occurred="2004-10-15T11:58:27"><Message>&lt;AuditLog AuditLogID=&quot;173428&quot; Table=&quot;AllergyReaction&quot; TableID=&quot;420&quot; PrimaryKey=&quot;305&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;9&quot; CreatedDate=&quot;2004-10-15T10:29:29.423&quot; Terminal=&quot;System&quot; LocationID=&quot;0&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AllergyReaction NoteTypeID=&amp;quot;2&amp;quot; TableID=&amp;quot;420&amp;quot; EntityID=&amp;quot;9&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;AllergyReaction&amp;quot; EpisodeID=&amp;quot;5594&amp;quot; NoteID_Allergy=&amp;quot;303&amp;quot; SeverityID=&amp;quot;3&amp;quot; OrderCatalogueID_DssTerm=&amp;quot;735&amp;quot; Detail=&amp;quot;rash&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="76" ErrSource="Occured:      2004/10/15 11:58:18
+Number:       76
+Source:       EventNotifierV1
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000076
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 997
+ThreadID:     2072
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  modFileHandling.WriteMessageToFile()
+    ExtraInfo: Opening file &apos;c:\pasmsgs\live\000001.HL7&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">Path not found</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2004-10-15T11:58:42"><Message>&lt;AuditLog AuditLogID=&quot;173428&quot; Table=&quot;AllergyReaction&quot; TableID=&quot;420&quot; PrimaryKey=&quot;305&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;9&quot; CreatedDate=&quot;2004-10-15T10:29:29.423&quot; Terminal=&quot;System&quot; LocationID=&quot;0&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AllergyReaction NoteTypeID=&amp;quot;2&amp;quot; TableID=&amp;quot;420&amp;quot; EntityID=&amp;quot;9&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;AllergyReaction&amp;quot; EpisodeID=&amp;quot;5594&amp;quot; NoteID_Allergy=&amp;quot;303&amp;quot; SeverityID=&amp;quot;3&amp;quot; OrderCatalogueID_DssTerm=&amp;quot;735&amp;quot; Detail=&amp;quot;rash&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="76" ErrSource="Occured:      2004/10/15 11:58:42
+Number:       76
+Source:       EventNotifierV1
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000076
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 997
+ThreadID:     2072
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  modFileHandling.WriteMessageToFile()
+    ExtraInfo: Opening file &apos;c:\pasmsgs\live\000002*.HL7&apos;
+  modFileHandling.SaveMessageToFile()
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">Path not found</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2004-10-15T11:58:44"><Message>&lt;AuditLog AuditLogID=&quot;173428&quot; Table=&quot;AllergyReaction&quot; TableID=&quot;420&quot; PrimaryKey=&quot;305&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;9&quot; CreatedDate=&quot;2004-10-15T10:29:29.423&quot; Terminal=&quot;System&quot; LocationID=&quot;0&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AllergyReaction NoteTypeID=&amp;quot;2&amp;quot; TableID=&amp;quot;420&amp;quot; EntityID=&amp;quot;9&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;AllergyReaction&amp;quot; EpisodeID=&amp;quot;5594&amp;quot; NoteID_Allergy=&amp;quot;303&amp;quot; SeverityID=&amp;quot;3&amp;quot; OrderCatalogueID_DssTerm=&amp;quot;735&amp;quot; Detail=&amp;quot;rash&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="76" ErrSource="Occured:      2004/10/15 11:58:44
+Number:       76
+Source:       EventNotifierV1
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000076
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 997
+ThreadID:     2072
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  modFileHandling.WriteMessageToFile()
+    ExtraInfo: Opening file &apos;c:\pasmsgs\live\000003*.HL7&apos;
+  modFileHandling.SaveMessageToFile()
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">Path not found</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2004-10-15T12:06:18"><Message></Message><ErrMessage ErrNum="-2147121501" ErrSource="Occured:      2004/10/15 12:05:54
+Number:       -2147121501
+Source:       RaiseError
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.222
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 997
+ThreadID:     2724
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Transport.ExecuteDeleteSP(1060, InterfaceRegister, 1)
+  frmICWMsgProcessorV1..GetNextRegisteredAuditLogEntry()
+  frmICWMsgProcessorV1..LookForMessages()
+">No transaction set for method that requires a transaction. Check COM+ components are registered in COM+. Check that the VB MTSTransactionMode properties on the calling classes are set RequiresTransaction. Classes that do any database writing, or call any other class that do database writing, MUST be set to RequiresTransaction. Classes that only read from the database, MUST be set to UsesTransaction providing they do not call any methods that perform database writes. </ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2004-10-15T12:07:17"><Message>&lt;AuditLog AuditLogID=&quot;173428&quot; Table=&quot;AllergyReaction&quot; TableID=&quot;420&quot; PrimaryKey=&quot;305&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;9&quot; CreatedDate=&quot;2004-10-15T10:29:29.423&quot; Terminal=&quot;System&quot; LocationID=&quot;0&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AllergyReaction NoteTypeID=&amp;quot;2&amp;quot; TableID=&amp;quot;420&amp;quot; EntityID=&amp;quot;9&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;AllergyReaction&amp;quot; EpisodeID=&amp;quot;5594&amp;quot; NoteID_Allergy=&amp;quot;303&amp;quot; SeverityID=&amp;quot;3&amp;quot; OrderCatalogueID_DssTerm=&amp;quot;735&amp;quot; Detail=&amp;quot;rash&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="76" ErrSource="Occured:      2004/10/15 12:07:17
+Number:       76
+Source:       EventNotifierV1
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000076
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     2072
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  modFileHandling.WriteMessageToFile()
+    ExtraInfo: Opening file &apos;c:\pasmsgs\live\000005*.HL7&apos;
+  modFileHandling.SaveMessageToFile()
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">Path not found</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2004-10-15T12:07:20"><Message>&lt;AuditLog AuditLogID=&quot;173428&quot; Table=&quot;AllergyReaction&quot; TableID=&quot;420&quot; PrimaryKey=&quot;305&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;9&quot; CreatedDate=&quot;2004-10-15T10:29:29.423&quot; Terminal=&quot;System&quot; LocationID=&quot;0&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AllergyReaction NoteTypeID=&amp;quot;2&amp;quot; TableID=&amp;quot;420&amp;quot; EntityID=&amp;quot;9&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;AllergyReaction&amp;quot; EpisodeID=&amp;quot;5594&amp;quot; NoteID_Allergy=&amp;quot;303&amp;quot; SeverityID=&amp;quot;3&amp;quot; OrderCatalogueID_DssTerm=&amp;quot;735&amp;quot; Detail=&amp;quot;rash&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="76" ErrSource="Occured:      2004/10/15 12:07:20
+Number:       76
+Source:       EventNotifierV1
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000076
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 997
+ThreadID:     2072
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  modFileHandling.WriteMessageToFile()
+    ExtraInfo: Opening file &apos;c:\pasmsgs\live\000006*.HL7&apos;
+  modFileHandling.SaveMessageToFile()
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">Path not found</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2004-10-15T12:07:22"><Message>True</Message><ErrMessage ErrNum="-2147221503" ErrSource="LookForMessages">&lt;BrokenRules&gt;&lt;Rule Code=&quot;91&quot; Text=&quot;Object variable or With block variable not set&quot; /&gt;&lt;/BrokenRules&gt;</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2004-10-15T12:07:23"><Message>True</Message><ErrMessage ErrNum="-2147221503" ErrSource="LookForMessages">&lt;BrokenRules&gt;&lt;Rule Code=&quot;91&quot; Text=&quot;Object variable or With block variable not set&quot; /&gt;&lt;/BrokenRules&gt;</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2004-10-15T12:07:23"><Message>True</Message><ErrMessage ErrNum="-2147221503" ErrSource="LookForMessages">&lt;BrokenRules&gt;&lt;Rule Code=&quot;91&quot; Text=&quot;Object variable or With block variable not set&quot; /&gt;&lt;/BrokenRules&gt;</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2004-10-15T12:07:24"><Message>True</Message><ErrMessage ErrNum="-2147221503" ErrSource="LookForMessages">&lt;BrokenRules&gt;&lt;Rule Code=&quot;91&quot; Text=&quot;Object variable or With block variable not set&quot; /&gt;&lt;/BrokenRules&gt;</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2004-10-15T12:07:24"><Message>True</Message><ErrMessage ErrNum="-2147221503" ErrSource="LookForMessages">&lt;BrokenRules&gt;&lt;Rule Code=&quot;91&quot; Text=&quot;Object variable or With block variable not set&quot; /&gt;&lt;/BrokenRules&gt;</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2004-10-15T12:07:25"><Message>True</Message><ErrMessage ErrNum="-2147221503" ErrSource="LookForMessages">&lt;BrokenRules&gt;&lt;Rule Code=&quot;91&quot; Text=&quot;Object variable or With block variable not set&quot; /&gt;&lt;/BrokenRules&gt;</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2004-10-15T12:07:29"><Message>True</Message><ErrMessage ErrNum="-2147221503" ErrSource="LookForMessages">&lt;BrokenRules&gt;&lt;Rule Code=&quot;91&quot; Text=&quot;Object variable or With block variable not set&quot; /&gt;&lt;/BrokenRules&gt;</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2004-10-15T12:07:47"><Message>True</Message><ErrMessage ErrNum="-2147221503" ErrSource="LookForMessages">&lt;BrokenRules&gt;&lt;Rule Code=&quot;91&quot; Text=&quot;Object variable or With block variable not set&quot; /&gt;&lt;/BrokenRules&gt;</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-01-10T13:11:20"><Message></Message><ErrMessage ErrNum="429" ErrSource="Occured:      2005/01/10 13:11:20
+Number:       429
+Source:       EventNotifierV1
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000429
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     964
+UserContext:  eddie.critchlow
+
+Callstack:
+  frmICWMsgProcessorV1..GetNextRegisteredAuditLogEntry()
+    ExtraInfo: Creating the transport layer object using &apos;.Transport&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">ActiveX component can&apos;t create object</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-01-10T13:12:39"><Message></Message><ErrMessage ErrNum="429" ErrSource="Occured:      2005/01/10 13:12:39
+Number:       429
+Source:       EventNotifierV1
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000429
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     964
+UserContext:  eddie.critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Creating object &apos;.Entity&apos; - Returned XML = &apos;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">ActiveX component can&apos;t create object</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-06T10:43:51"><Message></Message><ErrMessage ErrNum="91" ErrSource="Occured:      2005/07/06 10:43:51
+Number:       91
+Source:       EventNotifierV1
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000091
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     2464
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;-2147467259&quot; Source=&quot;Occured:      2005/07/06 10:43:51
+Number:       -2147467259
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2808
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=eddie-critchlow;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: [DBNETLIB][ConnectionOpen (Connect()).]SQL Server does not exist or access denied.
+HelpContext: 0
+HelpFile:    
+NativeError: 17
+Number:      -2147467259
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    08001
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()
+&quot;&gt;[DBNETLIB][ConnectionOpen (Connect()).]SQL Server does not exist or access denied.&lt;/Error&gt;&lt;/Return&gt;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">Object variable or With block variable not set</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-06T10:49:59"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/06 10:49:53
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000091
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     2464
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;-2147467259&quot; Source=&quot;Occured:      2005/07/06 10:48:31
+Number:       -2147467259
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2484
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=eddie-critchlow;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: [DBNETLIB][ConnectionOpen (Connect()).]SQL Server does not exist or access denied.
+HelpContext: 0
+HelpFile:    
+NativeError: 17
+Number:      -2147467259
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    08001
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()
+&quot;&gt;[DBNETLIB][ConnectionOpen (Connect()).]SQL Server does not exist or access denied.&lt;/Error&gt;&lt;/Return&gt;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">-2147467259 - Occured:      2005/07/06 10:48:31
+Number:       -2147467259
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2484
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=eddie-critchlow;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: [DBNETLIB][ConnectionOpen (Connect()).]SQL Server does not exist or access denied.
+HelpContext: 0
+HelpFile:    
+NativeError: 17
+Number:      -2147467259
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    08001
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-06T11:03:53"><Message></Message><ErrMessage ErrNum="91" ErrSource="Occured:      2005/07/06 11:03:53
+Number:       91
+Source:       EventNotifierV1
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000091
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     2464
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;BrokenRules&gt;&lt;Rule Code=&quot;InvalidLogin&quot; Text=&quot;User name or password incorrect.&quot; /&gt;&lt;/BrokenRules&gt;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">Object variable or With block variable not set</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-06T11:19:10"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/06 11:19:09
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     2464
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;InvalidLogin&quot; Source=&quot;&quot;&gt;User name or password incorrect.&lt;/Error&gt;&lt;/Return&gt;
+&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">InvalidLogin - </ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-06T11:21:16"><Message></Message><ErrMessage ErrNum="91" ErrSource="Occured:      2005/07/06 11:21:16
+Number:       91
+Source:       EventNotifierV1
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000091
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     2464
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  frmICWMsgProcessorV1..LookForMessages()
+">Object variable or With block variable not set</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-06T11:39:18"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/06 11:39:17
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     2464
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;ExistingSession&quot; Source=&quot;&quot;&gt;User already logged in&lt;/Error&gt;&lt;/Return&gt;
+&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">ExistingSession - </ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-06T11:48:37"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/06 11:48:37
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     536
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;-2147467259&quot; Source=&quot;Occured:      2005/07/06 11:48:34
+Number:       -2147467259
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2776
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=eddie-critchlow;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: [DBNETLIB][ConnectionOpen (Connect()).]SQL Server does not exist or access denied.
+HelpContext: 0
+HelpFile:    
+NativeError: 17
+Number:      -2147467259
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    08001
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()
+&quot;&gt;[DBNETLIB][ConnectionOpen (Connect()).]SQL Server does not exist or access denied.&lt;/Error&gt;&lt;/Return&gt;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">-2147467259 - Occured:      2005/07/06 11:48:34
+Number:       -2147467259
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2776
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=eddie-critchlow;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: [DBNETLIB][ConnectionOpen (Connect()).]SQL Server does not exist or access denied.
+HelpContext: 0
+HelpFile:    
+NativeError: 17
+Number:      -2147467259
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    08001
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-06T11:49:35"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/06 11:49:35
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     536
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;InvalidLogin&quot; Source=&quot;&quot;&gt;User name or password incorrect.&lt;/Error&gt;&lt;/Return&gt;
+&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">InvalidLogin - </ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-07T16:30:20"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/07 16:30:20
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     2664
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;-2147168246&quot; Source=&quot;Occured:      2005/07/07 16:30:19
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2116
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()
+&quot;&gt;New transaction cannot enlist in the specified transaction coordinator. &lt;/Error&gt;&lt;/Return&gt;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">-2147168246 - Occured:      2005/07/07 16:30:19
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2116
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-07T16:33:05"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/07 16:33:05
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     2664
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;-2147168246&quot; Source=&quot;Occured:      2005/07/07 16:33:05
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2760
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()
+&quot;&gt;New transaction cannot enlist in the specified transaction coordinator. &lt;/Error&gt;&lt;/Return&gt;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">-2147168246 - Occured:      2005/07/07 16:33:05
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2760
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-07T17:15:36"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/07 17:15:36
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     1620
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;-2147168246&quot; Source=&quot;Occured:      2005/07/07 17:15:36
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2596
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()
+&quot;&gt;New transaction cannot enlist in the specified transaction coordinator. &lt;/Error&gt;&lt;/Return&gt;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">-2147168246 - Occured:      2005/07/07 17:15:36
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2596
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-07T17:33:47"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/07 17:33:47
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     1620
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;-2147168246&quot; Source=&quot;Occured:      2005/07/07 17:33:47
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2592
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()
+&quot;&gt;New transaction cannot enlist in the specified transaction coordinator. &lt;/Error&gt;&lt;/Return&gt;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">-2147168246 - Occured:      2005/07/07 17:33:47
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2592
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-07T17:50:53"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/07 17:50:53
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     1620
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;-2147168246&quot; Source=&quot;Occured:      2005/07/07 17:50:53
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2588
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()
+&quot;&gt;New transaction cannot enlist in the specified transaction coordinator. &lt;/Error&gt;&lt;/Return&gt;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">-2147168246 - Occured:      2005/07/07 17:50:53
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2588
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-07T17:52:27"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/07 17:52:27
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     1620
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;-2147168246&quot; Source=&quot;Occured:      2005/07/07 17:52:27
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2584
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()
+&quot;&gt;New transaction cannot enlist in the specified transaction coordinator. &lt;/Error&gt;&lt;/Return&gt;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">-2147168246 - Occured:      2005/07/07 17:52:27
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2584
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-07T17:53:57"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/07 17:53:57
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     1620
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;-2147168246&quot; Source=&quot;Occured:      2005/07/07 17:53:57
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2580
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()
+&quot;&gt;New transaction cannot enlist in the specified transaction coordinator. &lt;/Error&gt;&lt;/Return&gt;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">-2147168246 - Occured:      2005/07/07 17:53:57
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2580
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T09:12:58"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/08 09:12:58
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     1128
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;-2147168246&quot; Source=&quot;Occured:      2005/07/08 09:12:57
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2608
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()
+&quot;&gt;New transaction cannot enlist in the specified transaction coordinator. &lt;/Error&gt;&lt;/Return&gt;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">-2147168246 - Occured:      2005/07/08 09:12:57
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2608
+UserContext:  Eddie.Critchlow
+
+ConnectionString:server=ascribesql;provider=sqloledb;uid=******;pwd=******;
+ADO Errors:
+
+Description: New transaction cannot enlist in the specified transaction coordinator. 
+HelpContext: 0
+HelpFile:    
+NativeError: 0
+Number:      -2147168246
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(-31486, pUserLogin, *Transport layer parameters withheld for security reasons*)  Security.LoginUser([parameters withheld for security reasons])
+  modInterfaceShared.InterfaceLogin()
+  Entity.Login()</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T09:13:27"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/08 09:13:27
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     1128
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;InvalidLogin&quot; Source=&quot;&quot;&gt;User name or password incorrect.&lt;/Error&gt;&lt;/Return&gt;
+&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">InvalidLogin - </ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T09:22:42"><Message></Message><ErrMessage ErrNum="-2147121501" ErrSource="Occured:      2005/07/08 09:22:42
+Number:       -2147121501
+Source:       RaiseError
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     1824
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Transport.ExecuteDeleteSP(275, InterfaceRegister, 1)
+  frmICWMsgProcessorV1..GetNextRegisteredAuditLogEntry()
+    ExtraInfo: Calling TRNRTL.Transport.ExecuteDeleteSp
+  frmICWMsgProcessorV1..LookForMessages()
+">No transaction set for method that requires a transaction. Check COM+ components are registered in COM+. Check that the VB MTSTransactionMode properties on the calling classes are set RequiresTransaction. Classes that do any database writing, or call any other class that do database writing, MUST be set to RequiresTransaction. Classes that only read from the database, MUST be set to UsesTransaction providing they do not call any methods that perform database writes. </ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T09:31:33"><Message>&lt;AuditLog AuditLogID=&quot;6336&quot; Table=&quot;AttachedNote&quot; TableID=&quot;294&quot; PrimaryKey=&quot;48&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;11199&quot; CreatedDate=&quot;2005-07-07T12:11:36.497&quot; Terminal=&quot;DSS 1&quot; LocationID=&quot;4&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AttachedNote NoteTypeID=&amp;quot;27&amp;quot; TableID=&amp;quot;294&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;Screened Note&amp;quot; Enabled=&amp;quot;1&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="-2147217887" ErrSource="Occured:      2005/07/08 09:24:01
+Number:       -2147217887
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2760
+UserContext:  Eddie.Critchlow
+
+ConnectionString:Provider=SQLOLEDB.1;Extended Properties=&quot;server;uid=******;pwd=******;database=v9-3-1_Pennine_live&quot;;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=EDDIE-CRITCHLOW;Use Encryption for Data=False;
+ADO Errors:
+
+Description: Could not find stored procedure &apos;pRequestLinkAttachedNoteXML&apos;.
+HelpContext: 0
+HelpFile:    
+NativeError: -2147217900
+Number:      265946
+Source:      Microsoft OLE DB Provider for SQL Server
+SQLState:    
+
+Callstack:
+  Transport.ExecuteSelectStreamSP(275, pRequestLinkAttachedNoteXML, &lt;Parameters&gt;&lt;Parameter Name=&quot;NoteID&quot; DataType=&quot;3&quot; Direction=&quot;1&quot; Length=&quot;4&quot; Value=&quot;48&quot;/&gt;
+&lt;/Parameters&gt;)
+  Encoder.ReadAttachedNoteLinkTable()
+  Encoder.Translate()
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">Could not find stored procedure &apos;pRequestLinkAttachedNoteXML&apos;.</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T09:45:13"><Message>&lt;AuditLog AuditLogID=&quot;6336&quot; Table=&quot;AttachedNote&quot; TableID=&quot;294&quot; PrimaryKey=&quot;48&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;11199&quot; CreatedDate=&quot;2005-07-07T12:11:36.497&quot; Terminal=&quot;DSS 1&quot; LocationID=&quot;4&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AttachedNote NoteTypeID=&amp;quot;27&amp;quot; TableID=&amp;quot;294&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;Screened Note&amp;quot; Enabled=&amp;quot;1&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="5" ErrSource="Occured:      2005/07/08 09:42:41
+Number:       5
+Source:       NthPennineDischargeRxEncoderV1
+EXEName:      NorthPennineDischargePrescriptionEncoderV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\NotificationTransforms\NorthPennineDischargePrescriptionEncoder\V1
+Version:      1.0.0
+HelpContext:  1000005
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     2904
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Encoder.UpdateEpisode()
+  Encoder.Translate()
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">Invalid procedure call or argument</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T09:46:15"><Message>&lt;AuditLog AuditLogID=&quot;6336&quot; Table=&quot;AttachedNote&quot; TableID=&quot;294&quot; PrimaryKey=&quot;48&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;11199&quot; CreatedDate=&quot;2005-07-07T12:11:36.497&quot; Terminal=&quot;DSS 1&quot; LocationID=&quot;4&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AttachedNote NoteTypeID=&amp;quot;27&amp;quot; TableID=&amp;quot;294&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;Screened Note&amp;quot; Enabled=&amp;quot;1&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="91" ErrSource="Occured:      2005/07/08 09:46:15
+Number:       91
+Source:       NthPennineDischargeRxEncoderV1
+EXEName:      NorthPennineDischargePrescriptionEncoderV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\NotificationTransforms\NorthPennineDischargePrescriptionEncoder\V1
+Version:      1.0.0
+HelpContext:  1000091
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 997
+ThreadID:     2904
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Encoder.Translate()
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">Object variable or With block variable not set</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T09:47:08"><Message>&lt;AuditLog AuditLogID=&quot;6336&quot; Table=&quot;AttachedNote&quot; TableID=&quot;294&quot; PrimaryKey=&quot;48&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;11199&quot; CreatedDate=&quot;2005-07-07T12:11:36.497&quot; Terminal=&quot;DSS 1&quot; LocationID=&quot;4&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AttachedNote NoteTypeID=&amp;quot;27&amp;quot; TableID=&amp;quot;294&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;Screened Note&amp;quot; Enabled=&amp;quot;1&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="-2147467259" ErrSource="Occured:      2005/07/08 09:47:08
+Number:       -2147467259
+Source:       msxml3.dll
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     1128
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">This operation can not be performed with a Node of type DOCUMENT.
+</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T10:01:50"><Message>&lt;AuditLog AuditLogID=&quot;6336&quot; Table=&quot;AttachedNote&quot; TableID=&quot;294&quot; PrimaryKey=&quot;48&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;11199&quot; CreatedDate=&quot;2005-07-07T12:11:36.497&quot; Terminal=&quot;DSS 1&quot; LocationID=&quot;4&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AttachedNote NoteTypeID=&amp;quot;27&amp;quot; TableID=&amp;quot;294&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;Screened Note&amp;quot; Enabled=&amp;quot;1&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="5" ErrSource="Occured:      2005/07/08 10:01:50
+Number:       5
+Source:       NthPennineDischargeRxEncoderV1
+EXEName:      NorthPennineDischargePrescriptionEncoderV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\NotificationTransforms\NorthPennineDischargePrescriptionEncoder\V1
+Version:      1.0.0
+HelpContext:  1000005
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 997
+ThreadID:     2904
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Encoder.UpdateEpisode()
+  Encoder.Translate()
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">Invalid procedure call or argument</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T10:04:00"><Message>&lt;AuditLog AuditLogID=&quot;6336&quot; Table=&quot;AttachedNote&quot; TableID=&quot;294&quot; PrimaryKey=&quot;48&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;11199&quot; CreatedDate=&quot;2005-07-07T12:11:36.497&quot; Terminal=&quot;DSS 1&quot; LocationID=&quot;4&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AttachedNote NoteTypeID=&amp;quot;27&amp;quot; TableID=&amp;quot;294&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;Screened Note&amp;quot; Enabled=&amp;quot;1&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="5" ErrSource="Occured:      2005/07/08 10:04:00
+Number:       5
+Source:       NthPennineDischargeRxEncoderV1
+EXEName:      NorthPennineDischargePrescriptionEncoderV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\NotificationTransforms\NorthPennineDischargePrescriptionEncoder\V1
+Version:      1.0.0
+HelpContext:  1000005
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 997
+ThreadID:     2904
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Encoder.UpdateEpisode()
+  Encoder.Translate()
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">Invalid procedure call or argument</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T10:04:57"><Message>&lt;AuditLog AuditLogID=&quot;6336&quot; Table=&quot;AttachedNote&quot; TableID=&quot;294&quot; PrimaryKey=&quot;48&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;11199&quot; CreatedDate=&quot;2005-07-07T12:11:36.497&quot; Terminal=&quot;DSS 1&quot; LocationID=&quot;4&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AttachedNote NoteTypeID=&amp;quot;27&amp;quot; TableID=&amp;quot;294&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;Screened Note&amp;quot; Enabled=&amp;quot;1&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="5" ErrSource="Occured:      2005/07/08 10:04:57
+Number:       5
+Source:       NthPennineDischargeRxEncoderV1
+EXEName:      NorthPennineDischargePrescriptionEncoderV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\NotificationTransforms\NorthPennineDischargePrescriptionEncoder\V1
+Version:      1.0.0
+HelpContext:  1000005
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 997
+ThreadID:     2904
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Encoder.UpdateEpisode()
+  Encoder.Translate()
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">Invalid procedure call or argument</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T10:05:09"><Message>&lt;AuditLog AuditLogID=&quot;6336&quot; Table=&quot;AttachedNote&quot; TableID=&quot;294&quot; PrimaryKey=&quot;48&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;11199&quot; CreatedDate=&quot;2005-07-07T12:11:36.497&quot; Terminal=&quot;DSS 1&quot; LocationID=&quot;4&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AttachedNote NoteTypeID=&amp;quot;27&amp;quot; TableID=&amp;quot;294&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;Screened Note&amp;quot; Enabled=&amp;quot;1&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="-2147121501" ErrSource="Occured:      2005/07/08 10:05:09
+Number:       -2147121501
+Source:       RaiseError
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 997
+ThreadID:     2424
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Transport.ExecuteDeleteSP(277, InterfaceRegister, 1)
+  frmICWMsgProcessorV1..GetNextRegisteredAuditLogEntry()
+    ExtraInfo: Calling TRNRTL.Transport.ExecuteDeleteSp
+  frmICWMsgProcessorV1..LookForMessages()
+">No transaction set for method that requires a transaction. Check COM+ components are registered in COM+. Check that the VB MTSTransactionMode properties on the calling classes are set RequiresTransaction. Classes that do any database writing, or call any other class that do database writing, MUST be set to RequiresTransaction. Classes that only read from the database, MUST be set to UsesTransaction providing they do not call any methods that perform database writes. </ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T10:05:55"><Message>&lt;AuditLog AuditLogID=&quot;6336&quot; Table=&quot;AttachedNote&quot; TableID=&quot;294&quot; PrimaryKey=&quot;48&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;11199&quot; CreatedDate=&quot;2005-07-07T12:11:36.497&quot; Terminal=&quot;DSS 1&quot; LocationID=&quot;4&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AttachedNote NoteTypeID=&amp;quot;27&amp;quot; TableID=&amp;quot;294&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;Screened Note&amp;quot; Enabled=&amp;quot;1&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="5" ErrSource="Occured:      2005/07/08 10:05:55
+Number:       5
+Source:       NthPennineDischargeRxEncoderV1
+EXEName:      NorthPennineDischargePrescriptionEncoderV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\NotificationTransforms\NorthPennineDischargePrescriptionEncoder\V1
+Version:      1.0.0
+HelpContext:  1000005
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 997
+ThreadID:     2904
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Encoder.UpdateEpisode()
+  Encoder.Translate()
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">Invalid procedure call or argument</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T10:10:53"><Message>&lt;AuditLog AuditLogID=&quot;6336&quot; Table=&quot;AttachedNote&quot; TableID=&quot;294&quot; PrimaryKey=&quot;48&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;11199&quot; CreatedDate=&quot;2005-07-07T12:11:36.497&quot; Terminal=&quot;DSS 1&quot; LocationID=&quot;4&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AttachedNote NoteTypeID=&amp;quot;27&amp;quot; TableID=&amp;quot;294&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;Screened Note&amp;quot; Enabled=&amp;quot;1&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="5" ErrSource="Occured:      2005/07/08 10:10:53
+Number:       5
+Source:       NthPennineDischargeRxEncoderV1
+EXEName:      NorthPennineDischargePrescriptionEncoderV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\NotificationTransforms\NorthPennineDischargePrescriptionEncoder\V1
+Version:      1.0.0
+HelpContext:  1000005
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 997
+ThreadID:     2904
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Encoder.UpdateEpisode()
+  Encoder.Translate()
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">Invalid procedure call or argument</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T10:10:55"><Message>&lt;AuditLog AuditLogID=&quot;6336&quot; Table=&quot;AttachedNote&quot; TableID=&quot;294&quot; PrimaryKey=&quot;48&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;11199&quot; CreatedDate=&quot;2005-07-07T12:11:36.497&quot; Terminal=&quot;DSS 1&quot; LocationID=&quot;4&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AttachedNote NoteTypeID=&amp;quot;27&amp;quot; TableID=&amp;quot;294&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;Screened Note&amp;quot; Enabled=&amp;quot;1&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="-2147121501" ErrSource="Occured:      2005/07/08 10:10:55
+Number:       -2147121501
+Source:       RaiseError
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 997
+ThreadID:     2760
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Transport.ExecuteDeleteSP(278, InterfaceRegister, 1)
+  frmICWMsgProcessorV1..GetNextRegisteredAuditLogEntry()
+    ExtraInfo: Calling TRNRTL.Transport.ExecuteDeleteSp
+  frmICWMsgProcessorV1..LookForMessages()
+">No transaction set for method that requires a transaction. Check COM+ components are registered in COM+. Check that the VB MTSTransactionMode properties on the calling classes are set RequiresTransaction. Classes that do any database writing, or call any other class that do database writing, MUST be set to RequiresTransaction. Classes that only read from the database, MUST be set to UsesTransaction providing they do not call any methods that perform database writes. </ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T10:15:13"><Message>&lt;AuditLog AuditLogID=&quot;6336&quot; Table=&quot;AttachedNote&quot; TableID=&quot;294&quot; PrimaryKey=&quot;48&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;11199&quot; CreatedDate=&quot;2005-07-07T12:11:36.497&quot; Terminal=&quot;DSS 1&quot; LocationID=&quot;4&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AttachedNote NoteTypeID=&amp;quot;27&amp;quot; TableID=&amp;quot;294&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;Screened Note&amp;quot; Enabled=&amp;quot;1&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="5" ErrSource="Occured:      2005/07/08 10:15:13
+Number:       5
+Source:       NthPennineDischargeRxEncoderV1
+EXEName:      NorthPennineDischargePrescriptionEncoderV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\NotificationTransforms\NorthPennineDischargePrescriptionEncoder\V1
+Version:      1.0.0
+HelpContext:  1000005
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 997
+ThreadID:     2904
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Encoder.UpdateEpisode()
+  Encoder.Translate()
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">Invalid procedure call or argument</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T10:15:19"><Message>&lt;AuditLog AuditLogID=&quot;6336&quot; Table=&quot;AttachedNote&quot; TableID=&quot;294&quot; PrimaryKey=&quot;48&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;11199&quot; CreatedDate=&quot;2005-07-07T12:11:36.497&quot; Terminal=&quot;DSS 1&quot; LocationID=&quot;4&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AttachedNote NoteTypeID=&amp;quot;27&amp;quot; TableID=&amp;quot;294&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;Screened Note&amp;quot; Enabled=&amp;quot;1&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="-2147121501" ErrSource="Occured:      2005/07/08 10:15:19
+Number:       -2147121501
+Source:       RaiseError
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 997
+ThreadID:     2608
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Transport.ExecuteDeleteSP(278, InterfaceRegister, 1)
+  frmICWMsgProcessorV1..GetNextRegisteredAuditLogEntry()
+    ExtraInfo: Calling TRNRTL.Transport.ExecuteDeleteSp
+  frmICWMsgProcessorV1..LookForMessages()
+">No transaction set for method that requires a transaction. Check COM+ components are registered in COM+. Check that the VB MTSTransactionMode properties on the calling classes are set RequiresTransaction. Classes that do any database writing, or call any other class that do database writing, MUST be set to RequiresTransaction. Classes that only read from the database, MUST be set to UsesTransaction providing they do not call any methods that perform database writes. </ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T10:15:32"><Message>&lt;AuditLog AuditLogID=&quot;6336&quot; Table=&quot;AttachedNote&quot; TableID=&quot;294&quot; PrimaryKey=&quot;48&quot; User=&quot; Eddie Critchlow&quot; EntityID_User=&quot;11199&quot; CreatedDate=&quot;2005-07-07T12:11:36.497&quot; Terminal=&quot;DSS 1&quot; LocationID=&quot;4&quot; LogType=&quot;I&quot; DataXML=&quot;&amp;lt;AttachedNote NoteTypeID=&amp;quot;27&amp;quot; TableID=&amp;quot;294&amp;quot; NoteID_Thread=&amp;quot;0&amp;quot; Description=&amp;quot;Screened Note&amp;quot; Enabled=&amp;quot;1&amp;quot;/&amp;gt;&quot;/&gt;</Message><ErrMessage ErrNum="5" ErrSource="Occured:      2005/07/08 10:15:32
+Number:       5
+Source:       NthPennineDischargeRxEncoderV1
+EXEName:      NorthPennineDischargePrescriptionEncoderV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\NotificationTransforms\NorthPennineDischargePrescriptionEncoder\V1
+Version:      1.0.0
+HelpContext:  1000005
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 997
+ThreadID:     2904
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Encoder.UpdateEpisode()
+  Encoder.Translate()
+  frmICWMsgProcessorV1..ProcessMessage()
+  frmICWMsgProcessorV1..LookForMessages()
+">Invalid procedure call or argument</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T10:30:26"><Message></Message><ErrMessage ErrNum="-2147168246" ErrSource="Occured:      2005/07/08 10:30:26
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 997
+ThreadID:     2932
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Transport.ValidateSessionID()
+  Transport.ExecuteSelectStreamSP(279, pInterfaceRegisterPopRowXML, )
+  frmICWMsgProcessorV1..GetNextRegisteredAuditLogEntry()
+    ExtraInfo: Creating the transport layer object using &apos;TRNRTL10.Transport&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">New transaction cannot enlist in the specified transaction coordinator. </ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T17:00:18"><Message></Message><ErrMessage ErrNum="-2147221231" ErrSource="Occured:      2005/07/08 17:00:17
+Number:       -2147221231
+Source:       EventNotifierV1
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     2792
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Creating the IENRTL10 object using &apos;IENRTL10.Entity&apos; - Returned XML = &apos;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">Automation error
+ClassFactory cannot supply requested class </ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T17:03:14"><Message></Message><ErrMessage ErrNum="91" ErrSource="Occured:      2005/07/08 17:03:14
+Number:       91
+Source:       EventNotifierV1
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000091
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     2792
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;UserLogin Success=&quot;1&quot; InvalidLogin=&quot;0&quot; Locked=&quot;0&quot; ForceChange=&quot;0&quot; InvalidLocation=&quot;0&quot; AccountExpired=&quot;0&quot; Name=&quot;Version 8 Discharge Interface&quot; ExistingSession=&quot;0&quot; SessionID=&quot;290&quot;/&gt;&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">Object variable or With block variable not set</ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T17:07:36"><Message></Message><ErrMessage ErrNum="-2147220501" ErrSource="Occured:      2005/07/08 17:07:36
+Number:       -2147220501
+Source:       Login
+EXEName:      EventNotifierV1
+Path:         C:\32bitSource\V92MAIN\Services\EventNotificationService\V1\source
+Version:      1.0.0
+HelpContext:  1000440
+HelpFile:     C:\WINNT\Help\VBENLR98.CHM
+LastDLLError: 0
+ThreadID:     2792
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Config..Login()
+    ExtraInfo: Processing the returned login XML - Returned XML = &apos;&lt;Return&gt;&lt;Error Code=&quot;ExistingSession&quot; Source=&quot;&quot;&gt;User already logged in&lt;/Error&gt;&lt;/Return&gt;
+&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">ExistingSession - </ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T17:08:56"><Message></Message><ErrMessage ErrNum="-2147121501" ErrSource="Occured:      2005/07/08 17:08:56
+Number:       -2147121501
+Source:       RaiseError
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2976
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Transport.ExecuteDeleteSP(291, InterfaceRegister, 1)
+  frmICWMsgProcessorV1..GetNextRegisteredAuditLogEntry()
+    ExtraInfo: Calling TRNRTL.Transport.ExecuteDeleteSp
+  frmICWMsgProcessorV1..LookForMessages()
+">No transaction set for method that requires a transaction. Check COM+ components are registered in COM+. Check that the VB MTSTransactionMode properties on the calling classes are set RequiresTransaction. Classes that do any database writing, or call any other class that do database writing, MUST be set to RequiresTransaction. Classes that only read from the database, MUST be set to UsesTransaction providing they do not call any methods that perform database writes. </ErrMessage></Error>
+<Error InstanceName="TEST" Occurred="2005-07-08T17:10:09"><Message></Message><ErrMessage ErrNum="-2147168246" ErrSource="Occured:      2005/07/08 17:10:09
+Number:       -2147168246
+Source:       Microsoft OLE DB Provider for SQL Server
+EXEName:      TRNRTL10
+Path:         C:\32bitSource\V92MAIN\COM\Bin
+Version:      1.0.370
+HelpContext:  1000440
+HelpFile:     
+LastDLLError: 0
+ThreadID:     2432
+UserContext:  Eddie.Critchlow
+
+Callstack:
+  Transport.ValidateSessionID()
+  Transport.ExecuteSelectStreamSP(291, pInterfaceRegisterPopRowXML, )
+  frmICWMsgProcessorV1..GetNextRegisteredAuditLogEntry()
+    ExtraInfo: Creating the transport layer object using &apos;TRNRTL10.Transport&apos;
+  frmICWMsgProcessorV1..LookForMessages()
+">New transaction cannot enlist in the specified transaction coordinator. </ErrMessage></Error>

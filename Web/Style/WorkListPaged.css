@@ -1,0 +1,41 @@
+.GridHeadingCell
+{
+    BORDER-RIGHT: #335a7b 1px solid;
+    BORDER-LEFT: #7ea9ce 1px solid;
+    BORDER-TOP: #7ea9ce 1px solid;
+    BORDER-BOTTOM: #335a7b 1px solid;
+    FONT-WEIGHT: bold;
+    COLOR: #ffffff;
+    TEXT-ALIGN: left
+}
+.GridHeading
+{
+    BACKGROUND-COLOR: #4682b4
+}
+.GridImage
+{
+	width:18px
+}
+#tbl-container TD
+{
+    BORDER-RIGHT: #E0E0E0 1px solid;
+    BORDER-BOTTOM: #E0E0E0 1px solid
+}
+.GridBody
+{
+    BACKGROUND-COLOR: #ffffff
+}
+.RowSelected
+{
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #00599c
+}
+.RowUnfocused
+{
+    COLOR: #000000;
+    BACKGROUND-COLOR: #E5E5E5;
+}
+.RowCurrent
+{
+    FONT-STYLE: normal
+}

@@ -1,0 +1,763 @@
+/* -------------------------------------------------------------------------------------------------- */
+/*								Styles for the Drug Administration application											*/
+/*																										  */
+/*	Note that sizing is done in code, not in stylesheets, so that the program knows how many				*/
+/* items can fit on the screen.  So adding sizing styles here will not work!									*/
+/* -------------------------------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------------------------------- */
+/*											Common Styles											  */
+/* -------------------------------------------------------------------------------------------------- */
+
+.Touchscreen .Caption
+{
+	font-weight:bold;
+	font-size:10pt;
+}
+
+.Touchscreen .AttrName
+{
+	font-size:8pt;
+	overflow:hidden;
+}
+
+.Touchscreen .AttrValue
+{
+	font-size:8pt;
+	font-weight:bold;	
+}
+
+.Happy
+{
+	color:#008000;
+}
+
+.Warning
+{
+	color: #9F6000;
+}
+
+.Sad
+{
+	color:#ff0000;
+}
+
+.Complete {
+   color:#008000; 
+}
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/*										Patient List Screen																		*/
+/* -------------------------------------------------------------------------------------------------- */
+
+.PatientList
+{
+	margin:0px;
+	padding:0px;
+}
+
+.Patient .AttrName
+{
+	width:100px;
+}
+
+.Patient .AttrValue
+{
+	width:135px;
+}
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/*										Admin Request Buttons																	*/
+/* -------------------------------------------------------------------------------------------------- */
+
+.AdminRequest
+{
+    scrollbar-base-color: #bb3333;
+}
+
+.RequestList
+{
+}
+
+.EpisodePanel
+{
+    font-size:14px;
+}
+
+/* Buttons which are disabled (not administerable) */
+.Disabled
+{
+	background-color:#CE7B7B;
+	cursor:default;
+}
+
+.AdminRequest .DueTime
+{
+	border-top:#000000 1px solid;
+	padding-left:3px;
+	height:18px;
+	color:green;
+	font-weight:bold;
+}
+
+.AdminRequest .OverdueTime
+{
+	padding-left:25px;
+}
+
+/* Buttons for doses which are overdue */
+.Overdue .DueTime, .Overdue .OverdueTime
+{
+	background-color:#CE7B7B;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+
+/* Buttons for doses which have had administration recorded */
+.AdminRequest .DrugNameArea
+{
+	border-bottom:#000000 1px solid;
+}
+
+.AdminRequest .EpisodeMissMatchArea
+{
+	color: Red;
+	font-weight:bold;
+}
+
+.AdminRequest .PrescriptionCancelled
+{
+	color: Red;
+	font-weight:bold;
+}
+
+.AdminRequest .LineIndicator
+{
+	border-bottom:#000000 1px solid;
+	border-top:   #000000 1px solid;
+	border-left:  #000000 1px solid;
+	border-right: #000000 1px solid;
+	background:white;
+	font-size:13pt;
+	vertical-align:middle;
+	text-align:center;
+	padding:3px; 
+}
+
+.AdminRequest .LineIndicatorSmall
+{
+	border-bottom:#000000 1px solid;
+	border-top:   #000000 1px solid;
+	border-left:  #000000 1px solid;
+	border-right: #000000 1px solid;
+	background:white;
+	font-size:11pt;
+	vertical-align:middle;
+	text-align:center;
+	padding:3px; 
+}
+
+.AdminRequest .GiveConcurrently
+{
+	font-size:12pt;
+}
+
+.AdminRequest .RowNumber
+{
+	border-bottom:#000000 1px solid;
+	border-top:   #000000 1px solid;
+	border-left:  #000000 1px solid;
+	border-right: #000000 1px solid;
+	background:white;
+	font-size:16pt;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.AdminRequest .Caption
+{
+	height:19px;
+	font-size:11pt;
+}
+
+.AdminRequest .CaptionForDiluent
+{
+	height:19px;
+	font-size:11pt;
+	overflow:hidden
+}
+
+.AdminRequest .CaptionForGenericTemplate
+{
+	height:19px;
+	font-size:10pt;
+	font-weight:bold;
+	color:Red;
+	overflow:auto;
+}
+.AdminRequest .RouteImage
+{
+	border-right:#000000 1px solid;
+}
+
+.AdminRequest .RouteImage img
+{
+
+}
+
+.AdminRequest .StatusSection
+{
+	border-left:#000000 1px solid;	
+	padding:3px;
+	vertical-align:top;
+}
+
+.AdminRequest .StatusBar
+{
+	height:22px;
+	overflow:hidden;
+}
+
+.AdminRequest .StatusBarDueTime
+{
+	height:22px;	
+	overflow:hidden;
+	font-size:9pt;
+}
+
+.AdminRequest .StatusBarDueTimeSmall
+{
+	height:22px;	
+	overflow:hidden;
+	font-size:9pt;
+}
+
+.AdminRequest .StatusInfo
+{
+	overflow:hidden;
+	font-size:8pt;
+}	
+
+.AdminRequest .ProductName
+{
+	font-weight:bold;
+	font-size:12pt;
+}
+
+
+.AdminRequest .Directions
+{
+	font-size:9pt;
+	padding:3px;
+	vertical-align:top;
+	overflow-y:auto;
+    height: 80px;
+}
+
+
+.AdminRequest .AttrName
+{
+	display:none;
+	width:30%;
+}
+
+.AdminRequest .SupervisedAdmin
+{
+	font-weight: bold;
+	font-size: 9pt;
+	color: green;
+	text-align: center;
+}
+
+
+.AdminRequest .ControlDrug
+{
+    text-align: center;
+    border: 2px solid #CC6600;
+    font-size: 9px;
+    font-weight: bold;
+    background-color: #FFB76F;
+    overflow: hidden;
+}
+
+
+.AdminRequest .OptionText
+{
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: Red;
+    overflow: hidden;
+}
+
+
+.AdminRequest .RouteText
+{
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: Black;
+    overflow: hidden;
+}
+
+.Toolbar .AdminRequest Table
+{
+	border-left:#000000 1px solid;
+}
+
+.RequestList .odd {
+	background-color:#FDFDBF;
+}
+
+.RequestList .even {
+	background-color:#FFFFFF;
+}
+
+/*
+
+.RequestList .AdminRequest .DueInfo .DueTime
+*/
+
+
+
+/*.RequestList .AdminRequest .StatusInfo
+*/
+
+
+
+/* .Overdue */
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/*										"Was this dose administered" Screen							  */
+/* -------------------------------------------------------------------------------------------------- */
+.AdminDetails .Prompt
+{
+	padding-top:5px;
+}
+
+.AdminDetails .TouchCaption
+{
+	font-size:20pt;
+}
+
+.AdminDetails .Toolbar .TouchCaption
+{
+	font-size:10pt;
+}
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/*										Administration Details Screens								  */
+/* -------------------------------------------------------------------------------------------------- */
+
+.AdminDetails .Prompt
+{
+	text-align:center;
+}
+
+.AdminDetails .PromptSmallText
+{
+	text-align:center;
+	font-size:10pt;
+}
+
+.AdminDetails .BackButtonText
+{
+	text-align:center;
+	font-size:9pt;
+}
+
+.AdminDetails.TouchCaption
+{
+	font-size:15pt;
+}
+
+.AdminDetails.Toolbar .TouchCaption
+{
+	font-size:10pt;
+}
+
+.AdminDetails .ConfirmListItem Table
+{
+	border-left:#000000 1px solid;
+}
+
+.AdminDetails .ConfirmListItem .Caption
+{
+	text-align:center;
+	border-bottom:#000000 1px solid;
+}
+
+.AdminDetails.Prompt 
+{
+	text-align:center;
+	vertical-align:middle;
+}
+
+.AdminDetails.Value
+{
+	text-align:center;
+	vertical-align:middle;
+	font-size:16pt;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/*										Arb Text Picker											      */
+/* -------------------------------------------------------------------------------------------------- */
+.ArbText .Code
+{
+	font-weight:bold;
+}
+
+.ArbText .Value
+{
+	font-size:10pt;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/*										Batch Number Entry											  */
+/* -------------------------------------------------------------------------------------------------- */
+.BatchNumber
+{
+	font-weight:bold;
+	font-size:12pt;
+	text-align:center;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/*											Product Picker											  */
+/* -------------------------------------------------------------------------------------------------- */
+
+.Product .BigNumber
+{
+	color:green;
+	font-weight:bold;
+	font-size:30pt;
+	width:80px;
+	border-left:#000000 1px solid;
+	text-align:center;
+}
+
+.Product .Caption
+{
+	vertical-align:middle;
+}
+
+.Product .Tradename
+{
+	border-bottom:#000000 1px solid;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.TotalDose
+{
+	border-top:#c0c0c0 4px solid;
+	vertical-align:middle;
+	height:100px;
+}
+
+.TotalDose .AttrName
+{
+	padding-left:10px;
+	font-size:24pt;
+	font-weight:bold;
+}
+
+.TotalDose .AttrValue
+{
+	padding-left:10px;
+	font-size:24pt;
+	font-weight:bold;
+}
+
+
+.TotalDose .StatusInfo
+{
+	width:300px;
+	font-size:12pt;
+}
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/*											Date Picker											  */
+/* -------------------------------------------------------------------------------------------------- */
+
+.Touchscreen .Date
+{
+	font-size:20pt;
+	text-align:center;
+	font-weight:bold
+}
+
+.Callendar .Date
+{
+	border-right:none;
+}
+
+.Touchscreen .Time
+{
+	font-size:20pt;
+	text-align:center;
+	font-weight:bold;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/*											Information Screens																	*/
+/* -------------------------------------------------------------------------------------------------- */
+.PrescriptionDetail .Prompt
+{
+	text-align:center;
+	border-top:#c0c0c0 4px solid;
+}
+
+.PrescriptionDetail .PromptSmallText
+{
+	text-align:center;
+	font-size:9pt;
+	text-decoration:none;
+}
+
+.PrescriptionDetail .AttrName
+{
+	font-size:12pt;
+	text-decoration:underline;
+}
+
+.PrescriptionDetail .AttrValue
+{
+	font-size:12pt;
+}
+
+.PrescriptionDetail .Toolbar .AttrName
+{
+	font-size:8pt;
+	text-decoration:none
+}
+
+.PrescriptionDetail .Toolbar .AttrValue
+{
+	font-size:8pt;
+}
+
+.PrescriptionDetail .DoseInformation
+{
+	margin-bottom:30px;
+	margin-top:10px;
+	background-color:#E1E1E1;
+	border:#000000 1px solid;
+}
+
+.PrescriptionDetail .PrescriptionCancelled
+{
+	margin-bottom: -5px;
+	margin-top:5px;
+	background-color:#E1E1E1;
+	border:#000000 1px solid;
+}
+
+.PrescriptionDetail .DoseInformation .AttrName
+{
+	text-decoration:none;
+	padding-right:10px;
+}
+
+.PrescriptionDetail .AttachedNoteList
+{
+	
+}
+.PrescriptionDetail .FurtherDetail .AttrName
+{
+	padding-top:30px;
+}
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/*											Drug Pick List											  */
+/* -------------------------------------------------------------------------------------------------- */
+.PickList
+{
+	background-color:#ffffff;
+}
+
+.SectionTitle th
+{
+	border-bottom:#000000 4px solid;
+	font-size:24pt;
+	font-weight:bold;
+	padding-top:20px;
+}
+
+.Info
+{
+	font-size:14pt;
+	color:#606060;
+	padding-top:10pt;
+}
+
+.Drug td
+{
+	padding-bottom:5px;
+	padding-top:5px;
+	padding-left:5px;
+	font-size:16pt;
+}
+
+.Drug td.Quantity
+{
+	font-weight:bold;
+}
+
+.Drug td.Description
+{
+	font-weight:bold;
+}
+
+.Drug td.Tradename, .Drug td.Patient
+{
+	font-size:14pt;
+	color:#606060;
+}
+
+.Drug.Underline td
+{
+	border-bottom:#e0e0e0 2px solid;
+}
+
+.Drug.Strikethrough td
+{
+	text-decoration:line-through;
+}
+
+.StatusIndicator
+{
+	border:black 2px solid;
+	background-color:#E1E1E1;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/*											Drug Entry 												  */
+/* -------------------------------------------------------------------------------------------------- */
+.DrugEntry .Prompt
+{
+	font-size:18pt;
+}
+
+.DrugEntry .Info
+{
+	padding-left:10px;
+	font-size:12pt;
+	padding-right:10px;
+}
+
+.DrugEntry .Drug .Description, .DrugEntry .Drug .Tradename, .DrugEntry .Drug .Location
+{
+	font-size:16px;
+}
+
+.DrugEntry .Drug .Description, .DrugEntry .Drug .Location
+{
+	font-weight:bold
+}
+
+.DrugEntry .Drug .Quantity
+{
+	font-size:20pt;
+	font-weight:bold;
+	border-bottom:#e0e0e0 2px solid;
+	text-align:center;
+}
+
+.DrugEntry .NotAvailable td
+{
+	color:#c0c0c0;
+}
+
+.DrugEntry .Drug td
+{
+	border-bottom:#e0e0e0 2px solid;
+}
+
+
+.NumericEntry .Prompt
+{
+	padding-top:20px;
+}
+
+.NumericEntry .TotalDose
+{
+	border:none;
+	font-size:20pt;
+	font-weight:bold;
+}
+
+.Dose .Touchbutton .Info
+{
+	color:#000000;
+}
+
+.Dose .Touchbutton .Prompt
+{
+	font-size:20pt;
+	font-weight:bold;
+}
+
+.ConfirmPanel
+{
+	background-color:#E1E1E1;
+	border:#c0c0c0 4px solid;
+	padding:3px;
+	padding-bottom:0px;
+}
+
+
+/*Episode Alert*/
+.EpisodesAlertDialog
+{
+    margin:10px;
+    margin-top:20px;
+    padding:20px;
+    background-color:#FFFFAA;
+    border:solid 3px red;
+}
+
+.EpisodesAlertDialog h1
+{
+    color:Red;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.EpisodesAlertDialog li
+{
+    font-size:16px;
+}
+
+.EpisodesAlertDialog .buttonsSection
+{
+    text-align:center;
+}
+
+.EpisodesAlertDialog .button
+{
+    text-align:center;
+    display:inline-block;
+	cursor:hand;
+	background-color:#E1E1E1;
+    font-weight:bold;
+	padding:10px;
+	font-weight:bold;
+	font-size:12pt;
+	height:50px;
+	line-height:50px;
+	width:160px;
+	border:solid 3px #C0C0C0;
+}

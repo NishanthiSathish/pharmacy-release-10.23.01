@@ -1,0 +1,43 @@
+[version]
+	signature="$CHICAGO$"
+	AdvancedINF=2.0
+[Add.Code]
+	rsclientprint.dll=rsclientprint.dll
+	rsclientprint_1028.rll=rsclientprint_1028.rll
+	rsclientprint_1031.rll=rsclientprint_1031.rll
+	rsclientprint_1033.rll=rsclientprint_1033.rll
+	rsclientprint_1036.rll=rsclientprint_1036.rll
+	rsclientprint_1040.rll=rsclientprint_1040.rll
+	rsclientprint_1041.rll=rsclientprint_1041.rll
+	rsclientprint_2052.rll=rsclientprint_2052.rll
+	rsclientprint_1042.rll=rsclientprint_1042.rll
+	rsclientprint_1046.rll=rsclientprint_1046.rll
+	rsclientprint_1049.rll=rsclientprint_1049.rll
+	rsclientprint_3082.rll=rsclientprint_3082.rll
+[rsclientprint_1028.rll]
+	file=thiscab
+[rsclientprint_1031.rll]
+	file=thiscab
+[rsclientprint_1033.rll]
+	file=thiscab
+[rsclientprint_1036.rll]
+	file=thiscab
+[rsclientprint_1040.rll]
+	file=thiscab
+[rsclientprint_1041.rll]
+	file=thiscab
+[rsclientprint_2052.rll]
+	file=thiscab
+[rsclientprint_1042.rll]
+	file=thiscab
+[rsclientprint_1046.rll]
+	file=thiscab
+[rsclientprint_1049.rll]
+	file=thiscab
+[rsclientprint_3082.rll]
+	file=thiscab
+[rsclientprint.dll]
+	file=thiscab
+	clsid={5554DCB0-700B-498D-9B58-4E40E5814405}
+	RegisterServer=yes
+	FileVersion=2009,100,1750,0

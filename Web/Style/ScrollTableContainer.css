@@ -1,0 +1,92 @@
+﻿/*
+    Style sheet that provides a means of having tables with fixed headers, fotters, left, and right columns.
+    Sorts out all the horz\vert scolling for the that table as well.
+
+    Usage:
+    <link href="../../style/ScrollTableContainer.css" rel="stylesheet" type="text/css" />
+    :
+    <div class="ScrollTableContainerIE">
+        <table>
+            <thead id="scrollHeader">
+               <tr>
+                <td class="fixedleft">first column</td>
+                <td>second column</td>
+                <td>third column</td>
+                <td class="fixedright">fourth column</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                <td class="fixedleft">0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="fixedright">0</td>
+               </tr>
+               <tr>
+                <td class="fixedleft">1</td>
+                <td>1</td>
+                <td>1</td>
+                <td class="fixedright">1</td>
+               </tr>
+            </tbody>
+            <tfoot id="scrollfooter">
+               <tr>
+                  <td class="fixedleft">first column</td>
+                  <td>second column</td>
+                  <td>third column</td>
+                  <td class="fixedright">fourth column</td>
+               </tr>
+            </tfoot>
+        </table>
+    </div>    
+
+    Comes from site
+    http://s7u.blogspot.co.uk/2008/07/dear-friends-i-want-to-discuss-about.html
+*/
+
+.ScrollTableContainerIE
+{
+    clear: both;
+    overflow: AUTO;
+    POSITION: relative;
+}
+
+.ScrollTableContainerIE thead td, .ScrollTableContainerIE thead th, .ScrollTableContainerIE tfoot td 
+{
+    Z-INDEX: 60;
+    position:relative;
+}
+
+.ScrollTableContainerIE table
+{
+    border:0px;
+}
+
+.ScrollTableContainerIE thead td, .ScrollTableContainerIE thead th
+{
+    TOP: expression(this.offsetParent.scrollTop -2);
+}
+
+.ScrollTableContainerIE tfoot td
+{
+    TOP: expression(this.offsetParent.clientHeight + this.offsetParent.scrollTop - (this.offsetParent.scrollHeight -2));
+}
+
+.ScrollTableContainerIE .fixedLeft
+{
+    z-index: 70;
+    LEFT: expression(this.offsetParent.scrollLeft -1);
+    POSITION: relative;
+}
+
+.ScrollTableContainerIE .fixedRight
+{
+    z-index: 70;
+    LEFT: expression(this.offsetParent.clientWidth - this.offsetParent.scrollWidth + this.offsetParent.scrollLeft + 1); 
+    POSITION: relative;
+}
+
+.ScrollTableContainerIE thead .fixedLeft, .ScrollTableContainerIE thead .fixedRight
+{
+    z-index: 80;
+}

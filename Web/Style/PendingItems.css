@@ -1,0 +1,192 @@
+Body 
+{
+	overflow:hidden;
+}
+
+
+.titleCell				
+{
+	width:40%;
+	height:30px;
+	font-size:11pt;
+	font-weight:bold;
+	background-color:#A3C1AD;
+	color:#000000;
+	border-top:#83AD90 1px solid;
+	border-bottom:#C7DBCD 1px solid;
+	border-left:#83AD90 1px solid;
+	border-right:#C7DBCD 2px solid;
+	padding-left:5px;
+}
+
+.OtherUsers				
+{
+	background-color:#ECDEAC;
+	border-top:#D9C377 1px solid;
+	border-bottom:#F7EABF 1px solid;
+	border-left: #D9C377 1px solid;
+	border-right:#F7EABF 2px solid;
+}
+
+
+.infoCell				
+{
+	width:60%;
+	height:30px;
+	font-size:11pt;
+	font-weight:bold;	
+	background-color:#A3C1AD;
+	color:#ffffff;
+	border-top:#83AD90 1px solid;
+	border-bottom:#C7DBCD 1px solid;
+	border-left:#83AD90 2px solid;
+	border-right:#C7DBCD 1px solid;
+	padding-left:5px;
+}
+
+.gridHeader		
+{
+	background-color:#4682b4;
+	color:#ffffff;
+	border-top:#7EA9CE 1px solid;
+	border-bottom:#335A7B 1px solid;
+	border-left:#7EA9CE 1px solid;
+	border-right:#335A7B  1px solid;
+	height:20px;
+	padding-left:3px;
+	font-size:10pt;
+	font-weight:bold;
+}
+
+
+.ListTable 
+{
+	background-color:#ffffff;
+	border:#38951E 1px solid;
+	border-top:none;
+	width:100%;
+	height:100%;
+}
+
+
+.ListTableCell
+{
+	border-bottom:#c0c0c0 1px solid;
+	padding:2px;
+	height:20px;
+}
+
+.ListImageCell
+{
+	width:50px;
+}
+
+.ListTextCell
+{
+	width:48%;
+}
+
+.ListReasonCell
+{
+	width:40%;
+}
+
+.ListButtonCell
+{
+	padding:0px;
+	width:20px;
+}
+
+.ReasonSpan
+{
+	width:100%;
+	height:100%;
+}
+
+.Required
+{
+	border: red 1px solid;
+}
+
+.NotRequired
+{
+	border:black 1px dotted;
+}
+
+.PickerButton
+{
+	height:15px;
+	width:20px;
+}
+
+.NotMyItem 
+{
+	background-color:#c0c0c0;
+	color:red;
+}
+
+.NotFilledIn
+{
+	background-color:#FBD7D7;
+}
+
+.Highlighted
+{
+	background-color: #00599C;
+	color:#ffffff;
+}
+
+.LinkSpan
+{
+	text-decoration:underline;
+	cursor:hand;
+	font-size:10pt;
+	font-weight:normal;
+}
+
+.EmptyPageTitle													
+{
+	font-size:x-large;
+}
+.EmptyPageDetail													
+{
+	font-size:medium;
+}																						
+
+/*Image styles */
+.BoxImage
+{
+	border-top: #c0c0c0 1px solid;
+	border-bottom: #c0c0c0 1px solid;
+	border-left: #c0c0c0 1px solid;
+}
+
+.BoxImageRight
+{
+	border: #c0c0c0 1px solid;
+}
+
+
+/* Commit dialog styles */
+h3
+{
+	padding:5px;
+	text-align:center;
+}
+
+/* Style applied to clickable images when you hover the mouse over them */
+.imgHover
+{
+	background:#ff8040;
+}
+
+.gridTable
+{
+	table-layout: fixed;
+}
+
+.GridRow td
+{
+    MIN-HEIGHT: 20px;
+    MAX-HEIGHT: 500px;
+}

@@ -1,0 +1,6 @@
+@echo off 
+cd WindowsFolder\Microsoft.NET\Framework\v4.0.30319
+ASPNET_REGIIS -pef "connectionStrings" "InstallPath"
+
+cd WindowsFolder\Microsoft.NET\Framework\v4.0.30319
+ASPNET_REGIIS -s w3svc/1/ROOT/"VdName"

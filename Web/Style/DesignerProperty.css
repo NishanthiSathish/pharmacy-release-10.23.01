@@ -1,0 +1,15 @@
+BODY
+{
+    BACKGROUND-COLOR: #d6e3ff
+}
+.tableHolder
+{
+    margin:8px -8px 0px 8px; 
+    height:97%;
+    background-color:#ffffff; 
+    border: solid 1px #000000;    
+}
+table
+{
+    background-color:#ffffff;     
+}

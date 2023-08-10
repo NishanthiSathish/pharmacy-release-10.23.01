@@ -1,0 +1,42 @@
+BODY
+{
+	padding-left:10px;
+	padding-top:10px;
+}
+
+.NotesContainer
+{
+	background-color:#ffffff;
+	border:#00599C 1px solid;
+	height:100%;
+	width:100%;
+}
+
+.unselected 
+{
+	background-color:#ffffff;
+	font-size:10pt;
+	font-weight:normal;
+	color: #000000;
+}
+
+.Selected 
+{
+	background-color: #00599C;
+	color:#ffffff;
+}
+
+BUTTON
+{
+	width:70px;
+}
+
+.NoteRow
+{
+	border-bottom: #c0c0c0 1px solid;	
+}
+
+.Disabled
+{
+	color:#A0A0A0;
+}

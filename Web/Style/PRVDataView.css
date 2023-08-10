@@ -1,0 +1,225 @@
+
+html
+{
+	overflow:hidden ;
+}	
+BODY
+{
+	height:100%;
+    OVERFLOW: hidden;
+    BACKGROUND-COLOR: #d6e3ff
+}
+
+.prv
+{
+    BORDER-RIGHT: black 1px solid;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: black 1px solid;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9pt;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    BORDER-LEFT: black 1px solid;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: black 1px solid;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: white
+}
+.prv .title
+{
+    BORDER-RIGHT: black 1px solid;
+    BORDER-TOP: 1px;
+    FONT-SIZE: 9pt;
+    LEFT: 0px;
+    FLOAT: left;
+    BORDER-LEFT: 1px;
+    CURSOR: default;
+    COLOR: white;
+    BORDER-BOTTOM: black 1px solid;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #4682b4
+
+}
+.prv .title .corner
+{
+    FONT-WEIGHT: bolder;
+    COLOR: black;
+    BACKGROUND-COLOR: #a3c1ad;
+}
+.prv .locked, .prv .title .locked
+{
+    left: expression(document.getElementById("tblContainer").scrollLeft - 1);
+    POSITION: relative;
+    BORDER-RIGHT: black 1px solid;
+}
+.prv .data
+{
+    LIST-STYLE-POSITION: inside;
+    LIST-STYLE-TYPE: none
+}
+.prv .data .empty
+{
+    BACKGROUND-COLOR: lightgrey
+}
+.prv .data TD
+{
+    BORDER-RIGHT: black 1px solid;
+    PADDING-RIGHT: 3px;
+    PADDING-LEFT: 3px;
+    PADDING-BOTTOM: 1px;
+    MARGIN: 0px;
+    WIDTH: 35px;
+    PADDING-TOP: 1px;
+    BORDER-BOTTOM: black 1px solid;
+    TEXT-ALIGN: center
+}
+.prv .title .toprow
+{
+    BORDER-RIGHT: black 1px solid
+}
+.prv .title .spacer
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: black 1px solid;
+    BORDER-LEFT: medium none;
+    BORDER-BOTTOM: black 1px solid;
+    BACKGROUND-COLOR: #d6e3ff
+}
+.prv .data .today
+{
+}
+.prv .data .ascHigh
+{
+    LIST-STYLE: square url(../images/Application/PRV/high.gif) inside;
+    BACKGROUND-COLOR: pink
+}
+.prv .data .ascLow
+{
+    LIST-STYLE-POSITION: inside;
+    LIST-STYLE-IMAGE: url(../images/Application/PRV/low.gif);
+    BACKGROUND-COLOR: plum
+}
+.prv .data .attnote
+{
+    BACKGROUND-POSITION: right top;
+    BACKGROUND-ATTACHMENT: fixed;
+    BACKGROUND-IMAGE: url(../images/Application/PRV/Corner.bmp);
+    BACKGROUND-REPEAT: no-repeat
+}
+.prv .data .note
+{
+    BACKGROUND-POSITION: center center;
+    BACKGROUND-IMAGE: url(../images/Application/PRV/note1.gif);
+    BACKGROUND-REPEAT: no-repeat
+}
+.prv .data .cancel
+{
+    BACKGROUND-POSITION: right center;
+    BACKGROUND-IMAGE: url(../images/Application/PRV/delete.gif);
+    BACKGROUND-REPEAT: no-repeat;
+    TEXT-ALIGN: left
+}
+.prv .data .highlight
+{
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    BORDER-RIGHT: red solid 2px;
+    BORDER-TOP: red solid 1px;
+    BORDER-LEFT: red solid 2px;
+    BORDER-BOTTOM: red solid 2px
+}
+.prv .data .normal
+{
+}
+.prv .data .ascError
+{
+    BACKGROUND-COLOR: #ffff33
+}
+.prv .title .datecell
+{
+    BORDER-RIGHT: black 1px solid;
+    BORDER-TOP: black 1px solid
+}
+.prv .title .banner
+{
+    COLOR: #000000;
+    BACKGROUND-COLOR: #ccffff;
+    width:100%
+    
+}
+.norap
+{
+    VERTICAL-ALIGN: bottom;
+    OVERFLOW: hidden;
+    HEIGHT: 100%;
+    WORD-WRAP: normal
+}
+.prv .title .section
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: larger;
+    BACKGROUND-COLOR: #cc9933
+}
+.prescriptionadmin
+{
+    BORDER-RIGHT: black 1px solid;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: black 1px solid;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9pt;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    BORDER-LEFT: black 1px solid;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: black 1px solid;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: white
+}
+.prescriptionadmin .title
+{
+    BORDER-RIGHT: black 1px solid;
+    BORDER-BOTTOM: black 1px solid;
+    BACKGROUND-COLOR: #4682b4
+}
+.prescriptionadmin .data
+{
+}
+.prescriptionadmin .data .available
+{
+    BACKGROUND-COLOR: #ffffff
+}
+.prescriptionadmin .data .administered
+{
+    BACKGROUND-COLOR: #99ff99
+}
+.prescriptionadmin .data .notadministered
+{
+    BACKGROUND-COLOR: #ff6666
+}
+.prescriptionadmin .data .empty
+{
+    BACKGROUND-COLOR: lightgrey
+}
+.prescriptionadmin .data TD
+{
+    BORDER-RIGHT: black 1px solid;
+    PADDING-RIGHT: 3px;
+    PADDING-LEFT: 3px;
+    PADDING-BOTTOM: 1px;
+    PADDING-TOP: 1px;
+    BORDER-BOTTOM: black 1px solid
+}
+.prescriptionadmin .data .notinwindow
+{
+    BACKGROUND-COLOR: #999999
+}
+div#tblContainer 
+{
+width:100%;
+height:100%;
+overflow: auto;
+}

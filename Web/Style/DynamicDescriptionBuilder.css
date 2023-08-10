@@ -1,0 +1,36 @@
+BODY
+{
+}
+.Heading
+{
+    PADDING-RIGHT: 10px;
+    PADDING-LEFT: 10px;
+    FONT-SIZE: small;
+    COLOR: white;
+    HEIGHT: 35px;
+    BACKGROUND-COLOR: #006699
+}
+.FieldsList
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Arial, 'Courier New';
+    BACKGROUND-COLOR: #ffffff
+}
+UL
+{
+    CURSOR: default;
+    LIST-STYLE-TYPE: none
+}
+.AvailableSelected
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, 'Courier New'
+}
+.AvailableHover
+{
+    FONT-SIZE: 10pt;
+    COLOR: #4682b4;
+    FONT-FAMILY: Arial, 'Courier New'
+}

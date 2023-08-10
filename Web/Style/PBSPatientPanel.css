@@ -1,0 +1,30 @@
+BODY
+{
+}
+.Caption
+{
+    FONT-SIZE: 11pt;
+    WIDTH: 1%;
+    COLOR: white;
+    BACKGROUND-COLOR: steelblue
+}
+.Text
+{
+    FONT-SIZE: 11pt
+}
+.FieldSurround
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    BORDER-LEFT: medium none;
+    BORDER-BOTTOM: medium none;
+    BACKGROUND-COLOR: transparent
+}
+.PanelBackground
+{
+    BORDER-RIGHT: #c6d3f0 1px solid;
+    BORDER-TOP: #c6d3f0 1px solid;
+    BORDER-LEFT: #c6d3f0 1px solid;
+    BORDER-BOTTOM: #c6d3f0 1px solid;
+    BACKGROUND-COLOR: white
+}
