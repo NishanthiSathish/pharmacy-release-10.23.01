@@ -2844,7 +2844,7 @@ Dim dlcl As DrugParameters
       
    End If
    replace tmp$, "{" & Chr$(13) & Chr$(10) & "\par}", "{\par}", 0  '22Jan01 TH Remove additional blank lines
-   replace tmp$, Chr$(13) & Chr$(10), " \par ", 0
+   'replace tmp$, Chr$(13) & Chr$(10), " \par ", 0 ' Commented - MM-14261 : New manufacturing worksheets are created with a large gap at the top of the label data element
    '15dec00 CKJ Line removed as it should be in the layout and does not match the 'label' on the worksheet
    'tmp$ = tmp$ & " \par " & plvl$("DoNotUseAfter") & batchexpiry$ & "  " & batchnumber$      '12Jul99 CFY Changed /par to \par
    Heap 10, gPRNheapID, "label", tmp$, 0
